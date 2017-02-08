@@ -1,4 +1,4 @@
-\documentclass[aps,preprintnumbers,showpacs,nofootinbib,superscriptaddress,floatfix]{revtex4-1}
+\documentclass[aps,preprintnumbers,showpacs,nofootinbib,superscriptaddress,floatfix]{revtex4}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
@@ -16,8 +16,8 @@
 \newcommand{\zh}{z_h}
 
 %% macro to draw particularly short right arrows. Choose one of the two
-\newcommand{\smarrow}{\mbox{\raisebox{-4.5pt}[0pt][0pt]{$\hspace{-1pt}
-      \vec{\phantom{v}}$}}}
+\newcommand{\smarrow}{\mbox{\raisebox{-4.5pt}[0pt][0pt]{$\hspace{-1pt} 
+		\vec{\phantom{v}}$}}}
 %\newcommand{\smarrow}{\mbox{\raisebox{0.5pt}{\tiny $\hspace{-1.5pt} \rightarrow 
 %\hspace{-8.25pt}{\color{white} \rule[1pt]{1.5pt}{0.5pt}} \hspace{4pt} $}} }
 
@@ -772,11 +772,52 @@ best-fit parameters for TMD PDFs for the flavor-dependent fit}
 \label{ss:hermes}
 %%%%%%%%%%%%%%%%%%%%%%
 
+Description of Hermes data (version from Dropbox, Feb. 8$^{th}$).
+Legend for $z$ values needs to be added too.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{plots/Hermes/Hermes_Pions_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$.} 
+\label{f:H_pions}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{plots/Hermes/Hermes_Kaons_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$.} 
+\label{f:H_kaons}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Compass data}
 \label{ss:compass}
 %%%%%%%%%%%%%%%%%%%%%%
+
+Description of Compass data (version from Dropbox, Feb. 8$^{th}$).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{plots/Compass/COMPASS_SCIplot_flINDEP_Piminus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first bin in ${\bm P}_{hT}^ 2$ for each $\langle z \rangle$ value.} 
+\label{f:C_pim}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{plots/Compass/COMPASS_SCIplot_flINDEP_Piplus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of positive hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first bin in ${\bm P}_{hT}^ 2$ for each $\langle z \rangle$ value.} 
+\label{f:C_pip}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -784,6 +825,8 @@ best-fit parameters for TMD PDFs for the flavor-dependent fit}
 \label{ss:dy}
 %%%%%%%%%%%%%%%%%%%%%%
 
+Description of low energy Drell-Yan data (version from Dropbox, Feb. 8$^{th}$).
+Legends need to be added too. Fix the y-axis label.
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Z-boson production data}
@@ -842,3 +885,36 @@ The work of AS has been funded partly also by the program of the Stichting voor 
 %%% mode: latex
 %%% TeX-master: t
 %%% End: 
+
+
+%% figure with one panel :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width=***cm]{fig_name}
+%\end{center}
+%\caption{} 
+%\label{f:xxxxx}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% figure with two panels :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%\begin{tabular}{ccc}
+%\includegraphics[width=***cm]{fig_name}
+%&\hspace{0.001cm}
+%&
+%\includegraphics[width=6cm]{fig_name}
+%\\
+%(a) && (b)
+%\end{tabular}
+%\caption{write the caption here (a) and another here (b).}
+%\label{f:xxxxx}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
