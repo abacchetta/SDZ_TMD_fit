@@ -4,18 +4,11 @@ The top-level auxiliary file: SDZ_TMD_fit_AB.aux
 The style file: apsrevM.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybiblio.bib
-Warning--I didn't find a database entry for "Signori2013"
-Warning--I didn't find a database entry for "ito1981measurement"
-Warning--I didn't find a database entry for "prokudin2015scheme"
-Warning--I didn't find a database entry for "affolder2000transverse"
-Warning--I didn't find a database entry for "abbott2000measurement"
-Warning--I didn't find a database entry for "aaltonen2012transverse"
-Warning--I didn't find a database entry for "abazov2008measurement"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 44 entries,
             3471 wiz_defined-function locations,
-            1502 strings with 19050 characters,
+            1494 strings with 18906 characters,
 and the built_in function-call counts, 31781 in all, are:
 = -- 1858
 > -- 1025
@@ -54,4 +47,3 @@ warning$ -- 0
 while$ -- 129
 width$ -- 0
 write$ -- 671
-(There were 7 warnings)
