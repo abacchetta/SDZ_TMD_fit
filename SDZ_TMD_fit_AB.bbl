@@ -408,6 +408,20 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Boglione et~al.}(2017)\citenamefont{Boglione, Collins,
+  Gamberg, Gonzalez-Hernandez, Rogers, and Sato}}]{Boglione:2016bph}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Collins}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Gamberg}},
+  \bibinfo{author}{\bibfnamefont{J.~O.} \bibnamefont{Gonzalez-Hernandez}},
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Sato}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B766}},
+  \bibinfo{pages}{245} (\bibinfo{year}{2017}), \eprint{1611.10329}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Ito et~al.}(1981)}]{Ito:1980ev}
 \bibinfo{author}{\bibfnamefont{A.~S.} \bibnamefont{Ito}} \bibnamefont{et~al.},
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D23}},
@@ -456,20 +470,6 @@
   \bibnamefont{et~al.} (\bibinfo{collaboration}{D0}), \bibinfo{journal}{Phys.
   Rev. Lett.} \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{102002}
   (\bibinfo{year}{2008}), \eprint{0712.0803}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[{\citenamefont{Boglione et~al.}(2017)\citenamefont{Boglione, Collins,
-  Gamberg, Gonzalez-Hernandez, Rogers, and Sato}}]{Boglione:2016bph}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Collins}},
-  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Gamberg}},
-  \bibinfo{author}{\bibfnamefont{J.~O.} \bibnamefont{Gonzalez-Hernandez}},
-  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Sato}},
-  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B766}},
-  \bibinfo{pages}{245} (\bibinfo{year}{2017}), \eprint{1611.10329}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
