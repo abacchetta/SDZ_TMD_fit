@@ -1,5 +1,8 @@
 \documentclass[aps,preprintnumbers,showpacs,nofootinbib,superscriptaddress,floatfix]{revtex4}
 
+\pdfoutput=1 % if your are submitting a pdflatex (i.e. if you have
+             % images in pdf, png or jpg format)
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -21,6 +24,10 @@
 %\newcommand{\smarrow}{\mbox{\raisebox{0.5pt}{\tiny $\hspace{-1.5pt} \rightarrow 
 %\hspace{-8.25pt}{\color{white} \rule[1pt]{1.5pt}{0.5pt}} \hspace{4pt} $}} }
 
+%% names of experiments + MINUIT
+\newcommand{\hermes}{\textsc{Hermes }}
+\newcommand{\compass}{\textsc{Compass }}
+\newcommand{\minuit}{\textsc{Minuit }}
 
 %% macro to manage T versus perp notation
 \newcommand{\T}{\perp}
@@ -89,8 +96,10 @@ This could be considered as a first attempt at a global fit of TMDs.
 
 \maketitle
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+\label{s:intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Parton distribution functions describe the internal structure of the nucleon
 in terms of its elementary constituents (quarks and gluons). They cannot be
@@ -187,11 +196,14 @@ Sec.~\ref{s:results}, the results of our global fit are presented and
 discussed. In Sec.~\ref{s:end}, we draw some conclusions. 
    
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Theoretical formulas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formalism}
 \label{s:theory}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%
+\textcolor{blue}{Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Semi-inclusive DIS}
 \label{ss:SIDIS_formalism}
 
@@ -283,7 +295,8 @@ To the purpose of applying TMD evolution equations,
 
 \textcolor{red}{ E' questa la formula usata nel codice, o serve dire altro?}
 
-%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Drell--Yan processes}
 \label{ss:DY_formalism}
 
@@ -401,7 +414,7 @@ A_a & = I_{3a} \  .
 
 
 
-%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{TMDs and their evolution}
 \label{ss:TMDevo}
 
@@ -494,18 +507,38 @@ D_{1 {\rm NP}}^{a\to h} (z, \bm{P}_{\T}) &=  \frac{1}{\pi} \
  \end{align}
  \textcolor{red}{where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to h}^2 \big\rangle \equiv \big \langle \bm{P}_{\T a \to h}^2 \big\rangle (\hat{z})$ with $\hat{z} = 0.5$, are free parameters. For sake of simplicity, the $\beta, \, \gamma, \, \delta$ parameters are taken equal for all fragmentation channels~\cite{Signori:2013mda,Bacchetta:2015ora}. }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Data selection}
-\label{s:data}
+
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data analysis}
+\label{s:data_analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 One of the main goals of our fit is to test the universality of TMD parton distributions and fragmentation functions among different processes.
-To achieve this we included measurements taken from semi-inclusive DIS, Drell-Yan and Z boson production from a wide range of experimental collaborations.\\
-In this chapter we will illustrate the experimental data considered for each process and the reasons behind the kinematic cuts applied to them.\\
+To achieve this we included measurements taken from semi-inclusive DIS, Drell-Yan and $Z$ boson production from a wide range of experimental collaborations. 
+In this chapter we will illustrate the experimental data considered for each process and the reasons behind the kinematic cuts applied to them.
 
-The semi-inclusive DIS data are taken from \textsc{Hermes} collaboration \cite{Airapetian:2012ki} and COMPASS experiment \cite{Adolph:2013stb}.
-\textcolor{red}{A similar analysis on \textsc{Hermes} data has been alredy done in a previous work \cite{Signori:2013mda}.}  \textsc{Hermes} data are grouped in two data sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only the vector meson subtracted data set.\\
+Tab.~\ref{t:data_SIDIS_proton} refers to the experimental data for SIDIS off proton target (\hermes experiment) and presents its kinematic features. 
+The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hermes data}
+\label{ss:hermes}
+
+The semi-inclusive DIS data are taken from \textsc{Hermes} collaboration~\cite{Airapetian:2012ki} and \compass experiment \cite{Adolph:2013stb}.
+\textcolor{red}{A similar analysis on \textsc{Hermes} data has been alredy done in a previous work~\cite{Signori:2013mda}.} 
+
+\textsc{Hermes} data are grouped in two data sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only the vector meson subtracted data set.\\
 The collaboration measured the multiplicities for SIDIS in a fixed target experiment using hydrogen and deuteron and separating charged pions and kaons produced in the final state. The data set then includes 8 different channels for every combination of target and final-state hadron for a total of 2688 points.\\
-They are divided in bins of $(x,z,Q^2,Ph_T)$ with the average values of $(x,Q^2)$ spanning from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$, while for other variables we have $0.1\leq z\leq 0.9$ and $0.1 \text{GeV} \leq \vert Ph_T \vert \leq 1 \text{ GeV}$.\\
+They are divided in bins of $(x,z,Q^2,Ph_T)$ with the average values of $(x,Q^2)$ spanning from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$, while for other variables we have $0.1\leq z\leq 0.9$ and $0.1 \text{GeV} \leq \vert Ph_T \vert \leq 1 \text{ GeV}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Compass data}
+\label{ss:compass}
 
 Compass collaboration instead extracted multiplicities of charged hadrons produced in SIDIS on a deuteron ($^6\text{LiD}$) target. The data are organised in bins dependent on $(x,z,Q^2,Ph_T)$ as well, however the number of data is an order of magnitude greater than the \textsc{Hermes} ones.\\
 The data cover the range of $(x,Q^2)$ from $(0.0052, 1.11\text{GeV}^2)$ to $(0.0932, 7.57\text{GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$.\\
@@ -513,27 +546,37 @@ In data sets from both collaborations, for every bin we used the average values 
 
 To avoid issues relative to errors in the normalization of data, we divided every Compass data point by the value of the first data point of their bin, defining a new variable:
 \begin{equation}
-m_{norm} = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}
+m_{\text{norm}} = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}
 \label{eq:mult_norm}
 \end{equation}
-The first data point of every selected bin  was consequently considered as a fixed parameter and excluded from the degrees of freedom of the system.\\
+The first data point of every selected bin  was consequently considered as a fixed parameter and excluded from the degrees of freedom of the system.
 
-In the case of Drell-Yan data we started our analysis on data sets considered in previous works \textcolor{red}{[CITE]}.\\
-We used data from E288\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ Gev}^2$, denoted with the name 200, 300 and 400 respectively. We included also data from E605 \cite{Moreno:1990sf} at $\sqrt{s}=38.8 \text{ GeV}^2$.
+\textcolor{red}{The application of the TMD formalism to SIDIS at low energy $Q$ crucially depends on the capability of separating the current from the target fragmentation region and from a soft region. The issue has been recently discussed in~\cite{Boglione:2016bph}. In this paper, }
+\textcolor{blue}{we do not implement any combined cut on $z$ and $P_{hT}$. We leave it to future studies\footnote{The implementation of the $R$ cut proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the quark properties.}}
+%\textcolor{blue}{consistently with the way experimental data are presently binned, we identify the current fragmentation region by means of cuts on $z$.}
 
-We needed also data at higher $q_T$, so we considered also data taken from Z boson production in collider experiments at Tevatron.  We used data from CDF and D0, from Run I \cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II \cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. The invariant mass for this kind of experiments is $M=M_Z$, while the transverse momentum exchanged spans $0< q_T < 20 \text{GeV}$.
-The quantity used in the fit for Z boson production data is $d\sigma /dq_T$,  however in the case of D0 Run II the data published contain the quantity $1/\sigma \times d\sigma/dq_T$ so we multiplied every one of this point for the cross section of this process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$. The errors relative to the cross section and the data published have been added in quadrature.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Low-energy Drell-Yan data}
+\label{ss:dy}
+
+In the case of Drell-Yan data we started our analysis on data sets considered in previous works \textcolor{red}{[CITE]}. We used data from E288~\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ Gev}^2$, denoted with the name 200, 300 and 400 respectively. We included also data from E605~\cite{Moreno:1990sf} at $\sqrt{s}=38.8 \text{ GeV}^2$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Z-boson production data}
+\label{ss:zboson}
+
+We needed also data at higher $q_T$, so we considered also data taken from Z boson production in collider experiments at Tevatron.  We used data from CDF and D0, from Run I~\cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II~\cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. The invariant mass for this kind of experiments is $M=M_Z$, while the transverse momentum exchanged spans $0< q_T < 20 \text{GeV}$.
+The quantity used in the fit for Z boson production data is $d\sigma /dq_T$,  however in the case of D0 Run II the data published contain the quantity $1/\sigma \times d\sigma/dq_T$ so we multiplied every one of this point for the cross section of this process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$. The errors relative to the cross section and the data published have been added in quadrature.\\
 
 \textcolor{red}{Cuts and reasons}\\
-\textcolor{red}{ERRORS}\\
+\textcolor{red}{ERRORS}
 
-\textcolor{red}{The application of the TMD formalism to SIDIS at low energy $Q$ crucially depends on the capability of separating the current from the target fragmentation region. The issue has been recently discussed in Ref.~\cite{Boglione:2016bph}. In this paper, }
-\textcolor{blue}{consistently with the way experimental data are presently binned, we identify the current fragmentation region by means of cuts on $z$.}
 
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
 \renewcommand{\arraystretch}{1.3} % enlarge line spacing
 
-\begin{table}[h]
+%%%%%%%%%%%%%% Tab. SIDIS data off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
  \hline
@@ -557,12 +600,12 @@ $x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }                \\
 %$\chi^2 /$points &4.24 & 3.49 & 0.63 & 1.00                \\
 %\hline
 \end{tabular}
-\caption{Semi-inclusive DIS proton-target data}
+\caption{Semi-inclusive DIS proton-target data (Hermes experiment).}
+\label{t:data_SIDIS_proton}
 \end{center}
 \end{table}
-
-
-\begin{table}[h]
+%%%%%%%%%%%%%% Tab. SIDIS data off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|}
  \hline
@@ -587,11 +630,12 @@ Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\disp
 %$\chi^2 /$points &3.06 & 2.53 & 1.04 & 3.18    &  1.48        &    0.96             \\
 %\hline
 \end{tabular}
-\caption{Semi-inclusive DIS deuteron-target data}
+\caption{Semi-inclusive DIS deuteron-target data (Hermes and Compass experiments).}
+\label{t:data_SIDIS_deuteron}
 \end{center}
 \end{table}
-
-\begin{table}[h]
+%%%%%%%%%%%%%% Tab. Drell-Yan data low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \begin{center}
 %\newcommand{\m}{\hphantom{$-$}}
 %\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
@@ -616,12 +660,13 @@ $Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV  
 \hline
 %$ \chi^2  /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
 %\hline
- \end{tabular}
- \caption{Drell-Yan data}
+\end{tabular}
+\caption{Low energy Drell-Yan data collected by the E288 and E605 experiments at Tevatron, with different center-of-mass energies.}
+\label{t:data_DY}
 \end{center}
 \end{table}
-
-\begin{table}[h]
+%%%%%%%%%%%%%% Tab. Z data Tevatron %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \begin{center}
 %\vskip 18pt
 %\newcommand{\m}{\hphantom{$-$}}
@@ -645,15 +690,99 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 %$\chi^2 /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
 %\hline
 \end{tabular}
-\caption{$Z$-production data}
+\caption{$Z$ boson production data collected by the CDF and D0 experiments at Tevatron, with different center-of-mass energies. \textcolor{blue}{Discuss the meaning of the normalization factors}.}
+\label{t:data_Z}
 \end{center}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The replica method}
+\label{ss:replica_method}
+
+Description of the replica method and the definition of the $\chi^2$ (error function).
+
+\textcolor{blue}{The following text is copy-pasted from~\cite{Signori:2013mda}. We need to edit/rewrite it. Explain: which sources of theoretical errors are we considering in the current fit, apart from the error on the collinear fragmentation functions?}
+
+The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty}, and taking
+inspiration from the work of the NNPDF collaboration (see, e.g.,~\cite{Forte:2002fg,Ball:2008by,Ball:2010de}). The approach consists in creating $\mathcal{M}$ replicas of the data points. In each replica (denoted
+by the index $r$), each data point $i$ is shifted by a Gaussian noise with the
+same variance as the measurement. Each replica, therefore, represents a
+possible outcome of an independent experimental measurement, which we denote
+by $m_{N, r}^{h}(x, z, \bm{P}_{h\Tperp}^2, Q^2)$. The number of replicas is
+chosen so that the mean and standard deviation of the set of replicas
+accurately reproduces the original data points. In our case, we have found
+that 200 replicas are more than sufficient.
+
+The standard minimization procedure is applied to each replica separately, by
+minimizing the following error  
+function~\footnote{Note that the error for each replica is taken to be equal
+  to the error on the original data points. This is consistent with the fact
+  that the variance of the $\mathcal{M}$ replicas should reproduce the
+  variance of the original data points.}  
+\begin{equation}
+%\small
+E_r^2(\{p\})=\sum_{i} 
+\frac{\Bigl(m_{N, r}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2, Q_i^2) - m_{N,  \mbox{\tiny theo}}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2; \{p\})\Bigr)^2}
+        {\Bigl( \Delta m_{N, \mbox{\tiny stat}}^{h\ 2} + \Delta m_{N, \mbox{\tiny sys}}^{h\ 2} \Bigr)(x_i, z_i, \bm{P}_{h\Tperp i}^2, Q^2_i) +\Bigl(\Delta m_{N, \mbox{\tiny theo}}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2) \Bigr)^2}   . 
+\label{e:MC_chi2}
+\end{equation}
+The sum runs over the $i$ experimental points, including all species of
+targets $N$ and final-state hadrons $h$. The theoretical multiplicities $m_{N,
+  \text{theo}}^{h}$ and their error $\Delta m_{N,  {\rm theo}}^{h}$ do not
+depend on $Q^2$, as explained in the previous section. They are computed at
+the fixed value $Q^2=2.4$ GeV$^2$ using the formula in
+Eq.~\eqref{e:FDmult}. However, in each $z$ bin for each replica the value of
+$D_1^{a \smarrow h}$ is independently modified with a Gaussian noise with
+standard deviation equal to the theoretical error $\Delta D_1^{a\smarrow
+  h}$. The latter is estimated from the plots in Ref.~\cite{Epele:2012vg} and
+it represents the main source of uncertainty in $\Delta m_{N,  {\rm
+    theo}}^{h}$. Finally, the symbol $\{p\}$ denotes the vector of fitting
+parameters.  
+
+The minimization was carried out using the \minuit  code. The final outcome is a set of $\mathcal{M}$ different vectors of best-fit parameters, $\{ p_{0r}\},\; r=1,\ldots \mathcal{M}$, with which we can calculate any observable, its mean, and its standard deviation. 
+The distribution of these values needs not to be necessarily Gaussian. In this
+case, the $1 \sigma$ confidence interval is different from the 68\%
+interval. The 68\% confidence interval can simply be computed for
+each experimental point by rejecting the largest and the lowest 16\% of the
+$\mathcal{M}$ values.   
+
+Although the minimization is performed on the function defined in Eq.~\eqref{e:MC_chi2}, the agreement of the $\mathcal{M}$ replicas with the original data is better expressed in terms of a $\chi^2$ function defined as in Eq.~\eqref{e:MC_chi2} but with the replacement $m_{N, r}^{h} \to m_{N}^{h}$, i.e.,  with respect to the original data set.
+If the model is able to give a good description of the data, the distribution of the $\mathcal{M}$ values of $\chi^2$/d.o.f. should be peaked around one. 
+%In practice, the rigidity of our functional form leads to higher $\chi^2$ values. 
+
+
+
+
+
+
+
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{s:results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
+In the following we detail the results of fits to the data sets presented in Sec.~\ref{s:data_analysis}. In Sec.~\ref{ss:fl_ind_fit} we present a fit of TMDs with flavor-independent widths (see Eqs.~\eqref{e:f1NP} and~\eqref{e:D1NP}); in Sec.~\ref{ss:fl_dep_fit} we discuss the flavor-dependent case.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%		 	   FLAVOR INDEPENDENT CASE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Flavor independent fit}
+\label{ss:fl_ind_fit}
+
+In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$ and its breakdown (division) between SIDIS (separating Hermes and Compass) and Drell-Yan/$Z$ events. \textcolor{blue}{$\chi^2$ values need to be added.} 
+Tab.~\ref{t:fl_ind_parcommon} summarizes the values of the nonperturbative parameters $b_{\rm min}$ and $b_{\rm max}$ (which delimit the range in $b_T$ where transverse momentum resummation is computed perturbatively) and $g_2$, whcih quantifies the amount of soft gluons radiated.
+Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values for the quantities used to parametrize the nonperturbative part of the TMDs (Eqs.~\eqref{e:f1NP} and~\eqref{e:D1NP}); central values and standard deviations are based on the replica methodology (see Sec.~\ref{ss:replica_method}), using $68\%$ confidence levels.
+
+%%%%%%%%%%%%%%%% Tab. # SIDIS points %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \small
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
@@ -671,16 +800,12 @@ Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.&
 \hline
 \hline
 \end{tabular}
-\caption{Number of points and $\chi^2$ values 
-for the flavor-independent fit}
-\label{t:chi2}
+\caption{Flavor-independent fit: number of points analyzed and $\chi^2$ values for SIDIS and Drell-Yan/$Z$ production.}
+\label{t:fl_ind_chi2}
 \end{table}
 
-\begin{figure}
-
-
-
-\begin{table}
+%%%%%%%%%%%%%%%% Tab. common parameters %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \small
   \centering
   \begin{tabular}{|c|c|c|}
@@ -689,9 +814,9 @@ for the flavor-independent fit}
 %  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
 %  \hline
 %  \hline
-$b_{\rm max}$ & $b_{\rm min}$ &  $g_2$ 
+$b_{\rm max}$ [GeV$^{-1}$] & $b_{\rm min}$ [GeV$^{-1}$] &  $g_2$ {[GeV$^2$]} 
  \\ 
- (fixed)     & (fixed)   & {[GeV$^2$]}                           \\
+ (fixed)     & (fixed)   &                            \\
 \hline
 $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.12 \pm 0.01$  \\
 \hline
@@ -702,7 +827,8 @@ $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.12 \pm 0.01$  \\
 \label{t:parcommon}
 \end{table}
 
-\begin{table}
+%%%%%%%%%%%%%%% Tab. results paramters TMDs %%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
 \small
   \centering
   \begin{tabular}{|c||c|c|c|c|c|c|}
@@ -735,8 +861,60 @@ $\beta$ & $\delta$ & $\gamma$ & $\lambda_F$ & $\big \langle
 \caption{68\% confidence intervals of 
 best-fit parameters for TMD PDFs and FFs}
 % for the flavor-independent fit}
-\label{t:fd_PDFs_par}
+\label{t:fl_ind_PDFs_par}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Average transverse momenta}
+\label{sss:kT2_PT2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Kinematic dependence}
+\label{sss:kindep}
+
+Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
+Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
+Fix some of the labels on the vertical axis.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\centering
+\begin{tabular}{ccc}
+\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/kT2av_curves_at1GeV_flINDEP.pdf}
+&\hspace{0.001cm}
+&
+\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/PT2av_curves_at1GeV_flINDEP.pdf}
+\\
+(a) && (b)
+\end{tabular}
+\caption{write the caption here (a) and another here (b).}
+\label{f:avmomenta_all_rep}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\centering
+\begin{tabular}{ccc}
+\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/kT2av_Compare_with_other_extractions_flINDEP.pdf}
+&\hspace{0.001cm}
+&
+\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/PT2av_Compare_with_other_extractions_flINDEP.pdf}
+\\
+(a) && (b)
+\end{tabular}
+\caption{write the caption here (a) and another here (b).}
+\label{f:avmomenta_68CL}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
 
 %\begin{table}[h]
 %\small
@@ -837,10 +1015,7 @@ best-fit parameters for TMD PDFs and FFs}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Hermes data}
-\label{ss:hermes}
-%%%%%%%%%%%%%%%%%%%%%%
+
 
 Description of Hermes data (version from Dropbox, Feb. 9$^{th}$).
 Legend for $z$ values needs to be added too.
@@ -863,10 +1038,6 @@ Legend for $z$ values needs to be added too.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Compass data}
-\label{ss:compass}
-%%%%%%%%%%%%%%%%%%%%%%
 
 Description of Compass data (version from Dropbox, Feb. 9$^{th}$).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -890,10 +1061,6 @@ Description of Compass data (version from Dropbox, Feb. 9$^{th}$).
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Low-energy Drell-Yan data}
-\label{ss:dy}
-%%%%%%%%%%%%%%%%%%%%%%
 
 Description of low energy Drell-Yan data (version from Dropbox, Feb. 9$^{th}$).
 Legends need to be added too. Fix the y-axis label.
@@ -929,10 +1096,7 @@ Legends need to be added too. Fix the y-axis label.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Z-boson production data}
-\label{ss:zboson}
-%%%%%%%%%%%%%%%%%%%%%%
+
 
 Description of Z-boson production data (version from Dropbox, Feb. 9$^{th}$).
 Legends need to be added too. Fix the y-axis label.
@@ -941,7 +1105,7 @@ Legends need to be added too. Fix the y-axis label.
 \begin{center}
 \includegraphics[width=0.85\textwidth]{plots/DY-Z/Z_SCIplot_flINDEP.pdf}
 \end{center}
-\caption{Transverse momentum spectrum of a $Z$ boson produced from hadronic collisions ($p\bar{p}$ ?) at Tevatron. $q_T$ is the transverse momentum of the $Z$ boson. ... } 
+\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.96$ TeV and $\sqrt{s}=1.8$ TeV).} 
 \label{f:Z_qT}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -950,83 +1114,37 @@ Legends need to be added too. Fix the y-axis label.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Average transverse momenta}
-\label{ss:kT2_PT2}
-%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Kinematic dependence}
-\label{ss:kindep}
-%%%%%%%%%%%%%%%%%%%%%%
-
-Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
-Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
-Fix some of the labels on the vertical axis.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\centering
-\begin{tabular}{ccc}
-\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/kT2av_curves_at1GeV_flINDEP.pdf}
-&\hspace{0.001cm}
-&
-\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/PT2av_curves_at1GeV_flINDEP.pdf}
-\\
-(a) && (b)
-\end{tabular}
-\caption{write the caption here (a) and another here (b).}
-\label{f:avmomenta_all_rep}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\centering
-\begin{tabular}{ccc}
-\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/kT2av_Compare_with_other_extractions_flINDEP.pdf}
-&\hspace{0.001cm}
-&
-\includegraphics[width=0.40\textwidth]{plots/Parameters_and_Curves/PT2av_Compare_with_other_extractions_flINDEP.pdf}
-\\
-(a) && (b)
-\end{tabular}
-\caption{write the caption here (a) and another here (b).}
-\label{f:avmomenta_68CL}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 
 
 
-
-%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions and outlook}
 \label{s:end}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgments}
 %Discussions with  are gratefully acknowledged. 
 This work is supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 647981, 3DSPIN). 
 AS acknowledges support from U.S. Department of Energy contract DE-AC05-06OR23177, under which Jefferson Science Associates, LLC, manages and operates Jefferson Lab. 
 The work of AS has been funded partly also by the program of the Stichting voor Fundamenteel Onderzoek der Materie (FOM), which is financially supported by the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO).
 \end{acknowledgments}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\bibliographystyle{myrevtex}
 %\bibliographystyle{h-physrev}
 \bibliographystyle{apsrevM}
+%\bibliographystyle{JHEP}
 \bibliography{mybiblio}
 %\bibliography{biblio_sidis}
 %\bibliography{bibroad}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \end{document}
 
