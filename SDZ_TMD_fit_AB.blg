@@ -4,8 +4,37 @@ The top-level auxiliary file: SDZ_TMD_fit_AB.aux
 The style file: apsrevM.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybiblio.bib
+You're missing a field name---line 1413 of file mybiblio.bib
+ : 
+ : %url            = "http://inspirehep.net/record/1410100/files/arXiv:1512.05379.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1861 of file mybiblio.bib
+ : 
+ : %      url            = "http://inspirehep.net/record/1411657/files/arXiv:1512.09014.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1964 of file mybiblio.bib
+ : 
+ : %      url            = "http://inspirehep.net/record/1375601/files/78.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2541 of file mybiblio.bib
+ : @article{Barone:2015ksa
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2705 of file mybiblio.bib
+ : @article{Kang:2015msa
+ :                      ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5633 of file mybiblio.bib
+ : 
+ : %      url            = "http://www.cambridge.org/de/knowledge/isbn/item5756723",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+<<<<<<< Updated upstream
 You've used 49 entries,
             3471 wiz_defined-function locations,
             1529 strings with 19741 characters,
@@ -47,3 +76,47 @@ warning$ -- 0
 while$ -- 144
 width$ -- 0
 write$ -- 746
+=======
+You've used 52 entries,
+            3471 wiz_defined-function locations,
+            1547 strings with 20350 characters,
+and the built_in function-call counts, 38180 in all, are:
+= -- 2217
+> -- 1265
+< -- 172
++ -- 1026
+- -- 308
+* -- 5237
+:= -- 4080
+add.period$ -- 52
+call.type$ -- 52
+change.case$ -- 210
+chr.to.int$ -- 52
+cite$ -- 52
+duplicate$ -- 3410
+empty$ -- 3130
+format.name$ -- 798
+if$ -- 7194
+int.to.chr$ -- 1
+int.to.str$ -- 53
+missing$ -- 508
+newline$ -- 330
+num.names$ -- 156
+pop$ -- 825
+preamble$ -- 1
+purify$ -- 208
+quote$ -- 0
+skip$ -- 1421
+stack$ -- 0
+substring$ -- 1270
+swap$ -- 2656
+text.length$ -- 249
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 310
+warning$ -- 0
+while$ -- 151
+width$ -- 0
+write$ -- 786
+(There were 6 error messages)
+>>>>>>> Stashed changes
