@@ -1,11 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-<<<<<<< Updated upstream
-\begin{mcitethebibliography}{49}
-=======
-\begin{mcitethebibliography}{52}
->>>>>>> Stashed changes
+\begin{mcitethebibliography}{57}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -589,9 +585,9 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Ball et~al.}(2009)}]{Ball:2008by}
 \bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{Ball}} \bibnamefont{et~al.}
-  (\bibinfo{collaboration}{NNPDF Collaboration}), \bibinfo{journal}{Nucl.
-  Phys.} \textbf{\bibinfo{volume}{B809}}, \bibinfo{pages}{1}
-  (\bibinfo{year}{2009}), \eprint{0808.1231}\relax
+  (\bibinfo{collaboration}{NNPDF Collaboration}), \bibinfo{journal}{Nucl.Phys.}
+  \textbf{\bibinfo{volume}{B809}}, \bibinfo{pages}{1} (\bibinfo{year}{2009}),
+  \eprint{0808.1231}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -610,7 +606,7 @@
   \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Llubaroff}},
   \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
-  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D86}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D86}},
   \bibinfo{pages}{074028} (\bibinfo{year}{2012}), \eprint{1209.3240}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
