@@ -43,7 +43,6 @@
      "ss:replica_method"
      "e:MC_chi2"
      "s:results"
-     "ss:fl_ind_fit"
      "t:fl_ind_chi2"
      "t:parcommon"
      "t:fl_ind_PDFs_par"
