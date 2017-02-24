@@ -45,6 +45,8 @@
      "e:MC_chi2"
      "s:results"
      "t:fl_ind_chi2"
+     "t:chi2_DY"
+     "t:chi2_Z"
      "t:parcommon"
      "t:fl_ind_PDFs_par"
      "sss:kT2_PT2"

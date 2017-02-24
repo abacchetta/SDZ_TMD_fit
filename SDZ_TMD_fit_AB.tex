@@ -281,31 +281,32 @@ $\bm{P}_\T$. The term $Y_{UU,T}$ is introduced to ensure a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
 
 The applicability of Eq.~\eqref{e:SIDISkT} 
-depends on the possibility of
+relies on the possibility of
 neglecting $M^2/Q^2$ corrections.
 At large $Q^2$ this should not pose serious
-problems. However, fixed-target DIS experiments collect a large amount of data
+problems. However, fixed-target DIS experiments typically 
+collect a large amount of data
 at relatively low $Q^2$ values, which may lead to problems (see, e.g., recent
 discussions in Refs.~\cite{Boglione:2016bph,Moffat:2017sha}).
 
-Eq.~\eqref{e:SIDISkT} can be expanded in powers
-of $\alpha_S$. However, in the first term of the equation, containing the
-TMDs, the strong coupling appears multiplied by large logarithms $L \equiv
-\log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$. 
+ 
 
-In the present analysis, we 
+Eq.~\eqref{e:SIDISkT} can be expanded in powers
+of $\alpha_S$. In the present analysis, we 
 will consider only the leading order terms in $\alpha_S$, i.e., stop at
 order $\alpha_S^0$. In this case $\mathcal{H}_{UU,T} (Q^2, \mu^2) \approx 1$
-and $Y_{UU,T}\approx 0$.
-We will take into account 
+and $Y_{UU,T}\approx 0$. 
+However, perturbative corrections include large logarithms $L \equiv
+\log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$.
+In the present analysis, we will take into account all 
 powers of the form $\alpha_S^n L^{2n} \approx 1$ (Leading Logarithms --LL) 
 and 
 $\alpha_S^n L^n \approx 1$ (Next-to-Leading Logarithms -- NNL).
 
 In these approximations (LO in $alpha_S$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
-literature this has been called $W$ term). This term should provide a good 
-description of the
+literature this has been called $W$ term). We expect this term to provide a
+good description of the
 structure function only in the region where $P_{hT}^2/z^2 \ll Q^2$. 
 It can happen that $Y_{UU,T}$, defined
 in the standard way (see, e.g., Ref.~\cite{Collins:1984kg}), gives large
@@ -315,12 +316,14 @@ We leave a detailed treatment of the matching to the high $P_{hT}^2 \approx Q^2$
 region to future investigations.   
 
 To the purpose of applying TMD evolution equations, 
-\textcolor{red}{we need to calculate the Fourier transform of the the part of Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to} 
+ need to calculate the Fourier transform of the the part of 
+Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to 
 \begin{align}
 \label{e:SIDISkTFF}
    F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &\approx \sum_a  
       \int_0^{\infty} \frac{d \bT}{2 \pi} \bT J_0\big(\bT |\bm{P}_{hT}|/z\big)
-      \tilde{f}_1^a\big(x, \bT;\mu^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT; \mu^2 \big)
+      \tilde{f}_1^a\big(x, \bT;Q^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT;
+      Q^2 \big) 
 \nonumber \, .
 \end{align} 
 \textcolor{red}{ E' questa la formula usata nel codice, o serve dire altro?}
@@ -746,7 +749,7 @@ The quantity used in the fit for Z boson production data is $d\sigma /dq_T$,  ho
              & \multicolumn{4}{c|}{$0.2 <z <0.7$}     \\
              & \multicolumn{4}{c|}{$P_{h \Tperp}< {\rm Min}[0.2\ Q, 0.7 \ Q z ] +0.5$ GeV}     \\
 \hline
- Points         &  188 & 186 & 187 & 185       \\
+ Points         &  190 & 190 & 189 & 187       \\
  \hline
 Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}               \\
  \hline
@@ -775,7 +778,7 @@ $x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }                \\
              & \multicolumn{6}{c|}{$0.2 <z <0.7$}     \\
              & \multicolumn{6}{c|}{$P_{h \Tperp}< {\rm Min}[0.2\ Q, 0.7 \ Q z ] +0.5$ GeV}     \\
 \hline
- Points         &  188 & 188 & 186 & 187       &      3024    &   3021                 \\
+ Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
  \hline
 Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}      & \multicolumn{2}{c|}{$10 \text{ GeV}^2 $}             \\
  \hline
@@ -943,47 +946,130 @@ In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$ and its breakdown
 (division) between SIDIS (separating Hermes and Compass) and Drell-Yan/$Z$
 events. \textcolor{blue}{$\chi^2$ values need to be added.} 
 
-%%%%%%%%%%%%%%%% Tab. # SIDIS points %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Tab. chi2 total  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \small
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|}
 \hline
 \hline
 %  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
 %  \hline
 %  \hline
-Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
-                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
- \\ 
-      &    &    &  & HERMES    & HERMES   & COMPASS & COMPASS & DY \& Z & DY \& Z  \\
+Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 \hline
-8156 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ & 1737&  &6126 & & 293 &    \\
+8059 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ \\
 \hline
 \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for SIDIS and Drell-Yan/$Z$ production.}
+%  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+%Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
+%                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
+% \\ 
+%      &    &    &  & HERMES    & HERMES   & COMPASS & COMPASS & DY \& Z & DY \& Z  \\
+%\hline
+%8156 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ & 1737&  &6126 & & 293 &    \\
+%\hline
+%\hline
+%\end{tabular}
+\caption{Total number of points analyzed, number of free parameters, and $\chi^2$ values.}
 \label{t:fl_ind_chi2}
 \end{table}
 
 
-%%%%%%%%%%%%%% Tab. SIDIS data off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Tab. chi2 SIDIS off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
  \hline
+\hline
   & HERMES & HERMES & HERMES & HERMES \\   
- &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$               \\
+ &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$
+ \\
  \hline
- Points         &  188 & 186 & 187 & 185       \\
+ Points         &  190 & 190 & 189 & 187       \\
  \hline
 %$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
-$\chi^2 /$points &4.24 & 3.49 & 0.63 & 1.00               
-%\hline
+$\chi^2 /$points &4.83 & 2.47 & 0.91 & 0.82   \\            
+\hline
+\hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for SIDIS and Drell-Yan/$Z$ production.}
+\caption{Number of points analyzed and $\chi^2$ values for SIDIS off the
+  proton.}
 \end{center}
 \end{table}
+
+%%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+ \hline
+\hline
+  & HERMES & HERMES & HERMES & HERMES & COMPASS & COMPASS\\
+ ~          &  $D \to \pi^+$    &   $D \to \pi^-$    &  $D \to K^+$    &   $D \to K^-$      &  $D \to h^+$    &   $D \to h^-$            \\
+\hline
+ Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
+ \hline
+%$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
+$\chi^2 /$points &3.46 & 2.00 & 1.31 & 2.54  & 1.11 & 1.61 \\            
+ \hline
+ \hline
+\end{tabular}
+\caption{Number of points analyzed and $\chi^2$ values for SIDIS off the
+  deuteron.} 
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%% Tab. chi2 Drell-Yan low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+%\newcommand{\m}{\hphantom{$-$}}
+%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
+\renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
+\renewcommand{\arraystretch}{1.2} % enlarge line spacing
+\begin{tabular}{|c|c|c|c|c|}
+ \hline
+ \hline
+ ~                        &  E288 200    &  E288 300        &  E288 400          &  E605                \\
+ \hline
+ Points                   &      45      &   45             &       78           &     35               \\
+ \hline
+$ \chi^2  /$points      &  0.99        &    0.84           &       0.32
+&   1.12     \\
+\hline
+\hline
+\end{tabular}
+\caption{Number of points analyzed and $\chi^2$ values for 
+low energy Drell-Yan experiments.}
+\label{t:chi2_DY}
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%% Tab. chi2 Z Tevatron %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+%\vskip 18pt
+%\newcommand{\m}{\hphantom{$-$}}
+%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
+\renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
+\renewcommand{\arraystretch}{1.2} % enlarge line spacing
+\begin{tabular}{|c|c|c|c|c|}
+ \hline
+\hline
+ ~                        & CDF Run I    &  D0 Run I        & CDF Run II        & D0 Run II      \\
+ \hline
+ Points                   &      31      &   14             &       37          &        8       \\
+ \hline
+$\chi^2 /$points      &  1.36        &    1.11           &       2.00         &   1.73     \\
+\hline
+\hline
+\end{tabular}
+\caption{Number of points analyzed and $\chi^2$ values for
+$Z$ boson production. }
+\label{t:chi2_Z}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 Tab.~\ref{t:fl_ind_parcommon} summarizes the values of the nonperturbative parameters $b_{\rm min}$ and $b_{\rm max}$ (which delimit the range in $\bT$ where transverse momentum resummation is computed perturbatively) and $g_2$, whcih quantifies the amount of soft gluons radiated.
@@ -994,17 +1080,19 @@ Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values for the quantities used
 \begin{table}[h!]
 \small
   \centering
-  \begin{tabular}{|c|c|c|}
+  \begin{tabular}{|c|c|c|c|}
 \hline
 \hline
 %  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
 %  \hline
 %  \hline
-$b_{\rm max}$ [GeV$^{-1}$] & $b_{\rm min}$ [GeV$^{-1}$] &  $g_2$ {[GeV$^2$]} 
+&$b_{\rm max}$ [GeV$^{-1}$] & $b_{\rm min}$ [GeV$^{-1}$] &  $g_2$ {[GeV$^2$]} 
  \\ 
- (fixed)     & (fixed)   &                            \\
+& (fixed)     & (fixed)   &                            \\
 \hline
-$2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.12 \pm 0.01$  \\
+All replicas & $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.13 \pm 0.01$  \\
+\hline
+Replica 105 &  $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
 \hline
 \hline
 \end{tabular}
@@ -1027,20 +1115,26 @@ TMD PDFs&  $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$
 & $\alpha$ & $\sigma$ & & $\lambda$ &  
  \\ 
         & {[GeV$^2$]}                               &
-      (random) &      &  & & \\
+       &      &  &{[GeV$^{-2}$]} & \\
 \hline
-  & $0.31 \pm 0.08$ & $2.93 \pm 0.07 $ & $0.20 \pm
-0.01$  &  & $1.49 \pm 0.96$ &    \\
+All replicas &  $0.28\pm 0.06$ & $2.95\pm 0.05$ & $0.17\pm 0.02$ & 
+                & $0.86\pm 0.78$ & 
+\\
+\hline
+Replica 105  &  $0.285$ & $2.98$ & $0.173$ & & $0.39$ & \\
 \hline
 \hline
 TMD FFs&  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ &
 $\beta$ & $\delta$ & $\gamma$ & $\lambda_F$ & $\big \langle
 \hat{\bm{P}}_{\perp}^{\prime 2} \big \rangle$
  \\ 
-        & {[GeV$^2$]} &            &         & & &{[GeV$^2$]}    \\
+        & {[GeV$^2$]} &            &        & &{[GeV$^{-2}$]} &{[GeV$^2$]}    \\
 \hline
-   &  $0.20 \pm 0.01$ & $2.7 \pm 0.1 $ & $3.4
-\pm 0.1$ & $0.041 \pm 0.004$ & $4.9 \pm 1.2$ & $0.040 \pm 0.001$  \\
+All replicas & $0.21\pm 0.02$ & $1.65\pm 0.49$ & $2.28\pm 0.46$ & $0.14\pm 0.07$ &
+$5.50\pm 1.23$ & $0.13\pm 0.01$ \\
+\hline
+Replica 105   &  
+ $0.212$ & $2.10$ & $2.52$ & $0.094$ & $5.29$ & $0.135$ \\
 \hline
 \hline
 \end{tabular}
