@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{49}
+\begin{mcitethebibliography}{57}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -15,13 +15,13 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{\citenamefont{Collins et~al.}(1989)\citenamefont{Collins, Soper, and
+\bibitem[{\citenamefont{Collins et~al.}(1988)\citenamefont{Collins, Soper, and
   Sterman}}]{Collins:1989gx}
 \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Collins}},
   \bibinfo{author}{\bibfnamefont{D.~E.} \bibnamefont{Soper}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Sterman}},
   \bibinfo{journal}{Adv. Ser. Direct. High Energy Phys.}
-  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{1} (\bibinfo{year}{1989}),
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{1} (\bibinfo{year}{1988}),
   \eprint{hep-ph/0409313}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -29,19 +29,16 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Collins}(2011)}]{Collins:2011zzd}
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Collins}},
-  \emph{\bibinfo{title}{Foundations of Perturbative QCD}}, Cambridge Monographs
-  on Particle Physics, Nuclear Physics and Cosmology
-  (\bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{2011}), ISBN
-  \bibinfo{isbn}{9780521855334},
-  \urlprefix\url{http://books.google.it/books?id=0xGi1KW9vykC}\relax
+  \emph{\bibinfo{title}{{Foundations of perturbative QCD}}}, {Cambridge
+  Monographs on Particle Physics, Nuclear Physics and Cosmology}
+  (\bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{2011})\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Rogers}(2016)}]{Rogers:2015sqa}
-\bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
-  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A52}},
-  \bibinfo{pages}{153} (\bibinfo{year}{2016}), \eprint{1509.04766}\relax
+\bibitem[{\citenamefont{Rogers}(2015)}]{Rogers:2015sqa}
+\bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}}
+  (\bibinfo{year}{2015}), \eprint{1509.04766}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -86,12 +83,31 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Boer and Mulders}(1998)}]{Boer:1997nt}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Boer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mulders}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D57}},
+  \bibinfo{pages}{5780} (\bibinfo{year}{1998}),
+  \eprint[http://arXiv.org/abs]{hep-ph/9711485}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Bacchetta and Mulders}(2000)}]{Bacchetta:2000jk}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bacchetta}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mulders}},
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D62}},
   \bibinfo{pages}{114004} (\bibinfo{year}{2000}),
   \eprint[http://arXiv.org/abs]{hep-ph/0007120}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Mulders and Rodrigues}(2001)}]{Mulders:2000sh}
+\bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mulders}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Rodrigues}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D63}},
+  \bibinfo{pages}{094021} (\bibinfo{year}{2001}), \eprint{hep-ph/0009343}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -110,32 +126,102 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Angeles-Martinez
-  et~al.}(2015)}]{Angeles-Martinez:2015sea}
-\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Angeles-Martinez}}
-  \bibnamefont{et~al.}, \bibinfo{journal}{Acta Phys. Polon.}
-  \textbf{\bibinfo{volume}{B46}}, \bibinfo{pages}{2501} (\bibinfo{year}{2015}),
-  \eprint{1507.05267}\relax
+\bibitem[{\citenamefont{Bacchetta and Radici}(2011)}]{Bacchetta:2011gx}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bacchetta}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Radici}},
+  \bibinfo{journal}{Phys.Rev.Lett.} \textbf{\bibinfo{volume}{107}},
+  \bibinfo{pages}{212001} (\bibinfo{year}{2011}), \eprint{1107.5755}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Aschenauer et~al.}(2016)\citenamefont{Aschenauer,
-  D'Alesio, and Murgia}}]{Aschenauer:2015ndk}
-\bibinfo{author}{\bibfnamefont{E.~C.} \bibnamefont{Aschenauer}},
-  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Murgia}},
-  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A52}},
-  \bibinfo{pages}{156} (\bibinfo{year}{2016}), \eprint{1512.05379}\relax
+\bibitem[{\citenamefont{Anselmino et~al.}(2012)\citenamefont{Anselmino,
+  Boglione, and Melis}}]{Anselmino:2012aa}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Anselmino}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D86}},
+  \bibinfo{pages}{014028} (\bibinfo{year}{2012}), \eprint{1204.1239}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Boglione and Prokudin}(2016)}]{Boglione:2015zyc}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}} \bibnamefont{and}
+\bibitem[{\citenamefont{Echevarria et~al.}(2014)\citenamefont{Echevarria,
+  Idilbi, Kang, and Vitev}}]{Echevarria:2014xaa}
+\bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarria}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Idilbi}},
+  \bibinfo{author}{\bibfnamefont{Z.-B.} \bibnamefont{Kang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vitev}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D89}},
+  \bibinfo{pages}{074013} (\bibinfo{year}{2014}), \eprint{1401.5078}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Anselmino et~al.}(2016)\citenamefont{Anselmino,
+  Boglione, D'Alesio, Murgia, and Prokudin}}]{Anselmino:2016uie}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Anselmino}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Murgia}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}}
+  (\bibinfo{year}{2016}), \eprint{1612.06413}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Lu and Schmidt}(2010)}]{Lu:2009ip}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Lu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Schmidt}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D81}},
+  \bibinfo{pages}{034023} (\bibinfo{year}{2010}), \eprint{0912.2031}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Barone et~al.}(2015)\citenamefont{Barone, Boglione,
+  Gonzalez~Hernandez, and Melis}}]{Barone:2015ksa}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Barone}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
+  \bibinfo{author}{\bibfnamefont{J.~O.} \bibnamefont{Gonzalez~Hernandez}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
+  \bibinfo{pages}{074019} (\bibinfo{year}{2015}), \eprint{1502.04214}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Lefky and Prokudin}(2015)}]{Lefky:2014eia}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Lefky}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}},
-  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A52}},
-  \bibinfo{pages}{154} (\bibinfo{year}{2016}), \eprint{1511.06924}\relax
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
+  \bibinfo{pages}{034010} (\bibinfo{year}{2015}), \eprint{1411.0580}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Anselmino et~al.}(2013)\citenamefont{Anselmino,
+  Boglione, D'Alesio, Melis, Murgia et~al.}}]{Anselmino:2013vqa}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Anselmino}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Murgia}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys.Rev.}
+  \textbf{\bibinfo{volume}{D87}}, \bibinfo{pages}{094019}
+  (\bibinfo{year}{2013}), \eprint{1303.3822}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Kang et~al.}(2016)\citenamefont{Kang, Prokudin, Sun,
+  and Yuan}}]{Kang:2015msa}
+\bibinfo{author}{\bibfnamefont{Z.-B.} \bibnamefont{Kang}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sun}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Yuan}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D93}},
+  \bibinfo{pages}{014009} (\bibinfo{year}{2016}), \eprint{1505.05589}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -259,23 +345,22 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Echevarriá et~al.}(2013)\citenamefont{Echevarriá,
-  Idilbi, Schäfer, and Scimemi}}]{Echevarria:2012pw}
-\bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarriá}},
+\bibitem[{\citenamefont{Echevarria et~al.}(2013)\citenamefont{Echevarria,
+  Idilbi, Sch{\"a}fer, and Scimemi}}]{Echevarria:2012pw}
+\bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarria}},
   \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Idilbi}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Schäfer}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Scimemi}},
-  \bibinfo{journal}{Eur.Phys.J.} \textbf{\bibinfo{volume}{C73}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Sch{\"a}fer}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Scimemi}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C73}},
   \bibinfo{pages}{2636} (\bibinfo{year}{2013}), \eprint{1208.1281}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Collins and Rogers}(2013)}]{Collins:2012uy}
+\bibitem[{\citenamefont{Collins and Rogers}(2012)}]{Collins:2012uy}
 \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Collins}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
-  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D87}},
-  \bibinfo{pages}{034018} (\bibinfo{year}{2013}), \eprint{1210.2100}\relax
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}}
+  (\bibinfo{year}{2012}), \eprint{1210.2100}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -328,7 +413,7 @@
   \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Ferrera}},
   \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Grazzini}},
-  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B696}},
+  \bibinfo{journal}{Phys.Lett.} \textbf{\bibinfo{volume}{B696}},
   \bibinfo{pages}{207} (\bibinfo{year}{2011}), \eprint{1007.2351}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -360,7 +445,7 @@
 \bibitem[{\citenamefont{Konychev and Nadolsky}(2006)}]{Konychev:2005iy}
 \bibinfo{author}{\bibfnamefont{A.~V.} \bibnamefont{Konychev}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Nadolsky}},
-  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B633}},
+  \bibinfo{journal}{Phys.Lett.} \textbf{\bibinfo{volume}{B633}},
   \bibinfo{pages}{710} (\bibinfo{year}{2006}), \eprint{hep-ph/0506225}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -368,13 +453,12 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Aidala et~al.}(2014)\citenamefont{Aidala, Field,
   Gamberg, and Rogers}}]{Aidala:2014hva}
-\bibinfo{author}{\bibfnamefont{C.~A.} \bibnamefont{Aidala}},
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Aidala}},
   \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Field}},
-  \bibinfo{author}{\bibfnamefont{L.~P.} \bibnamefont{Gamberg}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.~C.}
-  \bibnamefont{Rogers}}, \bibinfo{journal}{Phys. Rev.}
-  \textbf{\bibinfo{volume}{D89}}, \bibinfo{pages}{094002}
-  (\bibinfo{year}{2014}), \eprint{1401.2654}\relax
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Gamberg}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rogers}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D89}},
+  \bibinfo{pages}{094002} (\bibinfo{year}{2014}), \eprint{1401.2654}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -393,7 +477,7 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Airapetian et~al.}(2013)}]{Airapetian:2012ki}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Airapetian}}
-  \bibnamefont{et~al.} (\bibinfo{collaboration}{HERMES Collaboration}),
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{HERMES}),
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D87}},
   \bibinfo{pages}{074029} (\bibinfo{year}{2013}), \eprint{1212.5407}\relax
 \mciteBstWouldAddEndPuncttrue
@@ -402,7 +486,9 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Adolph et~al.}(2013)}]{Adolph:2013stb}
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Adolph}} \bibnamefont{et~al.}
-  (\bibinfo{collaboration}{COMPASS Collaboration}) (\bibinfo{year}{2013}),
+  (\bibinfo{collaboration}{COMPASS}), \bibinfo{journal}{Eur. Phys. J.}
+  \textbf{\bibinfo{volume}{C73}}, \bibinfo{pages}{2531} (\bibinfo{year}{2013}),
+  \bibinfo{note}{[Erratum: Eur. Phys. J.C75,no.2,94(2015)]},
   \eprint{1305.7317}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -499,9 +585,9 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Ball et~al.}(2009)}]{Ball:2008by}
 \bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{Ball}} \bibnamefont{et~al.}
-  (\bibinfo{collaboration}{NNPDF Collaboration}), \bibinfo{journal}{Nucl.
-  Phys.} \textbf{\bibinfo{volume}{B809}}, \bibinfo{pages}{1}
-  (\bibinfo{year}{2009}), \eprint{0808.1231}\relax
+  (\bibinfo{collaboration}{NNPDF Collaboration}), \bibinfo{journal}{Nucl.Phys.}
+  \textbf{\bibinfo{volume}{B809}}, \bibinfo{pages}{1} (\bibinfo{year}{2009}),
+  \eprint{0808.1231}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -520,7 +606,7 @@
   \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Llubaroff}},
   \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
-  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D86}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D86}},
   \bibinfo{pages}{074028} (\bibinfo{year}{2012}), \eprint{1209.3240}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
