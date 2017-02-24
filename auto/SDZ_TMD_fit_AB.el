@@ -21,6 +21,7 @@
      "e:TMDevol2"
      "e:WC1"
      "e:WC2"
+     "Sudakov"
      "e:mub"
      "e:b*"
      "e:bminmax"

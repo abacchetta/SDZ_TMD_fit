@@ -281,31 +281,32 @@ $\bm{P}_\T$. The term $Y_{UU,T}$ is introduced to ensure a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
 
 The applicability of Eq.~\eqref{e:SIDISkT} 
-depends on the possibility of
+relies on the possibility of
 neglecting $M^2/Q^2$ corrections.
 At large $Q^2$ this should not pose serious
-problems. However, fixed-target DIS experiments collect a large amount of data
+problems. However, fixed-target DIS experiments typically 
+collect a large amount of data
 at relatively low $Q^2$ values, which may lead to problems (see, e.g., recent
 discussions in Refs.~\cite{Boglione:2016bph,Moffat:2017sha}).
 
-Eq.~\eqref{e:SIDISkT} can be expanded in powers
-of $\alpha_S$. However, in the first term of the equation, containing the
-TMDs, the strong coupling appears multiplied by large logarithms $L \equiv
-\log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$. 
+ 
 
-In the present analysis, we 
+Eq.~\eqref{e:SIDISkT} can be expanded in powers
+of $\alpha_S$. In the present analysis, we 
 will consider only the leading order terms in $\alpha_S$, i.e., stop at
 order $\alpha_S^0$. In this case $\mathcal{H}_{UU,T} (Q^2, \mu^2) \approx 1$
-and $Y_{UU,T}\approx 0$.
-We will take into account 
+and $Y_{UU,T}\approx 0$. 
+However, perturbative corrections include large logarithms $L \equiv
+\log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$.
+In the present analysis, we will take into account all 
 powers of the form $\alpha_S^n L^{2n} \approx 1$ (Leading Logarithms --LL) 
 and 
 $\alpha_S^n L^n \approx 1$ (Next-to-Leading Logarithms -- NNL).
 
 In these approximations (LO in $alpha_S$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
-literature this has been called $W$ term). This term should provide a good 
-description of the
+literature this has been called $W$ term). We expect this term to provide a
+good description of the
 structure function only in the region where $P_{hT}^2/z^2 \ll Q^2$. 
 It can happen that $Y_{UU,T}$, defined
 in the standard way (see, e.g., Ref.~\cite{Collins:1984kg}), gives large
@@ -315,12 +316,14 @@ We leave a detailed treatment of the matching to the high $P_{hT}^2 \approx Q^2$
 region to future investigations.   
 
 To the purpose of applying TMD evolution equations, 
-\textcolor{red}{we need to calculate the Fourier transform of the the part of Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to} 
+ need to calculate the Fourier transform of the the part of 
+Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to 
 \begin{align}
 \label{e:SIDISkTFF}
    F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &\approx \sum_a  
       \int_0^{\infty} \frac{d \bT}{2 \pi} \bT J_0\big(\bT |\bm{P}_{hT}|/z\big)
-      \tilde{f}_1^a\big(x, \bT;\mu^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT; \mu^2 \big)
+      \tilde{f}_1^a\big(x, \bT;Q^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT;
+      Q^2 \big) 
 \nonumber \, .
 \end{align} 
 \textcolor{red}{ E' questa la formula usata nel codice, o serve dire altro?}
