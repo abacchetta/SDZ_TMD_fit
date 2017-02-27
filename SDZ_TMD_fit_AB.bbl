@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{59}
+\begin{mcitethebibliography}{60}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -480,14 +480,15 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{D'Alesio et~al.}(2014)\citenamefont{D'Alesio,
-  Echevarria, Melis, and Scimemi}}]{D'Alesio:2014vja}
+\bibitem[{\citenamefont{D'Alesio
+  et~al.}(2014{\natexlab{a}})\citenamefont{D'Alesio, Echevarria, Melis, and
+  Scimemi}}]{D'Alesio:2014vja}
 \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}},
   \bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarria}},
   \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Scimemi}},
   \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{098}
-  (\bibinfo{year}{2014}), \eprint{1407.3311}\relax
+  (\bibinfo{year}{2014}{\natexlab{a}}), \eprint{1407.3311}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -520,6 +521,19 @@
   \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}}
   (\bibinfo{year}{2013}{\natexlab{b}}), \eprint{1312.6261}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{D'Alesio
+  et~al.}(2014{\natexlab{b}})\citenamefont{D'Alesio, Echevarria, Melis, and
+  Scimemi}}]{DAlesio:2014mrz}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}},
+  \bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarria}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Melis}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Scimemi}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{098}
+  (\bibinfo{year}{2014}{\natexlab{b}}), \eprint{1407.3311}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
