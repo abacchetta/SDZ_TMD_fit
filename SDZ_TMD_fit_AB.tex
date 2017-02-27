@@ -677,44 +677,51 @@ where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to
 \label{s:data_analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-One of the main goals of our fit is to test the universality of TMD parton distributions and fragmentation functions among different processes.
+One of the main goals of our fit is to test the universality of TMD parton distribution and fragmentation functions among different processes.
 To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations. 
-In this chapter we will describe the data sets considered for each process and the reasons behind the kinematic cuts applied to them.
+In this chapter we describe the data sets considered for each process and the reasons behind the kinematic cuts applied.
 
 Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes experiment) and presents their kinematic ranges. 
-The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production.
+The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
+For each kinematic variable in all the considered data sets, we fit the average value in each bin. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hermes data}
 \label{ss:hermes}
 
-The semi-inclusive DIS data are taken from \textsc{Hermes} collaboration~\cite{Airapetian:2012ki} and \compass experiment~\cite{Adolph:2013stb}.
+The semi-inclusive DIS data are taken from \textsc{Hermes}~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
 Both \textsc{Hermes} and \compass data have been alredy analyzed in a previous works~\cite{Signori:2013mda,Anselmino:2013lza}.
 
-\textsc{Hermes} data are grouped in two sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only the vector meson subtracted data set.\\
-The collaboration measured the multiplicities for SIDIS in a fixed target experiment using hydrogen ($p$) and deuteron ($D$) and separating charged pions and kaons produced in the final state. The data include 8 different channels for every combination of target and final-state hadron for a total of 2688 points.\\
-These are grouped in bins of $(x,z,Q^2,Ph_T)$ with the average values per bin of $(x,Q^2)$ spanning from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
-The collinear energy fraction $z$ ranges in $0.1\leq z\leq 0.9$ and for the transverse momenum of the detected hadron $0.1 \text{GeV} \leq \vert Ph_T \vert \leq 1 \text{ GeV}$ holds. %% HERE
+\textsc{Hermes} data~\cite{Airapetian:2012ki} are grouped in two sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only data set where contributions from vector mesons have been subtracted. \\
+The collaboration measured the multiplicities for SIDIS in a fixed-target experiment using hydrogen ($p$) and deuteron ($D$) targets and separating charged pions and kaons produced in the final state. The data include 8 different channels for every combination of target and final-state hadron for a total of 2688 points.\\
+These are grouped in bins of $(x,z,Q^2,Ph_T)$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
+The collinear energy fraction $z$ (see~\eqref{e:xyz}) ranges in $0.1\leq z\leq 0.9$. The transverse momenum of the detected hadron lies in $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1 \text{ GeV}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Compass data}
 \label{ss:compass}
 
-Compass collaboration instead extracted multiplicities of charged hadrons produced in SIDIS on a deuteron ($^6\text{LiD}$) target. The data are organised in bins dependent on $(x,z,Q^2,Ph_T)$ as well, however the number of data is an order of magnitude greater than the \textsc{Hermes} ones.\\
-The data cover the range of $(x,Q^2)$ from $(0.0052, 1.11\text{GeV}^2)$ to $(0.0932, 7.57\text{GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$.\\
-In data sets from both collaborations, for every bin we used the average values for each kinematic variables.\\
+Compass collaboration instead extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}. 
+The data are organised in multidiensional bins, $(x,z,Q^2,P_{h\Tperp})$. The number of data is an order of magnitude higher compared to the \textsc{Hermes} experiment. \\
+The data cover a range in $(x,Q^2)$ from $(0.0052, 1.11\text{GeV}^2)$ to $(0.0932, 7.57\text{GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes, for \compass $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
 
-To avoid issues relative to errors in the normalization of data, we divided every Compass data point by the value of the first data point of their bin, defining a new variable:
+To avoid issues related to the normalization of Compass multiplicities (see the {\em erratum} to~\cite{Adolph:2013stb}), we normalize all the data in $(x,z,Q^2)$ to the value of the first bin in $P_{h\Tperp}^2$. We define the {\em normalized} multiplicity as:
 \begin{equation}
-m_{\text{norm}} = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}
-\label{eq:mult_norm}
+m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
+\label{e:mult_norm}
 \end{equation}
-The first data point of every selected bin  was consequently considered as a fixed parameter and excluded from the degrees of freedom of the system.
+where the multiplicity $m_N^h$ is defined in~\eqref{e:multiplicity}. Fitting normalized multiplicities the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
 
-\textcolor{red}{The application of the TMD formalism to SIDIS at low energy $Q$ crucially depends on the capability of separating the current from the target fragmentation region and from a soft region. The issue has been recently discussed in~\cite{Boglione:2016bph}. In this paper, }
-\textcolor{blue}{we do not implement any combined cut on $z$ and $P_{hT}$. We leave it to future studies\footnote{The implementation of the $R$ cut proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the quark properties.}}
+The application of the TMD formalism to SIDIS crucially depends on the capability of separating the current fragmentation region from the target fragmentation region and from a soft fragmentation region. The has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out the possible overlap among the three fragmentation regions when the hard scale $Q$ is sufficiently low. 
+In this paper we do not explore this effect and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only.\footnote{The implementation of the collinearity $R$ criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the quark properties.}
 %\textcolor{blue}{consistently with the way experimental data are presently binned, we identify the current fragmentation region by means of cuts on $z$.}
+
+%PhT <Min[0.2Q,0.7Qz]+0.5GeV
+Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
+In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
+The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. To comply with these, we impose $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the coefficients are dictated by the fitting procedure only. 
+All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Low-energy Drell-Yan data}
@@ -785,8 +792,9 @@ Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}      & \multicolumn
  \hline
 $x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }    &  \multicolumn{2}{c|}{$0.006 < x < 0.12$ }             \\
 \hline
-Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle \frac{m_N^h
-    (x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}$}             \\
+Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2)$, eq.~\eqref{e:mult_norm}}  \\
+%Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle \frac{m_N^h
+%    (x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}$}             \\
 \hline 
 %$\chi^2 /$points &3.06 & 2.53 & 1.04 & 3.18    &  1.48        &    0.96             \\
 %\hline

@@ -503,7 +503,9 @@
 \EndOfBibitem
 \bibitem[{\citenamefont{Adolph et~al.}(2013)}]{Adolph:2013stb}
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Adolph}} \bibnamefont{et~al.}
-  (\bibinfo{collaboration}{COMPASS Collaboration}) (\bibinfo{year}{2013}),
+  (\bibinfo{collaboration}{COMPASS}), \bibinfo{journal}{Eur. Phys. J.}
+  \textbf{\bibinfo{volume}{C73}}, \bibinfo{pages}{2531} (\bibinfo{year}{2013}),
+  \bibinfo{note}{[Erratum: Eur. Phys. J.C75,no.2,94(2015)]},
   \eprint{1305.7317}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
