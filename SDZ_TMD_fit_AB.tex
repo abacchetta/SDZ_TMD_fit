@@ -870,7 +870,7 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 %$\chi^2 /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
 %\hline
 \end{tabular}
-\caption{$Z$ boson production data collected by the CDF and D0 experiments at Tevatron, with different center-of-mass energies. \textcolor{blue}{Discuss the meaning of the normalization factors}.}
+\caption{$Z$ boson production data collected by the CDF and D0 experiments at Tevatron, with different center-of-mass energies.}
 \label{t:data_Z}
 \end{center}
 \end{table}
@@ -882,57 +882,36 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 \subsection{The replica method}
 \label{ss:replica_method}
 
-\textcolor{red}{Talk about sources of errors: stat, syst and theoretical. - see D1 treatment as explained by Alessandro}
+\textcolor{blue}{I edited a bit the text, but some overlap remains with the text in~\cite{Signori:2013mda}.}
 
-In this section we describe the replica method and we give a definition of the $\chi^2$ function used to perform the fit.
-\textcolor{blue}{The following text is copy-pasted from~\cite{Signori:2013mda}. We need to edit/rewrite it. Explain: which sources of theoretical errors are we considering in the current fit, apart from the error on the collinear fragmentation functions?}
-A similar strategy has already been employed in, e.g.,~\cite{Signori:2013mda,Radici:2015mwa}.
+In this section we describe the replica method and we give a definition of the $\chi^2$ function minimized by the fit procedure.
+The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty,Signori:2013mda,Radici:2015mwa}, and taking
+inspiration from the work of the Neural-Network PDF (NNPDF) collaboration (see, e.g.,~\cite{Forte:2002fg,Ball:2008by,Ball:2010de}). 
+The approach consists in creating $\mathcal{M}$ replicas of the data points. In each replica (denoted by the index $r$), each data point $i$ is shifted by a Gaussian noise with the same variance as the measurement. 
+Each replica, therefore, represents a possible outcome of an independent experimental measurement, which we denote by $m_{N, r}^{h}(x, z, \bm{P}_{h\Tperp}^2, Q^2)$. 
+The number of replicas is chosen so that the mean and standard deviation of the set of replicas accurately reproduces the original data points. We see that 200 replicas are sufficient for the purpose.
 
-The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty}, and taking
-inspiration from the work of the NNPDF collaboration (see, e.g.,~\cite{Forte:2002fg,Ball:2008by,Ball:2010de}). The approach consists in creating $\mathcal{M}$ replicas of the data points. In each replica (denoted
-by the index $r$), each data point $i$ is shifted by a Gaussian noise with the
-same variance as the measurement. Each replica, therefore, represents a
-possible outcome of an independent experimental measurement, which we denote
-by $m_{N, r}^{h}(x, z, \bm{P}_{h\Tperp}^2, Q^2)$. The number of replicas is
-chosen so that the mean and standard deviation of the set of replicas
-accurately reproduces the original data points. In our case, we have found
-that 200 replicas are more than sufficient.
-
-The standard minimization procedure is applied to each replica separately, by
-minimizing the following error  
-function~\footnote{Note that the error for each replica is taken to be equal
-  to the error on the original data points. This is consistent with the fact
-  that the variance of the $\mathcal{M}$ replicas should reproduce the
-  variance of the original data points.}  
+A minimization procedure is applied to each replica separately, by minimizing the following error function:
+~\footnote{Note that the error for each replica is taken to be equal to the error on the original data points. This is consistent with the fact that the variance of the $\mathcal{M}$ replicas should reproduce the variance of the original data points.}  
 \begin{equation}
-%\small
 E_r^2(\{p\})=\sum_{i} 
 \frac{\Bigl(m_{N, r}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2, Q_i^2) - m_{N,  \mbox{\tiny theo}}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2; \{p\})\Bigr)^2}
-        {\Bigl( \Delta m_{N, \mbox{\tiny stat}}^{h\ 2} + \Delta m_{N, \mbox{\tiny sys}}^{h\ 2} \Bigr)(x_i, z_i, \bm{P}_{h\Tperp i}^2, Q^2_i) +\Bigl(\Delta m_{N, \mbox{\tiny theo}}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2) \Bigr)^2}   . 
+        {\Bigl( \Delta m_{N, \mbox{\tiny stat}}^{h\ 2} + \Delta m_{N, \mbox{\tiny sys}}^{h\ 2} \Bigr)(x_i, z_i, \bm{P}_{h\Tperp i}^2, Q^2_i) +\Bigl(\Delta m_{N, \mbox{\tiny theo}}^{h}(x_i, z_i, \bm{P}_{h\Tperp i}^2) \Bigr)^2}\  . 
 \label{e:MC_chi2}
 \end{equation}
-The sum runs over the $i$ experimental points, including all species of
-targets $N$ and final-state hadrons $h$. The theoretical multiplicities $m_{N,
-  \text{theo}}^{h}$ and their error $\Delta m_{N,  {\rm theo}}^{h}$ do not
-depend on $Q^2$, as explained in the previous section. They are computed at
-the fixed value $Q^2=2.4$ GeV$^2$ using the formula in
-Eq.~\eqref{e:FDmult}. However, in each $z$ bin for each replica the value of
-$D_1^{a \smarrow h}$ is independently modified with a Gaussian noise with
-standard deviation equal to the theoretical error $\Delta D_1^{a\smarrow
-  h}$. The latter is estimated from the plots in Ref.~\cite{Epele:2012vg} and
-it represents the main source of uncertainty in $\Delta m_{N,  {\rm
-    theo}}^{h}$. Finally, the symbol $\{p\}$ denotes the vector of fitting
-parameters.  
+The sum runs over the $i$ experimental points, including all species of targets $N$ and final-state hadrons $h$. 
+In each $z$ bin for each replica the values of the collinear fragmentation functions $D_1^{a \smarrow h}$ are independently modified with a Gaussian noise with standard deviation equal to the theoretical error $\Delta D_1^{a\smarrow h}$. 
+In this work we rely on different parametrizations for $D_1^{a \smarrow h}$: for pions we use the DSEHS analysis~\cite{deFlorian:2014xna} at NLO in $\alpha_s$; for kaons we use the DSS paranetrization~\cite{deFlorian:2007aj} at LO in pQCD. 
+The uncertainties $\Delta D_1^{a\smarrow h}$ are estimated from the plots in~\cite{Epele:2012vg}; they represents the only source of uncertainty in $\Delta m_{N,  {\rm theo}}^{h}$. 
+Statistical and systematical experimental uncertainties $\Delta m_{N, \mbox{\tiny stat}}^{h}$ and $\Delta m_{N, \mbox{\tiny sys}}^{h}$ are taken from the experimental collaborations. 
+We do not take into account the covariance among different kinematic bins. 
 
-The minimization was carried out using the \minuit  code. The final outcome is a set of $\mathcal{M}$ different vectors of best-fit parameters, $\{ p_{0r}\},\; r=1,\ldots \mathcal{M}$, with which we can calculate any observable, its mean, and its standard deviation. 
-The distribution of these values needs not to be necessarily Gaussian. In this
-case, the $1 \sigma$ confidence interval is different from the 68\%
-interval. The 68\% confidence interval can simply be computed for
-each experimental point by rejecting the largest and the lowest 16\% of the
-$\mathcal{M}$ values.   
+\minuit minimizes the error function in~\eqref{e:MC_chi2} calculating its gradient with respect to the vector of parameters $\{p\}$. 
+The final outcome is a set of $\mathcal{M}$ different vectors of best-fit parameters, $\{ p_{0r}\},\; r=1,\ldots \mathcal{M}$, with which we can calculate any observable, its mean, and its standard deviation. 
+The distribution of these values needs not to be necessarily Gaussian. In fact, in this case the $1 \sigma$ confidence interval is different from the 68\% interval. 
+The latter can simply be computed for each experimental point by rejecting the largest and the lowest 16\% of the $\mathcal{M}$ values.   
 
-Although the minimization is performed on the function defined in Eq.~\eqref{e:MC_chi2}, the agreement of the $\mathcal{M}$ replicas with the original data is better expressed in terms of a $\chi^2$ function defined as in Eq.~\eqref{e:MC_chi2} but with the replacement $m_{N, r}^{h} \to m_{N}^{h}$, i.e.,  with respect to the original data set.
-If the model is able to give a good description of the data, the distribution of the $\mathcal{M}$ values of $\chi^2$/d.o.f. should be peaked around one. 
+Although the minimization is performed on the function defined in~\eqref{e:MC_chi2}, the agreement of the $\mathcal{M}$ replicas with the original data is better expressed in terms of a $\chi^2$ function defined as in~\eqref{e:MC_chi2} but with the replacement $m_{N, r}^{h} \to m_{N}^{h}$, i.e.,  with respect to the original data set. If the model is able to give a good description of the data, the distribution of the $\mathcal{M}$ values of $\chi^2$/d.o.f. should be peaked around one. 
 %In practice, the rigidity of our functional form leads to higher $\chi^2$ values. 
 
 

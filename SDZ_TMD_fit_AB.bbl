@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{60}
+\begin{mcitethebibliography}{62}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -590,6 +590,17 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Bacchetta et~al.}(2013)\citenamefont{Bacchetta,
+  Courtoy, and Radici}}]{Bacchetta:2012ty}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bacchetta}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Courtoy}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Radici}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{1303}}, \bibinfo{pages}{119}
+  (\bibinfo{year}{2013}), \eprint{1212.3568}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Radici et~al.}(2015)\citenamefont{Radici, Courtoy,
   Bacchetta, and Guagnelli}}]{Radici:2015mwa}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Radici}},
@@ -599,17 +610,6 @@
   \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Guagnelli}},
   \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{05}}, \bibinfo{pages}{123}
   (\bibinfo{year}{2015}), \eprint{1503.03495}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[{\citenamefont{Bacchetta et~al.}(2013)\citenamefont{Bacchetta,
-  Courtoy, and Radici}}]{Bacchetta:2012ty}
-\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bacchetta}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Courtoy}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Radici}},
-  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{1303}}, \bibinfo{pages}{119}
-  (\bibinfo{year}{2013}), \eprint{1212.3568}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -639,6 +639,31 @@
 \bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{Ball}} \bibnamefont{et~al.},
   \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B838}},
   \bibinfo{pages}{136} (\bibinfo{year}{2010}), \eprint{1002.4407}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{de~Florian et~al.}(2015)\citenamefont{de~Florian,
+  Sassot, Epele, Hernández-Pinto, and Stratmann}}]{deFlorian:2014xna}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Epele}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Hernández-Pinto}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
+  \bibinfo{pages}{014035} (\bibinfo{year}{2015}), \eprint{1410.6027}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{de~Florian et~al.}(2007)\citenamefont{de~Florian,
+  Sassot, and Stratmann}}]{deFlorian:2007aj}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D75}},
+  \bibinfo{pages}{114010} (\bibinfo{year}{2007}), \eprint{hep-ph/0703242}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
