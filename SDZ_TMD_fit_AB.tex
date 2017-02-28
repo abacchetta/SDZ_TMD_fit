@@ -936,30 +936,6 @@ Although the minimization is performed on the function defined in~\eqref{e:MC_ch
 In the following we detail the results of a fit to the data sets described in Sec.~\ref{s:data_analysis} with a a flavor-independent configuration for the transverse momentum dependence of unpolarized TMDs
 In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. As usual, the number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
 The overall quality of the fit is good, with a global $\chi^2$/d.o.f. $= 1.55 \pm 0.05$. Uncertainties are computed as the $68\%$ confidence level (C.L.) from the replica methodology. The C.L. is not necessarily Gaussian. 
-
-%========================================================
-\subsection{Agreement between data and theory}
-\label{ss:data_vs_theory}
-
-The partition of the global $\chi^2$ among SIDIS off proton, SIDIS off deuteron, Drell-Yan and $Z$ production events is given in Tab.~\ref{t:fl_ind_chi2_eP},~\ref{t:fl_ind_chi2_eD},~\ref{t:fl_ind_chi2_DY},~\ref{t:fl_ind_chi2_Z} respectively. 
-
-\subsubsection*{Semi-inclusive DIS}
-\label{sss:SIDIS_agreement}
-
-For SIDIS at \hermes off a proton, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon multiplicities. 
-On the contrary, the major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. 
-In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between experiment and theory (which relies on the DSS parametrization~\cite{deFlorian:2007aj} for collinear FFs) at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. Instead, in this work we use a newer parametrization of the collinear FFs (DSEHS~\cite{deFlorian:2014xna}), based on a fit which includes \hermes collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
-The poor $\chi^2$ for $\pi^\pm$ production off a proton at \hermes is mainly due to a bad agreement in the TMD multiplciities at low $z$ values (see the first two blocks from the top in Fig.~\ref{f:H_pions}). 
-For kaon production off the proton at \hermes the agreement at low $z$ is better than for the pions (see the first two blocks from the top in Fig.~\ref{f:H_kaons}), which, combined with larger experimental uncertainties, results in lower $\chi^2$.
-
-For SIDIS at \hermes off a deuteron, the situation is slightly different with respect to the proton case.
-For pion production the $\chi^2$ is lower with respect to the scattering off a proton because the experimental uncertainties for $D \to \pi^\pm$ are slightly larger than for $p \to \pi^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_pions}).
-On the contrary, for kaon production the $\chi^2$ is higher with respect to the scattering off a proton because the experimental uncertainties for $D \to K^\pm$ are slightly smaller than for $p \to K^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_kaons}).
-SIDIS at \compass involvese scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$.  ....
-
-\subsubsection*{Drell-Yan processes}
-\label{sss:DYZ_agreement}
-
 %%%%%%%%%%%%%%%% Tab. chi2 total  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \small
@@ -989,7 +965,27 @@ Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 \caption{Total number of points analyzed, number of free parameters, and $\chi^2$ values.}
 \label{t:fl_ind_chi2}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+%========================================================
+\subsection{Agreement between data and theory}
+\label{ss:data_vs_theory}
+
+The partition of the global $\chi^2$ among SIDIS off proton, SIDIS off deuteron, Drell-Yan and $Z$ production events is given in Tab.~\ref{t:fl_ind_chi2_eP},~\ref{t:fl_ind_chi2_eD},~\ref{t:fl_ind_chi2_DY},~\ref{t:fl_ind_chi2_Z} respectively. 
+
+
+\subsubsection*{Semi-inclusive DIS}
+\label{sss:SIDIS_agreement}
+
+%%% CHI2 VALUES %%%
+
+For SIDIS at \hermes off a proton, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon multiplicities. 
+On the contrary, the major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. 
+In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between experiment and theory (which relies on the DSS parametrization~\cite{deFlorian:2007aj} for collinear FFs) at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. Instead, in this work we use a newer parametrization of the collinear FFs (DSEHS~\cite{deFlorian:2014xna}), based on a fit which includes \hermes collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
+The poor $\chi^2$ for $\pi^\pm$ production off a proton at \hermes is mainly due to a bad agreement in the TMD multiplciities at low $z$ values (see the first two blocks from the top in Fig.~\ref{f:H_pions}). 
+For kaon production off the proton at \hermes the agreement at low $z$ is better than for the pions (see the first two blocks from the top in Fig.~\ref{f:H_kaons}), which, combined with larger experimental uncertainties, results in lower $\chi^2$.
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1011,7 +1007,17 @@ $\chi^2 /$points &4.83 & 2.47 & 0.91 & 0.82   \\
 \label{t:fl_ind_chi2_eP}
 \end{center}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+For SIDIS at \hermes off a deuteron, the situation is slightly different with respect to the proton case.
+For pion production the $\chi^2$ is lower with respect to the scattering off a proton because the experimental uncertainties for $D \to \pi^\pm$ are slightly larger than for $p \to \pi^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_pions}).
+On the contrary, for kaon production the $\chi^2$ is higher with respect to the scattering off a proton because the experimental uncertainties for $D \to K^\pm$ are slightly smaller than for $p \to K^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_kaons}).
+
+Fixing the target and comparing pion and kaon production at \hermes, we see that the $\chi^2$ for kaons is in general lower than for pions. This is because the theoretical uncertainty for $D_1^{a \to K}$ is larger than the one for $D_1^{a \to \pi}$~\cite{Epele:2012vg}, even if the experimental uncertainties are in general smaller for kaons.
+
+SIDIS at \compass involvese scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$. 
+The quality of the agreement between theory and \compass data is better than in the case of pion production at \hermes. This depends on at least two factors. First: the fit is essentially driven by the \compass data, since the number of data points in \compass is much higher than in \hermes. Moreover, the observable that we fit for the case of \compass is the normalized multiplicity, defined in~\eqref{e:mult_norm}. This automatically eliminates any possible tension between theory and data due to normalization effects.
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1032,6 +1038,70 @@ $\chi^2 /$points &3.46 & 2.00 & 1.31 & 2.54  & 1.11 & 1.61 \\
 \label{t:fl_ind_chi2_eD}
 \end{center}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% FIGURES %%%
+
+Fig.~\ref{f:H_pions} presents the agreement between the theoretical formula in~\eqref{e:multiplicity} and the \hermes multiplicities for production of pions off a proton and a deuteron. 
+Different $\langle x \rangle$, $\langle z \rangle$ and $\langle Q^2 \rangle$ bins are displayed as a funciton of the transverse momentum of the dected hadron $P_{hT}$.
+The grey bands are an envelope of the $200$ replica of best-fit curves. For every point in $P_{hT}$ we apply a $68\%$ C.L. selection criterion. 
+Points marked by different shapes and colors correspond to different $\langle z \rangle$ values. There is a strong correlation between $\langle x \rangle$ and $\langle Q^2 \rangle$ that does not allow to explore $x$ and $Q^2$ dependence separetely. 
+We notice that the agreement tends to improve as we move to higher $Q^2$ values, where the kinematic approximations of factorization are more reliable. 
+Moreover, for fixed $P_{hT}$ and $Q^2$, the agreement is in general better at higher $z$ values.
+
+Fig.~\ref{f:H_kaons} has same content and notation as in Fig.~\ref{f:H_pions} but for kaons in the final state. Here we notice that the agreement at low $z$ tends to be better than in the previous case of pion production. 
+
+In Fig.~\ref{f:C_pim} 
+
+In Fig.~\ref{f:C_pip}
+... agreement in this case is worse for higher $z$, contrary to what happens in \hermes data.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$.} 
+\label{f:H_pions}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$.} 
+\label{f:H_kaons}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\label{f:C_pim}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of positive hadrons (pions) off
+  a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and
+  $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the
+  dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first
+  bin in  $P_{hT}$ for each $\langle z \rangle$ value. For clarity,
+  each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\label{f:C_pip}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\subsubsection*{Drell-Yan processes}
+\label{sss:DYZ_agreement}
+
 
 %%%%%%%%%%%%%% Tab. chi2 Drell-Yan low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1083,51 +1153,7 @@ $\chi^2 /$points      &  1.36        &    1.11           &       2.00         & 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Description of Hermes data (version from Dropbox, Feb. 9$^{th}$).
-Legend for $z$ values needs to be added too.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
-\end{center}
-\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$.} 
-\label{f:H_pions}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
-\end{center}
-\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$.} 
-\label{f:H_kaons}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-Description of Compass data (version from Dropbox, Feb. 9$^{th}$).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
-\end{center}
-\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
-\label{f:C_pim}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
-\end{center}
-\caption{Compass multiplicities for production of positive hadrons (pions) off
-  a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and
-  $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the
-  dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first
-  bin in  $P_{hT}$ for each $\langle z \rangle$ value. For clarity,
-  each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
-\label{f:C_pip}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Description of low energy Drell-Yan data (version from Dropbox, Feb. 9$^{th}$).
 Legends need to be added too. Fix the y-axis label.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
