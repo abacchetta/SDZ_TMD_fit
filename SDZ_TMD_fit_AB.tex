@@ -929,24 +929,15 @@ Although the minimization is performed on the function defined in~\eqref{e:MC_ch
 \label{s:results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{red}{AS: Check if we are indeed using the last version available of the plots - Filippo ?}
+\textcolor{red}{AS: Check if we are using the last version available of the plots - Filippo ?}
 
-In the following we detail the results of fits to the data sets presented in Sec.~\ref{s:data_analysis}. 
-%In Sec.~\ref{ss:fl_ind_fit} we present a fit of
-%TMDs with flavor-independent widths (see Eqs.~\eqref{e:f1NP}
-%and~\eqref{e:D1NP}); in Sec.~\ref{ss:fl_dep_fit} we discuss the
-%flavor-dependent case. 
+In the following we detail the results of a fit to the data sets described in Sec.~\ref{s:data_analysis} with a a flavor-independent configuration for the transverse momentum dependence of unpolarized TMDs
+In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. As usual, the number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
+The overall quality of the fit is good, with a global $\chi^2$/d.o.f. $= 1.55 \pm 0.05$. Uncertainties are computed as the $68\%$ confidence level (C.L.) from the replica methodology. The C.L. is not necessarily Gaussian. 
 
+The partition of the global $\chi^2$ among SIDIS off proton, SIDIS off deuteron, Drell-Yan and $Z$ production events is given in Tab.~\ref{t:fl_ind_chi2_eP},~\ref{t:fl_ind_chi2_eD},~\ref{t:fl_ind_chi2_DY},~\ref{t:fl_ind_chi2_Z} respectively. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%		 	   FLAVOR INDEPENDENT CASE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{Flavor independent fit}
-%\label{ss:fl_ind_fit}
-
-In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$ and its breakdown
-(division) between SIDIS (separating Hermes and Compass) and Drell-Yan/$Z$
-events. \textcolor{blue}{$\chi^2$ values need to be added.} 
+For SIDIS off a proton at \hermes, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon multiplicities. On the contrary, the major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. This is due to the poor agreement between theory and experiment at the level of the collinear multiplicities, as already noted in~\cite{Signori:2013mda,Signori:2013gra}.
 
 %%%%%%%%%%%%%%%% Tab. chi2 total  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -978,7 +969,6 @@ Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 \label{t:fl_ind_chi2}
 \end{table}
 
-
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -996,8 +986,8 @@ $\chi^2 /$points &4.83 & 2.47 & 0.91 & 0.82   \\
 \hline
 \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for SIDIS off the
-  proton.}
+\caption{Number of points analyzed and $\chi^2$ values for SIDIS off a proton target.}
+\label{t:fl_ind_chi2_eP}
 \end{center}
 \end{table}
 
@@ -1017,8 +1007,8 @@ $\chi^2 /$points &3.46 & 2.00 & 1.31 & 2.54  & 1.11 & 1.61 \\
  \hline
  \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for SIDIS off the
-  deuteron.} 
+\caption{Number of points analyzed and $\chi^2$ values for SIDIS off a deuteron target.} 
+\label{t:fl_ind_chi2_eD}
 \end{center}
 \end{table}
 
@@ -1041,9 +1031,8 @@ $ \chi^2  /$points      &  0.99        &    0.84           &       0.32
 \hline
 \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for 
-low energy Drell-Yan experiments.}
-\label{t:chi2_DY}
+\caption{Number of points analyzed and $\chi^2$ values for fixed-target Drell-Yan experiments at low energy.}
+\label{t:fl_ind_chi2_DY}
 \end{center}
 \end{table}
 
@@ -1066,9 +1055,8 @@ $\chi^2 /$points      &  1.36        &    1.11           &       2.00         & 
 \hline
 \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for
-$Z$ boson production. }
-\label{t:chi2_Z}
+\caption{Number of points analyzed and $\chi^2$ values for $Z$ boson production at Tevatron.}
+\label{t:fl_ind_chi2_Z}
 \end{center}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

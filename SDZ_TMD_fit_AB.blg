@@ -10,45 +10,45 @@ Warning--I didn't find a database entry for "Altarelli:1984pt"
 Warning--I didn't find a database entry for "Boer:2014tka"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 62 entries,
+You've used 63 entries,
             3471 wiz_defined-function locations,
-            1622 strings with 22173 characters,
-and the built_in function-call counts, 46113 in all, are:
-= -- 2673
-> -- 1537
-< -- 206
-+ -- 1252
-- -- 374
-* -- 6374
-:= -- 4910
-add.period$ -- 62
-call.type$ -- 62
-change.case$ -- 250
-chr.to.int$ -- 60
-cite$ -- 62
-duplicate$ -- 4115
-empty$ -- 3772
-format.name$ -- 964
-if$ -- 8689
+            1631 strings with 22455 characters,
+and the built_in function-call counts, 46891 in all, are:
+= -- 2719
+> -- 1562
+< -- 209
++ -- 1272
+- -- 380
+* -- 6482
+:= -- 4992
+add.period$ -- 63
+call.type$ -- 63
+change.case$ -- 254
+chr.to.int$ -- 61
+cite$ -- 63
+duplicate$ -- 4182
+empty$ -- 3836
+format.name$ -- 979
+if$ -- 8838
 int.to.chr$ -- 3
-int.to.str$ -- 63
-missing$ -- 617
-newline$ -- 390
-num.names$ -- 186
-pop$ -- 972
+int.to.str$ -- 64
+missing$ -- 627
+newline$ -- 396
+num.names$ -- 189
+pop$ -- 988
 preamble$ -- 1
-purify$ -- 248
+purify$ -- 252
 quote$ -- 0
-skip$ -- 1705
+skip$ -- 1735
 stack$ -- 0
-substring$ -- 1530
-swap$ -- 3242
-text.length$ -- 300
+substring$ -- 1563
+swap$ -- 3295
+text.length$ -- 305
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 370
+type$ -- 376
 warning$ -- 0
-while$ -- 183
+while$ -- 186
 width$ -- 0
-write$ -- 941
+write$ -- 956
 (There were 4 warnings)
