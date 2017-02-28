@@ -1,0 +1,23 @@
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{2}{}
+\contentsline {section}{\numberline {II}Formalism}{2}{}
+\contentsline {subsection}{\numberline {A}Semi-inclusive DIS}{2}{}
+\contentsline {subsection}{\numberline {B}Drell--Yan processes}{4}{}
+\contentsline {subsection}{\numberline {C}TMDs and their evolution}{5}{}
+\contentsline {section}{\numberline {III}Data analysis}{8}{}
+\contentsline {subsection}{\numberline {A}Hermes data}{8}{}
+\contentsline {subsection}{\numberline {B}Compass data}{8}{}
+\contentsline {subsection}{\numberline {C}Low-energy Drell-Yan data}{9}{}
+\contentsline {subsection}{\numberline {D}Z-boson production data}{9}{}
+\contentsline {subsection}{\numberline {E}The replica method}{10}{}
+\contentsline {section}{\numberline {IV}Results}{12}{}
+\contentsline {subsection}{\numberline {A}Agreement between data and theory}{12}{}
+\contentsline {subsubsection}{\numberline {}Semi-inclusive DIS}{12}{}
+\contentsline {subsubsection}{\numberline {}Drell-Yan processes}{12}{}
+\contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{13}{}
+\contentsline {subsection}{\numberline {C}Comments on flavor-dependent fits}{13}{}
+\contentsline {section}{\numberline {V}Conclusions and outlook}{13}{}
+\contentsline {section}{\numberline {}Acknowledgments}{16}{}
+\contentsline {section}{\numberline {}References}{18}{}

@@ -96,7 +96,9 @@ This could be considered as a first attempt at a global fit of TMDs.
 \pacs{13.60.Le, 13.87.Fh,14.20.Dh}
 
 \maketitle
+\tableofcontents
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{s:intro}
@@ -685,7 +687,7 @@ In this chapter we describe the data sets considered for each process and the re
 Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes experiment) and presents their kinematic ranges. 
 The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
 For each kinematic variable in all the considered data sets, we fit the average value in each bin. 
-
+\textcolor{red}{Specify how we treat the nuclear targets, like D= p+n incoherent, then DY ... .}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hermes data}
@@ -935,12 +937,28 @@ In the following we detail the results of a fit to the data sets described in Se
 In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. As usual, the number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
 The overall quality of the fit is good, with a global $\chi^2$/d.o.f. $= 1.55 \pm 0.05$. Uncertainties are computed as the $68\%$ confidence level (C.L.) from the replica methodology. The C.L. is not necessarily Gaussian. 
 
+%========================================================
+\subsection{Agreement between data and theory}
+\label{ss:data_vs_theory}
+
 The partition of the global $\chi^2$ among SIDIS off proton, SIDIS off deuteron, Drell-Yan and $Z$ production events is given in Tab.~\ref{t:fl_ind_chi2_eP},~\ref{t:fl_ind_chi2_eD},~\ref{t:fl_ind_chi2_DY},~\ref{t:fl_ind_chi2_Z} respectively. 
 
-For SIDIS off a proton at \hermes, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon multiplicities. On the contrary, the major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between theory and experiment at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. In this work we use a newer parametrization of the collinear fragmentation functions $D_1^{a \to \pi^\pm}(z,Q^2)$, based on a fit which includes \hermes collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
-The poor $\chi^2$ for $\pi^\pm$ production off a proton and off a deuteron at \hermes is mainly due to a bad agreement between the data and the fit function in the TMD multiplciities at low $z$ values (see the first two lines in Fig.~\ref{f:H_pions} and~\ref{f:H_kaons}). 
-Concerning \compass ..
-%We can read a similar pattern in SIDIS data off a deuteron at \hermes. 
+\subsubsection*{Semi-inclusive DIS}
+\label{sss:SIDIS_agreement}
+
+For SIDIS at \hermes off a proton, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon multiplicities. 
+On the contrary, the major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. 
+In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between experiment and theory (which relies on the DSS parametrization~\cite{deFlorian:2007aj} for collinear FFs) at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. Instead, in this work we use a newer parametrization of the collinear FFs (DSEHS~\cite{deFlorian:2014xna}), based on a fit which includes \hermes collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
+The poor $\chi^2$ for $\pi^\pm$ production off a proton at \hermes is mainly due to a bad agreement in the TMD multiplciities at low $z$ values (see the first two blocks from the top in Fig.~\ref{f:H_pions}). 
+For kaon production off the proton at \hermes the agreement at low $z$ is better than for the pions (see the first two blocks from the top in Fig.~\ref{f:H_kaons}), which, combined with larger experimental uncertainties, results in lower $\chi^2$.
+
+For SIDIS at \hermes off a deuteron, the situation is slightly different with respect to the proton case.
+For pion production the $\chi^2$ is lower with respect to the scattering off a proton because the experimental uncertainties for $D \to \pi^\pm$ are slightly larger than for $p \to \pi^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_pions}).
+On the contrary, for kaon production the $\chi^2$ is higher with respect to the scattering off a proton because the experimental uncertainties for $D \to K^\pm$ are slightly smaller than for $p \to K^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_kaons}).
+SIDIS at \compass involvese scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$.  ....
+
+\subsubsection*{Drell-Yan processes}
+\label{sss:DYZ_agreement}
 
 %%%%%%%%%%%%%%%% Tab. chi2 total  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1065,10 +1083,96 @@ $\chi^2 /$points      &  1.36        &    1.11           &       2.00         & 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+Description of Hermes data (version from Dropbox, Feb. 9$^{th}$).
+Legend for $z$ values needs to be added too.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$.} 
+\label{f:H_pions}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$.} 
+\label{f:H_kaons}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+Description of Compass data (version from Dropbox, Feb. 9$^{th}$).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\label{f:C_pim}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
+\end{center}
+\caption{Compass multiplicities for production of positive hadrons (pions) off
+  a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and
+  $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the
+  dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first
+  bin in  $P_{hT}$ for each $\langle z \rangle$ value. For clarity,
+  each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\label{f:C_pip}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Description of low energy Drell-Yan data (version from Dropbox, Feb. 9$^{th}$).
+Legends need to be added too. Fix the y-axis label.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.95\textwidth]{plots/DY_SCIplot_flINDEP.pdf}
+\caption{Drell-Yan differential cross section for different experiments and
+  different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins.
+  For clarity, each $\langle Q \rangle$  bin has been shifted by an offset
+  indicated in the legend.}
+\label{f:DY_panel}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Description of Z-boson production data (version from Dropbox, Feb. 9$^{th}$).
+Legends need to be added too. Fix the y-axis label.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.95\textwidth]{plots/Z_SCIplot_flINDEP.pdf}
+\end{center}
+\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.8$ TeV and $\sqrt{s}=1.96$ TeV).} 
+\label{f:Z_qT}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+%========================================================
+\subsection{Transverse momentum dependence at 1 GeV}
+\label{ss:bestfit_TMDs}
+
 Tab.~\ref{t:fl_ind_parcommon} summarizes the values of the nonperturbative parameters $b_{\rm min}$ and $b_{\rm max}$ (which delimit the range in $\bT$ where transverse momentum resummation is computed perturbatively) and $g_2$, whcih quantifies the amount of soft gluons radiated.
 Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values for the parametrization of the nonperturbative part of the TMDs (Eqs.~\eqref{e:f1NP} and~\eqref{e:D1NP}); central values and standard deviations are based on the replica methodology (see Sec.~\ref{ss:replica_method}), using $68\%$ confidence levels.
 
 We stress here that a prescription involving both $b_{\text{min}}$ and $b_{\text{max}}$ is crucial in order to fit SIDIS data with TMD evolution. 
+
+Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
+Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
+Fix some of the labels on the vertical axis.
+
 
 
 %%%%%%%%%%%%%%%% Tab. common parameters %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1141,20 +1245,6 @@ best-fit parameters for TMD PDFs and FFs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Average transverse momenta}
-\label{sss:kT2_PT2}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Kinematic dependence}
-\label{sss:kindep}
-
-Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
-Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
-Fix some of the labels on the vertical axis.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \centering
@@ -1188,6 +1278,11 @@ Fix some of the labels on the vertical axis.
 
 
 
+
+
+%========================================================
+\subsection{Comments on flavor-dependent fits}
+\label{ss:comment_fldep}
 
 
 
@@ -1287,119 +1382,6 @@ Fix some of the labels on the vertical axis.
 %\end{table}
 
 
-
-
-
-
-
-Description of Hermes data (version from Dropbox, Feb. 9$^{th}$).
-Legend for $z$ values needs to be added too.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
-\end{center}
-\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$.} 
-\label{f:H_pions}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
-\end{center}
-\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$.} 
-\label{f:H_kaons}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-Description of Compass data (version from Dropbox, Feb. 9$^{th}$).
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
-\end{center}
-\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first bin in ${\bm P}_{hT}^ 2$ for each $\langle z \rangle$ value.} 
-\label{f:C_pim}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
-\end{center}
-\caption{Compass multiplicities for production of positive hadrons (pions) off
-  a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and
-  $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the
-  dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first
-  bin in ${\bm P}_{hT}^ 2$ for each $\langle z \rangle$ value. For clarity,
-  each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
-\label{f:C_pip}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-Description of low energy Drell-Yan data (version from Dropbox, Feb. 9$^{th}$).
-Legends need to be added too. Fix the y-axis label.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.95\textwidth]{plots/DY_SCIplot_flINDEP.pdf}
-\caption{Drell-Yan differential cross section for different experiments and
-  different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins.
-  For clarity, each $\langle A \rangle$  bin has been shifted by an offset
-  indicated in the legend.}
-\label{f:DY_panel}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[h!]
-%\centering
-%\begin{tabular}{ccc}
-%\includegraphics[width=0.40\textwidth]{plots/DY_SCIplot_flINDEP_1.pdf}
-%&\hspace{0.001cm}
-%&
-%\includegraphics[width=0.40\textwidth]{plots/DY_SCIplot_flINDEP_2.pdf}
-%\\
-%(a) && (b)
-%\end{tabular}
-%\caption{write the caption here (a) and another here (b).}
-%\label{f:DY_panel_1}
-%\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[h!]
-%\centering
-%\begin{tabular}{ccc}
-%\includegraphics[width=0.40\textwidth]{plots/DY_SCIplot_flINDEP_3.pdf}
-%&\hspace{0.001cm}
-%&
-%\includegraphics[width=0.40\textwidth]{plots/DY_SCIplot_flINDEP_4.pdf}
-%\\
-%(a) && (b)
-%\end{tabular}
-%\caption{write the caption here (a) and another here (b).}
-%\label{f:DY_panel_2}
-%\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
-%
-
-
-Description of Z-boson production data (version from Dropbox, Feb. 9$^{th}$).
-Legends need to be added too. Fix the y-axis label.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Z_SCIplot_flINDEP.pdf}
-\end{center}
-\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.96$ TeV and $\sqrt{s}=1.8$ TeV).} 
-\label{f:Z_qT}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
