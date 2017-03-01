@@ -17,7 +17,7 @@
 \contentsline {subsubsection}{\numberline {}Semi-inclusive DIS}{12}{}
 \contentsline {subsubsection}{\numberline {}Drell-Yan processes}{13}{}
 \contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{18}{}
-\contentsline {subsection}{\numberline {C}Comments on flavor-dependent fits}{21}{}
-\contentsline {section}{\numberline {V}Conclusions and outlook}{21}{}
+\contentsline {subsection}{\numberline {C}Comments on flavor-dependent fits}{20}{}
+\contentsline {section}{\numberline {V}Summary and outlook}{20}{}
 \contentsline {section}{\numberline {}Acknowledgments}{22}{}
 \contentsline {section}{\numberline {}References}{22}{}

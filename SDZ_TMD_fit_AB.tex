@@ -132,7 +132,7 @@ are functions only of the parton longitudinal momentum fraction $x$.
 TMD PDFs (or TMDs for short) 
 include also the dependence on transverse momentum components $k_{\T}^2$. 
 They can be interpreted as three-dimensional generalizations of collinear PDFs.
-Similar arguments apply to collinear FFs and TMD FFs.
+Similar arguments apply to collinear FFs and TMD FFs~\cite{Angeles-Martinez:2015sea}.
 
 There are several differences between collinear and TMD distributions. From
 the formal point of view, factorization theorems for the two types of
@@ -181,7 +181,7 @@ FF $D_1^{q \to h}(z,P_{hT}^2)$, where $z$ is
 We take into consideration three kinds of processes: semi-inclusive DIS, and
 Drell--Yan processes (DY) with the production of virtual photons and $Z$
 bosons. To date, they represent \textcolor{red}{almost [AB:why almost? what
-  else could be used?]} all possible processes
+  else could be used? AS: $e^+e^-$ data.]} all possible processes
   where experimental information is available for unpolarized TMD
   extractions. 
 The only important
@@ -193,10 +193,10 @@ first attempt at a global fit of TMDs.
 The paper is organized as follows. In Sec.~\ref{s:theory}, the general
 formalism for TMDs in SIDIS and DY processes is briefly outlined, including a
 description of the assumptions and approximations in the phenomenological
-implementation of TMD evolution equations. In Sec.~\ref{s:data}, the criteria
+implementation of TMD evolution equations. In Sec.~\ref{s:data_analysis}, the criteria
 for selecting the data analyzed in the fit are summarized and commented. In
 Sec.~\ref{s:results}, the results of our global fit are presented and
-discussed. In Sec.~\ref{s:end}, we draw some conclusions. 
+discussed. In Sec.~\ref{s:conclusions}, we summarize the results and present an outlook for future analyses. 
    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,7 +204,7 @@ discussed. In Sec.~\ref{s:end}, we draw some conclusions.
 \label{s:theory}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{blue}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
+\textcolor{red}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Semi-inclusive DIS}
@@ -720,7 +720,6 @@ where the multiplicity $m_N^h$ is defined in~\eqref{e:multiplicity}. Fitting nor
 
 The application of the TMD formalism to SIDIS crucially depends on the capability of separating the current fragmentation region from the target fragmentation region and from a soft fragmentation region. The has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out the possible overlap among the three fragmentation regions when the hard scale $Q$ is sufficiently low. 
 In this paper we do not explore this effect and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.7$.\footnote{The implementation of the collinearity $R$ criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the quark properties.}
-%\textcolor{blue}{consistently with the way experimental data are presently binned, we identify the current fragmentation region by means of cuts on $z$.}
 
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
 Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
@@ -886,7 +885,7 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 \subsection{The replica method}
 \label{ss:replica_method}
 
-\textcolor{blue}{I edited a bit the text, but some overlap remains with the text in~\cite{Signori:2013mda}.}
+\textcolor{red}{AS: I edited a bit the text, but some overlap remains in this section with the text in~\cite{Signori:2013mda}.}
 
 In this section we describe the replica method and we give a definition of the $\chi^2$ function minimized by the fit procedure.
 The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty,Signori:2013mda,Radici:2015mwa}, and taking
@@ -1081,7 +1080,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{Compass multiplicities for production of negative hadrons ($\pi^-$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pim}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1089,7 +1088,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of positive hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first bin in  $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{Compass multiplicities for production of positive hadrons ($\pi^+$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$. Multiplicities are normalized to the first bin in  $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pip}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1212,7 +1211,7 @@ Again, we give the average value over the full set of replica and the standard d
 We also compare these values with the best-values from replica $105$.
 
 After reminding the reader that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big \langle \bm{k}_{\T}^2 \big \rangle (x=0.1)$ and  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big \rangle (z=0.5)$, we note that the average value of $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ is similar to and compatible within error bands with the value given in~\cite{Signori:2013mda} for the flavor-independent scenario. The value of $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ is larger but still compatible with the same quantity given in~\cite{Signori:2013mda}. Comparisons between the two fits are anyway delicate, since here we rely on a modified Gaussian ansatz, see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}.
-Fig.~\ref{f:kT2_vs_PT2}) is a better tool to compare diffferent extractions of partonic transverse momenta. The red area corresponds to the $68\%$ confidence region for $( \big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$, $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$) pairs. Each black dot is an outcome of one fit (replica). The same applies to the orange region and its black dots, related to the flavor-independent analysis in~\cite{Signori:2013mda}. All the other boxes are related to other extractions. 
+Fig.~\ref{f:kT2_vs_PT2} is a better tool to compare diffferent extractions of partonic transverse momenta. The red area corresponds to the $68\%$ confidence region for $\{ \big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$, $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle \}$ pairs. Each black dot is an outcome of one fit (replica). The same applies to the orange region and its black dots, related to the flavor-independent analysis in~\cite{Signori:2013mda}. All the other boxes are related to different extractions and the color coding is described in the caption of the figure. 
 From the orange region (fit of SIDIS at \hermes only) a strong anticorrelation between the transverse momenta is evident. 
 The inclusion of Drell-Yan and $Z$ production data adds physical information about the nonperturbative structure of  $f_1(x,k_T^2)$. This significantly reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the red region). 
 The inclusion of \compass data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
@@ -1292,10 +1291,12 @@ Replica 105   &
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.90\textwidth]{plots/kT2_vs_PT2}
+\includegraphics[width=0.60\textwidth]{plots/kT2_PT2_flav_indep}
 \end{center}
-\caption{Correlation between transverse momenta in TMD FFs, $\langle P_\perp^2 \rangle(z=0.5)$, and in TMD PDFs, $\langle k_\perp^2 \rangle(x=0.1)$, in different extractions. The red region is the $68\%$ C.L. area explored in this fit. The white box represents the average values for the transverse momenta. The other works are referred to in the legenda, together with the related $Q$ value if available. 
-\textcolor{red}{AS: this is a screenshot, I need the vector image from Alessandro's keynote in GHP. Change also the legenda: ``in preparation''.}} 
+\caption{Correlation between transverse momenta in TMD FFs, $\langle P_\perp^2 \rangle(z=0.5)$, and in TMD PDFs, $\langle k_\perp^2 \rangle(x=0.1)$, in different phenomenological extractions. 
+The red region is the $68\%$ C.L. area explored in this fit (1-red). The white box represents the average values for the transverse momenta. 
+The other extractions are: (2-orange)~\cite{Signori:2013mda}, (3-blue)~\cite{Schweitzer:2010tt}, (4-brown)~\cite{Anselmino:2013lza} for \hermes data, (5-red point)~\cite{Anselmino:2013lza} for \hermes data at high $z$, (6-pink)~\cite{Anselmino:2013lza} for normalized \compass data, (7-purple)~\cite{Anselmino:2013lza} for normalized \compass data at high $z$, (8-yellow)~\cite{Echevarria:2014xaa}.  
+For more details, such as the value of the input scale for the TMDs, see the respective references.} 
 \label{f:kT2_vs_PT2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1323,7 +1324,7 @@ Replica 105   &
 \\
 (a) && (b)
 \end{tabular}
-\caption{Kinematic dependence of $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$ (a) and of $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$ (b). The bands are the $68\%$ C.L. envelope of the full sets of best-fit curves. Comparisons with other extractions are provided. Color and coding are the same as in Fig.~\ref{f:kT2_vs_PT2}.  In (b) the grey-dashed curve refers to the parametrization used in GMCtrans~\cite{gmctrans} and the black-dashed curve refers to~\cite{Boglione:1999pz}. }
+\caption{Kinematic dependence of $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$ (a) and of $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$ (b). The bands are the $68\%$ C.L. envelope of the full sets of best-fit curves. Comparisons with other extractions are displayed. Color coding is the same as in Fig.~\ref{f:kT2_vs_PT2}.  In (b) the grey-dashed curve refers to the parametrization used in GMCtrans~\cite{gmctrans} and the black-dashed curve refers to~\cite{Boglione:1999pz}. }
 \label{f:avmomenta_68CL}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1337,7 +1338,7 @@ Replica 105   &
 \subsection{Comments on flavor-dependent fits}
 \label{ss:comment_fldep}
 
-
+\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I alsoI think that we should aim at conveying a positiv(ish) message.} For example, we could talk about some of the tests that we have performed excluding \compass data.
 
 %\begin{table}[h]
 %\small
@@ -1439,17 +1440,31 @@ Replica 105   &
 
 
 
-
-
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions and outlook}
-\label{s:end}
+\section{Summary and outlook}
+\label{s:conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+In this work we demonstrated for the first time the possibility to perform a rigorous simultaneous fit of unpolarized TMDs to data of SIDIS, Drell-Yan, and $Z$ boson production collected by different experiments.
+This constitutes the first attempt towards a global fitting strategy for $f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD factorization.
+
+We extracted unpolarized TMDs using 8059 data points with 11 free parameters using a replica methodology. We choose $Q^2 > 1.4$ GeV$^2$, $0.2 < z < 0.7$ and phenomenological implementations of the small transverse momentum region (see Sec.~\ref{s:data_analysis}). The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$.
+Most of the discrepancies between experimental data and theory comes from the normalisation and not from the shape. This might indicate the both perturbative corrections and higher-twist corrections could play a relevant role at low energies.
+We plan to release grids of the parametrizations studied in this work via TMDlib~\cite{Hautmann:2014kza} to facilitate phenomenological studies for present and future experiments.
+
+This fit is performed assuming that the intrinsic transverse momentum dependence is described by a normalized linear combination of a Gaussian and a weigthed Gaussian in momentum space. For $f_1$ we assume that the two Gaussian distributions have the same variance, for $D_1$ we relax this condition.  To describe the high transverse momentum tail of the TMDs, we include TMD evolution at NLL in the Sudakov exponenet and at LO in the Wilson coefficients matching onto collinear distributions.
+
+By means of fitting data from different processes and experiments, we also perform a phenomenological check of the universality of unpolarized TMDs. 
+TMD factorization allows us to describe the eximed data in a reasonable way at low transverse momentum. In future works we should aim at a more precise analysis from the perturbative point of view, at a detailed flavor decomposition in momentum space and at describing also events at higher transverse momenta matching to the collinear fixed-order calculations. We look also forward to the possibility of identifying the current fragmentation region in a more sistematic way~\cite{Boglione:2016bph}.
+Together with an improved theoretical framework, in order to better understand the formalism we need more data. In particular with larger coverage in the $x$, $z$ and rapidity ranges and spanning over a larger range in $Q^2$. 
+Additional data from SIDIS (at Jefferson Lab, at a future Electron-Ion Collider), Drell-Yan, $Z/W$ production (at \compass, at the LHC, at RHIC, at A Fixed-Target Experiment at the LHC) and $e^+e^-$ (at Belle-II, BES-III, at a future Internation Linear Collider) would be very important. 
+
+Testing the formalism of TMD factorization and understanding the structure of unpolarized TMDs is only the first crucial step in the exploration of the 3D proton structure in momentum space and this work opens the way to global determinations of TMDs. 
+Building on this, we can proceed to deepen our understanding of hadron structure via asymmetries and polarized structure function (see e.g.~\cite{Aschenauer:2015ndk,Boglione:2015zyc,Kikola:2017hnp}) and, at the same time, to test the impact of hadron structure in precision measurements at high-energies, such as at the LHC. A detailed mapping of hadron structure is essential to interpret data from hadronic collisions, which are presently the most frequently used tool to look for footprints of new physics.
+In particular, the $12$ GeV physics program at Jefferson Lab~\cite{Dudek:2012vr} will be very important to constrain collinear and TMD distributions at large $x$, extremely useful for searches of new heavy particles at hadron colliders.
+
+
 
 
 

@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{65}
+\begin{mcitethebibliography}{72}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -34,6 +34,16 @@
   (\bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{2011}), ISBN
   \bibinfo{isbn}{9780521855334},
   \urlprefix\url{http://books.google.it/books?id=0xGi1KW9vykC}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Angeles-Martinez
+  et~al.}(2015)}]{Angeles-Martinez:2015sea}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Angeles-Martinez}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Acta Phys. Polon.}
+  \textbf{\bibinfo{volume}{B46}}, \bibinfo{pages}{2501} (\bibinfo{year}{2015}),
+  \eprint{1507.05267}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -692,6 +702,17 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Schweitzer et~al.}(2010)\citenamefont{Schweitzer,
+  Teckentrup, and Metz}}]{Schweitzer:2010tt}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Schweitzer}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Teckentrup}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Metz}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D81}},
+  \bibinfo{pages}{094019} (\bibinfo{year}{2010}), \eprint{1003.2190}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Bacchetta et~al.}(2004)\citenamefont{Bacchetta,
   Elschenbroich, Miyachi, Schnell, Shibata, Takubo, Tanaka, and
   Seidl}}]{gmctrans}
@@ -715,6 +736,72 @@
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D60}},
   \bibinfo{pages}{054007} (\bibinfo{year}{1999}),
   \eprint[http://arXiv.org/abs]{hep-ph/9903354}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Hautmann et~al.}(2014)\citenamefont{Hautmann, Jung,
+  Krämer, Mulders, Nocera, Rogers, and Signori}}]{Hautmann:2014kza}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Hautmann}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Jung}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Krämer}},
+  \bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mulders}},
+  \bibinfo{author}{\bibfnamefont{E.~R.} \bibnamefont{Nocera}},
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Signori}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C74}},
+  \bibinfo{pages}{3220} (\bibinfo{year}{2014}), \eprint{1408.3015}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Aschenauer et~al.}(2016)\citenamefont{Aschenauer,
+  D'Alesio, and Murgia}}]{Aschenauer:2015ndk}
+\bibinfo{author}{\bibfnamefont{E.~C.} \bibnamefont{Aschenauer}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Murgia}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A52}},
+  \bibinfo{pages}{156} (\bibinfo{year}{2016}), \eprint{1512.05379}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Boglione and Prokudin}(2016)}]{Boglione:2015zyc}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A52}},
+  \bibinfo{pages}{154} (\bibinfo{year}{2016}), \eprint{1511.06924}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Kiko?a et~al.}(2017)\citenamefont{Kiko?a, Echevarria,
+  Hadjidakis, Lansberg, Lorcé, Massacrier, Quintans, Signori, and
+  Trzeciak}}]{Kikola:2017hnp}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Kiko?a}},
+  \bibinfo{author}{\bibfnamefont{M.~G.} \bibnamefont{Echevarria}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Hadjidakis}},
+  \bibinfo{author}{\bibfnamefont{J.-P.} \bibnamefont{Lansberg}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Lorcé}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Massacrier}},
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Quintans}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Signori}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Trzeciak}}
+  (\bibinfo{year}{2017}), \eprint{1702.01546}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Dudek et~al.}(2012)\citenamefont{Dudek, Ent, Essig,
+  Kumar, Meyer et~al.}}]{Dudek:2012vr}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Dudek}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ent}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Essig}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Kumar}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Meyer}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Eur.Phys.J.}
+  \textbf{\bibinfo{volume}{A48}}, \bibinfo{pages}{187} (\bibinfo{year}{2012}),
+  \eprint{1208.1244}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
