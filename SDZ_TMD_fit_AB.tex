@@ -536,7 +536,7 @@ The Sudakov exponent $S$ can be written as
 S(\mu_b^2,\mu^2)=-\int_{\mu_b^2}^{\mu^2}{dk_T^2\over k_T^2}
 \left[A\left(\alpha_s(k_T)\right)\ln\left({Q^2\over k_T^2}\right) 
 + B\left(\alpha_s(k_T)\right) \right] \; ,
-\label{Sudakov} 
+\label{e:Sudakov} 
 \end{equation} 
 
 \textcolor{red}{The convolutions are only valid for small $\bT \ll
@@ -1198,11 +1198,18 @@ Being able to describe quantitatively spectra in transverse momentum from $1$ Ge
 \subsection{Transverse momentum dependence at 1 GeV}
 \label{ss:bestfit_TMDs}
 
-Tab.~\ref{t:fl_ind_parcommon} summarizes the values of the nonperturbative parameters $b_{\rm min}$ and $b_{\rm max}$ (which delimit the range in $\bT$ where transverse momentum resummation is computed perturbatively) and $g_2$, whcih quantifies the amount of soft gluons radiated.
+%% separation in bT space
+The variables $b_{\rm min}$ and $b_{\rm max}$ delimit the range in $b_T$ where transverse momentum resummation is computed perturbatively. $b_{\rm max}$ allows to avoid the Landau pole and $b_{\rm min}$ allows to recover correctly the high transverse momentum limit of the cross section (see also Sec.~\ref{ss:TMDevo}).
+The parameter $g_2$ which enters the nonperturbative Sudakov exponent quantifies the amount of soft gluons radiated.
+As already explained in Sec.~\ref{ss:TMDevo}, in this work we fix the value for $b_{\rm min}$ and $b_{\rm max}$ in such a way that at $Q=1$ GeV the unpolarized TMDs coincide with their nonperturbative input. $g_2$, instead, is a fit parameter.
+
+Tab.~\ref{t:fl_ind_parcommon} summarizes the chosen values of $b_{\rm min}$, $b_{\rm max}$ and the best-fit value of $g_2$. The latter is given as an average best-fit value with $68\%$ C.L. uncertainty computed over the set of 200 replicas. A similar value ($g_2 = 0.18 \pm ...$) was found in~\cite{Konychev:2005iy}.
+We stress here that a prescription involving both $b_{\text{min}}$ and $b_{\text{max}}$ is equivalent to request $\mu_{\bar{b^*}}^2 < Q^2 \equiv \mu^2$ for all $b_T$ values in~\eqref{e:Sudakov}. This requirement turns out to be crucial in order to fit SIDIS data with TMD evolution and without a $Y$-term.
+
+%% best fit values and transverse momenta
 Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values for the parametrization of the nonperturbative part of the TMDs (Eqs.~\eqref{e:f1NP} and~\eqref{e:D1NP}); central values and standard deviations are based on the replica methodology (see Sec.~\ref{ss:replica_method}), using $68\%$ confidence levels.
 
-We stress here that a prescription involving both $b_{\text{min}}$ and $b_{\text{max}}$ is crucial in order to fit SIDIS data with TMD evolution. 
-
+% kinematic behavior of T.M. and correlations
 Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
 Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
 Fix some of the labels on the vertical axis.
@@ -1222,9 +1229,9 @@ Fix some of the labels on the vertical axis.
  \\ 
 & (fixed)     & (fixed)   &                            \\
 \hline
-All replicas & $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.13 \pm 0.01$  \\
+All replicas & $2 e^{-\gamma_E}[/$GeV]& $2 e^{-\gamma_E}/Q$  & $0.13 \pm 0.01$  \\
 \hline
-Replica 105 &  $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
+Replica 105 &  $2 e^{-\gamma_E}[/$GeV]& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
 \hline
 \hline
 \end{tabular}
