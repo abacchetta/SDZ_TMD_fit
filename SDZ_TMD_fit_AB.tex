@@ -723,7 +723,7 @@ In this paper we do not explore this effect and we leave it to future studies. A
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
 Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
 In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
-The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. To comply with these, we impose $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the coefficients are chosen to maximize the goodness of the fit procedure. 
+The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. To comply with these, we impose $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the coefficients are chosen to maximize the goodness of the fit procedure and not to exclude too many data points~\footnote{Adding $0.5$ GeV might be a bit extreme, since we could probe in the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}
 All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -962,7 +962,7 @@ Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 %\hline
 %\hline
 %\end{tabular}
-\caption{Total number of points analyzed, number of free parameters, and $\chi^2$ values.}
+\caption{Total number of points analyzed, number of free parameters and $\chi^2$ values.}
 \label{t:fl_ind_chi2}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1014,9 +1014,9 @@ For SIDIS at \hermes off a deuteron, the situation is slightly different with re
 For pion production the $\chi^2$ is lower with respect to the scattering off a proton because the experimental uncertainties for $D \to \pi^\pm$ are slightly larger than for $p \to \pi^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_pions}).
 On the contrary, for kaon production the $\chi^2$ is higher with respect to the scattering off a proton because the experimental uncertainties for $D \to K^\pm$ are slightly smaller than for $p \to K^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_kaons}).
 
-Fixing the target and comparing pion and kaon production at \hermes, we see that the $\chi^2$ for kaons is in general lower than for pions. This is because the theoretical uncertainty for $D_1^{a \to K}$ is larger than the one for $D_1^{a \to \pi}$~\cite{Epele:2012vg}, even if the experimental uncertainties are in general smaller for kaons.
+Fixing the target and comparing pion and kaon production at \hermes, we see that the $\chi^2$ for kaons is in general lower than for pions. This is because the theoretical uncertainty for $D_1^{a \to K}$ is larger than the one for $D_1^{a \to \pi}$~\cite{Epele:2012vg,Signori:2013mda}, even if the experimental uncertainties are in general smaller for kaons.
 
-SIDIS at \compass involvese scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$. 
+SIDIS at \compass involves scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$. 
 The quality of the agreement between theory and \compass data is better than in the case of pion production at \hermes. This depends on at least two factors. First: the fit is essentially driven by the \compass data, since the number of data points in \compass is much higher than in \hermes. Moreover, the observable that we fit for the case of \compass is the normalized multiplicity, defined in~\eqref{e:mult_norm}. This automatically eliminates any possible tension between theory and data due to normalization effects.
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1048,14 +1048,16 @@ Different $\langle x \rangle$, $\langle z \rangle$ and $\langle Q^2 \rangle$ bin
 The grey bands are an envelope of the $200$ replica of best-fit curves. For every point in $P_{hT}$ we apply a $68\%$ C.L. selection criterion. 
 Points marked by different shapes and colors correspond to different $\langle z \rangle$ values. There is a strong correlation between $\langle x \rangle$ and $\langle Q^2 \rangle$ that does not allow to explore $x$ and $Q^2$ dependence separetely. 
 We notice that the agreement tends to improve as we move to higher $Q^2$ values, where the kinematic approximations of factorization are more reliable. 
-Moreover, for fixed $P_{hT}$ and $Q^2$, the agreement is in general better at higher $z$ values.
+Moreover, for fixed $P_{hT}$ and $Q^2$, the agreement is in general better at higher $z$ values, which also resembles the kinematic condition $P_{hT}/z \lesssim Q$ for TMD factorization.
 
 Fig.~\ref{f:H_kaons} has same content and notation as in Fig.~\ref{f:H_pions} but for kaons in the final state. Here we notice that the agreement at low $z$ tends to be better than in the previous case of pion production. 
 
-In Fig.~\ref{f:C_pim} 
+In Fig.~\ref{f:C_pim} we present \compass normalized multiplicities (see~\eqref{e:mult_norm}) for production of $\pi^-$ off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$. The circle around the first $P_{hT}$ point in each panel indicates that the first value is fixed and not fitted. 
+The correlation between $x$ and $Q^2$ is less stronger than at \hermes and this allows to study different $\langle x \rangle$ bins at fixed $\langle Q^2 \rangle$.
+For the highest $Q^2$ the agreement is good for all $\langle x \rangle$, $\langle z \rangle$ and $\langle P_{hT} \rangle$. In bins at lower energy, the descriptions is degraded and gets worse especially as $z$ increases, contrary to \hermes data. 
+For fixed $\langle Q^2 \rangle$ and high $\langle z \rangle$, a good agreement is recovered moving to higher $\langle x \rangle$ bins.
 
-In Fig.~\ref{f:C_pip}
-... agreement in this case is worse for higher $z$, contrary to what happens in \hermes data.
+Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and the same comments on the agreement between theory and the data apply.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
@@ -1077,7 +1079,7 @@ In Fig.~\ref{f:C_pip}
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{Compass multiplicities for production of negative hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pim}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1085,12 +1087,7 @@ In Fig.~\ref{f:C_pip}
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of positive hadrons (pions) off
-  a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and
-  $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the
-  dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first
-  bin in  $P_{hT}$ for each $\langle z \rangle$ value. For clarity,
-  each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{Compass multiplicities for production of positive hadrons (pions) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron ${\bm P}_{hT}^ 2$. Multiplicities are normalized to the first bin in  $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pip}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1160,10 +1157,7 @@ Legends need to be added too. Fix the y-axis label.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.95\textwidth]{plots/DY_SCIplot_flINDEP.pdf}
-\caption{Drell-Yan differential cross section for different experiments and
-  different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins.
-  For clarity, each $\langle Q \rangle$  bin has been shifted by an offset
-  indicated in the legend.}
+\caption{Drell-Yan differential cross section for different experiments and different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins. For clarity, each $\langle Q \rangle$  bin has been shifted by an offset indicated in the legend. \textcolor{red}{Is the cross section differential in $Q^2$ .}}
 \label{f:DY_panel}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
