@@ -72,10 +72,10 @@ inelastic scattering and Drell-Yan data
 \author{Andrea Signori}
 \email{asignori@jlab.org}
 \affiliation{Theory Center, Thomas Jefferson National Accelerator Facility, 12000 Jefferson Avenue, Newport News, VA 23606, USA}
-\affiliation{Department of Physics and Astronomy, VU University Amsterdam, De
-  Boelelaan 1081, NL-1081 HV Amsterdam, the Netherlands}
-\affiliation{Nikhef, Science Park 105, NL-1098 XG Amsterdam, the
-  Netherlands}
+%\affiliation{Department of Physics and Astronomy, VU University Amsterdam, De
+% Boelelaan 1081, NL-1081 HV Amsterdam, the Netherlands}
+%\affiliation{Nikhef, Science Park 105, NL-1098 XG Amsterdam, the
+% Netherlands}
 
 \begin{abstract}
 We present an extraction of unpolarized partonic transverse momentum
@@ -204,7 +204,7 @@ discussed. In Sec.~\ref{s:end}, we draw some conclusions.
 \label{s:theory}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{blue}{Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
+\textcolor{blue}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Semi-inclusive DIS}
@@ -373,6 +373,7 @@ functions~\cite{Boer:2006eq,Arnold:2008kf}. For our purposes, we need the unpola
 cross section
 integrated over $d\Omega$ and over the azimuthal angle of the virtual photon, 
 \begin{align}
+\label{e:dsigma_gZ}
 \frac{d\sigma}{dQ^2\, dq_T^2\,d\eta} &= \sigma_0^{\gamma,Z}
 \bigg(F_{UU}^1 + \frac{1}{2} F_{UU}^2\bigg). 
 \end{align} 
@@ -686,8 +687,9 @@ In this chapter we describe the data sets considered for each process and the re
 
 Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes experiment) and presents their kinematic ranges. 
 The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
-For each kinematic variable in all the considered data sets, we fit the average value in each bin. 
-\textcolor{red}{Specify how we treat the nuclear targets, like D= p+n incoherent, then DY ... .}
+For each kinematic variable in all the considered data sets, we fit the average value in each bin.
+ 
+\textcolor{red}{AS: specify how we treat the nuclear targets, like D= p+n incoherent, then DY ... .}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Hermes data}
@@ -731,7 +733,7 @@ All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:d
 \label{ss:dy}
 
 We analyze Drell-Yan events collected by fixed-target experimets at low-energy. These data set have been considered also in previous works, e.g.~\cite{DAlesio:2014mrz}. 
-We use data from E288~\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ Gev}^2$, denoted with the label ``200'', ``300'' and ``400'' respectively. 
+We use data from E288~\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ GeV}^2$, denoted with the label ``200'', ``300'' and ``400'' respectively. 
 We also include data from E605~\cite{Moreno:1990sf} at $\sqrt{s}=38.8 \text{ GeV}^2$.
 
 The explored $Q$ values are higher compared to the SIDIS case, see Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity, whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf}).  
@@ -1061,7 +1063,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
+\includegraphics[width=0.90\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
 \end{center}
 \caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron  $P_{hT}$.} 
 \label{f:H_pions}
@@ -1069,7 +1071,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.95\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
+\includegraphics[width=0.90\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
 \end{center}
 \caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$.} 
 \label{f:H_kaons}
@@ -1099,7 +1101,11 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 \subsubsection*{Drell-Yan processes}
 \label{sss:DYZ_agreement}
 
+%%% CHI2 VALUES %%%
 
+The low energy Drell-Yan data collected by the E288 and E605 experiments at Fermilab have large error bands (see Fig.~\ref{f:DY_panel}). This is way the $\chi^2$ values in Tab.~\ref{t:fl_ind_chi2_DY} are rather low compared to the other data sets. 
+
+The agreement is also good for $Z$ boson production, see Tab.~\ref{t:fl_ind_chi2_Z}. The statistics from Run-II is higher, which generates smaller experimental uncertainties and higher $\chi^2$, especially for the CDF experiment.
 %%%%%%%%%%%%%% Tab. chi2 Drell-Yan low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1110,7 +1116,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 \begin{tabular}{|c|c|c|c|c|}
  \hline
  \hline
- ~                        &  E288 200    &  E288 300        &  E288 400          &  E605                \\
+ ~                        &  E288 [200]    &  E288 [300]        &  E288 [400]          &  E605                \\
  \hline
  Points                   &      45      &   45             &       78           &     35               \\
  \hline
@@ -1119,11 +1125,10 @@ $ \chi^2  /$points      &  0.99        &    0.84           &       0.32
 \hline
 \hline
 \end{tabular}
-\caption{Number of points analyzed and $\chi^2$ values for fixed-target Drell-Yan experiments at low energy.}
+\caption{Number of points analyzed and $\chi^2$ values for fixed-target Drell-Yan experiments at low energy. The labels in square brackets were introduced in Sec.~\ref{ss:dy}.}
 \label{t:fl_ind_chi2_DY}
 \end{center}
 \end{table}
-
 %%%%%%%%%%%%%% Tab. chi2 Z Tevatron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1151,24 +1156,33 @@ $\chi^2 /$points      &  1.36        &    1.11           &       2.00         & 
 
 
 
-Description of low energy Drell-Yan data (version from Dropbox, Feb. 9$^{th}$).
-Legends need to be added too. Fix the y-axis label.
+%%% FIGURES %%%
+
+Fig.~\ref{f:DY_panel} displays the cross section differential with respect to the transverse momentum $q_T$ of the virtual photon, its invariant mass $Q^2$ and rapidity $y$.  
+As for the case of SIDIS, the grey bands are the $68\%$ C.L. envelope of the 200 replicas of the fit function. The four panels represents different values for the rapidity $y$ or $x_F$ (see~\eqref{e:eta_xf}). In each panel, we have plots for different $Q^2$ values.
+The lower $Q$, the less points in $q_T$ we fit, in agreement with the condition $q_T \ll Q$ (see also Sec.~\ref{ss:dy}). 
+The hard scale lies in the region $4.5 < \langle Q \rangle < 13.5$ GeV. This region is of particular importance, since these ``moderate'' $Q$ values are high enough to safely apply factorization without pollution from higher twist effects and from the very low $b_T$ region and, at the same time, low enough in order for the nonperturbative effects not to be shaded by transverse momentum resummation.
+A visible effect of TMD evolution is to shift the peak position as $Q$ increases (effect visible in each panel in Fig.~\ref{f:DY_panel}).
+
+In Fig.~\ref{f:Z_qT} we compare the cross section differential with respect to the transverse momentum $q_T$ of the virtual $Z$ (namely Eq.~\eqref{e:dsigma_gZ} integrated over $\eta$) to data from CDF and D0 at Tevatron Run I and II. 
+Due to the higher $Q = M_Z$, the range explored in $q_T$ is much larger compared to all the other observables considered. The tails of the distributions clearly deviate from a Gaussian behavior, as it is also evident in the bins at higher $Q^2$ in Fig.~\ref{f:DY_panel}.
+As an effect of TMD evolution, the peak shifts from $\sim 1$ GeV for Drell-Yan events in Fig.~\ref{f:DY_panel} to $\sim 5$ GeV in Fig.~\ref{f:Z_qT}. The position of the peak is affected both by the perturbative and the nonperturbative part of the Sudakov exponent (see Sec.~\ref{ss:TMDevo} and discussions in~\cite{Signori:2016lvd}).
+Most of the contributions to the $\chi^2$ comes from normalization effects and not from the shape in $q_T$. 
+
+Being able to describe quantitatively spectra in transverse momentum from $1$ GeV up to $M_Z$ is a remarkable achievement of the interplay between perturbative and nonperturbative effects in the TMD formalism.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.95\textwidth]{plots/DY_SCIplot_flINDEP.pdf}
-\caption{Drell-Yan differential cross section for different experiments and different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins. For clarity, each $\langle Q \rangle$  bin has been shifted by an offset indicated in the legend. \textcolor{red}{Is the cross section differential in $Q^2$ .}}
+\caption{Drell-Yan differential cross section for different experiments and different values of $\sqrt{s}$ and for different $\langle Q \rangle$ bins. For clarity, each $\langle Q \rangle$  bin has been shifted by an offset indicated in the legend. \textcolor{red}{AS: is the cross section differential in $Q^2$ and rapidity $\eta$ (or $y$?) ``Normalized''=?}}
 \label{f:DY_panel}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Description of Z-boson production data (version from Dropbox, Feb. 9$^{th}$).
-Legends need to be added too. Fix the y-axis label.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.95\textwidth]{plots/Z_SCIplot_flINDEP.pdf}
 \end{center}
-\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.8$ TeV and $\sqrt{s}=1.96$ TeV).} 
+\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.8$ TeV and $\sqrt{s}=1.96$ TeV). \textcolor{red}{AS: don't we have BANDS here..?}} 
 \label{f:Z_qT}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1192,7 +1206,6 @@ We stress here that a prescription involving both $b_{\text{min}}$ and $b_{\text
 Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
 Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
 Fix some of the labels on the vertical axis.
-
 
 
 %%%%%%%%%%%%%%%% Tab. common parameters %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1219,7 +1232,6 @@ Replica 105 &  $2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
 %for the flavor-independent fit}
 \label{t:fl_ind_parcommon}
 \end{table}
-
 %%%%%%%%%%%%%%% Tab. results paramters TMDs %%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \small
@@ -1257,14 +1269,20 @@ Replica 105   &
 \hline
 \hline
 \end{tabular}
-\caption{68\% confidence intervals of 
-best-fit parameters for TMD PDFs and FFs}
+\caption{68\% confidence intervals of best-fit parameters for TMD PDFs and FFs.}
 % for the flavor-independent fit}
 \label{t:fl_ind_par_TMD}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.90\textwidth]{plots/kT2_vs_PT2}
+\end{center}
+\caption{Correlation between transverse momenta in TMD FFs, $\langle P_\perp^2 \rangle(z=0.5)$, and in TMD PDFs, $\langle k_\perp^2 \rangle(x=0.1)$, in different extractions. The red region is the $68\%$ C.L. area explored in this fit. The white box represents the average values for the transverse momenta. The other works are referred to in the legenda, together with the related $Q$ value if available. 
+\textcolor{red}{AS: this is a screenshot, I need the vector image from Alessandro's keynote in GHP. Change also the legenda: ``in preparation''.}} 
+\label{f:kT2_vs_PT2}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \centering
