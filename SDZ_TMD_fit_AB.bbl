@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{63}
+\begin{mcitethebibliography}{65}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -688,6 +688,33 @@
   \bibinfo{journal}{Int. J. Mod. Phys. Conf. Ser.}
   \textbf{\bibinfo{volume}{25}}, \bibinfo{pages}{1460020}
   (\bibinfo{year}{2014}), \eprint{1309.5929}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Bacchetta et~al.}(2004)\citenamefont{Bacchetta,
+  Elschenbroich, Miyachi, Schnell, Shibata, Takubo, Tanaka, and
+  Seidl}}]{gmctrans}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bacchetta}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Elschenbroich}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Miyachi}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Schnell}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Shibata}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Takubo}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Tanaka}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Seidl}},
+  \bibinfo{journal}{HERMES Internal Report 04-039}
+  (\bibinfo{year}{2004})\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Boglione and Mulders}(1999)}]{Boglione:1999pz}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~J.} \bibnamefont{Mulders}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D60}},
+  \bibinfo{pages}{054007} (\bibinfo{year}{1999}),
+  \eprint[http://arXiv.org/abs]{hep-ph/9903354}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

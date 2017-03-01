@@ -668,7 +668,7 @@ where $\alpha, \, \sigma,$ and $\big\langle \hat{\bm{k}}_{\T a}^2 \big\rangle \e
 where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to
   h}^2 \big\rangle \equiv \big \langle \bm{P}_{\T a \to h}^2 \big\rangle
 (\hat{z})$ with $\hat{z} = 0.5$, are free parameters. 
-
+\textcolor{red}{Mention that also the other variance in the TMD FF has the same kinematic dependence.}
 %For sake of simplicity, the $\beta, \, \gamma, \, \delta$ parameters are taken equal for all fragmentation channels~\cite{Signori:2013mda,Bacchetta:2015ora}. 
 %
 
@@ -1165,7 +1165,7 @@ The hard scale lies in the region $4.5 < \langle Q \rangle < 13.5$ GeV. This reg
 A visible effect of TMD evolution is to shift the peak position as $Q$ increases (effect visible in each panel in Fig.~\ref{f:DY_panel}).
 
 In Fig.~\ref{f:Z_qT} we compare the cross section differential with respect to the transverse momentum $q_T$ of the virtual $Z$ (namely Eq.~\eqref{e:dsigma_gZ} integrated over $\eta$) to data from CDF and D0 at Tevatron Run I and II. 
-Due to the higher $Q = M_Z$, the range explored in $q_T$ is much larger compared to all the other observables considered. The tails of the distributions clearly deviate from a Gaussian behavior, as it is also evident in the bins at higher $Q^2$ in Fig.~\ref{f:DY_panel}.
+Due to the higher $Q = M_Z$, the range explored in $q_T$ is much larger compared to all the other observables considered. The tails of the distributions clearly deviate from a Gaussian behavior, as it is also evident in the bins at higher $Q^2$ in Fig.~\ref{f:DY_panel}. The band from the replica methodology in this case is much narrower, due to the reduced sensitivity to the intrinsic transverse momenta at $Q=M_Z$ and to the limited range of best-fit values for the parameter $g_2$, which controls soft-gluon emission. 
 As an effect of TMD evolution, the peak shifts from $\sim 1$ GeV for Drell-Yan events in Fig.~\ref{f:DY_panel} to $\sim 5$ GeV in Fig.~\ref{f:Z_qT}. The position of the peak is affected both by the perturbative and the nonperturbative part of the Sudakov exponent (see Sec.~\ref{ss:TMDevo} and discussions in~\cite{Signori:2016lvd}).
 Most of the contributions to the $\chi^2$ comes from normalization effects and not from the shape in $q_T$. 
 
@@ -1182,7 +1182,7 @@ Being able to describe quantitatively spectra in transverse momentum from $1$ Ge
 \begin{center}
 \includegraphics[width=0.95\textwidth]{plots/Z_SCIplot_flINDEP.pdf}
 \end{center}
-\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.8$ TeV and $\sqrt{s}=1.96$ TeV). \textcolor{red}{AS: don't we have BANDS here..?}} 
+\caption{Cross section differential with respect to the transverse momentum $q_T$ of a $Z$ boson produced from $p\bar{p}$ collisions at Tevatron. The four panels refer to different experiments (CDF and D$0$) with two different values for the center-of-mass energy ($\sqrt{s} = 1.8$ TeV and $\sqrt{s}=1.96$ TeV). In this case the band is narrow due to the narrow range for the best-fit values of $g_2$.} 
 \label{f:Z_qT}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1213,12 +1213,16 @@ We also compare these values with the best-values from replica $105$.
 
 After reminding the reader that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big \langle \bm{k}_{\T}^2 \big \rangle (x=0.1)$ and  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big \rangle (z=0.5)$, we note that the average value of $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ is similar to and compatible within error bands with the value given in~\cite{Signori:2013mda} for the flavor-independent scenario. The value of $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ is larger but still compatible with the same quantity given in~\cite{Signori:2013mda}. Comparisons between the two fits are anyway delicate, since here we rely on a modified Gaussian ansatz, see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}.
 Fig.~\ref{f:kT2_vs_PT2}) is a better tool to compare diffferent extractions of partonic transverse momenta. The red area corresponds to the $68\%$ confidence region for $( \big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$, $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$) pairs. Each black dot is an outcome of one fit (replica). The same applies to the orange region and its black dots, related to the flavor-independent analysis in~\cite{Signori:2013mda}. All the other boxes are related to other extractions. 
-From the orange region (fit of SIDIS at \hermes only) a strong anticorrelation between the transverse momenta is evident. The inclusion of Drell-Yan and $Z$ production data adds physical information about the nonperturbative structure of  $f_1(x,k_T^2)$. This significantly reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the red region). This is an important feature of this fit and we should aim at including $e^+e^-$ data too to further reduce the correlation. Ideally in a global fit we could reach the lowest degree of correlation possible.
+From the orange region (fit of SIDIS at \hermes only) a strong anticorrelation between the transverse momenta is evident. 
+The inclusion of Drell-Yan and $Z$ production data adds physical information about the nonperturbative structure of  $f_1(x,k_T^2)$. This significantly reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the red region). 
+The inclusion of \compass data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
+These are important features of this fit and we should aim at including $e^+e^-$ data too to further reduce the correlation. Ideally in a global fit we could reach the lowest degree of correlation possible.  
+When comparing different extractions, it is important to keep in mind that the intrinsic transverse momentum always depends on the scheme used to implement TMD evolution and its precision. 
 
 % kinematic behavior of T.M. and correlations
-Average square transverse momenta and their kinematic dependence.  (version from Dropbox, Feb. 9$^{th}$).
-Full sets of replicas and $68\%$ confidence level bands compared to the results from other fits.
-Fix some of the labels on the vertical axis.
+Tab.~\ref{t:fl_ind_par_TMD} also presents the best-fit values for parameters shaping the kinematic dependence of $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$, $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$, $\big \langle \bm{P}{\perp}^{\prime 2} \big \rangle (z)$ (see~\eqref{e:kT2_kin} and~\eqref{e:PT2_kin}). Since the values are all positive the average square transverse momenta do not diverge in the limits $x,z \to 0$ or $1$. 
+The kinematic dependence is shown in Fig.~\ref{f:avmomenta_68CL} (a) for $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$ and (b) for $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$. The plot for $\big \langle \bm{P}{\perp}^{\prime 2} \big \rangle (z)$ is identical to (b) apart from a normalization factor. 
+The pink bands are computed as the $68\%$ C.L.  envelope of the full sets of curves from the 200 replicas. Comparison with other extractions are presented and the legenda is detailed in the caption of the figure.
 
 
 %%%%%%%%%%%%%%%% Tab. common parameters %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1241,7 +1245,7 @@ Replica 105 &  $2 e^{-\gamma_E}[/$GeV]& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
 \hline
 \hline
 \end{tabular}
-\caption{Values of parameters common to TMD PDFs and FFs}
+\caption{Values of parameters common to TMD PDFs and TMD FFs.}
 \label{t:fl_ind_parcommon}
 \end{table}
 %%%%%%%%%%%%%%% Tab. results paramters TMDs %%%%%%%%%%%%%%%%%%%%%%
@@ -1295,19 +1299,19 @@ Replica 105   &
 \label{f:kT2_vs_PT2}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]
-\centering
-\begin{tabular}{ccc}
-\includegraphics[width=0.40\textwidth]{plots/kT2av_curves_at1GeV_flINDEP.pdf}
-&\hspace{0.001cm}
-&
-\includegraphics[width=0.40\textwidth]{plots/PT2av_curves_at1GeV_flINDEP.pdf}
-\\
-(a) && (b)
-\end{tabular}
-\caption{write the caption here (a) and another here (b).}
-\label{f:avmomenta_all_rep}
-\end{figure}
+%\begin{figure}[h!]
+%\centering
+%\begin{tabular}{ccc}
+%\includegraphics[width=0.40\textwidth]{plots/kT2av_curves_at1GeV_flINDEP.pdf}
+%&\hspace{0.001cm}
+%&
+%\includegraphics[width=0.40\textwidth]{plots/PT2av_curves_at1GeV_flINDEP.pdf}
+%\\
+%(a) && (b)
+%\end{tabular}
+%\caption{write the caption here (a) and another here (b).}
+%\label{f:avmomenta_all_rep}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h!]
 \centering
@@ -1319,7 +1323,7 @@ Replica 105   &
 \\
 (a) && (b)
 \end{tabular}
-\caption{write the caption here (a) and another here (b).}
+\caption{Kinematic dependence of $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$ (a) and of $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$ (b). The bands are the $68\%$ C.L. envelope of the full sets of best-fit curves. Comparisons with other extractions are provided. Color and coding are the same as in Fig.~\ref{f:kT2_vs_PT2}.  In (b) the grey-dashed curve refers to the parametrization used in GMCtrans~\cite{gmctrans} and the black-dashed curve refers to~\cite{Boglione:1999pz}. }
 \label{f:avmomenta_68CL}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
