@@ -4,75 +4,51 @@ The top-level auxiliary file: SDZ_TMD_fit_AB.aux
 The style file: apsrevM.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybiblio.bib
-You're missing a field name---line 1413 of file mybiblio.bib
- : 
- : %url            = "http://inspirehep.net/record/1410100/files/arXiv:1512.05379.pdf",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1861 of file mybiblio.bib
- : 
- : %      url            = "http://inspirehep.net/record/1411657/files/arXiv:1512.09014.pdf",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 1964 of file mybiblio.bib
- : 
- : %      url            = "http://inspirehep.net/record/1375601/files/78.pdf",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 2541 of file mybiblio.bib
- : @article{Barone:2015ksa
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2705 of file mybiblio.bib
- : @article{Kang:2015msa
- :                      ,
-I'm skipping whatever remains of this entry
-You're missing a field name---line 5633 of file mybiblio.bib
- : 
- : %      url            = "http://www.cambridge.org/de/knowledge/isbn/item5756723",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Anselmino:2016uie"
+Warning--I didn't find a database entry for "Moffat:2017sha"
+Warning--I didn't find a database entry for "Altarelli:1984pt"
+Warning--I didn't find a database entry for "Boer:2014tka"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 57 entries,
+You've used 72 entries,
             3471 wiz_defined-function locations,
-            1582 strings with 21189 characters,
-and the built_in function-call counts, 41839 in all, are:
-= -- 2430
-> -- 1388
-< -- 187
-+ -- 1126
-- -- 338
-* -- 5744
-:= -- 4475
-add.period$ -- 57
-call.type$ -- 57
-change.case$ -- 230
-chr.to.int$ -- 57
-cite$ -- 57
-duplicate$ -- 3742
-empty$ -- 3430
-format.name$ -- 875
-if$ -- 7881
-int.to.chr$ -- 1
-int.to.str$ -- 58
-missing$ -- 558
-newline$ -- 360
-num.names$ -- 171
-pop$ -- 901
+            1689 strings with 24484 characters,
+and the built_in function-call counts, 54679 in all, are:
+= -- 3122
+> -- 1905
+< -- 252
++ -- 1572
+- -- 464
+* -- 7593
+:= -- 5778
+add.period$ -- 72
+call.type$ -- 72
+change.case$ -- 290
+chr.to.int$ -- 70
+cite$ -- 72
+duplicate$ -- 4873
+empty$ -- 4440
+format.name$ -- 1179
+if$ -- 10274
+int.to.chr$ -- 3
+int.to.str$ -- 73
+missing$ -- 727
+newline$ -- 450
+num.names$ -- 216
+pop$ -- 1170
 preamble$ -- 1
-purify$ -- 228
+purify$ -- 288
 quote$ -- 0
-skip$ -- 1555
+skip$ -- 2019
 stack$ -- 0
-substring$ -- 1378
-swap$ -- 2915
-text.length$ -- 272
+substring$ -- 1756
+swap$ -- 3857
+text.length$ -- 363
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 340
+type$ -- 430
 warning$ -- 0
-while$ -- 166
+while$ -- 211
 width$ -- 0
-write$ -- 861
-(There were 6 error messages)
+write$ -- 1087
+(There were 4 warnings)
