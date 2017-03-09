@@ -4,51 +4,46 @@ The top-level auxiliary file: SDZ_TMD_fit_AB.aux
 The style file: apsrevM.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybiblio.bib
-Warning--I didn't find a database entry for "Anselmino:2016uie"
-Warning--I didn't find a database entry for "Moffat:2017sha"
-Warning--I didn't find a database entry for "Altarelli:1984pt"
-Warning--I didn't find a database entry for "Boer:2014tka"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 72 entries,
+You've used 82 entries,
             3471 wiz_defined-function locations,
-            1689 strings with 24484 characters,
-and the built_in function-call counts, 54679 in all, are:
-= -- 3122
-> -- 1905
-< -- 252
-+ -- 1572
-- -- 464
-* -- 7593
-:= -- 5778
-add.period$ -- 72
-call.type$ -- 72
-change.case$ -- 290
-chr.to.int$ -- 70
-cite$ -- 72
-duplicate$ -- 4873
-empty$ -- 4440
-format.name$ -- 1179
-if$ -- 10274
+            1744 strings with 26299 characters,
+and the built_in function-call counts, 62542 in all, are:
+= -- 3536
+> -- 2235
+< -- 294
++ -- 1852
+- -- 544
+* -- 8705
+:= -- 6585
+add.period$ -- 82
+call.type$ -- 82
+change.case$ -- 330
+chr.to.int$ -- 80
+cite$ -- 82
+duplicate$ -- 5589
+empty$ -- 5059
+format.name$ -- 1373
+if$ -- 11716
 int.to.chr$ -- 3
-int.to.str$ -- 73
-missing$ -- 727
-newline$ -- 450
-num.names$ -- 216
-pop$ -- 1170
+int.to.str$ -- 83
+missing$ -- 828
+newline$ -- 510
+num.names$ -- 246
+pop$ -- 1376
 preamble$ -- 1
-purify$ -- 288
+purify$ -- 328
 quote$ -- 0
-skip$ -- 2019
+skip$ -- 2291
 stack$ -- 0
-substring$ -- 1756
-swap$ -- 3857
-text.length$ -- 363
+substring$ -- 1930
+swap$ -- 4422
+text.length$ -- 423
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 430
+type$ -- 490
 warning$ -- 0
-while$ -- 211
+while$ -- 238
 width$ -- 0
-write$ -- 1087
-(There were 4 warnings)
+write$ -- 1229

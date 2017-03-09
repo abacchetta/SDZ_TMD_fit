@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{72}
+\begin{mcitethebibliography}{82}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -167,6 +167,18 @@
   \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vitev}},
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D89}},
   \bibinfo{pages}{074013} (\bibinfo{year}{2014}), \eprint{1401.5078}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Anselmino et~al.}(2016)\citenamefont{Anselmino,
+  Boglione, D'Alesio, Murgia, and Prokudin}}]{Anselmino:2016uie}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Anselmino}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Boglione}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{D'Alesio}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Murgia}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Prokudin}}
+  (\bibinfo{year}{2016}), \eprint{1612.06413}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -382,6 +394,17 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Moffat et~al.}(2017)\citenamefont{Moffat, Melnitchouk,
+  Rogers, and Sato}}]{Moffat:2017sha}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Moffat}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Rogers}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Sato}}
+  (\bibinfo{year}{2017}), \eprint{1702.03955}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Boer and Vogelsang}(2006)}]{Boer:2006eq}
 \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Boer}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Vogelsang}},
@@ -398,6 +421,39 @@
   \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Schlegel}},
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D79}},
   \bibinfo{pages}{034005} (\bibinfo{year}{2009}), \eprint{0809.2262}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Davies and Stirling}(1984)}]{Davies:1984hs}
+\bibinfo{author}{\bibfnamefont{C.~T.~H.} \bibnamefont{Davies}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~J.}
+  \bibnamefont{Stirling}}, \bibinfo{journal}{Nucl. Phys.}
+  \textbf{\bibinfo{volume}{B244}}, \bibinfo{pages}{337}
+  (\bibinfo{year}{1984})\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Frixione et~al.}(1999)\citenamefont{Frixione, Nason,
+  and Ridolfi}}]{Frixione:1998dw}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Frixione}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Nason}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Ridolfi}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B542}},
+  \bibinfo{pages}{311} (\bibinfo{year}{1999}), \eprint{hep-ph/9809367}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Bozzi et~al.}(2006)\citenamefont{Bozzi, Catani,
+  de~Florian, and Grazzini}}]{Bozzi:2005wk}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Bozzi}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Catani}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Grazzini}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B737}},
+  \bibinfo{pages}{73} (\bibinfo{year}{2006}), \eprint{hep-ph/0508068}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -423,6 +479,18 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Altarelli et~al.}(1984)\citenamefont{Altarelli, Ellis,
+  Greco, and Martinelli}}]{Altarelli:1984pt}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Altarelli}},
+  \bibinfo{author}{\bibfnamefont{R.~K.} \bibnamefont{Ellis}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Greco}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Martinelli}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B246}},
+  \bibinfo{pages}{12} (\bibinfo{year}{1984})\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Bozzi et~al.}(2011)\citenamefont{Bozzi, Catani,
   Ferrera, de~Florian, and Grazzini}}]{Bozzi:2010xn}
 \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Bozzi}},
@@ -432,6 +500,15 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Grazzini}},
   \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B696}},
   \bibinfo{pages}{207} (\bibinfo{year}{2011}), \eprint{1007.2351}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Boer and den Dunnen}(2014)}]{Boer:2014tka}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Boer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~J.} \bibnamefont{den Dunnen}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B886}},
+  \bibinfo{pages}{421} (\bibinfo{year}{2014}), \eprint{1404.6753}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -499,6 +576,70 @@
   \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Scimemi}},
   \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{098}
   (\bibinfo{year}{2014}{\natexlab{a}}), \eprint{1407.3311}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Gluck et~al.}(2008)\citenamefont{Gluck,
+  Jimenez-Delgado, and Reya}}]{Gluck:2007ck}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Gluck}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Jimenez-Delgado}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Reya}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C53}},
+  \bibinfo{pages}{355} (\bibinfo{year}{2008}), \eprint{0709.0614}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Buckley et~al.}(2015)\citenamefont{Buckley, Ferrando,
+  Lloyd, Nordström, Page, Rüfenacht, Schönherr, and Watt}}]{Buckley:2014ana}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Buckley}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ferrando}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Lloyd}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Nordström}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Page}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Rüfenacht}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Schönherr}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Watt}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C75}},
+  \bibinfo{pages}{132} (\bibinfo{year}{2015}), \eprint{1412.7420}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{de~Florian et~al.}(2015)\citenamefont{de~Florian,
+  Sassot, Epele, Hernández-Pinto, and Stratmann}}]{deFlorian:2014xna}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Epele}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Hernández-Pinto}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
+  \bibinfo{pages}{014035} (\bibinfo{year}{2015}), \eprint{1410.6027}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{de~Florian et~al.}(2007)\citenamefont{de~Florian,
+  Sassot, and Stratmann}}]{deFlorian:2007aj}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D75}},
+  \bibinfo{pages}{114010} (\bibinfo{year}{2007}), \eprint{hep-ph/0703242}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{de~Florian et~al.}(2017)\citenamefont{de~Florian,
+  Epele, Hernandez-Pinto, Sassot, and Stratmann}}]{deFlorian:2017lwf}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Epele}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Hernandez-Pinto}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}}
+  (\bibinfo{year}{2017}), \eprint{1702.06353}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -649,31 +790,6 @@
 \bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{Ball}} \bibnamefont{et~al.},
   \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B838}},
   \bibinfo{pages}{136} (\bibinfo{year}{2010}), \eprint{1002.4407}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[{\citenamefont{de~Florian et~al.}(2015)\citenamefont{de~Florian,
-  Sassot, Epele, Hernández-Pinto, and Stratmann}}]{deFlorian:2014xna}
-\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Epele}},
-  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Hernández-Pinto}},
-  \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
-  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
-  \bibinfo{pages}{014035} (\bibinfo{year}{2015}), \eprint{1410.6027}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[{\citenamefont{de~Florian et~al.}(2007)\citenamefont{de~Florian,
-  Sassot, and Stratmann}}]{deFlorian:2007aj}
-\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{de~Florian}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sassot}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Stratmann}},
-  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D75}},
-  \bibinfo{pages}{114010} (\bibinfo{year}{2007}), \eprint{hep-ph/0703242}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
