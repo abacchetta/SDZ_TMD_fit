@@ -681,8 +681,8 @@ where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to
 \label{s:data_analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-One of the main goals of our fit is to test the universality of TMD parton distribution and fragmentation functions among different processes.
-To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations. 
+
+The main goals of our work are to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes. To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales. \\
 In this chapter we describe the data sets considered for each process and the reasons behind the kinematic cuts applied.
 
 Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes experiment) and presents their kinematic ranges. 
@@ -696,10 +696,10 @@ For each kinematic variable in all the considered data sets, we fit the average 
 \label{ss:hermes}
 
 The semi-inclusive DIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
-Both \hermes and \compass data have been already analyzed in a previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}.
+Both \hermes and \compass data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}.
 
-\hermes data~\cite{Airapetian:2012ki} are grouped in two sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where contributions from vector mesons have been subtracted. \\
-The collaboration measured the multiplicities for SIDIS in a fixed-target experiment using hydrogen ($p$) and deuteron ($D$) targets and separating charged pions and kaons produced in the final state. The data include 8 different channels for every combination of target and final-state hadron for a total of 2688 points.\\
+\hermes data~\cite{Airapetian:2012ki} are grouped in two sets, distinguished by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
+The collaboration measured the multiplicities for SIDIS in a fixed-target experiment using hydrogen ($p$) and deuteron ($D$) targets and separating charged pions and kaons produced in the final state. The data then include 8 different channels, one for every combination of target and final-state hadron, for a total of 2688 points.\\
 These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
 The collinear energy fraction $z$ in~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1 \text{ GeV}$.
 
@@ -711,7 +711,8 @@ Compass collaboration extracted multiplicities of charge-separated but unidentif
 The data are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$. The number of data is an order of magnitude higher compared to the \hermes experiment. \\
 The data cover a range in $(x,Q^2)$ from $(0.0052, 1.11\text{ GeV}^2)$ to $(0.0932, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes, for \compass $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
 
-To avoid issues related to the normalization of \compass multiplicities (see the {\em erratum} to~\cite{Adolph:2013stb}), we normalize all the data in $(x,z,Q^2)$ to the value of the first bin in $P_{h\Tperp}^2$. We define the {\em normalized} multiplicity as:
+The multiplicities published by \compass are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}), in order to avoid this issue we divide the data grouped in one of the bin characterized by a value of ($x, z, Q^2$) by the data point with the lowest $P_{hT}^2$ in that group.
+We define the {\em normalized} multiplicity that result from this procedure as:
 \begin{equation}
 m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm \min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
 \label{e:mult_norm}
@@ -724,7 +725,7 @@ In this paper we do not tackle this problem and we leave it to future studies. A
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
 Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
 In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
-The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax~\footnote{\textcolor{red}{AS [comment to ourselves]: adding $0.5$ GeV might be a bit ``extreme'', since we could probe the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}} these conditions and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points
+The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax~\footnote{\textcolor{red}{AS [comment to ourselves]: adding $0.5$ GeV might be a bit ``extreme'', since we could probe the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}} these conditions and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points.
 All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -732,7 +733,7 @@ All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:d
 \label{ss:dy}
 
 We analyze Drell-Yan events collected by fixed-target experimets at low-energy. These data set have been considered also in previous works, e.g.~\cite{DAlesio:2014mrz}. 
-We use data from E288~\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ GeV}^2$, denoted with the label ``200'', ``300'' and ``400'' respectively. \textcolor{red}{AS: why these numbers?}
+We use data from E288~\cite{Ito:1980ev} measured at $\sqrt{s}=19.4,\,23.8$ and $27.4\text{ GeV}^2$, usually denoted with the labels ``200'', ``300'' and ``400'' referring to their respective incident proton energies in $GeV$.
 We also include data from E605~\cite{Moreno:1990sf} at $\sqrt{s}=38.8 \text{ GeV}^2$.
 
 The explored $Q$ values are higher compared to the SIDIS case, see Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity, whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf}).  
@@ -747,7 +748,7 @@ We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:
 The invariant mass distribution peaks at the $Z$-pole, $Q=M_Z$, while the transverse momentum of the exchanged $Z$ ranges in $0< q_T < 20 \text{ GeV}$.
 We use the same kinematic condition applied to Drell-yan events:  $q_T < 0.2\ Q + 0.5$ GeV $ = 18.7$ GeV, since $Q$ is fixed to $M_Z$. 
 
-The observable is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable in all the cases considered, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abazov:2007ac}. in this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
+The observable measured in CDF and D0 is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable in all the cases considered, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abazov:2007ac}. In this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
 
 We normalize our functional form with factors listed in Tab.~\ref{t:data_Z}. These are the same normalization factors used in~\cite{DAlesio:2014mrz} to fit $Z$ boson production and differ from the experimental ones. 
 
@@ -903,7 +904,7 @@ E_r^2(\{p\})=\sum_{i}
 \end{equation}
 The sum runs over the $i$ experimental points, including all species of targets $N$ and final-state hadrons $h$. 
 In each $z$ bin for each replica the values of the collinear fragmentation functions $D_1^{a \smarrow h}$ are independently modified with a Gaussian noise with standard deviation equal to the theoretical error $\Delta D_1^{a\smarrow h}$. 
-In this work we rely on different parametrizations for $D_1^{a \smarrow h}$: for pions we use the DSEHS analysis~\cite{deFlorian:2014xna} at NLO in $\alpha_s$; for kaons we use the DSS paranetrization~\cite{deFlorian:2007aj} at LO in $\alpha_s$. 
+In this work we rely on different parametrizations for $D_1^{a \smarrow h}$: for pions we use the DSEHS analysis~\cite{deFlorian:2014xna} at NLO in $\alpha_s$; for kaons we use the DSS parametrization~\cite{deFlorian:2007aj} at LO in $\alpha_s$. 
 The uncertainties $\Delta D_1^{a\smarrow h}$ are estimated from the plots in~\cite{Epele:2012vg}; they represents the only source of uncertainty in $\Delta m_{N,  {\rm theo}}^{h}$. 
 Statistical and systematical experimental uncertainties $\Delta m_{N, \mbox{\tiny stat}}^{h}$ and $\Delta m_{N, \mbox{\tiny sys}}^{h}$ are taken from the experimental collaborations. 
 We do not take into account the covariance among different kinematic bins. 
