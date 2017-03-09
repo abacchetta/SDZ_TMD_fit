@@ -81,7 +81,7 @@ inelastic scattering and Drell-Yan data
 We present an extraction of unpolarized partonic transverse momentum
 distributions (TMDs) 
 from a simultaneous fit of available data measured in semi-inclusive deep inelastic scattering 
-and in Drell-Yan processes through the production of photon and $Z$ bosons. 
+and in Drell-Yan processes with the production of photon and $Z$ bosons. 
 To connect data at different scales, we use TMD evolution at next-to-leading logarithmic accuracy. The
 analysis is restricted to the low-transverse-momentum region, with no matching
 to fixed-order calculations at high transverse momentum. We introduce specific
@@ -180,8 +180,8 @@ FF $D_1^{q \to h}(z,P_{hT}^2)$, where $z$ is
 
 We take into consideration three kinds of processes: semi-inclusive DIS, and
 Drell--Yan processes (DY) with the production of virtual photons and $Z$
-bosons. To date, they represent \textcolor{red}{almost [AB:why almost? what
-  else could be used? AS: $e^+e^-$ data.]} all possible processes
+bosons. To date, they represent 
+all possible processes
   where experimental information is available for unpolarized TMD
   extractions. 
 The only important
@@ -210,7 +210,7 @@ discussed. In Sec.~\ref{s:conclusions}, we summarize the results and present an 
 \subsection{Semi-inclusive DIS}
 \label{ss:SIDIS_formalism}
 
-In one-particle \textcolor{red}{SIDIS}, a lepton $\ell$ with momentum $l$ scatters 
+In one-particle SIDIS, a lepton $\ell$ with momentum $l$ scatters 
 off a hadron target $N$ with mass $M$ and momentum
 $P$. In the final state, the scattered lepton momentum 
 $l'$ is measured together with
@@ -233,13 +233,13 @@ z &= \frac{P \cdot P_h}{P\cdot q},
 \gamma &= \frac{2 M x}{Q} .
 \end{align}
 
-The available data refer to \textcolor{red}{SIDIS} hadron multiplicities, namely to the differential number of hadrons produced per corresponding inclusive DIS event. In terms of cross sections, we define the multiplicities as
+The available data refer to SIDIS hadron multiplicities, namely to the differential number of hadrons produced per corresponding inclusive DIS event. In terms of cross sections, we define the multiplicities as
 \begin{equation}
 m_N^h (x,z,|\bm{P}_{h\Tperp}|, Q^2) = \frac{d \sigma_N^h / ( dx  dz d|\bm{P}_{h\Tperp}| dQ^2) }
                                                                    {d\sigma_{\text{DIS}} / ( dx dQ^2 ) }\, ,
 \label{e:multiplicity}
 \end{equation}
-where $d\sigma_N^h$ is the differential cross section for the \textcolor{red}{SIDIS} process and $d\sigma_{\text{DIS}}$ is the corresponding inclusive one, 
+where $d\sigma_N^h$ is the differential cross section for the SIDIS process and $d\sigma_{\text{DIS}}$ is the corresponding inclusive one, 
 and where \( \bm{P}_{h\Tperp} \) is the component of \( \bm{P}_{h} \) transverse to \( \bm{q} \). 
 In the single-photon-exchange approximation, the multiplicities can be written as ratios of
 structure functions (see \cite{Bacchetta:2006tn} for details):
@@ -260,13 +260,13 @@ The semi-inclusive cross section can be expressed in a factorized form in terms 
 
 To express the structure functions in terms of TMD PDFs and FFs, 
 we rely on the factorized formula 
-for \textcolor{red}{SIDIS}~\cite{Collins:1981uk,Collins:1984kg,Ji:2002aa,Ji:2004wu,%
+for SIDIS~\cite{Collins:1981uk,Collins:1984kg,Ji:2002aa,Ji:2004wu,%
 Collins:2011zzd,Aybat:2011zv,GarciaEchevarria:2011rb,Echevarria:2012pw,%
 Collins:2012uy}:  
 \begin{align}
 \label{e:SIDISkT}
    F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &= \sum_a \mathcal{H}_{UU,T}^{a}(Q^2;\mu^2) \\ 
-      &\times \int d\bm{k}_\T^{} \, d\bm{P}_\T^{} \,  f_1^a\big(x,\bm{k}_{\T}^2; \mu^2 \big) \, D_{1}^{a\smarrow h}\big(z,\bm{P}_{\T}^2; \mu^2 \big) \,
+      &\times x \int d\bm{k}_\T^{} \, d\bm{P}_\T^{} \,  f_1^a\big(x,\bm{k}_{\T}^2; \mu^2 \big) \, D_{1}^{a\smarrow h}\big(z,\bm{P}_{\T}^2; \mu^2 \big) \,
       \delta \big(z {\bm k}_{\T} - {\bm P}_{h \Tperp} + {\bm P}_{\T}\big)
 \nonumber\\&
 \nonumber + Y_{UU,T}\big(Q^2, \bm{P}_{h\Tperp}^2\big) + \mathcal{O}\big(M^2/Q^2\big) \, .
@@ -290,7 +290,6 @@ problems. However, fixed-target DIS experiments typically
 collect a large amount of data
 at relatively low $Q^2$ values, which may lead to problems (see, e.g., recent
 discussions in Refs.~\cite{Boglione:2016bph,Moffat:2017sha}).
-
  
 
 Eq.~\eqref{e:SIDISkT} can be expanded in powers
@@ -301,9 +300,9 @@ and $Y_{UU,T}\approx 0$.
 However, perturbative corrections include large logarithms $L \equiv
 \log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$.
 In the present analysis, we will take into account all 
-powers of the form $\alpha_S^n L^{2n} \approx 1$ (Leading Logarithms --LL) 
+powers of the form $\alpha_S^n L^{2n-1} \approx 1$ (Leading Logarithms --LL) 
 and 
-$\alpha_S^n L^n \approx 1$ (Next-to-Leading Logarithms -- NNL).
+$\alpha_S^n L^{n-1} \approx 1$ (Next-to-Leading Logarithms -- NNL).
 
 In these approximations (LO in $alpha_S$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
@@ -322,28 +321,28 @@ To the purpose of applying TMD evolution equations,
 Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to 
 \begin{align}
 \label{e:SIDISkTFF}
-   F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &\approx \sum_a  
-      \int_0^{\infty} \frac{d \bT}{2 \pi} \bT J_0\big(\bT |\bm{P}_{hT}|/z\big)
-      \tilde{f}_1^a\big(x, \bT;Q^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT;
+   F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &\approx \sum_a x 
+      \int_0^{\infty} {d \bT} \bT J_0\big(\bT |\bm{P}_{hT}|/z\big)
+      \tilde{f}_1^a\big(x, \bT^2:Q^2\big) \tilde{D}_1^{a\smarrow h}\big(z, \bT^2;
       Q^2 \big) 
 \nonumber \, .
 \end{align} 
 \textcolor{red}{ E' questa la formula usata nel codice, o serve dire altro?}
 where we introduced the Fourier transforms of the TMD PDF and FF according to
 \begin{align} 
-\tilde{f}_1^a\big(x, \bT;\mu^2\big) &=
-% \int_0^{\infty} \frac{d^2 \bm{k}_\T}{(2 \pi)^2} e^{i \bm{k}_\T \cdot \bm{b}_T}
+\tilde{f}_1^a\big(x, \bT^2;\mu^2\big) &=
+% \frac{1}{2\pi}\int_0^{\infty} d^2 \bm{k}_\T  e^{i \bm{k}_\T \cdot \bm{b}_T}
 %       f_1^a\big(x, \bm{k}_\T^2;\mu^2\big)
 %\\ &= 
-\int_0^{\infty}\frac{d |\bm{k}_\T|}{2 \pi} 
+\int_0^{\infty} d |\bm{k}_\T| 
                 |\bm{k}_\T|J_0\big(\bT |\bm{k}_\T|\big) 
        f_1^a\big(x, \bm{k}_\T^2;\mu^2\big),
 \\
-\tilde{D}_1^{a\smarrow h}\big(z, \bT; \mu^2 \big) &=
-%\int_0^{\infty} \frac{d^2 \bm{P}_\T}{(2 \pi)^2 z^2} e^{i (\bm{P}_\T \cdot \bm{b}_T)/z}
+\tilde{D}_1^{a\smarrow h}\big(z, \bT^2; \mu^2 \big) &=
+% \frac{1}{2\pi} \int_0^{\infty} \frac{d^2 \bm{P}_\T}{z^2} e^{i (\bm{P}_\T \cdot \bm{b}_T)/z}
 %       D_1^{a\smarrow h}\big(z, \bm{P}_{\T}^2; \mu^2 \big)
 %\\ &=
- \int_0^{\infty} \frac{d |\bm{P}_{\T}|}{2 \pi z^2} |\bm{P}_{\T}| 
+\int_0^{\infty} \frac{d |\bm{P}_{\T}|}{z^2} |\bm{P}_{\T}| 
                                              J_0\big(\bT |\bm{P}_{\T}|/z\big)
        D_1^{a\smarrow h}\big(z, \bm{P}_{\T}^2; \mu^2 \big).
 \end{align}  
@@ -379,11 +378,11 @@ integrated over $d\Omega$ and over the azimuthal angle of the virtual photon,
 \end{align} 
 The elementary cross sections are
 \begin{align}
-\sigma_0^{\gamma} &= \frac{4\pi \alpha^2_{\rm em}}{3 Q^2 s},
+\sigma_0^{\gamma} &= \frac{4\pi^2 \alpha^2_{\rm em}}{3 Q^2 s},
 &
 \sigma_0^Z &= 
 %\frac{\sqrt{2} \pi G_F M_Z^2}{s}
-\frac{\pi^2 \alpha_{\rm em}}{s (\sin^2{\theta_W} \cos^2{\theta_W}}
+\frac{\pi^2 \alpha_{\rm em}}{s \sin^2{\theta_W} \cos^2{\theta_W}}
 B_R(Z\rightarrow \ell^+\ell^-)
 \delta(Q^2 - M_Z^2), 
 \end{align} 
@@ -394,33 +393,7 @@ $Q^2 \neq M_Z^2$.
 We used the values 
 $\sin^2 \theta_W= 0.2313$, $M_Z = 91.18$ GeV, and 
 $B_R(Z\rightarrow \ell^+\ell^-)=3.366$.  
-
-\textcolor{red}{[ Secondo me nella prima delle eq.(10) ci vuole $\pi^2$. Infatti, partendo da Ref.[14] abbiamo}
-\begin{align}
-\frac{d\sigma}{d^4q} &= \frac{\alpha^2}{s Q^2}\, \frac{8 \pi}{3} \, \left[ F_{UU}^1 + \frac{1}{2}\, F_{UU}^2 \right] 
-\nonumber
-\end{align}
-\textcolor{red}{Ora $d^4 q = dq^+ dq^- dq_x dq_y$. Lo Jacobiano della trasformazione $|| dQ^2 d\eta / dq^+ dq^- || = 2$. Mentre quello per $||dq_T^2 d\theta_q / dq_x dq_y|| = 2$. Quindi }
-\begin{align}
-\frac{d\sigma}{dQ^2 d\eta dq_T^2 d\theta_q} &= \frac{1}{4} \, \frac{d\sigma}{d^4q} = \frac{\alpha^2}{s Q^2}\, \frac{2 \pi}{3} \, \left[ F_{UU}^1 + \frac{1}{2}\, F_{UU}^2 \right] 
-\nonumber
-\end{align}
-\textcolor{red}{L'ulteriore integrazione in $d\theta_q$ fornisce un $2\pi$, quindi}
-\begin{align}
-\frac{d\sigma}{dQ^2 d\eta dq_T^2} &= \frac{\alpha^2}{s Q^2}\, \frac{4 \pi^2}{3} \, \left[ F_{UU}^1 + \frac{1}{2}\, F_{UU}^2 \right] 
-\nonumber
-\end{align}
-\textcolor{red}{Vi torna? ]
-\textcolor{red}[AB: I started from Eq. 57 of Ref. \cite{Arnold:2008kf} and I
-integrated over the solid angle. The integration over $\phi$ is trivial and
-gives a $2 \pi$. The
-integration over $cos\theta$ gives a factor $8/3$ in front of $F_{UU}^1$
- and a factor $4/3$ in front of $F_{UU}^2$. The $F$ factor in the
- denominator, neglecting hadron masses, is equal to $2s$ (see first line of p.
- 3). Finally, there is the factor 2 in the denomininator coming from the first
- Jacobian of Marco. ]}
-
-\textcolor{red}{Similarly to the SIDIS case, in the kinematical limit $q_T^2 \ll Q^2$ and neglecting the hadron masses the structure function $F_{UU}^2$ can be neglected.}
+Similarly to the SIDIS case, in the kinematical limit $q_T^2 \ll Q^2$ and neglecting hadron masses the structure function $F_{UU}^2$ can be neglected.
 %Similar reasons as for the semi-inclusive DIS case leads us to neglecting
 %the structure function $F_{UU}^2$.
 
@@ -447,7 +420,7 @@ The structure function $F_{UU}^1$ can be written as
 \begin{align}
 \label{e:DYkT}
    F_{UU}^1(x_A,x_B, \bm{q}_{T}^2, Q^2) &= \sum_a \mathcal{H}_{UU}^{1 a}(Q^2;\mu^2) \\ 
-      &\times \int d\bm{k}_{\T A}^{} \, d\bm{k}_{\T B}^{} 
+      &\times x_A x_B \int d\bm{k}_{\T A}^{} \, d\bm{k}_{\T B}^{} 
 \,  f_1^a\big(x_A,\bm{k}_{\T A}^2; \mu^2 \big) 
 \, f_{1}^{\bar{a}}\big(x_B,\bm{k}_{\T B}^2; \mu^2 \big) \,
       \delta \big({\bm k}_{\T A} - {\bm q}_T + {\bm k}_{\T B}\big)
@@ -456,10 +429,8 @@ The structure function $F_{UU}^1$ can be written as
 \end{align} 
 
 
-\textcolor{red}{As in the SIDIS case, with the above kinematical limits the
-  $Y_{UU}$ term and corrections from higher twists of order $M^2/Q^2$ or
-  higher can be neglected.}
-In our analysis, we consider the hard coefficients only up to leading order in
+As in the SIDIS case, in our analysis we neglect $Y_{UU}$ term
+and we consider the hard coefficients only up to leading order in
 the couplings, i.e.,
 \begin{align} 
 {\cal H}_{UU, \gamma}^{1 a}(Q^2;\mu^2) &\approx \frac{e_a^2}{N_c},
@@ -474,12 +445,13 @@ V_a & = I_{3a} - 2 e_{a} \sin \theta_W \  ,
 A_a & = I_{3a} \  .
 \end{align} 
 
-\textcolor{red}{The structure function can be conveniently expressed as a Fourier transform of the right-handside of Eq.~\eqref{e:DYkT} as }
+The structure function can be conveniently expressed as a Fourier transform of
+the right-hand side of Eq.~\eqref{e:DYkT} as 
 \begin{align}
 \label{e:DYkTFF}
-   F_{UU}^1(x_A,x_B, \bm{q}_T^2, Q^2) &=
- \sum_a {\cal H}_{UU}^{1 a} \, \int_0^{\infty} \frac{d \bT}{2 \pi} \bT\, J_0\big( \bT |\bm{q}_T|\big)\ 
-      \tilde{f}_1^a\big(x_A, \bT;\mu^2\big) \   \tilde{f}_1^{\bar{a}}\big(x_B, \bT;\mu^2 \big)  \, .
+   F_{UU}^1(x_A,x_B, \bm{q}_T^2, Q^2) &\approx
+ \sum_a {\cal H}_{UU}^{1 a} \, x_a x_B \int_0^{\infty} \frac{d \bT} \bT\, J_0\big( \bT |\bm{q}_T|\big)\ 
+      \tilde{f}_1^a\big(x_A, \bT^2;\mu^2\big) \   \tilde{f}_1^{\bar{a}}\big(x_B, \bT^2;\mu^2 \big)  \, .
 \end{align} 
 
 \textcolor{red}{ Stessa osservazione che in SIDIS: \`e questa la formula usata nel codice, o serve dire altro?}
@@ -494,10 +466,10 @@ Following the formalism of Refs.~\cite{Collins:2011zzd,Aybat:2011zv}, the
 unpolarized TMD distribution and fragmentation functions in configuration
 space for a parton flavor $a$ at a certain scale $\mu^2$ can be written as 
 \begin{align}   
-\widetilde{f}_1^a (x,  \bT; \mu^2) &= \sum_{i=q,\bar q,g} \bigl( C_{a/i} \otimes f_1^i \bigr) (x; \mu_b^2) 
-\  e^{S (\mu_b^2, \mu^2)} \  e^{g_K(\bT) \ln (\mu^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT) \ ,
+\widetilde{f}_1^a (x,  \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( C_{a/i} \otimes f_1^i \bigr) (x; \mu_b^2) 
+\  e^{S (\mu_b^2, Q^2)} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
 \label{e:TMDevol1} \\
-\widetilde{D}_1^{a\to h} (z, \bT; \mu^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) \  e^{S (\mu_b^2, \mu^2)} \  e^{g_K( \bT) \ln (\mu^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT) \  .
+\widetilde{D}_1^{a\to h} (z, \bT^2; \mu^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
 \label{e:TMDevol2}
 \end{align}
 
@@ -524,20 +496,51 @@ C_{a/i} \Big( \frac{x}{u}, \alpha_S\big(\mu_b^2\big)  \Big) &\approx
 \end{align}  
 As a consequence, the expression for the evolved TMD functions reduces to
 \begin{align}   
-\widetilde{f}_1^a (x,  \bT; \mu^2) &= f_1^a (x ; \mu_b^2) 
-\  e^{S (\mu_b^2, \mu^2)} \  e^{g_K(\bT) \ln (\mu^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT) \ ,
-\label{e:TMDevol1} \\
-\widetilde{D}_1^{a\to h} (z, \bT; \mu^2) &= D_1^{a\to h} (z; \mu_b^2) \  e^{S (\mu_b^2, \mu^2)} \  e^{g_K( \bT) \ln (\mu^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT) \  .
-\label{e:TMDevol2}
+\widetilde{f}_1^a (x,  \bT^2; Q^2) &= f_1^a (x ; \mu_b^2) 
+\  e^{S (\mu_b^2, Q^2)} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
+\label{e:TMDevol1b} \\
+\widetilde{D}_1^{a\to h} (z, \bT^2; Q^2) &= D_1^{a\to h} (z; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
+\label{e:TMDevol2b}
 \end{align}
 
-The Sudakov exponent $S$ can be written as
+The Sudakov exponent $S$ 
+%in Eqs.~\eqref{e:TMDevol1b} and \eqref{e:TMDevol2b} 
+can be written as
 \begin{equation} 
-S(\mu_b^2,\mu^2)=-\int_{\mu_b^2}^{\mu^2}{dk_T^2\over k_T^2}
-\left[A\left(\alpha_s(k_T)\right)\ln\left({Q^2\over k_T^2}\right) 
-+ B\left(\alpha_s(k_T)\right) \right] \; ,
+S(\mu_b^2,Q^2)=-\int_{\mu_b^2}^{Q^2}{d\mu^2\over \mu^2}
+\bigg[A\Big(\alpha_s(k_T)\Big)\ln\bigg({Q^2\over \mu^2}\bigg) 
++ B\Big(\alpha_s(k_T)\Big) \bigg] \;.
 \label{e:Sudakov} 
 \end{equation} 
+Functions $A$ and $B$ have perturbative expansions of the form
+\begin{align}
+A\left(\alpha_s(k_T)\right) &= \sum_{k=1}^{\infty}A_k
+\bigg(\frac{\alpha_S}{\pi} \bigg),
+&
+B\left(\alpha_s(k_T)\right) &= \sum_{k=1}^{\infty}B_k
+\bigg(\frac{\alpha_S}{\pi} \bigg).
+\end{align} 
+To NNL accuracy, we need the following 
+terms \cite{Davies:1984hs,Collins:1984kg}
+\begin{align}
+A_1&= C_F, 
+&
+A_2&=
+\frac{1}{2} C_F  \bigg[
+C_A \bigg( \frac{67}{18} - \frac{\pi^2}{6} \bigg)
+- \frac{5}{9} N_f \bigg],
+&
+B_1&= - \frac{3}{2}C_F.
+\end{align} 
+We use the approximate analytic expression for $\alpha_S$ at NLO with the
+$\Lambda_{\text{QCD}}=$ 340 MeV, 296 MeV, 214 MeV for three, four, five
+flavors, respectively, corresponding to a value of $\alpha_S(M_Z)=0.117$. 
+We fix the flavor thresholds at $m_c=1.5$ GeV and 
+$m_b= 4.7$ GeV. The integration of the Sudakov exponent in
+Eq.~\eqref{e:Sudakov} can
+be done analytically (for the complete expressions see, e.g.,
+Refs.~\cite{Frixione:1998dw,Bozzi:2005wk,Echevarria:2012pw}).  
+
 
 \textcolor{red}{The convolutions are only valid for small $\bT \ll
   1/\Lambda_{\rm QCD}$. At larger $\bT$, the TMDs need to match the
@@ -621,37 +624,51 @@ g_2 \bT^2 / 2$ with $g_2$ a free parameter. Recently, several alternative
 forms have been proposed~\cite{Aidala:2014hva,Collins:2014jpa} including the
 suggestion of not including such term~\cite{D'Alesio:2014vja}. 
 
+In this analysis, for the collindear PDFs $f_1^a$ we adopt the GJR08FFnloE
+set~\cite{Gluck:2007ck} through the LHAPDF library~\cite{Buckley:2014ana}, and
+for the collinear fragmentation functions 
+the DSS14 NLO set for
+pions~\cite{deFlorian:2014xna} and the DSS07 NLO set for
+kaons~\cite{deFlorian:2007aj}.\footnote{After the completion of our analysis, 
+a new set of kaon
+  fragmentation function was presented in Ref.~\cite{deFlorian:2017lwf}.} We
+will comment on the use of other PDF sets in Sec.~\ref{s:}.
+
 We parametrize the intrinsic nonperturbative parts of the TMDs in the
 following ways
 \begin{align}
-\widetilde{f}_{1 {\rm NP}}^a (x, \bT) &= e^{-\langle \bm{k}_{\T a}^2 \rangle \frac{\bT^2}{4}}
+\widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) &= \frac{1}{2\pi}
+        e^{-\langle \bm{k}_{\T a}^2 \rangle \frac{\bT^2}{4}}
         \bigg( 1 - \frac{\lambda \langle \bm{k}_{\T a}^2 \rangle^2}{1+\lambda\langle \bm{k}_{\T a}^2 \rangle}  \frac{\bT^2}{4} \bigg)\  ,
 \label{e:f1NP} \\
-\widetilde{D}_{1 {\rm NP}}^{a \to h} (z, \bT) &= 
-    \frac{ \langle \bm{P}_{\T a\to h}^2 \rangle \   e^{-\langle \bm{P}_{\T a\to h}^2 \rangle \frac{\bT^2}{4}}
-        + \lambda_F \   \langle \bm{P}_{\T a\to h}'^2 \rangle \left( 1 - \langle \bm{P}_{\T a\to h}'^2 \rangle \frac{\bT^2}{4} \right)
-         \  e^{- \langle \bm{P}_{\T a\to h}'^2 \rangle \frac{\bT^2}{4}}}
-     {\langle \bm{P}_{\T a\to h}^2 \rangle + \lambda_F\   \langle \bm{P}_{\T a\to h}'^2 \rangle} \  .
+\widetilde{D}_{1 {\rm NP}}^{a \to h} (z, \bT^2) &= 
+    \frac{ \langle \bm{P}_{\T a\to h}^2 \rangle \   e^{-\langle \bm{P}_{\T
+          a\to h}^2 \rangle \frac{\bT^2}{4 z^2}}
+        + \lambda_F \   \langle \bm{P}_{\T a\to h}'^2 \rangle^2
+        \left( 1 - \langle \bm{P}_{\T a\to h}'^2 \rangle \frac{\bT^2}{4 z^2} \right)
+         \  e^{- \langle \bm{P}_{\T a\to h}'^2 \rangle \frac{\bT^2}{4z^2}}}
+     {2 \pi z^2 \Big(\langle \bm{P}_{\T a\to h}^2 \rangle + {\lambda_F}\   \langle \bm{P}_{\T a\to h}'^2 \rangle^2\Big)} \  .
 \label{e:D1NP}
 \end{align} 
 After performing the anti-Fourier transform, the $f_{1 \rm NP}$ and $D_{1\rm
   NP}$ in momentum space correspond to the normalized linear combination of
 a Gaussian and a weighted Gaussian:
 \begin{align} 
-f_{1 {\rm NP}}^a (x, \bm{k}_{\T}) &= \frac{1}{\pi} \  
+f_{1 {\rm NP}}^a (x, \bm{k}_{\T}^2) &= \frac{1}{\pi} \  
                         \frac{\big( 1 +\lambda \bm{k}_{\T}^2\big)}
                                 {\langle \bm{k}_{\T a}^2 \rangle +\lambda \  \langle \bm{k}_{\T a}^2 \rangle^2}
                         \  e^{- \frac{\bm{k}_{\T}^2}{\langle \bm{k}_{\T a}^2 \rangle}} \  ,
 \label{e:f1NPk}   \\
-D_{1 {\rm NP}}^{a\to h} (z, \bm{P}_{\T}) &=  \frac{1}{\pi} \   
+D_{1 {\rm NP}}^{a\to h} (z, \bm{P}_{\T}^2) &=  \frac{1}{\pi} \   
                        \frac{1}{\langle \bm{P}_{\T a\to h}^2 \rangle + \lambda_F \  \langle \bm{P}_{\T a\to h}'^2 \rangle^2}
                 \   \bigg( e^{- \frac{\bm{P}_{\T}^2}{\langle \bm{P}_{\T a\to h}^2 \rangle}}
                               + \lambda_F \  \bm{P}_{\T}^2 \  e^{- \frac{\bm{P}_{\T}^2}{\langle \bm{P}_{\T a\to h}'^2 \rangle}} \bigg) \  .
 \label{e:D1NPk}
 \end{align} 
-
-Based on the analyses of Refs.~\cite{Signori:2013mda,Bacchetta:2015ora}, we
-consider that the
+In the TMD PDF case, the Gaussian and the
+weighted Gaussian have the same width, while in the fragmentation function, we
+considered the possibility that the two Gaussian widths are different. 
+We consider that the
 Gaussian width of the TMD distribution depends 
 on the parton flavor $a$ and on its fractional momentum $x$ according to
 \begin{align} 
@@ -667,7 +684,13 @@ where $\alpha, \, \sigma,$ and $\big\langle \hat{\bm{k}}_{\T a}^2 \big\rangle \e
  \end{align}
 where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to
   h}^2 \big\rangle \equiv \big \langle \bm{P}_{\T a \to h}^2 \big\rangle
-(\hat{z})$ with $\hat{z} = 0.5$, are free parameters. 
+(\hat{z})$ with $\hat{z} = 0.5$, are free parameters. The same functional form
+applies also to the width of the weighted Gaussian. For simplicity, we
+considered parameters $\beta$, $\delta$, and $\gamma$ to be the same for both
+Gaussians, and keep a distinction only between parameters 
+$\big\langle \hat{\bm{P}}_{\T a \to  h}^2 \big\rangle$ and
+$\big\langle \hat{\bm{P}}_{\T a \to  h}^{\prime 2} \big\rangle$.
+ 
 \textcolor{red}{Mention that also the other variance in the TMD FF has the same kinematic dependence.}
 %For sake of simplicity, the $\beta, \, \gamma, \, \delta$ parameters are taken equal for all fragmentation channels~\cite{Signori:2013mda,Bacchetta:2015ora}. 
 %
@@ -1498,6 +1521,7 @@ In particular, the $12$ GeV physics program at Jefferson Lab~\cite{Dudek:2012vr}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgments}
 %Discussions with  are gratefully acknowledged. 
+Discussions with Giuseppe Bozzi are gratefully acknowledged.
 This work is supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 647981, 3DSPIN). 
 AS acknowledges support from U.S. Department of Energy contract DE-AC05-06OR23177, under which Jefferson Science Associates, LLC, manages and operates Jefferson Lab. 
 The work of AS has been funded partly also by the program of the Stichting voor Fundamenteel Onderzoek der Materie (FOM), which is financially supported by the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO).
