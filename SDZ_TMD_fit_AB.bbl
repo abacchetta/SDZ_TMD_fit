@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{82}
+\begin{mcitethebibliography}{87}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -299,6 +299,24 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Chekanov et~al.}(2009)}]{Chekanov:2009na}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Chekanov}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{ZEUS}), \bibinfo{journal}{Phys. Lett.}
+  \textbf{\bibinfo{volume}{B682}}, \bibinfo{pages}{8} (\bibinfo{year}{2009}),
+  \eprint{0904.1092}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Andreev et~al.}(2014)}]{Andreev:2013vha}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Andreev}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{H1}), \bibinfo{journal}{Eur. Phys. J.}
+  \textbf{\bibinfo{volume}{C74}}, \bibinfo{pages}{2814} (\bibinfo{year}{2014}),
+  \eprint{1312.4821}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Collins and Soper}(1981)}]{Collins:1981uk}
 \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Collins}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{D.~E.} \bibnamefont{Soper}},
@@ -425,6 +443,15 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Lambertsen and Vogelsang}(2016)}]{Lambertsen:2016wgj}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Lambertsen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Vogelsang}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D93}},
+  \bibinfo{pages}{114013} (\bibinfo{year}{2016}), \eprint{1605.02625}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Davies and Stirling}(1984)}]{Davies:1984hs}
 \bibinfo{author}{\bibfnamefont{C.~T.~H.} \bibnamefont{Davies}}
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{W.~J.}
@@ -513,15 +540,6 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[{\citenamefont{Collins and Rogers}(2015)}]{Collins:2014jpa}
-\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Collins}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rogers}},
-  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
-  \bibinfo{pages}{074020} (\bibinfo{year}{2015}), \eprint{1412.3820}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem[{\citenamefont{Nadolsky et~al.}(2000)\citenamefont{Nadolsky, Stump,
   and Yuan}}]{Nadolsky:1999kb}
 \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Nadolsky}},
@@ -563,6 +581,15 @@
   \bibnamefont{Rogers}}, \bibinfo{journal}{Phys. Rev.}
   \textbf{\bibinfo{volume}{D89}}, \bibinfo{pages}{094002}
   (\bibinfo{year}{2014}), \eprint{1401.2654}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Collins and Rogers}(2015)}]{Collins:2014jpa}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Collins}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rogers}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D91}},
+  \bibinfo{pages}{074020} (\bibinfo{year}{2015}), \eprint{1412.3820}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -852,6 +879,29 @@
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D60}},
   \bibinfo{pages}{054007} (\bibinfo{year}{1999}),
   \eprint[http://arXiv.org/abs]{hep-ph/9903354}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Martin et~al.}(2009)\citenamefont{Martin, Stirling,
+  Thorne, and Watt}}]{Martin:2009iq}
+\bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Martin}},
+  \bibinfo{author}{\bibfnamefont{W.~J.} \bibnamefont{Stirling}},
+  \bibinfo{author}{\bibfnamefont{R.~S.} \bibnamefont{Thorne}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Watt}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C63}},
+  \bibinfo{pages}{189} (\bibinfo{year}{2009}), \eprint{0901.0002}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Owens et~al.}(2013)\citenamefont{Owens, Accardi, and
+  Melnitchouk}}]{Owens:2012bv}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Owens}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Accardi}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D87}},
+  \bibinfo{pages}{094012} (\bibinfo{year}{2013}), \eprint{1212.1702}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

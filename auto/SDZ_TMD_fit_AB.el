@@ -67,6 +67,8 @@
      "t:fl_ind_par_TMD"
      "f:kT2_vs_PT2"
      "f:avmomenta_68CL"
+     "ss:replica105"
+     "t:replica105-hermes"
      "ss:comment_fldep"
      "s:conclusions")
     (TeX-add-symbols
@@ -78,7 +80,8 @@
      "minuit"
      "T"
      "Tperp"
-     "bT")
+     "bT"
+     "bb")
     (TeX-run-style-hooks
      "color"
      "multirow"
