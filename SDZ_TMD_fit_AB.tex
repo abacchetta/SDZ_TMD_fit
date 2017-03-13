@@ -379,6 +379,7 @@ integrated over $d\Omega$ and over the azimuthal angle of the virtual photon,
 \end{align} 
 The elementary cross sections are
 \begin{align}
+\label{e:elem_cs_sig0}
 \sigma_0^{\gamma} &= \frac{4\pi \alpha^2_{\rm em}}{3 Q^2 s},
 &
 \sigma_0^Z &= 
@@ -735,26 +736,46 @@ All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:d
 \label{ss:dy}
 
 We analyze Drell-Yan events collected by fixed-target experiments at low-energy. These data set have been considered also in previous works, e.g.~\cite{DAlesio:2014mrz}. 
-We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the Invariant dimuon cross section $E d^3\sigma / dp^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of $Cu$ or $Pt$.
+We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dp^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of $Cu$ or $Pt$.
 The measurements were repeated using proton incident energies of $200$, $300$ and $400$ $GeV$, producing three different data sets.
 Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4 Gev$.\\
 We also included the set of measurements $E d^3\sigma / dp^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8 \text{ GeV}$) on a copper fixed target .\\
 
-The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity , whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf}).  
+The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity ,\textcolor{red}{ whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf})}.  
 As discussed for SIDIS data, we can apply TMD factorization if $\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse momentum of the intermediate electroweak boson, reconstructed from the kinematics of the final state leptons. As done for SIDIS, we choose $q_T < 0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to maximize the goodness of the fit and to not exclude too many points.
 We consider the target nuclei as an ensemble composed by $40\%$ proton and $60\%$ nucleon, as suggested in~\cite{Ito:1980ev}, independent one from the other.
+
+As we already observed, results from E288 and E605 experiments are reported as $\frac{Ed^3\sigma}{d^3p}$; this variable is related the differential cross section $d\sigma/dq_T$ in the following way~\cite{Olive:2016xmw} :
+
+\begin{equation}
+\frac{Ed^3\sigma}{d^3p}=\frac{d^3\sigma}{d\phi dy p_T dp_T} \Rightarrow \frac{d^2\sigma}{\pi dy d(p^2_T)}
+\end{equation}
+
+where the third term is the average over $\phi$.
+The invariant dimuon cross section can be obtained from Eq.~\ref{e:dsigma_gZ} performing an integration of its terms over $Q^2$ and adding a factor $1/\pi$ to the result:
+
+\begin{equation}
+\frac{Ed^3\sigma}{d^3p} = \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T dy} .
+\end{equation}
+
+We checked that integrating in $Q^2$ only the prefactor $\sigma_q^\gamma$, defined in Eq.~\ref{e:elem_cs_sig0}, and not the entire term in Eq.~\ref{e:dsigma_gZ} (including then the convolution) introduces only a negligible error in the fit procedure:  
+
+\begin{equation}
+\frac{1}{\pi} \cdot \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
+= \frac{4\alpha_{em}^2}{3 N_c s} e_q^2 \ln \left( \frac{Q_f^2}{Q_i^2} \right) .
+\end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Z-boson production data}
 \label{ss:zboson}
 
 In order to reach higher $Q$ and $q_T$ values, we also consider $Z$ boson production in collider experiments at Tevatron. 
-We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II~\cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. CDF and D0 collaborations studied the differential cross section for the production of an $e^+e^-$ pairs from $p\bar{p}$ collision,  through an intermediate $Z$ vector boson. 
+We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II~\cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. CDF and D0 collaborations studied the differential cross section for $p\bar{p}\rightarrow Z/\gamma^* \rightarrow, e^+e^- + X$, that is the production of an $e^+e^-$ pairs from $p\bar{p}$ collision,  through an intermediate $Z$ vector boson. 
 
 The invariant mass distribution peaks at the $Z$-pole, $Q=M_Z$, while the transverse momentum of the exchanged $Z$ ranges in $0< q_T < 20 \text{ GeV}$.
 We use the same kinematic condition applied to Drell-Yan events:  $q_T < 0.2\ Q + 0.5$ GeV $ = 18.7$ GeV, since $Q$ is fixed to $M_Z$. 
 
-The observable measured in CDF and D0 is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable in all the cases considered, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abazov:2007ac}. In this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
+The observable measured in CDF and D0 is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable in all the cases considered, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abulencia:2005ix}. In this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
 
 We normalize our functional form with factors listed in Tab.~\ref{t:data_Z}. These are the same normalization factors used in~\cite{DAlesio:2014mrz} to fit $Z$ boson production and differ from the experimental ones. 
 
@@ -846,7 +867,7 @@ Cuts             & \multicolumn{4}{c|}{$q_T < 0.2\ Q +0.5$ GeV}
 \hline
 $Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV   &  7-9, 10.5-18 GeV   \\
  \hline
- Kin. var.           & $y$=0.4         &  $y$=0.21          &   $y$=0.03         &    $-0.1<x_F< 0.2$         \\
+ Kin. var.           & $\eta$=0.4         &  $\eta$=0.21          &   $\eta$=0.03         &    $-0.1<x_F< 0.2$         \\
 \hline
 %$ \chi^2  /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
 %\hline
@@ -1163,8 +1184,8 @@ $\chi^2 /$points      &  1.36        &    1.11           &       2.00         & 
 
 %%% FIGURES %%%
 
-Fig.~\ref{f:DY_panel} displays the cross section for DY events differential with respect to the transverse momentum $q_T$ of the virtual photon, its invariant mass $Q^2$ and rapidity $y$.  
-As for the case of SIDIS, the grey bands are the $68\%$ C.L. envelope of the 200 replicas of the fit function. The four panels represents different values for the rapidity $y$ or $x_F$ (see~\eqref{e:eta_xf}). In each panel, we have plots for different $Q^2$ values.
+Fig.~\ref{f:DY_panel} displays the cross section for DY events differential with respect to the transverse momentum $q_T$ of the virtual photon, its invariant mass $Q^2$ and rapidity $\eta$.  
+As for the case of SIDIS, the grey bands are the $68\%$ C.L. envelope of the 200 replicas of the fit function. The four panels represents different values for the rapidity $\eta$ or $x_F$ (see~\eqref{e:eta_xf}). In each panel, we have plots for different $Q^2$ values.
 The lower is $Q$, the less points in $q_T$ we fit (see also Sec.~\ref{ss:dy}). 
 The hard scale lies in the region $4.5 < \langle Q \rangle < 13.5$ GeV. This region is of particular importance, since these ``moderate'' $Q$ values are high enough to safely apply factorization without pollution from higher twist effects and from the very low $b_T$ region and, at the same time, low enough in order for the nonperturbative effects to not be shaded by transverse momentum resummation.
 A visible effect of TMD evolution is the shift of the peak position to higher $q_T$ as $Q$ increases (effect visible in each panel in Fig.~\ref{f:DY_panel}). 
