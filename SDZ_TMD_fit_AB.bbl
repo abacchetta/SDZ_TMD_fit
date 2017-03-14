@@ -1,7 +1,7 @@
 \ifx\mcitethebibliography\mciteundefinedmacro
 \PackageError{apsrevM.bst}{mciteplus.sty has not been loaded}
 {This bibstyle requires the use of the mciteplus package.}\fi
-\begin{mcitethebibliography}{72}
+\begin{mcitethebibliography}{74}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -564,6 +564,15 @@
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[{\citenamefont{Patrignani et~al.}(2016)}]{Olive:2016xmw}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Patrignani}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{Particle Data Group}),
+  \bibinfo{journal}{Chin. Phys.} \textbf{\bibinfo{volume}{C40}},
+  \bibinfo{pages}{100001} (\bibinfo{year}{2016})\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[{\citenamefont{Affolder et~al.}(2000)}]{Affolder:1999jh}
 \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Affolder}} \bibnamefont{et~al.}
   (\bibinfo{collaboration}{CDF}), \bibinfo{journal}{Phys. Rev. Lett.}
@@ -596,6 +605,15 @@
   \bibnamefont{et~al.} (\bibinfo{collaboration}{D0}), \bibinfo{journal}{Phys.
   Rev. Lett.} \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{102002}
   (\bibinfo{year}{2008}), \eprint{0712.0803}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\citenamefont{Abulencia et~al.}(2007)}]{Abulencia:2005ix}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Abulencia}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CDF}), \bibinfo{journal}{J.
+  Phys.} \textbf{\bibinfo{volume}{G34}}, \bibinfo{pages}{2457}
+  (\bibinfo{year}{2007}), \eprint{hep-ex/0508029}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
