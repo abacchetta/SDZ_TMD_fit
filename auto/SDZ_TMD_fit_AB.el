@@ -14,6 +14,7 @@
      "e:SIDISkTFF"
      "ss:DY_formalism"
      "e:dsigma_gZ"
+     "e:elem_cs_sig0"
      "xab"
      "e:eta_xf"
      "e:DYkT"
@@ -83,6 +84,8 @@
      "bT"
      "bb")
     (TeX-run-style-hooks
+     "inputenc"
+     "utf8"
      "color"
      "multirow"
      "mciteplus"
