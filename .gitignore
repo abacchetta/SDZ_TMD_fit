@@ -4,3 +4,5 @@
 *.toc
 *.blg
 *.pdf
+*.DS_Store
+*.gz
