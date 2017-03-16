@@ -26,8 +26,8 @@
 %\hspace{-8.25pt}{\color{white} \rule[1pt]{1.5pt}{0.5pt}} \hspace{4pt} $}} }
 
 %% names of experiments + MINUIT
-\newcommand{\hermes}{\textsc{Hermes }}
-\newcommand{\compass}{\textsc{Compass }}
+\newcommand{\hermes}{\textsc{Hermes}}
+\newcommand{\compass}{\textsc{Compass}}
 \newcommand{\minuit}{\textsc{Minuit }}
 
 %% macro to manage T versus perp notation
@@ -243,7 +243,7 @@ m_N^h (x,z,|\bm{P}_{h\Tperp}|, Q^2) = \frac{d \sigma_N^h / ( dx  dz d|\bm{P}_{h\
 where $d\sigma_N^h$ is the differential cross section for the SIDIS process and $d\sigma_{\text{DIS}}$ is the corresponding inclusive one, 
 and where \( \bm{P}_{h\Tperp} \) is the component of \( \bm{P}_{h} \) transverse to \( \bm{q} \). 
 In the single-photon-exchange approximation, the multiplicities can be written as ratios of
-structure functions (see \cite{Bacchetta:2006tn} for details):
+structure functions (see~\cite{Bacchetta:2006tn} for details):
 \begin{equation}
 m_N^h (x,z,|\bm{P}_{h\Tperp}|, Q^2) =   
 \frac{2 \pi\,|\bm{P}_{h\Tperp}| F_{UU ,T}(x,z,\bm{P}_{h\Tperp}^2, Q^2) + 2 \pi
@@ -390,6 +390,7 @@ integrated over $d\Omega$ and over the azimuthal angle of the virtual photon,
 \end{align} 
 The elementary cross sections are
 \begin{align}
+\label{e:elem_cs_sig0}
 \sigma_0^{\gamma} &= \frac{4\pi^2 \alpha^2_{\rm em}}{3 Q^2 s},
 &
 \sigma_0^Z &= 
@@ -537,7 +538,7 @@ B\left(\alpha_s(k_T)\right) &= \sum_{k=1}^{\infty}B_k
 \bigg(\frac{\alpha_S}{\pi} \bigg).
 \end{align} 
 To NNL accuracy, we need the following 
-terms \cite{Davies:1984hs,Collins:1984kg}
+terms~\cite{Davies:1984hs,Collins:1984kg}
 \begin{align}
 A_1&= C_F, 
 &
@@ -723,45 +724,22 @@ $\big\langle \hat{\bm{P}}_{\T a \to  h}^{\prime 2} \big\rangle$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The main goals of our work are to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes. To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales. \\
+The main goals of our work are to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes. To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales.
 In this chapter we describe the data sets considered for each process and the reasons behind the kinematic cuts applied.
 
-Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes experiment) and presents their kinematic ranges. 
-The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes and \compass experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
+Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes\ experiment) and presents their kinematic ranges. 
+The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes\ and \compass\ experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
 For each kinematic variable in all the considered data sets, we fit the average value in each bin.
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Hermes data}
-\label{ss:hermes}
+\subsection{Semi-inclusive DIS data}
+\label{ss:SIDIS data}
 
 The semi-inclusive DIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
-Both \hermes and \compass data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}.
-
-\hermes hadron multiplicities are measured in a fixed target experiment, colliding a $27.6\,GeV$ lepton beam on a hydrogen ($p$) or deuterium ($D$) gas target, for a total of 2688 points.\\
-These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
-The collinear energy fraction $z$ in~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
-The peculiarity of \hermes SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to determine their momenta and charges.
-The particle identification process distinguish the final data sets in eight different channels, one for every combination of target ($p,\,D$) and detected charged hadron ($\pi^\pm, \,  K^\pm$ ).
-\hermes Collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Compass data}
-\label{ss:compass}
-
-Compass collaboration extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes experiment. \\
-The data set are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes, for \compass $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
-
-The multiplicities published by \compass are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}), in order to avoid this issue we divide the data grouped in one of the bin characterized by a value of ($x, z, Q^2$) by the data point with the lowest $P_{hT}^2$ in that group.
-We define the {\em normalized} multiplicity that result from this procedure as:
-\begin{equation}
-m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm \min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
-\label{e:mult_norm}
-\end{equation}
-where the multiplicity $m_N^h$ is defined in~\eqref{e:multiplicity}. Fitting normalized multiplicities the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
+Both \hermes\ and \compass\ data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}, however they have never been fitted together, nevertheless considering also the contributions deriving from TMD evolution.
 
 The application of the TMD formalism to SIDIS crucially depends on the capability of identifying the current fragmentation region. This task has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out a possible overlap among different  fragmentation regions when the hard scale $Q$ is sufficiently low. 
-In this paper we do not tackle this problem and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.74$.\footnote{The implementation of the ``collinearity'' criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the partonic properties.}
+In this paper we do not tackle this problem and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.74$\ .\footnote{The implementation of the ``collinearity'' criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the partonic properties.}
 
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
 Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
@@ -771,37 +749,62 @@ The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint
 these conditions and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points.
 All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
+\subsubsection{\hermes\ data}
+\label{sss:hermes}
+
+\hermes\ hadron multiplicities are measured in a fixed target experiment, colliding a $27.6$ GeV lepton beam on a hydrogen ($p$) or deuterium ($D$) gas target, for a total of 2688 points.\\
+These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
+The collinear energy fraction $z$ in Eq.~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
+The peculiarity of \hermes\ SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to determine their momenta and charges.
+The particle identification process distinguish the final data sets in eight different channels, one for every combination of target ($p,\,D$) and detected charged hadron ($\pi^\pm, \,  K^\pm$ ).
+\hermes\ Collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\compass\ data}
+\label{sss:compass}
+
+Compass collaboration extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment. \\
+The data set are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes , for \compass\ $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
+
+The multiplicities published by \compass\ are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}), in order to avoid this issue we divide the data grouped in one of the bin characterized by a value of ($x, z, Q^2$) by the data point with the lowest $P_{hT}^2$ in that group.
+We define the {\em normalized} multiplicity that result from this procedure as:
+\begin{equation}
+m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm \min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
+\label{e:mult_norm}
+\end{equation}
+where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. Fitting normalized multiplicities the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Low-energy Drell-Yan data}
 \label{ss:dy}
 
 We analyze Drell-Yan events collected by fixed-target experiments at low-energy. These data set have been considered also in previous works, e.g.~\cite{DAlesio:2014mrz}. 
-We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dp^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of $Cu$ or $Pt$.
+We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dq^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of Cu or Pt.
 The measurements were repeated using proton incident energies of $200$, $300$ and $400$ $GeV$, producing three different data sets.
-Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4 Gev$.\\
-We also included the set of measurements $E d^3\sigma / dp^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8 \text{ GeV}$) on a copper fixed target .\\
+Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4$ GeV.
+We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8$ GeV) on a copper fixed target .\\
 
 The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity ,\textcolor{red}{ whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf})}.  
 As discussed for SIDIS data, we can apply TMD factorization if $\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse momentum of the intermediate electroweak boson, reconstructed from the kinematics of the final state leptons. As done for SIDIS, we choose $q_T < 0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to maximize the goodness of the fit and to not exclude too many points.
 We consider the target nuclei as an ensemble composed by $40\%$ proton and $60\%$ nucleon, as suggested in~\cite{Ito:1980ev}, independent one from the other.
 
-As we already observed, results from E288 and E605 experiments are reported as $\frac{Ed^3\sigma}{d^3p}$; this variable is related the differential cross section $d\sigma/dq_T$ in the following way~\cite{Olive:2016xmw} :
+As we already observed, results from E288 and E605 experiments are reported as $\frac{Ed^3\sigma}{d^3q}$; this variable is related the differential cross section $d\sigma/dq_T$ in the following way~\cite{Olive:2016xmw} :
 
 \begin{equation}
-\frac{Ed^3\sigma}{d^3p}=\frac{d^3\sigma}{d\phi dy p_T dp_T} \Rightarrow \frac{d^2\sigma}{\pi dy d(p^2_T)}
+\frac{Ed^3\sigma}{d^3q}=\frac{d^3\sigma}{d\phi dy q_T dq_T} \Rightarrow \frac{d^2\sigma}{\pi dy d(q^2_T)}
 \end{equation}
-
 where the third term is the average over $\phi$.
-The invariant dimuon cross section can be obtained from Eq.~\ref{e:dsigma_gZ} performing an integration of its terms over $Q^2$ and adding a factor $1/\pi$ to the result:
+Therefore, the invariant dimuon cross section can be obtained from Eq.~\ref{e:dsigma_gZ} performing an integration of its terms over $Q^2$ and adding a factor $1/\pi$ to the result:
 
 \begin{equation}
-\frac{Ed^3\sigma}{d^3p} = \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T dy} .
+\frac{Ed^3\sigma}{d^3q} = \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T dy} .
 \end{equation}
 
-We checked that integrating in $Q^2$ only the prefactor $\sigma_q^\gamma$, defined in Eq.~\ref{e:elem_cs_sig0}, and not the entire term in Eq.~\ref{e:dsigma_gZ} (including then the convolution) introduces only a negligible error in the fit procedure:  
+We checked that integrating in $Q^2$ only the prefactor $\sigma_q^\gamma$, defined in Eq.~\ref{e:elem_cs_sig0}, and not the entire term in Eq.~\ref{e:dsigma_gZ} (including then the convolution) introduces only a negligible error in the fit procedure, therefore we assume:  
 
 \begin{equation}
-\frac{1}{\pi} \cdot \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
+\frac{1}{\pi}  \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
 = \frac{4\alpha_{em}^2}{3 N_c s} e_q^2 \ln \left( \frac{Q_f^2}{Q_i^2} \right) .
 \end{equation}
 
@@ -1053,11 +1056,11 @@ The partition of the global $\chi^2$ among SIDIS off proton, SIDIS off deuteron,
 
 %%% CHI2 VALUES %%%
 
-For SIDIS at \hermes off a proton, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon FFs. 
+For SIDIS at \hermes\ off a proton, events with a kaon in the final state have in general a lower $\chi^2$. This is due to the large uncertainties for the kaon FFs. 
 The major contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. 
-In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between experiment and theory (which relies on the DSS parametrization~\cite{deFlorian:2007aj} for collinear FFs) at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. Instead, in this work we use a newer parametrization of the collinear FFs (DSEHS~\cite{deFlorian:2014xna}), based on a fit which includes \hermes collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
-The poor $\chi^2$ for $\pi^\pm$ production off a proton at \hermes is mainly due to a bad agreement in the TMD multiplciities at low $z$ values (see the first two blocks from the top in Fig.~\ref{f:H_pions}). 
-For kaon production off the proton at \hermes the agreement at low $z$ is better than for the pions (see the first two blocks from the top in Fig.~\ref{f:H_kaons}), which, combined with larger uncertainties, results in lower $\chi^2$.
+In~\cite{Signori:2013mda,Signori:2013gra} a poor agreement between experiment and theory (which relies on the DSS parametrization~\cite{deFlorian:2007aj} for collinear FFs) at the level of the collinear multiplicities affected the quality of the fit, especially for $\pi^\pm$. Instead, in this work we use a newer parametrization of the collinear FFs (DSEHS~\cite{deFlorian:2014xna}), based on a fit which includes \hermes\ collinear pion multiplicities. This significantly improves the agreement at the collinear level with respect to~\cite{Signori:2013mda,Signori:2013gra}. 
+The poor $\chi^2$ for $\pi^\pm$ production off a proton at \hermes\ is mainly due to a bad agreement in the TMD multiplciities at low $z$ values (see the first two blocks from the top in Fig.~\ref{f:H_pions}). 
+For kaon production off the proton at \hermes\ the agreement at low $z$ is better than for the pions (see the first two blocks from the top in Fig.~\ref{f:H_kaons}), which, combined with larger uncertainties, results in lower $\chi^2$.
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off proton %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1082,14 +1085,14 @@ $\chi^2 /$points &4.83 & 2.47 & 0.91 & 0.82   \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-For SIDIS at \hermes off a deuteron, the situation is slightly different with respect to the proton case.
+For SIDIS at \hermes\ off a deuteron, the situation is slightly different with respect to the proton case.
 For pion production the $\chi^2$ is lower with respect to the scattering off a proton because the experimental uncertainties for $D \to \pi^\pm$ are slightly larger than for $p \to \pi^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_pions}).
 On the contrary, for kaon production the $\chi^2$ is higher with respect to the scattering off a proton because the experimental uncertainties for $D \to K^\pm$ are slightly smaller than for $p \to K^\pm$ (compare the first two blocks from the top with the last two ones in Fig.~\ref{f:H_kaons}).
 
-Fixing the target and comparing pion and kaon production at \hermes, we see that the $\chi^2$ for kaons is in general lower than for pions. This is because the theoretical uncertainty for $D_1^{a \to K}$ is larger than the one for $D_1^{a \to \pi}$~\cite{Epele:2012vg,Signori:2013mda}, even if the experimental uncertainties are in general smaller for kaons.
+Fixing the target and comparing pion and kaon production at \hermes\, we see that the $\chi^2$ for kaons is in general lower than for pions. This is because the theoretical uncertainty for $D_1^{a \to K}$ is larger than the one for $D_1^{a \to \pi}$~\cite{Epele:2012vg,Signori:2013mda}, even if the experimental uncertainties are in general smaller for kaons.
 
-SIDIS at \compass involves scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$. 
-The quality of the agreement between theory and \compass data is better than in the case of pion production at \hermes. This depends on at least two factors. First: the fit is essentially driven by the \compass data, since the number of points in \compass is much higher than in \hermes. Moreover, the observable that we fit for the case of \compass is the normalized multiplicity, defined in~\eqref{e:mult_norm}. This automatically eliminates any possible tension between theory and data due to normalization effects.
+SIDIS at \compass\ involves scattering off deuteron only, $D \to h^\pm$, and we identify $h \equiv \pi$. 
+The quality of the agreement between theory and \compass\ data is better than in the case of pion production at \hermes. This depends on at least two factors. First: the fit is essentially driven by the \compass\ data, since the number of points in \compass\ is much higher than in \hermes. Moreover, the observable that we fit for the case of \compass\ is the normalized multiplicity, defined in~\eqref{e:mult_norm}. This automatically eliminates any possible tension between theory and data due to normalization effects.
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
@@ -1115,7 +1118,7 @@ $\chi^2 /$points &3.46 & 2.00 & 1.31 & 2.54  & 1.11 & 1.61 \\
 
 %%% FIGURES %%%
 
-Fig.~\ref{f:H_pions} presents the agreement between the theoretical formula in~\eqref{e:multiplicity} and the \hermes multiplicities for production of pions off a proton and a deuteron. 
+Fig.~\ref{f:H_pions} presents the agreement between the theoretical formula in~\eqref{e:multiplicity} and the \hermes\ multiplicities for production of pions off a proton and a deuteron. 
 Different $\langle x \rangle$, $\langle z \rangle$ and $\langle Q^2 \rangle$ bins are displayed as a funciton of the transverse momentum of the dected hadron $P_{hT}$.
 The grey bands are an envelope of the $200$ replica of best-fit curves. For every point in $P_{hT}$ we apply a $68\%$ C.L. selection criterion. 
 Points marked with different symbols and colors correspond to different $\langle z \rangle$ values. There is a strong correlation between $\langle x \rangle$ and $\langle Q^2 \rangle$ that does not allow to explore $x$ and $Q^2$ dependence of the TMDs separetely. 
@@ -1124,9 +1127,9 @@ Moreover, for fixed $P_{hT}$ and $Q^2$, the agreement is in general better at hi
 
 Fig.~\ref{f:H_kaons} has same content and notation as in Fig.~\ref{f:H_pions} but for kaons in the final state. Here we notice that the agreement at low $z$ tends to be better than in the previous case of pion production. 
 
-In Fig.~\ref{f:C_pim} we present \compass normalized multiplicities (see~\eqref{e:mult_norm}) for production of $\pi^-$ off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$. The circle around the first $P_{hT}$ point in each panel indicates that the first value is fixed and not fitted. 
-The correlation between $x$ and $Q^2$ is less strong than at \hermes and this allows to study different $\langle x \rangle$ bins at fixed $\langle Q^2 \rangle$.
-For the highest $Q^2$ the agreement is good for all $\langle x \rangle$, $\langle z \rangle$ and $P_{hT}^2$. In bins at lower $Q^2$, the descriptions is degraded and gets worse especially as $z$ increases, contrary to \hermes data. 
+In Fig.~\ref{f:C_pim} we present \compass\ normalized multiplicities (see~\eqref{e:mult_norm}) for production of $\pi^-$ off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a funciton of the transverse momentum of the dected hadron $P_{hT}$. The circle around the first $P_{hT}$ point in each panel indicates that the first value is fixed and not fitted. 
+The correlation between $x$ and $Q^2$ is less strong than at \hermes\ and this allows to study different $\langle x \rangle$ bins at fixed $\langle Q^2 \rangle$.
+For the highest $Q^2$ the agreement is good for all $\langle x \rangle$, $\langle z \rangle$ and $P_{hT}^2$. In bins at lower $Q^2$, the descriptions is degraded and gets worse especially as $z$ increases, contrary to \hermes\ data. 
 For fixed $\langle Q^2 \rangle$ and high $\langle z \rangle$, a good agreement is recovered moving to higher $\langle x \rangle$ bins.
 
 Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and the same comments on the agreement between theory and the data apply.
@@ -1280,9 +1283,9 @@ We also compare these values with the best-values from replica $105$.
 
 Keeping in mind that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big \langle \bm{k}_{\T}^2 \big \rangle (x=0.1)$ and  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big \rangle (z=0.5)$, we note that the average value of $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ is similar to and compatible within error bands with the value given in~\cite{Signori:2013mda} for the flavor-independent scenario. The value of $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ is larger but still compatible with the same quantity given in~\cite{Signori:2013mda}. Comparisons between the two fits are anyway delicate, since here we rely on a modified Gaussian ansatz, see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}.
 Fig.~\ref{f:kT2_vs_PT2} is useful to compare diffferent extractions of partonic transverse momenta. The red area corresponds to the $68\%$ confidence region for $\{ \big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$, $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle \}$ pairs. Each black dot is an outcome of one fit (replica). The same applies to the orange region and its black dots, related to the flavor-independent analysis in~\cite{Signori:2013mda}. All the other points are related to different extractions and the color coding is described in the caption of Fig.~\ref{f:kT2_vs_PT2}. 
-From the orange region (fit of SIDIS at \hermes only) a strong anticorrelation between the transverse momenta is evident. 
+From the orange region (fit of SIDIS at \hermes\ only) a strong anticorrelation between the transverse momenta is evident. 
 The inclusion of Drell-Yan and $Z$ production data adds physical information about the nonperturbative structure of  $f_1(x,k_\perp^2)$. This significantly reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the red region). 
-The inclusion of \compass data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
+The inclusion of \compass\ data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
 These are important features of the fit and we should aim at including $e^+e^-$ data too to further reduce the correlation. Ideally in a global fit we will reach the lowest degree of correlation possible.  
 When comparing different extractions, it is important to keep in mind that the intrinsic transverse momentum always depends on the scheme used to implement TMD evolution and its accuracy. 
 
@@ -1363,7 +1366,7 @@ Replica 105   &
 \end{center}
 \caption{Correlation between transverse momenta in TMD FFs, $\langle P_\perp^2 \rangle(z=0.5)$, and in TMD PDFs, $\langle k_\perp^2 \rangle(x=0.1)$, in different phenomenological extractions. 
 The red region is the $68\%$ C.L. area explored in this fit (1-red). The white boxes represent the average values over the replicas for the transverse momenta. 
-The other extractions are: (2-orange)~\cite{Signori:2013mda}, (3-blue)~\cite{Schweitzer:2010tt}, (4-brown)~\cite{Anselmino:2013lza} for \hermes data, (5-red point)~\cite{Anselmino:2013lza} for \hermes data at high $z$, (6-pink)~\cite{Anselmino:2013lza} for normalized \compass data, (7-purple)~\cite{Anselmino:2013lza} for normalized \compass data at high $z$, (8-yellow)~\cite{Echevarria:2014xaa}.  
+The other extractions are: (2-orange)~\cite{Signori:2013mda}, (3-blue)~\cite{Schweitzer:2010tt}, (4-brown)~\cite{Anselmino:2013lza} for \hermes\ data, (5-red point)~\cite{Anselmino:2013lza} for \hermes\ data at high $z$, (6-pink)~\cite{Anselmino:2013lza} for normalized \compass\ data, (7-purple)~\cite{Anselmino:2013lza} for normalized \compass\ data at high $z$, (8-yellow)~\cite{Echevarria:2014xaa}.  
 For more details, such as the value of the input scale for the TMDs, see the respective references.} 
 \label{f:kT2_vs_PT2}
 \end{figure}
@@ -1402,7 +1405,7 @@ For more details, such as the value of the input scale for the TMDs, see the res
 \subsection{Tests on replica 105}
 \label{ss:replica105}
 
-In this subsection we have a closer look at the results of the fit to replica 105, which, as discussed above, is one of the most representative of the two hundred fits performed in our analysis. The corresponding $\chi^2/$d.o.f.~is 1.51. We note that if we normalize \hermes data to the value of the first bin in $P_{hT}$ as we did for \compass data, the global  $\chi^2/$d.o.f.~immediately reduces to 1.27, without performing any new minimization. The partial $\chi^2$ for the different SIDIS processes measured at \hermes are shown in Table~\ref{t:replica105-hermes}.
+In this subsection we have a closer look at the results of the fit to replica 105, which, as discussed above, is one of the most representative of the two hundred fits performed in our analysis. The corresponding $\chi^2/$d.o.f.~is 1.51. We note that if we normalize \hermes\ data to the value of the first bin in $P_{hT}$ as we did for \compass\ data, the global  $\chi^2/$d.o.f.~immediately reduces to 1.27, without performing any new minimization. The partial $\chi^2$ for the different SIDIS processes measured at \hermes\ are shown in Table~\ref{t:replica105-hermes}.
 
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1420,7 +1423,7 @@ Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\
  \hline
  \hline
 \end{tabular}
-\caption{$\chi^2$/d.o.f.\ for \hermes data with and without normalization to the value of the first bin in $P_{hT}$.} 
+\caption{$\chi^2$/d.o.f.\ for \hermes\ data with and without normalization to the value of the first bin in $P_{hT}$.} 
 \label{t:replica105-hermes}
 \end{center}
 \end{table}
@@ -1436,7 +1439,7 @@ Finally, we consider the sensitivity of our results on the set of parameterizati
 \subsection{Comments on flavor-dependent fits}
 \label{ss:comment_fldep}
 
-\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass data.}
+\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass\ data.}
 
 %\begin{table}[h]
 %\small
@@ -1556,7 +1559,7 @@ This fit is performed assuming that the intrinsic transverse momentum dependence
 By means of fitting data from different processes and experiments, we also perform a phenomenological check of the universality of unpolarized TMDs. 
 TMD factorization allows us to describe the considered data in a reasonable way at low transverse momentum. In future works we should aim at a more precise analysis from the perturbative point of view, at a detailed flavor decomposition in momentum space and at describing also events at higher transverse momenta matching to the collinear fixed-order calculations. We look also forward to the possibility of identifying the current fragmentation region in a more sistematic way~\cite{Boglione:2016bph}.
 Together with an improved theoretical framework, in order to better understand the formalism we need more experimental data. In particular with larger coverage in $x$, $z$ and rapidity and spanning over a larger range in $Q^2$. 
-Additional data from SIDIS (at Jefferson Lab, at a future Electron-Ion Collider), Drell-Yan, $Z/W$ production (at \compass, at the LHC, at RHIC, at A Fixed-Target Experiment at the LHC) and $e^+e^-$ (at Belle-II, BES-III, at a future Internation Linear Collider) will be very important. 
+Additional data from SIDIS (at Jefferson Lab, at a future Electron-Ion Collider), Drell-Yan, $Z/W$ production (at \compass\, at the LHC, at RHIC, at A Fixed-Target Experiment at the LHC) and $e^+e^-$ (at Belle-II, BES-III, at a future Internation Linear Collider) will be very important. 
 
 Testing the formalism of TMD factorization and understanding the structure of unpolarized TMDs is only the first crucial step in the exploration of the 3D proton structure in momentum space and this work opens the way to global determinations of TMDs. 
 Building on this, we can proceed to deepen our understanding of hadron structure via asymmetries and polarized structure function (see e.g.~\cite{Aschenauer:2015ndk,Boglione:2015zyc,Kikola:2017hnp}) and, at the same time, to test the impact of hadron structure in precision measurements at high-energies, such as at the LHC. A detailed mapping of hadron structure is essential to interpret data from hadronic collisions, which are among the most powerful tools to look for footprints of new physics.
