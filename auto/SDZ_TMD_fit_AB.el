@@ -14,6 +14,7 @@
      "e:SIDISkTFF"
      "ss:DY_formalism"
      "e:dsigma_gZ"
+     "e:elem_cs_sig0"
      "xab"
      "e:eta_xf"
      "e:DYkT"
@@ -36,8 +37,9 @@
      "e:kT2_kin"
      "e:PT2_kin"
      "s:data_analysis"
-     "ss:hermes"
-     "ss:compass"
+     "ss:SIDIS data"
+     "sss:hermes"
+     "sss:compass"
      "e:mult_norm"
      "ss:dy"
      "ss:zboson"
@@ -69,7 +71,6 @@
      "f:avmomenta_68CL"
      "ss:replica105"
      "t:replica105-hermes"
-     "ss:comment_fldep"
      "s:conclusions")
     (TeX-add-symbols
      "xbj"
@@ -83,6 +84,8 @@
      "bT"
      "bb")
     (TeX-run-style-hooks
+     "inputenc"
+     "utf8"
      "color"
      "multirow"
      "mciteplus"

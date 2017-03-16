@@ -13,6 +13,7 @@
 \usepackage{mciteplus}
 \usepackage{multirow}
 \usepackage{color}
+\usepackage[utf8]{inputenc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -81,8 +82,9 @@ inelastic scattering, Drell-Yan scattering, and Z-boson production.
 \begin{abstract}
 We present an extraction of unpolarized partonic transverse momentum
 distributions (TMDs) 
-from a simultaneous fit of available data measured in semi-inclusive deep inelastic scattering 
-and in Drell-Yan processes with the production of photon and $Z$ bosons. 
+from a simultaneous fit of available data measured in semi-inclusive deep
+inelastic scattering, 
+Drell-Yan scattering, and $Z$ boson production. 
 To connect data at different scales, we use TMD evolution at next-to-leading logarithmic accuracy. The
 analysis is restricted to the low-transverse-momentum region, with no matching
 to fixed-order calculations at high transverse momentum. We introduce specific
@@ -172,8 +174,9 @@ PDF $f_1^q(x,k_{\T}^2)$ and the unpolarized TMD
 FF $D_1^{q \to h}(z,P_{hT}^2)$, where $z$ is
   the fractional energy carried by the detected hadron $h$. Despite their
   simplicity, the phenomenology of these unpolarized TMDs present several
-  challenges~\cite{Signori:2016lvd}: the functional form of TMDs at low
-  partonic transverse momentum, its possible dependence on the parton
+  challenges~\cite{Signori:2016lvd}: the choice of a functional form 
+  for the nonperturbative components of TMDs, 
+  the inclusion of a possible dependence on partonic
   flavor~\cite{Signori:2013mda}, the implementation of TMD
   evolution~\cite{Bacchetta:2015ora,Rogers:2015sqa}, the matching to
   fixed-order calculations in collinear
@@ -298,8 +301,8 @@ to  Eq.~\eqref{e:SIDISkT}.
 At large $Q^2$ this is well justified. 
 However, fixed-target DIS experiments typically 
 collect a large amount of data
-at relatively low $Q^2$ values, where the reliability of these assumptions
-should be tested in future studies. The reliability
+at relatively low $Q^2$ values, where these assumptions
+should be all tested in future studies. The reliability
 of the theoretical description of SIDIS at low $Q^2$ has been recently
 discussed in Refs.~\cite{Boglione:2016bph,Moffat:2017sha}.
  
@@ -320,7 +323,7 @@ In these approximations (LO in $\alpha_S$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
 literature this has been called $W$ term). We expect this term to provide a
 good description of the
-structure function only in the region where $P_{hT}^2/z^2 \ll Q^2$. 
+structure function only in the region where $P_{hT}^2 \ll Q^2$. 
 It can happen that $Y_{UU,T}$, defined
 in the standard way (see, e.g., Ref.~\cite{Collins:1984kg}), gives large
 contributions also in this region, but it is admissible to
@@ -390,7 +393,6 @@ integrated over $d\Omega$ and over the azimuthal angle of the virtual photon,
 \end{align} 
 The elementary cross sections are
 \begin{align}
-\label{e:elem_cs_sig0}
 \sigma_0^{\gamma} &= \frac{4\pi^2 \alpha^2_{\rm em}}{3 Q^2 s},
 &
 \sigma_0^Z &= 
@@ -398,6 +400,7 @@ The elementary cross sections are
 \frac{\pi^2 \alpha_{\rm em}}{s \sin^2{\theta_W} \cos^2{\theta_W}}
 B_R(Z\rightarrow \ell^+\ell^-)
 \delta(Q^2 - M_Z^2), 
+\label{e:elem_cs_sig0}
 \end{align} 
 where $\theta_W$ is Weinberg's angle, $M_Z$ is the mass of the $Z$ boson, and
 $B_R$ is the branching ratio for the $Z$ boson decay in two leptons.
@@ -481,12 +484,12 @@ the right-hand side of Eq.~\eqref{e:DYkT} as
 
 Following the formalism of Refs.~\cite{Collins:2011zzd,Aybat:2011zv}, the
 unpolarized TMD distribution and fragmentation functions in configuration
-space for a parton flavor $a$ at a certain scale $\mu^2$ can be written as 
+space for a parton flavor $a$ at a certain scale $Q^2$ can be written as 
 \begin{align}   
 \widetilde{f}_1^a (x,  \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( C_{a/i} \otimes f_1^i \bigr) (x; \mu_b^2) 
 \  e^{S (\mu_b^2, Q^2)} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
 \label{e:TMDevol1} \\
-\widetilde{D}_1^{a\to h} (z, \bT^2; \mu^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
+\widetilde{D}_1^{a\to h} (z, \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
 \label{e:TMDevol2}
 \end{align}
 
@@ -636,10 +639,13 @@ order $\alpha_S$ from the Wilson coefficients) .
 \end{itemize} 
 
 Following Refs.~\cite{Nadolsky:1999kb,Landry:2002ix,Konychev:2005iy}, for the
-nonperturbative Sudakov factor we make the traditional choice $g_K (\bT) = -
-g_2 \bT^2 / 2$ with $g_2$ a free parameter. Recently, several alternative
+nonperturbative Sudakov factor we make the traditional choice 
+\begin{equation}
+g_K (\bT) = - g_2 \bT^2 / 2
+\end{equation} 
+with $g_2$ a free parameter. Recently, several alternative
 forms have been proposed~\cite{Aidala:2014hva,Collins:2014jpa} including the
-suggestion of not including such term~\cite{D'Alesio:2014vja}. 
+suggestion of not including such term~\cite{D'Alesio:2014vja}.  
 
 In this analysis, for the collindear PDFs $f_1^a$ we adopt the GJR08FFnloE
 set~\cite{Gluck:2007ck} through the LHAPDF library~\cite{Buckley:2014ana}, and
@@ -687,37 +693,43 @@ D_{1 {\rm NP}}^{a\to h} (z, \bm{P}_{\T}^2) &=  \frac{1}{\pi} \
 In the TMD PDF case, the Gaussian and the
 weighted Gaussian have the same width, while in the fragmentation function, we
 considered the possibility that the two Gaussian widths are different. 
-We consider that the
-Gaussian width of the TMD distribution depends 
-on the parton flavor $a$ and on its fractional momentum $x$ according to
+The choice of this particular functional form is motivated by model
+calculations: the weighted Gaussian could arise from 
+the presence of components of the quark wave function 
+with angular momentum
+$L=1$~\cite{Bacchetta:2007wc,Pasquini:2008ax,Avakian:2010br,Bacchetta:2010si,Burkardt:2015qoa}.   
+
+The
+Gaussian width of the TMD distribution may depend 
+on the parton flavor $a$~\cite{Signori:2013mda}. 
+In the present analysis, however, we assume they are
+flavor independent. The justification for this choice is that most of the data
+we are considering are not sufficiently sensitive to flavor differences.
+
+Finally, we assume the Gaussian width of the TMD depends on 
+fractional longitudinal momentum $x$ according to
 \begin{align} 
-\big\langle \bm{k}_{\T a}^2 \big\rangle (x) &= \big\langle \hat{\bm{k}}_{\T a}^2 \big\rangle \;  
+\big\langle \bm{k}_{\T}^2 \big\rangle (x) &= \big\langle \hat{\bm{k}}_{\T}^2 \big\rangle \;  
 \frac{(1-x)^{\alpha} \  x^{\sigma} }{ (1 - \hat{x})^{\alpha} \  \hat{x}^{\sigma} } \, ,
 \label{e:kT2_kin}
 \end{align}
-where $\alpha, \, \sigma,$ and $\big\langle \hat{\bm{k}}_{\T a}^2 \big\rangle \equiv \big\langle \bm{k}_{\T a}^2 \big\rangle (\hat{x})$ with $\hat{x} = 0.1$, are free parameters. Similarly, we have
+where $\alpha, \, \sigma,$ and $\big\langle \hat{\bm{k}}_{\T}^2 \big\rangle
+\equiv \big\langle \bm{k}_{\T}^2 \big\rangle (\hat{x})$ with $\hat{x} = 0.1$,
+are free parameters. Similarly, for fragmentation functions we have
 \begin{align}  
-\big\langle \bm{P}_{\T a \to h}^2 \big\rangle (z) &= \big\langle \hat{\bm{P}}_{\T a \to h}^2 \big\rangle \  
+\big\langle \bm{P}_{\T}^2 \big\rangle (z) &= \big\langle \hat{\bm{P}}_{\T}^2 \big\rangle \  
                \frac{ (z^{\beta} + \delta)\ (1-z)^{\gamma} }{ (\hat{z}^{\beta} + \delta)\   (1 - \hat{z})^{\gamma} } \, ,
  \label{e:PT2_kin}
  \end{align}
-where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T a \to
-  h}^2 \big\rangle \equiv \big \langle \bm{P}_{\T a \to h}^2 \big\rangle
+where $\beta, \, \gamma, \, \delta, $ and $\big\langle \hat{\bm{P}}_{\T}^2 \big\rangle \equiv \big \langle \bm{P}_{\T}^2 \big\rangle
 (\hat{z})$ with $\hat{z} = 0.5$, are free parameters. The same functional form
 applies also to the width of the weighted Gaussian. For simplicity, we
 considered parameters $\beta$, $\delta$, and $\gamma$ to be the same for both
 Gaussians, and keep a distinction only between parameters 
-$\big\langle \hat{\bm{P}}_{\T a \to  h}^2 \big\rangle$ and
-$\big\langle \hat{\bm{P}}_{\T a \to  h}^{\prime 2} \big\rangle$.
+$\big\langle \hat{\bm{P}}_{\T}^2 \big\rangle$ and
+$\big\langle \hat{\bm{P}}_{\T}^{\prime 2} \big\rangle$.
  
-\textcolor{red}{Mention that also the other variance in the TMD FF has the same kinematic dependence.}
-%For sake of simplicity, the $\beta, \, \gamma, \, \delta$ parameters are taken equal for all fragmentation channels~\cite{Signori:2013mda,Bacchetta:2015ora}. 
-%
 
-
-
-
-\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data analysis}
 \label{s:data_analysis}
@@ -1271,22 +1283,47 @@ Most of the contributions to the $\chi^2$ comes from normalization effects and n
 
 %% separation in bT space
 The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $b_T$ where transverse momentum resummation is computed perturbatively. $\bb_{\rm max}$ allows to avoid the Landau pole and $\bb_{\rm min}$ allows to recover correctly the high transverse momentum limit of the cross section (see also Sec.~\ref{ss:TMDevo}).
-The parameter $g_2$ which enters the nonperturbative Sudakov exponent quantifies the amount of soft gluons radiated.
-As already detailed in Sec.~\ref{ss:TMDevo}, in this work we fix the value for $\bb_{\rm min}$ and $\bb_{\rm max}$ in such a way that at $Q=1$ GeV the unpolarized TMDs coincide with their nonperturbative input. $g_2$, instead, is a fit parameter.
+Parameter $g_2$ enters the nonperturbative Sudakov exponent and
+quantifies the amount of transverse momentum 
+due to soft gluon radiation that is not included in the
+perturbative part of the Sudakov form factor.
+As already detailed in Sec.~\ref{ss:TMDevo}, in this work we fix the value for
+$\bb_{\rm min}$ and $\bb_{\rm max}$ in such a way that at $Q=1$ GeV the
+unpolarized TMDs coincide with their nonperturbative input. $g_2$, instead, is
+a fit parameter. 
 
-Tab.~\ref{t:fl_ind_parcommon} summarizes the chosen values of $\bb_{\rm min}$, $\bb_{\rm max}$ and the best-fit value for $g_2$. The latter is given as an average with $68\%$ C.L. uncertainty computed over the set of 200 replicas. A similar value ($g_2 = 0.184 \pm 0.018$) was found in~\cite{Konychev:2005iy}.
-We stress here that a prescription involving both $\bb_{\text{min}}$ and $\bb_{\text{max}}$ is equivalent to request $\mu_{\bar{b^*}}^2 < Q^2 \equiv \mu^2$ for all $b_T$ values in~\eqref{e:Sudakov}. This requirement turns out to be crucial in order to fit SIDIS data with TMD evolution and without a $Y$-term.
+Tab.~\ref{t:fl_ind_parcommon} summarizes the chosen values of $\bb_{\rm min}$,
+$\bb_{\rm max}$ and the best-fit value for $g_2$. The latter is given as an
+average with $68\%$ C.L. uncertainty computed over the set of 200 replicas. A
+larger value ($g_2 = 0.184 \pm 0.018$) was found in~\cite{Konychev:2005iy},
+where however no SIDIS data was taken into consideration.
+We stress here that a prescription involving both $\bb_{\text{min}}$ and
+$\bb_{\text{max}}$ is equivalent to requesting $\mu_{\bar{b^*}}^2 < Q^2 \equiv
+\mu^2$ for all $b_T$ values in~\eqref{e:Sudakov}. This requirement turns out
+to be crucial in order to fit SIDIS data with TMD evolution.
+
+To make it possible to analyze the results related to a single replica,
+instead of the full set, we also quote the results obtained from
+replica 105, since its parameters are very close to the
+mean values of all replicas. 
 
 %% best fit values and transverse momenta
 Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values of parameters in the nonperturbative part of the TMDs at $Q=1$ GeV (see~\eqref{e:f1NP} and~\eqref{e:D1NP}); we give the average value over the full set of replicas and the standard deviation based on a $68\%$ C.L. (see Sec.~\ref{ss:replica_method}). 
-We also compare these values with the best-values from replica $105$.
 
 Keeping in mind that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big \langle \bm{k}_{\T}^2 \big \rangle (x=0.1)$ and  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big \rangle (z=0.5)$, we note that the average value of $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ is similar to and compatible within error bands with the value given in~\cite{Signori:2013mda} for the flavor-independent scenario. The value of $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ is larger but still compatible with the same quantity given in~\cite{Signori:2013mda}. Comparisons between the two fits are anyway delicate, since here we rely on a modified Gaussian ansatz, see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}.
 Fig.~\ref{f:kT2_vs_PT2} is useful to compare diffferent extractions of partonic transverse momenta. The red area corresponds to the $68\%$ confidence region for $\{ \big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$, $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle \}$ pairs. Each black dot is an outcome of one fit (replica). The same applies to the orange region and its black dots, related to the flavor-independent analysis in~\cite{Signori:2013mda}. All the other points are related to different extractions and the color coding is described in the caption of Fig.~\ref{f:kT2_vs_PT2}. 
 From the orange region (fit of SIDIS at \hermes\ only) a strong anticorrelation between the transverse momenta is evident. 
-The inclusion of Drell-Yan and $Z$ production data adds physical information about the nonperturbative structure of  $f_1(x,k_\perp^2)$. This significantly reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the red region). 
-The inclusion of \compass\ data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
-These are important features of the fit and we should aim at including $e^+e^-$ data too to further reduce the correlation. Ideally in a global fit we will reach the lowest degree of correlation possible.  
+The inclusion of Drell-Yan and $Z$ production data adds physical information
+about the nonperturbative structure of  $f_1(x,k_\perp^2)$. This significantly
+reduces the spread in $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ and the
+correlation with $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ (see the
+red region).  
+The inclusion of \compass data, instead, determines a shift of the points and reduces the spread for $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ values. 
+These are important features of the fit and we should aim at including
+$e^+e^-$ data too to further reduce the correlation. 
+%Ideally in a global fit we will reach the lowest degree of correlation
+%possible.   
+
 When comparing different extractions, it is important to keep in mind that the intrinsic transverse momentum always depends on the scheme used to implement TMD evolution and its accuracy. 
 
 % kinematic behavior of T.M. and correlations
@@ -1402,10 +1439,34 @@ For more details, such as the value of the input scale for the TMDs, see the res
 
 
 %=======================================================
-\subsection{Tests on replica 105}
+\subsection{Modifications to the default choices}
 \label{ss:replica105}
 
-In this subsection we have a closer look at the results of the fit to replica 105, which, as discussed above, is one of the most representative of the two hundred fits performed in our analysis. The corresponding $\chi^2/$d.o.f.~is 1.51. We note that if we normalize \hermes\ data to the value of the first bin in $P_{hT}$ as we did for \compass\ data, the global  $\chi^2/$d.o.f.~immediately reduces to 1.27, without performing any new minimization. The partial $\chi^2$ for the different SIDIS processes measured at \hermes\ are shown in Table~\ref{t:replica105-hermes}.
+
+In this subsection we discuss the effect of modifying some of the choices we
+made in our default fit. Instead of repeating the fitting procedure with
+different choices, we limited ourselves to checking how the $\chi^2$ of a single
+replica is affected by the modifications. 
+
+As starting point we chose replica
+105, which, as discussed above, is one of the most representative among the
+whole replica set. 
+The global $\chi^2/$d.o.f.\ of replica 105 is 1.51. We kept all parameters
+fixed, without performing any new minimization, 
+and we computed the $\chi^2/$ after the modifications described in the
+following.
+
+First of all, we analyzed \hermes data with the same strategy as \compass,
+i.e., we normalize \hermes data to the value of the first bin
+in $P_{hT}$. In this case, the global
+$\chi^2/$d.o.f.~immediately reduces to 1.27. The partial $\chi^2$ for the
+different SIDIS processes measured 
+at \hermes are shown in Table~\ref{t:replica105-hermes}. 
+This confirms that normalization effects are the main contribution to the
+$\chi^2$ of SIDIS data and have minor effects on TMD-related parameters. In
+fact, even if we perform a new fit with this modification, the $\chi^2$ does
+not improve significantly and parameters do not change much.
+
 
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1429,17 +1490,48 @@ Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+We also considered the effect of changing the normalization of the $Z$-boson
+data: if we increase the normalization factors quoted
+in the last row of Tab.~\ref{t:data_Z} by 10\%, the $\chi^2$ . This effect is
+also already visible in Fig.~\ref{f:Z_qT}: the theoretical curves are
+systematically below the experimental data points, but the shape is reproduced
+very well.
 
-If we consider more stringent kinematic cuts on SIDIS data, namely $Q^2 > 1.5$ GeV$^2$ and $0.25 < z < 0.6$ instead of $Q^2 > 1.4$ GeV$^2$ and $0.2 < z < 0.7$, leaving the other ones unchanged,  the number of bins reduces from 8059 to 5679.  As a consequence, the  $\chi^2/ \text{d.o.f.}$  decreases to the value 1.23. In addition, if we replace the constraint  $P_{h T} < \text{Min} [ 0.2\, Q, 0.7\, Q z] + 0.5$  with $P_{h T} < \text{Min} [ 0.2\, Q, 0.5\, Q z] + 0.3$, the number of bins becomes 3380 and the $\chi^2/$d.o.f.\ decreases further to 0.96. By adopting the cut $P_{h T} < \text{Min} [ 0.2\, Q, 0.2\, Q z]$ instead, the number of bins drops to 477, with  a
- $\chi^2$/d.o.f.\ =1.02. 
+We considered the sensitivity of our results to the set of
+parameterizations adopted for the collinear quark PDFs. 
+The $\chi^2/ \text{d.o.f.}$ varies from its original value
+1.51, obtained with the NLO GJR 2008 parametrization~\cite{Gluck:2007ck}, to
+1.84 using NLO MSTW 2008~\cite{Martin:2009iq}, and 1.85 using NLO
+CJ12~\cite{Owens:2012bv}. 
 
-Finally, we consider the sensitivity of our results on the set of parameterizations adopted for the collinear, unpolarized quark distributions. The $\chi^2/ \text{d.o.f.}$ varies from its original value 1.51, obtained with the NLO GJR 2008 parametrization ~\cite{Gluck:2007ck}, to  1.84 (NLO MSTW 2008~\cite{Martin:2009iq})   and 1.85 (NLO CJ12~\cite{Owens:2012bv}).  
+An extremely important point is the choice of kinematic cuts. Our default
+choices are listed in Tabs.~\ref{t:data_SIDIS_proton}--\ref{t:data_Z}. We
+considered more stringent kinematic cuts on SIDIS data: 
+$Q^2 > 1.5$ GeV$^2$ and $z$ range to 
+$0.25 < z < 0.6$ instead of $Q^2 > 1.4$ GeV$^2$ and $0.2 < z <
+0.7$, leaving the other ones unchanged. The number of bins with these cuts 
+reduces from 8059 to 5679 and 
+the  $\chi^2/ \text{d.o.f.}$  decreases to the
+value 1.23. 
+In addition, if we replace the constraint  $P_{h T} < \text{Min} [
+0.2\, Q, 0.7\, Q z] + 0.5$ GeV  
+with $P_{h T} < \text{Min} [ 0.2\, Q, 0.5\, Q z] +
+0.3$ GeV, the number of bins reduces to 3380 and the $\chi^2/$d.o.f.\ decreases
+further to 0.96. By adopting the even stricter 
+cut $P_{h T} < 0.2\, Q z$, 
+the number of bins drops to only 477, with  a 
+ $\chi^2$/d.o.f.\ =1.02.  We can conclude that our fit, obtained by
+ fitting data in an extended kinematic region, where TMD factorization may be
+ questioned,  works extremely well also in a narrower
+ region, where TMD factorization is expected to be under control.
 
-%========================================================
-\subsection{Comments on flavor-dependent fits}
-\label{ss:comment_fldep}
 
-\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass\ data.}
+%%========================================================
+%\subsection{Comments on flavor-dependent fits}
+%\label{ss:comment_fldep}
+%
+%\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass data.}
+%
 
 %\begin{table}[h]
 %\small
@@ -1542,28 +1634,78 @@ Finally, we consider the sensitivity of our results on the set of parameterizati
 
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary and outlook}
+\section{Conclusions}
 \label{s:conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-In this work we demonstrated for the first time the possibility to perform a rigorous simultaneous fit of unpolarized TMDs to data of SIDIS, Drell-Yan, and $Z$ boson production collected by different experiments.
-This constitutes the first attempt towards a global fitting strategy for $f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD factorization. 
-We plan to release grids of the parametrizations studied in this work via TMDlib~\cite{Hautmann:2014kza} to facilitate phenomenological studies for present and future experiments.
+In this work we demonstrated for the first time that it is possible 
+to perform a
+simultaneous fit of unpolarized TMDs PDFs and FFs 
+to data of SIDIS, Drell-Yan, and $Z$
+boson production collected by different experiments. 
+This constitutes the first attempt towards a global fit of 
+$f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD
+factorization and with the implementation of 
+TMD evolution at NLL accuracy and at LO in $\alpha_S$.
+  
+We extracted unpolarized TMDs using 8059 data points with 11 free parameters
+using a replica methodology. We selected data with 
+$Q^2 > 1.4$ GeV$^2$ and $0.2 < z < 0.7$. We restricted our fit to the small
+transverse momentum region, selecting the maximum value of transverse momentum
+on the basis of phenomenological considerations
+(see Sec.~\ref{s:data_analysis}). With these choices, 
+we included regions where TMD
+factorization could be questioned, but we checked that our results describe 
+very well the regions where TMD factorization certainly holds.  
+We obtained The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$.
+Most of the discrepancies between experimental data and theory comes from the
+normalization and not from the transverse momentum shape. 
+%This might
+%indicate the both perturbative corrections and higher-twist corrections could
+%play a relevant role at low energies. 
 
-We extracted unpolarized TMDs using 8059 data points with 11 free parameters using a replica methodology. We choose $Q^2 > 1.4$ GeV$^2$, $0.2 < z < 0.7$ and phenomenological implementations of the small transverse momentum region (see Sec.~\ref{s:data_analysis}). The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$.
-Most of the discrepancies between experimental data and theory comes from the normalisation and not from the shape in transverse momentum. This might indicate the both perturbative corrections and higher-twist corrections could play a relevant role at low energies.
+Our fit is performed assuming that the intrinsic transverse momentum
+dependence of TMD PDFs and FFs 
+can be parametrized by a normalized linear combination of a Gaussian and a
+weigthed Gaussian. 
+%For $f_1$ we assume that the two Gaussian
+%distributions have the same variance, for $D_1$ we relax this condition.  
+For the nonperturbative component of TMD evolution, we adopted the choice most
+often used in the literature. 
 
-This fit is performed assuming that the intrinsic transverse momentum dependence is described by a normalized linear combination of a Gaussian and a weigthed Gaussian in momentum space. For $f_1$ we assume that the two Gaussian distributions have the same variance, for $D_1$ we relax this condition.  To describe the high transverse momentum tail of the TMDs, we include TMD evolution at NLL in the Sudakov exponenet and at LO in the Wilson coefficients matching onto collinear distributions.
+We plan to release grids of the parametrizations studied in this work via
+TMDlib~\cite{Hautmann:2014kza} to facilitate phenomenological studies for
+present and future experiments. 
 
-By means of fitting data from different processes and experiments, we also perform a phenomenological check of the universality of unpolarized TMDs. 
-TMD factorization allows us to describe the considered data in a reasonable way at low transverse momentum. In future works we should aim at a more precise analysis from the perturbative point of view, at a detailed flavor decomposition in momentum space and at describing also events at higher transverse momenta matching to the collinear fixed-order calculations. We look also forward to the possibility of identifying the current fragmentation region in a more sistematic way~\cite{Boglione:2016bph}.
-Together with an improved theoretical framework, in order to better understand the formalism we need more experimental data. In particular with larger coverage in $x$, $z$ and rapidity and spanning over a larger range in $Q^2$. 
-Additional data from SIDIS (at Jefferson Lab, at a future Electron-Ion Collider), Drell-Yan, $Z/W$ production (at \compass\, at the LHC, at RHIC, at A Fixed-Target Experiment at the LHC) and $e^+e^-$ (at Belle-II, BES-III, at a future Internation Linear Collider) will be very important. 
+In future studies, different
+functional forms for all nonperturbative ingredients should be explored, 
+adding also a possible
+flavor dependence, which we presently neglected.
+A more
+precise analysis from the perturbative point of view is also needed, which
+should in principle make it possible to describe data at higher transverse
+momenta and 
+should be properly matched to 
+the collinear fixed-order calculations. 
+
+Together with an improved theoretical framework, in order to better understand
+the formalism more experimental data is needed. It would be particularly
+useful to extend the
+coverage in $x$, $z$, rapidity, and $Q^2$.  
+The $12$ GeV physics program at Jefferson Lab~\cite{Dudek:2012vr} will be very important to constrain TMD distributions at large $x$.
+Additional data from SIDIS (at \compass, at a future Electron-Ion
+Collider), Drell-Yan (at \compass, at Fermilab), 
+$Z/W$ production (at LHC, RHIC, and at
+A Fixed-Target Experiment at the LHC) will be very important. Measurements
+related to unpolarized
+TMD FFs at $e^+e^-$ colliders (at Belle-II, BES-III, at a
+future Internation Linear Collider) will be invaluable, since they are
+presently missing.
 
 Testing the formalism of TMD factorization and understanding the structure of unpolarized TMDs is only the first crucial step in the exploration of the 3D proton structure in momentum space and this work opens the way to global determinations of TMDs. 
 Building on this, we can proceed to deepen our understanding of hadron structure via asymmetries and polarized structure function (see e.g.~\cite{Aschenauer:2015ndk,Boglione:2015zyc,Kikola:2017hnp}) and, at the same time, to test the impact of hadron structure in precision measurements at high-energies, such as at the LHC. A detailed mapping of hadron structure is essential to interpret data from hadronic collisions, which are among the most powerful tools to look for footprints of new physics.
-In particular, the $12$ GeV physics program at Jefferson Lab~\cite{Dudek:2012vr} will be very important to constrain collinear and TMD distributions at large $x$, fundamental in order to search new heavy particles at hadron colliders.
+
 
 
 
