@@ -70,7 +70,6 @@
      "f:avmomenta_68CL"
      "ss:replica105"
      "t:replica105-hermes"
-     "ss:comment_fldep"
      "s:conclusions")
     (TeX-add-symbols
      "xbj"

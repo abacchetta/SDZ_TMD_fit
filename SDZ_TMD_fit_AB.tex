@@ -1431,10 +1431,32 @@ For more details, such as the value of the input scale for the TMDs, see the res
 
 
 %=======================================================
-\subsection{Tests on replica 105}
+\subsection{Modifications to the default choices}
 \label{ss:replica105}
 
-In this subsection we have a closer look at the results of the fit to replica 105, which, as discussed above, is one of the most representative of the two hundred fits performed in our analysis. The corresponding $\chi^2/$d.o.f.~is 1.51. We note that if we normalize \hermes data to the value of the first bin in $P_{hT}$ as we did for \compass data, the global  $\chi^2/$d.o.f.~immediately reduces to 1.27, without performing any new minimization. The partial $\chi^2$ for the different SIDIS processes measured at \hermes are shown in Table~\ref{t:replica105-hermes}.
+In this subsection we discuss the effect of modifying some of the choices we
+made in our default fit. Instead of repeating the fitting procedure with
+different choices, we limited ourselves to checking how the $\chi^2$ of a single
+replica is affected by the modifications. 
+
+As starting point we chose replica
+105, which, as discussed above, is one of the most representative among the
+whole replica set. 
+The global $\chi^2/$d.o.f.\ of replica 105 is 1.51. We kept all parameters
+fixed, without performing any new minimization, 
+and we computed the $\chi^2/$ after the modifications described in the
+following.
+
+First of all, we analyzed \hermes data with the same strategy as \compass,
+i.e., we normalize \hermes data to the value of the first bin
+in $P_{hT}$. In this case, the global
+$\chi^2/$d.o.f.~immediately reduces to 1.27. The partial $\chi^2$ for the
+different SIDIS processes measured 
+at \hermes are shown in Table~\ref{t:replica105-hermes}. 
+This confirms that normalization effects are the main contribution to the
+$\chi^2$ of SIDIS data and have minor effects on TMD-related parameters. In
+fact, even if we perform a new fit with this modification, the $\chi^2$ does
+not improve significantly and parameters do not change much.
 
 %%%%%%%%%%%%%% Tab. chi2 SIDIS off deuteron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1458,18 +1480,48 @@ Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+We also considered the effect of changing the normalization of the $Z$-boson
+data: if we increase the normalization factors quoted
+in the last row of Tab.~\ref{t:data_Z} by 10\%, the $\chi^2$ . This effect is
+also already visible in Fig.~\ref{f:Z_qT}: the theoretical curves are
+systematically below the experimental data points, but the shape is reproduced
+very well.
 
-If we consider more stringent kinematic cuts on SIDIS data, namely $Q^2 > 1.5$ GeV$^2$ and $0.25 < z < 0.6$ instead of $Q^2 > 1.4$ GeV$^2$ and $0.2 < z < 0.7$, leaving the other ones unchanged,  the number of bins reduces from 8059 to 5679.  As a consequence, the  $\chi^2/ \text{d.o.f.}$  decreases to the value 1.23. In addition, if we replace the constraint  $P_{h T} < \text{Min} [ 0.2\, Q, 0.7\, Q z] + 0.5$  with $P_{h T} < \text{Min} [ 0.2\, Q, 0.5\, Q z] + 0.3$, the number of bins becomes 3380 and the $\chi^2/$d.o.f.\ decreases further to 0.96. By adopting the cut $P_{h T} < \text{Min} [ 0.2\, Q, 0.2\, Q z]$ instead, the number of bins drops to 477, with  a
- $\chi^2$/d.o.f.\ =1.02. 
+We considered the sensitivity of our results to the set of
+parameterizations adopted for the collinear quark PDFs. 
+The $\chi^2/ \text{d.o.f.}$ varies from its original value
+1.51, obtained with the NLO GJR 2008 parametrization~\cite{Gluck:2007ck}, to
+1.84 using NLO MSTW 2008~\cite{Martin:2009iq}, and 1.85 using NLO
+CJ12~\cite{Owens:2012bv}. 
 
-Finally, we consider the sensitivity of our results on the set of parameterizations adopted for the collinear, unpolarized quark distributions. The $\chi^2/ \text{d.o.f.}$ varies from its original value 1.51, obtained with the NLO GJR 2008 parametrization ~\cite{Gluck:2007ck}, to  1.84 (NLO MSTW 2008~\cite{Martin:2009iq})   and 1.85 (NLO CJ12~\cite{Owens:2012bv}).  
+An extremely important point is the choice of kinematic cuts. Our default
+choices are listed in Tabs.~\ref{t:data_SIDIS_proton}--\ref{t:data_Z}. We
+considered more stringent kinematic cuts on SIDIS data: 
+$Q^2 > 1.5$ GeV$^2$ and $z$ range to 
+$0.25 < z < 0.6$ instead of $Q^2 > 1.4$ GeV$^2$ and $0.2 < z <
+0.7$, leaving the other ones unchanged. The number of bins with these cuts 
+reduces from 8059 to 5679 and 
+the  $\chi^2/ \text{d.o.f.}$  decreases to the
+value 1.23. 
+In addition, if we replace the constraint  $P_{h T} < \text{Min} [
+0.2\, Q, 0.7\, Q z] + 0.5$ GeV  
+with $P_{h T} < \text{Min} [ 0.2\, Q, 0.5\, Q z] +
+0.3$ GeV, the number of bins reduces to 3380 and the $\chi^2/$d.o.f.\ decreases
+further to 0.96. By adopting the even stricter 
+cut $P_{h T} < 0.2\, Q z$, 
+the number of bins drops to only 477, with  a 
+ $\chi^2$/d.o.f.\ =1.02.  We can conclude that our fit, obtained by
+ fitting data in an extended kinematic region, where TMD factorization may be
+ questioned,  works extremely well also in a narrower
+ region, where TMD factorization is expected to be under control.
 
-%========================================================
-\subsection{Comments on flavor-dependent fits}
-\label{ss:comment_fldep}
 
-\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass data.}
-
+%%========================================================
+%\subsection{Comments on flavor-dependent fits}
+%\label{ss:comment_fldep}
+%
+%\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass data.}
+%
 %\begin{table}[h]
 %\small
 %  \centering
@@ -1571,24 +1623,49 @@ Finally, we consider the sensitivity of our results on the set of parameterizati
 
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary and outlook}
+\section{Conclusions}
 \label{s:conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-In this work we demonstrated for the first time the possibility to perform a rigorous simultaneous fit of unpolarized TMDs to data of SIDIS, Drell-Yan, and $Z$ boson production collected by different experiments.
-This constitutes the first attempt towards a global fitting strategy for $f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD factorization. 
-We plan to release grids of the parametrizations studied in this work via TMDlib~\cite{Hautmann:2014kza} to facilitate phenomenological studies for present and future experiments.
+In this work we demonstrated for the first time that it is possible 
+to perform a
+simultaneous fit of unpolarized TMDs PDFs and FFs 
+to data of SIDIS, Drell-Yan, and $Z$
+boson production collected by different experiments. 
+This constitutes the first attempt towards a global fit of 
+$f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD
+factorization and with the implementation of 
+TMD evolution at NLL accuracy and at LO in $\alpha_S$.
+  
+We extracted unpolarized TMDs using 8059 data points with 11 free parameters
+using a replica methodology. We selected data with 
+$Q^2 > 1.4$ GeV$^2$ and $0.2 < z < 0.7$. We restricted our fit to the small
+transverse momentum region
+(see Sec.~\ref{s:data_analysis}).  
+The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$.
+Most of the discrepancies between experimental data and theory comes from the
+normalization and not from the shape in transverse momentum. This might
+indicate the both perturbative corrections and higher-twist corrections could
+play a relevant role at low energies. 
 
-We extracted unpolarized TMDs using 8059 data points with 11 free parameters using a replica methodology. We choose $Q^2 > 1.4$ GeV$^2$, $0.2 < z < 0.7$ and phenomenological implementations of the small transverse momentum region (see Sec.~\ref{s:data_analysis}). The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$.
-Most of the discrepancies between experimental data and theory comes from the normalisation and not from the shape in transverse momentum. This might indicate the both perturbative corrections and higher-twist corrections could play a relevant role at low energies.
-
-This fit is performed assuming that the intrinsic transverse momentum dependence is described by a normalized linear combination of a Gaussian and a weigthed Gaussian in momentum space. For $f_1$ we assume that the two Gaussian distributions have the same variance, for $D_1$ we relax this condition.  To describe the high transverse momentum tail of the TMDs, we include TMD evolution at NLL in the Sudakov exponenet and at LO in the Wilson coefficients matching onto collinear distributions.
+This fit is performed assuming that the intrinsic transverse momentum
+dependence is described by a normalized linear combination of a Gaussian and a
+weigthed Gaussian in momentum space. 
+%For $f_1$ we assume that the two Gaussian
+%distributions have the same variance, for $D_1$ we relax this condition.  
+To describe the high transverse momentum tail of the TMDs, we include TMD
+evolution at NLL in the Sudakov exponenet and at LO in the Wilson coefficients
+matching onto collinear distributions. 
 
 By means of fitting data from different processes and experiments, we also perform a phenomenological check of the universality of unpolarized TMDs. 
 TMD factorization allows us to describe the considered data in a reasonable way at low transverse momentum. In future works we should aim at a more precise analysis from the perturbative point of view, at a detailed flavor decomposition in momentum space and at describing also events at higher transverse momenta matching to the collinear fixed-order calculations. We look also forward to the possibility of identifying the current fragmentation region in a more sistematic way~\cite{Boglione:2016bph}.
 Together with an improved theoretical framework, in order to better understand the formalism we need more experimental data. In particular with larger coverage in $x$, $z$ and rapidity and spanning over a larger range in $Q^2$. 
 Additional data from SIDIS (at Jefferson Lab, at a future Electron-Ion Collider), Drell-Yan, $Z/W$ production (at \compass, at the LHC, at RHIC, at A Fixed-Target Experiment at the LHC) and $e^+e^-$ (at Belle-II, BES-III, at a future Internation Linear Collider) will be very important. 
+
+We plan to release grids of the parametrizations studied in this work via
+TMDlib~\cite{Hautmann:2014kza} to facilitate phenomenological studies for
+present and future experiments. 
 
 Testing the formalism of TMD factorization and understanding the structure of unpolarized TMDs is only the first crucial step in the exploration of the 3D proton structure in momentum space and this work opens the way to global determinations of TMDs. 
 Building on this, we can proceed to deepen our understanding of hadron structure via asymmetries and polarized structure function (see e.g.~\cite{Aschenauer:2015ndk,Boglione:2015zyc,Kikola:2017hnp}) and, at the same time, to test the impact of hadron structure in precision measurements at high-energies, such as at the LHC. A detailed mapping of hadron structure is essential to interpret data from hadronic collisions, which are among the most powerful tools to look for footprints of new physics.
