@@ -1018,7 +1018,16 @@ Although the minimization is performed on the function defined in~\eqref{e:MC_ch
 \label{s:results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{red}{AS: Filippo, can you please check the final plots? I can't run the notebooks in Dropbox because of a problem with Mathematica.}
+%% overview of past works
+Our work aims at simultaneously fitting for the first time data sets related to different experiments. 
+In the past, only fits related either to SIDIS or hadronic collisions have been presented. Here we refer only to a selection of existing analyses. 
+Among the fits of SIDIS data only, we refer to~\cite{Signori:2013mda} and~\cite{Anselmino:2013lza}. In the first one, the authors fitted \hermes\ multiplicities only (1538 points in total) without taking into account QCD evolution (not DGLAP, nor TMD). In this work a flavor decomposition in transverse momentum for the unpolarized TMDs and an analysis of the kinematic dependence of the intrinsic average square transverse momenta were presented. 
+In~\cite{Anselmino:2013lza} the authors fitted \hermes\ and \compass\ multiplicities separetely (576 and 6284 points respectively), introducing an ad-hoc normalization for \compass\ data and using DGLAP evolution. 
+Looking at data from hadronic collisions, in 2007 Konychev and Nadolsky~\cite{Konychev:2005iy} fitted data of low-energy Drell-Yan events and $Z$-boson production at Tevatron, taking into account TMD evolution at NLL accuracy. They did not consider SIDIS events and fitted in total 98 points. Contrary to our approach, KN studied the quality of the fit as a function of $b_{\text{max}}$. They found that the best value for $b_{\text{max}}$ is $1.5$ GeV$^{-1}$. We choose $b_{\text{max}}=1.123$ GeV$^{-1}$, instead (see Sec.~\ref{ss:TMDevo}). Comparisons of best-fit values in the nonperturbative Sudakov form factors are delicate, since the functional form by KN is different from ours.
+In 2014 D'Alesio, Echevarria, Melis, Scimemi performed a fit~\cite{DAlesio:2014mrz} of Drell-Yan data and $Z$-boson production data at Tevatron, focusing in particular on the role of the nonperturbative contribution to the kernel of TMD evolution. This is the fit with the highest accuracy in transverse momentum resummation performed up to date (NNLL in the Sudakov exponent and ${\cal O}(\alpha_s)$ in the Wilson coefficients). 
+In the same year Echevarria, Idilbi, Kang and Vitev~\cite{Echevarria:2014xaa} attempted a global fit of data for the Sivers asymmetry (thus including both SIDIS and Drell-Yan events), extracting also the nonperturbative part of the unpolarized TMDs. They anyway considered only one bin in $x, Q^2$ both for \hermes\ and \compass\ and the agreement between data and theory is questionable. 
+Another attempt was performed by Sun, Isaacson, Yuan and Yuan~\cite{Su:2014wpa} without providing a precise fit of the nonperturbative contributions.
+
 
 In the following we detail the results of a fit to the data sets described in Sec.~\ref{s:data_analysis} with a a flavor-independent configuration for the transverse momentum dependence of unpolarized TMDs.
 In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. The number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
