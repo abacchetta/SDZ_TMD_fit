@@ -315,9 +315,11 @@ and $Y_{UU,T}\approx 0$.
 However, perturbative corrections include large logarithms $L \equiv
 \log\big(z^2 Q^2/P_{hT}^2\big)$, so that $\alpha_S L \approx 1$.
 In the present analysis, we will take into account all 
-powers of the form $\alpha_S^n L^{2n-1} \approx 1$ (Leading Logarithms --LL) 
+powers of the form $\alpha_S^n L^{2n-1}$ (Leading Logarithms -- LL) 
 and 
-$\alpha_S^n L^{n-1} \approx 1$ (Next-to-Leading Logarithms -- NNL).
+$\alpha_S^n L^{2n-2} $ (Next-to-Leading Logarithms -- NLL).\footnote{We
+  remark that formulas at NNLL are available in the
+  literature~\cite{Echevarria:2016scs}.} 
 
 In these approximations (LO in $\alpha_S$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
@@ -331,7 +333,7 @@ redefine it in order to avoid this problem~\cite{Collins:2016hqq}.
 We leave a detailed treatment of the matching to the high $P_{hT}^2 \approx Q^2$
 region to future investigations.   
 
-To the purpose of applying TMD evolution equations, 
+To the purpose of applying TMD evolution equations, we
  need to calculate the Fourier transform of the the part of 
 Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to 
 \begin{align}
@@ -342,7 +344,6 @@ Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to
       Q^2 \big) 
 \nonumber \, .
 \end{align} 
-\textcolor{red}{ E' questa la formula usata nel codice, o serve dire altro?}
 where we introduced the Fourier transforms of the TMD PDF and FF according to
 \begin{align} 
 \tilde{f}_1^a\big(x, \bT^2;\mu^2\big) &=
@@ -473,8 +474,6 @@ the right-hand side of Eq.~\eqref{e:DYkT} as
  2\pi \sum_a {\cal H}_{UU}^{1 a} \,x_a x_B \int_0^{\infty} d \bT \bT\, J_0\big( \bT |\bm{q}_T|\big)\ 
       \tilde{f}_1^a\big(x_A, \bT^2;\mu^2\big) \   \tilde{f}_1^{\bar{a}}\big(x_B, \bT^2;\mu^2 \big)  \, .
 \end{align} 
-
-\textcolor{red}{ Stessa osservazione che in SIDIS: \`e questa la formula usata nel codice, o serve dire altro?}
 
 
 
@@ -644,8 +643,13 @@ nonperturbative Sudakov factor we make the traditional choice
 g_K (\bT) = - g_2 \bT^2 / 2
 \end{equation} 
 with $g_2$ a free parameter. Recently, several alternative
-forms have been proposed~\cite{Aidala:2014hva,Collins:2014jpa} including the
-suggestion of not including such term~\cite{D'Alesio:2014vja}.  
+forms have been proposed~\cite{Aidala:2014hva,Collins:2014jpa}. Also, recent
+theoretical studies aimed at calculating this term using nonperturbative
+methods~\cite{Scimemi:2016ffw}.  
+All these
+choices should be tested in future studies. In Ref.~\cite{D'Alesio:2014vja}, a
+good agreement with data was achieved even without this term: we think this is
+not possible when including data at low $Q^2$.
 
 In this analysis, for the collindear PDFs $f_1^a$ we adopt the GJR08FFnloE
 set~\cite{Gluck:2007ck} through the LHAPDF library~\cite{Buckley:2014ana}, and
@@ -748,37 +752,60 @@ For each kinematic variable in all the considered data sets, we fit the average 
 \label{ss:SIDIS data}
 
 The semi-inclusive DIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
-Both \hermes\ and \compass\ data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}, however they have never been fitted together, nevertheless considering also the contributions deriving from TMD evolution.
+Both \hermes\ and \compass\ data have been already analyzed in previous works,
+e.g.~\cite{Signori:2013mda,Anselmino:2013lza}, however they have never been
+fitted together, considering also the contributions deriving from TMD
+evolution. 
 
-The application of the TMD formalism to SIDIS crucially depends on the capability of identifying the current fragmentation region. This task has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out a possible overlap among different  fragmentation regions when the hard scale $Q$ is sufficiently low. 
-In this paper we do not tackle this problem and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.74$\ .\footnote{The implementation of the ``collinearity'' criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the partonic properties.}
+The application of the TMD formalism to SIDIS depends on the capability of identifying the current fragmentation region. This task has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out a possible overlap among different  fragmentation regions when the hard scale $Q$ is sufficiently low. 
+In this paper we do not tackle this problem and we leave it to future
+studies. As described in Tabs.~\ref{t:data_SIDIS_proton}
+and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region
+operating a cut on $z$ only, namely $0.2 < z < 0.74$\ .\footnote{The
+  implementation of the ``collinearity'' criterion proposed
+  in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2
+  \rangle$, requiring independent determinations of the partonic
+  properties.} 
 
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
-Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
-In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
-The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax
+Another requirement for the applicability of TMD factorization is the presence
+of two separate scales in the process. In SIDIS, those are the $Q^2$ and
+$P_{hT}^2$, which should satisfy the condition $P_{hT}^2 \ll Q^2$, or more
+precisely  $P_{hT}^2/z^2 \ll Q^2$. 
+%In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
+%The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax
 %~\footnote{\textcolor{red}{AS [comment to ourselves]: adding $0.5$ GeV might be a bit ``extreme'', since we could probe the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}} 
-these conditions and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points.
+We implement this condition by imposing 
+$P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV.
+With this choice, $P_{hT}^2$ is always smaller than $Q^2/3$, but in a few 
+bins (at low $Q^2$ and $z$) $P_{hT}^2/z^2$ may become larger
+than $Q^2$. The applicability of TMD factorization in this case could be
+questioned. However, as we will explain further in Sec.~\ref{ss:replica105},
+we can obtain a fit that can describe a wide region of $P_{hT}$ and can also
+perform very well in a restricted region,  where TMD factorization
+certainly holds.
+
 All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
 \subsubsection{\hermes\ data}
 \label{sss:hermes}
 
-\hermes\ hadron multiplicities are measured in a fixed target experiment, colliding a $27.6$ GeV lepton beam on a hydrogen ($p$) or deuterium ($D$) gas target, for a total of 2688 points.\\
+\hermes\ hadron multiplicities are measured in a fixed target experiment,
+colliding a $27.6$ GeV lepton beam on a hydrogen ($p$) or deuterium ($D$) gas
+target, for a total of 2688 points.
 These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
 The collinear energy fraction $z$ in Eq.~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
 The peculiarity of \hermes\ SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to determine their momenta and charges.
 The particle identification process distinguish the final data sets in eight different channels, one for every combination of target ($p,\,D$) and detected charged hadron ($\pi^\pm, \,  K^\pm$ ).
-\hermes\ Collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
+\hermes\ Collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{\compass\ data}
 \label{sss:compass}
 
-Compass collaboration extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment. \\
+Compass collaboration extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment.
 The data set are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes , for \compass\ $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
-
 The multiplicities published by \compass\ are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}), in order to avoid this issue we divide the data grouped in one of the bin characterized by a value of ($x, z, Q^2$) by the data point with the lowest $P_{hT}^2$ in that group.
 We define the {\em normalized} multiplicity that result from this procedure as:
 \begin{equation}
@@ -795,7 +822,7 @@ We analyze Drell-Yan events collected by fixed-target experiments at low-energy.
 We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dq^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of Cu or Pt.
 The measurements were repeated using proton incident energies of $200$, $300$ and $400$ $GeV$, producing three different data sets.
 Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4$ GeV.
-We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8$ GeV) on a copper fixed target .\\
+We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8$ GeV) on a copper fixed target .
 
 The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity ,\textcolor{red}{ whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf})}.  
 As discussed for SIDIS data, we can apply TMD factorization if $\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse momentum of the intermediate electroweak boson, reconstructed from the kinematics of the final state leptons. As done for SIDIS, we choose $q_T < 0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to maximize the goodness of the fit and to not exclude too many points.
@@ -968,7 +995,6 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 \subsection{The replica method}
 \label{ss:replica_method}
 
-\textcolor{red}{AS: I edited a bit the text, but some overlap remains in this section with the text in~\cite{Signori:2013mda}.}
 
 In this section we describe the replica method and we give a definition of the $\chi^2$ function minimized by the fit procedure.
 The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty,Signori:2013mda,Radici:2015mwa} and taking
@@ -1018,7 +1044,6 @@ Although the minimization is performed on the function defined in~\eqref{e:MC_ch
 \label{s:results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{red}{AS: Filippo, can you please check the final plots? I can't run the notebooks in Dropbox because of a problem with Mathematica.}
 
 In the following we detail the results of a fit to the data sets described in Sec.~\ref{s:data_analysis} with a a flavor-independent configuration for the transverse momentum dependence of unpolarized TMDs.
 In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. The number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
@@ -1086,7 +1111,7 @@ For kaon production off the proton at \hermes\ the agreement at low $z$ is bette
  Points         &  190 & 190 & 189 & 187       \\
  \hline
 %$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
-$\chi^2 /$points &4.83 & 2.47 & 0.91 & 0.82   \\            
+$\chi^2 /$points &$4.83\pm 0.42$ & $2.47\pm 0.28$ & $0.91\pm 0.14$ & $0.82\pm 0.17$ \\
 \hline
 \hline
 \end{tabular}
@@ -1117,7 +1142,9 @@ The quality of the agreement between theory and \compass\ data is better than in
  Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
  \hline
 %$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
-$\chi^2 /$points &3.46 & 2.00 & 1.31 & 2.54  & 1.11 & 1.61 \\            
+$\chi^2 /$points &
+$3.46\pm 0.32$ & $2.00\pm 0.17$ & $1.31\pm 0.26$ & $2.54\pm 0.57$ \
+& $1.11\pm 0.03$ & $1.61\pm 0.04$ \\
  \hline
  \hline
 \end{tabular}
@@ -1205,8 +1232,8 @@ The agreement is also good for $Z$ boson production, see Tab.~\ref{t:fl_ind_chi2
  \hline
  Points                   &      45      &   45             &       78           &     35               \\
  \hline
-$ \chi^2  /$points      &  0.99        &    0.84           &       0.32
-&   1.12     \\
+$ \chi^2  /$points      &  
+$0.99\pm 0.09$ & $0.84\pm 0.10$ & $0.32\pm 0.01$ & $1.12\pm 0.08$ \\
 \hline
 \hline
 \end{tabular}
@@ -1229,7 +1256,8 @@ $ \chi^2  /$points      &  0.99        &    0.84           &       0.32
  \hline
  Points                   &      31      &   14             &       37          &        8       \\
  \hline
-$\chi^2 /$points      &  1.36        &    1.11           &       2.00         &   1.73     \\
+$\chi^2 /$points      &
+$1.36\pm 0.00$ & $1.11\pm 0.02$ & $2.00\pm 0.02$ & $1.73\pm 0.01$ \\
 \hline
 \hline
 \end{tabular}
@@ -1457,9 +1485,9 @@ and we computed the $\chi^2/$ after the modifications described in the
 following.
 
 First of all, we analyzed \hermes data with the same strategy as \compass,
-i.e., we normalize \hermes data to the value of the first bin
+i.e., we normalized \hermes data to the value of the first bin
 in $P_{hT}$. In this case, the global
-$\chi^2/$d.o.f.~immediately reduces to 1.27. The partial $\chi^2$ for the
+$\chi^2/$d.o.f.\ reduces sharply to 1.27. The partial $\chi^2$ for the
 different SIDIS processes measured 
 at \hermes are shown in Table~\ref{t:replica105-hermes}. 
 This confirms that normalization effects are the main contribution to the
@@ -1492,8 +1520,11 @@ Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\
 
 We also considered the effect of changing the normalization of the $Z$-boson
 data: if we increase the normalization factors quoted
-in the last row of Tab.~\ref{t:data_Z} by 10\%, the $\chi^2$ . This effect is
-also already visible in Fig.~\ref{f:Z_qT}: the theoretical curves are
+in the last row of Tab.~\ref{t:data_Z} by 5\%, the $\chi^2$ quoted in the last
+row of Tab.~\ref{t:fl_ind_chi2_Z}
+drop to 0.66, 
+0.52, 0.65, 0.68. This effect is
+also already visible by eye in Fig.~\ref{f:Z_qT}: the theoretical curves are
 systematically below the experimental data points, but the shape is reproduced
 very well.
 
@@ -1502,7 +1533,10 @@ parameterizations adopted for the collinear quark PDFs.
 The $\chi^2/ \text{d.o.f.}$ varies from its original value
 1.51, obtained with the NLO GJR 2008 parametrization~\cite{Gluck:2007ck}, to
 1.84 using NLO MSTW 2008~\cite{Martin:2009iq}, and 1.85 using NLO
-CJ12~\cite{Owens:2012bv}. 
+CJ12~\cite{Owens:2012bv}. In both cases, the agreement with \hermes\
+and $Z$ boson data is not affected significanlty,
+ the agreement with \compass\ data becomes slightly worse, 
+and the agreement with DY data is clearly worse. 
 
 An extremely important point is the choice of kinematic cuts. Our default
 choices are listed in Tabs.~\ref{t:data_SIDIS_proton}--\ref{t:data_Z}. We
