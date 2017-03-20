@@ -16,9 +16,9 @@
 \contentsline {section}{\numberline {IV}Results}{12}{}
 \contentsline {subsection}{\numberline {A}Agreement between data and theory}{12}{}
 \contentsline {subsubsection}{\numberline {}Semi-inclusive DIS}{12}{}
-\contentsline {subsubsection}{\numberline {}{\leavevmode {\color [rgb]{1,0,1}Drell--Yan and $Z$ production}}}{15}{}
-\contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{19}{}
+\contentsline {subsubsection}{\numberline {}{\leavevmode {\color [rgb]{1,0,1}Drell--Yan and $Z$ production}}}{14}{}
+\contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{14}{}
 \contentsline {subsection}{\numberline {C}Modifications to the default choices}{20}{}
 \contentsline {section}{\numberline {V}Conclusions}{22}{}
-\contentsline {section}{\numberline {}Acknowledgments}{22}{}
+\contentsline {section}{\numberline {}Acknowledgments}{23}{}
 \contentsline {section}{\numberline {}References}{23}{}
