@@ -6,19 +6,19 @@
 \contentsline {subsection}{\numberline {A}Semi-inclusive DIS}{3}{}
 \contentsline {subsection}{\numberline {B}{\leavevmode {\color [rgb]{1,0,1}Drell--Yan and $Z$ production}}}{4}{}
 \contentsline {subsection}{\numberline {C}TMDs and their evolution}{5}{}
-\contentsline {section}{\numberline {III}Data analysis}{7}{}
+\contentsline {section}{\numberline {III}Data analysis}{8}{}
 \contentsline {subsection}{\numberline {A}Semi-inclusive DIS data}{8}{}
 \contentsline {subsubsection}{\numberline {1}\textsc {Hermes}\ data}{8}{}
-\contentsline {subsubsection}{\numberline {2}\textsc {Compass}\ data}{8}{}
+\contentsline {subsubsection}{\numberline {2}\textsc {Compass}\ data}{9}{}
 \contentsline {subsection}{\numberline {B}Low-energy Drell-Yan data}{9}{}
-\contentsline {subsection}{\numberline {C}Z-boson production data}{9}{}
-\contentsline {subsection}{\numberline {D}The replica method}{10}{}
-\contentsline {section}{\numberline {IV}Results}{11}{}
+\contentsline {subsection}{\numberline {C}Z-boson production data}{10}{}
+\contentsline {subsection}{\numberline {D}The replica method}{11}{}
+\contentsline {section}{\numberline {IV}Results}{12}{}
 \contentsline {subsection}{\numberline {A}Agreement between data and theory}{12}{}
 \contentsline {subsubsection}{\numberline {}Semi-inclusive DIS}{12}{}
-\contentsline {subsubsection}{\numberline {}{\leavevmode {\color [rgb]{1,0,1}Drell--Yan and $Z$ production}}}{13}{}
-\contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{17}{}
+\contentsline {subsubsection}{\numberline {}{\leavevmode {\color [rgb]{1,0,1}Drell--Yan and $Z$ production}}}{15}{}
+\contentsline {subsection}{\numberline {B}Transverse momentum dependence at 1 GeV}{19}{}
 \contentsline {subsection}{\numberline {C}Modifications to the default choices}{20}{}
-\contentsline {section}{\numberline {V}Conclusions}{21}{}
+\contentsline {section}{\numberline {V}Conclusions}{22}{}
 \contentsline {section}{\numberline {}Acknowledgments}{22}{}
-\contentsline {section}{\numberline {}References}{22}{}
+\contentsline {section}{\numberline {}References}{23}{}

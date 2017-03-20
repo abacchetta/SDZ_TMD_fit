@@ -37,8 +37,8 @@
 %% macro to manage T versus perp notation
 \newcommand{\T}{\perp}
 \newcommand{\Tperp}{T}
-\newcommand{\bT}{\zeta_T}
-\newcommand{\bb}{\zeta}
+\newcommand{\bT}{b_T}
+\newcommand{\bb}{b}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -220,7 +220,7 @@ discussed. In Sec.~\ref{s:conclusions}, we summarize the results and present an 
 \label{s:theory}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{red}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
+\AS{Shall we add pictures for the kinematics of SIDIS and DY/$Z$ ? E.g. see Fig. 1 in~\cite{Signori:2013mda}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Semi-inclusive DIS}
@@ -256,7 +256,7 @@ m_N^h (x,z,|\bm{P}_{h\Tperp}|, Q^2) = \frac{d \sigma_N^h / ( dx  dz d|\bm{P}_{h\
 \label{e:multiplicity}
 \end{equation}
 where $d\sigma_N^h$ is the differential cross section for the SIDIS process and $d\sigma_{\text{DIS}}$ is the corresponding inclusive one, 
-and where \( \bm{P}_{h\Tperp} \) is the component of \( \bm{P}_{h} \) transverse to \( \bm{q} \). 
+and where \( \bm{P}_{h\Tperp} \) is the component of \( \bm{P}_{h} \) transverse to \( \bm{q} \) \AS{(choose $T$ vs $\perp$ and cite the appropriate Ref.)}. 
 In the single-photon-exchange approximation, the multiplicities can be written as ratios of
 structure functions (see~\cite{Bacchetta:2006tn} for details):
 \begin{equation}
@@ -270,11 +270,11 @@ where
 \begin{align}
 \varepsilon &= \frac{1-y -\frac{1}{4} \gamma^2 y^2}{1-y+\frac{1}{2} y^2 +\frac{1}{4} \gamma^2 y^2} \ .
 \end{align}  
-%\textcolor{red}{and the structure function $F_{XY,Z}$ corresponds to a lepton with polarization $X$ scattering on a target with polarization $Y$ by exchanging a virtual photon in a polarization state $Z$.}
+\AS{The structure functions $F_{XY,Z}$ in the numerator correspond to a lepton with polarization $X$ scattering on a target with polarization $Y$ by exchanging a virtual photon in a polarization state $Z$. In the denominator only the photon polarization is explicited ($T, L$).}
 
 The semi-inclusive cross section can be expressed in a factorized form in
-terms of TMDs only in the kinematical limits $M^2 \ll Q^2$ and $\bm{P}_T^2 \ll
-Q^2$. In these limits, the structure function $F_{UU,L}$ of Eq.~\eqref{e:mFF}
+terms of TMDs only in the kinematical limits $M^2 \ll Q^2$ and \AS{$\bm{P}_{hT}^2/z^2 \ll Q^2$}. 
+In these limits, the structure function $F_{UU,L}$ of Eq.~\eqref{e:mFF}
 can be neglected~\cite{Bacchetta:2008xw}. 
  The structure function $F_L$ in the denominator contains contributions
  involving powers of the strong coupling constant $\alpha_S$ at an order that
@@ -292,20 +292,22 @@ Collins:2012uy}:
 \begin{align}
 \label{e:SIDISkT}
    F_{UU,T}(x,z, \bm{P}_{h \Tperp}^2, Q^2) &= \sum_a \mathcal{H}_{UU,T}^{a}(Q^2;\mu^2) \\ 
-      &\times x \int d\bm{k}_\T^{} \, d\bm{P}_\T^{} \,  f_1^a\big(x,\bm{k}_{\T}^2; \mu^2 \big) \, D_{1}^{a\smarrow h}\big(z,\bm{P}_{\T}^2; \mu^2 \big) \,
-      \delta \big(z {\bm k}_{\T} - {\bm P}_{h \Tperp} + {\bm P}_{\T}\big)
+      &\times x \int \AS{d^2}\bm{k}_\T^{} \, \AS{d^2}\bm{P}_\T^{} \,  f_1^a\big(x,\bm{k}_{\T}^2; \mu^2 \big) \, D_{1}^{a\smarrow h}\big(z,\bm{P}_{\T}^2; \mu^2 \big) \,
+      \AS{\delta^{(2)}} \big(z {\bm k}_{\T} - {\bm P}_{h \Tperp} + {\bm P}_{\T}\big)
 \nonumber\\&
 \nonumber + Y_{UU,T}\big(Q^2, \bm{P}_{h\Tperp}^2\big) + \mathcal{O}\big(M^2/Q^2\big) \, .
 \end{align} 
 Here, $\mathcal{H}_{UU,T}$ is the hard scattering part; $f_1^a(x,\bm{k}_{\T}^2;
 \mu^2)$ is the TMD distribution of unpolarized partons with flavor $a$ in an unpolarized
 proton, carrying longitudinal momentum fraction $x$ and transverse momentum
-$\bm{k}_\T$ at the factorization scale $\mu^2$, which in the following we
-choose to be equal to $Q^2$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;
+$\bm{k}_\T$ \AS{\sout{at the factorization scale $\mu^2$, which in the following we
+choose to be equal to $Q^2$}}.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;
 \mu^2)$ is the TMD fragmentation function describing the fragmentation of an unpolarized parton with flavor $a$ into
 an unpolarized hadron $h$ carrying longitudinal momentum fraction $z$ and
-transverse momentum 
-$\bm{P}_\T$. The term $Y_{UU,T}$ is introduced to ensure a matching
+transverse momentum $\bm{P}_\T$. 
+\AS{Both distributions are evaluated at the factorization/renormalization scale $\mu^2$, which in the following we
+choose to be equal to $Q^2$.} 
+The term $Y_{UU,T}$ \AS{\sout{is introduced to} potentially ensures} a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
 
 In our analysis, we neglect any correction of the order of $M^2/Q^2$ or higher
@@ -344,7 +346,7 @@ We leave a detailed treatment of the matching to the high $P_{hT}^2 \approx Q^2$
 region to future investigations.   
 
 To the purpose of applying TMD evolution equations, 
- need to calculate the Fourier transform of the the part of 
+\AS{we} need to calculate the Fourier transform of the the part of 
 Eq.~\eqref{e:SIDISkT} involving TMDs. The structure function thus reduces to 
 \begin{align}
 \label{e:SIDISkTFF}
@@ -415,12 +417,12 @@ B_R(Z\rightarrow \ell^+\ell^-)
 \label{e:elem_cs_sig0}
 \end{align} 
 where $\theta_W$ is Weinberg's angle, $M_Z$ is the mass of the $Z$ boson, and
-$B_R$ is the branching ratio for the $Z$ boson decay in two leptons.
+\AS{$B_R(Z\rightarrow \ell^+\ell^-)$} is the branching ratio for the $Z$ boson decay in two leptons.
 We adopted the narrow-width approximation, i.e., we neglect contributions for 
 $Q^2 \neq M_Z^2$. 
 We used the values 
 $\sin^2 \theta_W= 0.2313$, $M_Z = 91.18$ GeV, and 
-$B_R(Z\rightarrow \ell^+\ell^-)=3.366$.  
+$B_R(Z\rightarrow \ell^+\ell^-)=3.366$\AS{~\cite{Olive:2016xmw}}.  
 Similarly to the SIDIS case, in the kinematical limit $q_T^2 \ll Q^2$ 
 the structure function $F_{UU}^2$ can be neglected 
 (for measurement and estimates of this
@@ -429,7 +431,7 @@ Ref.~\cite{Lambertsen:2016wgj} and references therein).
 %Similar reasons as for the semi-inclusive DIS case leads us to neglecting
 %the structure function $F_{UU}^2$.
 
-The longitudinal momentum fractions can be written in terms of
+The longitudinal momentum fractions \AS{of the annihilating quarks} can be written in terms of the 
 rapidity in the following way 
 \begin{align}
 x_A &= \frac{Q}{\sqrt{s}} e^{\eta},
@@ -452,16 +454,16 @@ The structure function $F_{UU}^1$ can be written as
 \begin{align}
 \label{e:DYkT}
    F_{UU}^1(x_A,x_B, \bm{q}_{T}^2, Q^2) &= \sum_a \mathcal{H}_{UU}^{1 a}(Q^2;\mu^2) \\ 
-      &\times x_A x_B \int d\bm{k}_{\T A}^{} \, d\bm{k}_{\T B}^{} 
+      &\times x_A x_B \int \AS{d^2}\bm{k}_{\T A}^{} \, \AS{d^2}\bm{k}_{\T B}^{} 
 \,  f_1^a\big(x_A,\bm{k}_{\T A}^2; \mu^2 \big) 
 \, f_{1}^{\bar{a}}\big(x_B,\bm{k}_{\T B}^2; \mu^2 \big) \,
-      \delta \big({\bm k}_{\T A} - {\bm q}_T + {\bm k}_{\T B}\big)
+      \AS{\delta^{(2)}} \big({\bm k}_{\T A} - {\bm q}_T + {\bm k}_{\T B}\big)
 \nonumber\\&
 \nonumber + Y_{UU}^1\big(Q^2, \bm{q}_T^2\big) + \mathcal{O}\big(M^2/Q^2\big) \, .
 \end{align} 
 
 
-As in the SIDIS case, in our analysis we neglect $Y_{UU}$ term
+As in the SIDIS case, in our analysis we neglect \AS{the} $Y_{UU}$ term
 and we consider the hard coefficients only up to leading order in
 the couplings, i.e.,
 \begin{align} 
@@ -494,39 +496,114 @@ the right-hand side of Eq.~\eqref{e:DYkT} as
 \subsection{TMDs and their evolution}
 \label{ss:TMDevo}
 
+\AS{TMDs generally depend on two energy scales, $\mu$ and $\zeta$~\cite{Collins:2011zzd}. 
+The first enters via the renormalization group evolution, whereas the second is associated to the rapidity renormalization and enters via a process-independent soft factor. 
+Evolution equations quantitatively describe the connection between different values for the two energy scales. 
+In the following we will set their initial values to $\mu_i^2=\zeta_i=\mu_b^2$ and their final values as $\mu_f^2=\zeta_f=Q^2$, so that only $Q^2$ and $\mu_b^2$ need to be specified in a TMD distribution. 
+We will assign the form of $\mu_b$ later in this Section.}
+
 Following the formalism of Refs.~\cite{Collins:2011zzd,Aybat:2011zv}, the
 unpolarized TMD distribution and fragmentation functions in configuration
-space for a parton flavor $a$ at a certain scale $Q^2$ can be written as 
+space for a parton flavor $a$ at the scale $Q^2$ can be written as 
 \begin{align}   
-\widetilde{f}_1^a (x,  \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( C_{a/i} \otimes f_1^i \bigr) (x; \mu_b^2) 
-\  e^{S (\mu_b^2, Q^2)} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
+\widetilde{f}_1^a (x,  \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( C_{a/i} \otimes f_1^i \bigr) (x,\AS{\bar{b}_\ast}; \mu_b^2) 
+\  e^{S (\mu_b^2, Q^2)} \ \AS{\bigg( \frac{Q^2}{\mu_b^2} \bigg)^{-K(\bar{b}_\ast;\mu_b)}} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
 \label{e:TMDevol1} \\
-\widetilde{D}_1^{a\to h} (z, \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
+\widetilde{D}_1^{a\to h} (z, \bT^2; Q^2) &= \sum_{i=q,\bar q,g} \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z,\AS{\bar{b}_\ast}; \mu_b^2) \  e^{S (\mu_b^2, Q^2)} \ \AS{\bigg( \frac{Q^2}{\mu_b^2} \bigg)^{-K(\bar{b}_\ast;\mu_b)}} \  e^{g_K( \bT) \ln (Q^2 / Q_0^2)} \  \widetilde{D}_{1 {\rm NP}}^{a\to h} (z, \bT^2) \  .
 \label{e:TMDevol2}
 \end{align}
 
-The $C$ and $\hat{C}$ are perturbatively calculable Wilson coefficients for
-the TMD distribution and fragmentation functions, respectively. They are
-convoluted with the corresponding collinear functions according to 
+The collinear \AS{distributions} in Eqs.~\eqref{e:TMDevol1b}, \eqref{e:TMDevol2b} \AS{and the perturbative Sudakov form factors involve \sout{are computed at}} a
+scale $\mu_b^2$ \AS{\sout{, which is also the lower limit of integration in the Sudakov
+exponent in Eq.~\eqref{e:Sudakov}}}. We choose it to be
+\begin{align} 
+\mu_b &= \frac{2 e^{-\gamma_E}}{\bar{\bb}_{\ast}} \  ,
+\label{e:mub}
+\end{align}  
+where $\gamma_E$ is the Euler constant and
+\begin{align} 
+\bar{\bb}_{\ast} &\equiv \bar{\bb}_{\ast}(b_T;\bb_{\rm min},\bb_{\rm max}) = \bb_{\rm max} \Bigg(\frac{1-e^{- \bT^4 / \bb_{\rm max}^4} }{1-e^{- \bT^4 / \bb_{\rm min}^4}} \Bigg)^{1/4} .
+\label{e:b*}
+\end{align}  
+This variable replaces the simple dependence upon $\bT$ in the
+  convolutions of Eqs.~\eqref{e:WC1}, \eqref{e:WC2} and in the perturbative
+  Sudakov factor $S$ \AS{\sout{and $\hat{S}$}}; namely, in the perturbative parts of the
+  TMD definitions of Eqs.~\eqref{e:TMDevol1},~\eqref{e:TMDevol2}. In fact, at
+  large $\bT$ these parts are no longer reliable. Therefore, the
+  $\bar{\bb}_{\ast}$ is chosen to saturate on the maximum value $\bb_{\rm max}$,
+  as suggested by the CSS 
+  formalism~\cite{Collins:2011zzd,Aybat:2011zv}.
+On the other hand, at
+small $\bT$ the TMD formalism is not reliable and should be 
+matched to the fixed-order collinear
+calculations. The way
+the matching is implemented is arbitrary.  In any case, the TMD contribution
+can be arbitrarily modified at small $\bT$. In our approach, we choose to
+saturate 
+$\bar{\bb}_{\ast}$  at
+the minimum value $\bb_{\rm min}\propto 1/Q$. With the appropriate choices, 
+for $\bT=0$ the Sudakov exponent vanishes, as it
+should~\cite{Parisi:1979se,Altarelli:1984pt}. 
+Our choice partially corresponds to modifying the resummed logarithms as in
+Ref.~\cite{Bozzi:2010xn} and to other similar modifications proposed in the
+literature~\cite{Boer:2014tka,Collins:2016hqq}. One advantage of these kind of
+prescriptions is that by integrating over the impact parameter $\bT$, the
+collinear expression for the cross section \AS{\sout{,}} in terms of collinear PDFs \AS{\sout{,}} is
+recovered, at least at leading order~\cite{Collins:2016hqq}.
+\AS{We remind that there are different schemes available to deal with the high-$\bT$ region, such as the the so-called ``complex-$\bb$ prescription''~\cite{Laenen:2000de} or an extrapolation of the perturbative small-$b_T$ calculation to the large $b_T$ region based on dynamical power corrections~\cite{Qiu:2000hf}.}
+
+The values of $\bb_{\rm max}$ and
+$\bb_{\rm min}$ could
+be regarded as arbitrary scales separating perturbative from nonperturbative
+regimes. 
+We choose to fix them to the
+values 
 \begin{align}
-\bigl( C_{a/i} \otimes f_1^i \bigr) (x; \mu_b^2) &=
+\bb_{\rm max} &= 2 e^{-\gamma_E}  \text{  GeV}^{-1} = 1.123 \text{  GeV}^{-1}, 
+&
+\bb_{\rm min} &= 2 e^{-\gamma_E}/Q \ .
+\label{e:bminmax}
+\end{align} 
+The motivations are the following: 
+\begin{itemize}
+\item{} with the above choices, the scale $\mu_b$ is
+  constrained between 1 GeV and $Q$, so that the collinear PDFs are never
+  computed at a scale lower than 1 GeV and the lower limit of the integrals
+  contained in the definition of the perturbative Sudakov factor \AS{(see Eq.~\eqref{e:Sudakov})} can never
+  become larger than the upper limit;
+\item{} at $Q_0 = 1$ GeV, $\bb_{\rm max} = \bb_{\rm min}$ and there are no evolution effects; the TMD is
+simply given by the corresponding collinear function multiplied by a
+nonperturbative contribution depending on $k_\T$ (plus possible corrections of
+order $\alpha_S$ from the Wilson coefficients) .
+\end{itemize} 
+
+\AS{The Collins-Soper kernel $K$ is a power series in $\alpha_s$ with coefficients involving $\ln \mu/\mu_b$. At NLL accuracy, $K(\bar{b}_{\ast};\mu=\mu_b) = 0$.}
+\AS{Similarly, }the $C$ and $\hat{C}$ are perturbatively calculable Wilson coefficients for
+the TMD distribution and fragmentation functions, respectively. 
+They are convoluted with the corresponding collinear functions according to 
+\begin{align}
+\bigl( C_{a/i} \otimes f_1^i \bigr) (x,\AS{\bar{b}_\ast}; \mu_b^2) &=
   \int_x^1 \frac{du}{u}\  
-        C_{a/i} \Big( \frac{x}{u}, \alpha_S\big(\mu_b^2\big)  \Big) \  
+        C_{a/i} \Big( \frac{x}{u}, \AS{\bar{b}_\ast}, \alpha_S\big(\mu_b^2\big)  \Big) \  
         f_1^i (u; \mu_b^2) \  , 
 \label{e:WC1} \\
-\bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z; \mu_b^2) &= \int_z^1 \frac{du}{u}\  \hat{C}_{a/i} \left( \frac{z}{u}, \alpha_S\big(\mu_b^2\big) \right) \  D_1^{i\to h} (u; \mu_b^2) \  . 
+\bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z,\AS{\bar{b}_\ast}; \mu_b^2) &= \int_z^1 \frac{du}{u}\  \hat{C}_{a/i} \left( \frac{z}{u},\AS{\bar{b}_\ast}, \alpha_S\big(\mu_b^2\big) \right) \  D_1^{i\to h} (u; \mu_b^2) \  . 
 \label{e:WC2}
 \end{align}
+\AS{The $b_T$ dependence in $C$ and $\hat{C}$ enters only at higher orders in $\alpha_S$ via logarithms of the type $\ln \mu/\mu_b$. 
+As we already saw for $K$, also for the Wilson coefficients $C,\hat{C}$ the choice $\mu_i=\mu_b$ improves the convergence of the perturbative calculation minimizing the logarithms involved.} 
+
 In the present analysis, we consider only the leading-order term
 in the $\alpha_S$ expansion, i.e., 
 \begin{align} 
-C_{a/i} \Big( \frac{x}{u}, \alpha_S\big(\mu_b^2\big)  \Big) &\approx
+\AS{C_{a/i} \Big( \frac{x}{u} \Big)} &\approx
 \delta_{ai} \delta(1-x/u),
 &
-\hat{C}_{a/i} \Big( \frac{z}{u}, \alpha_S\big(\mu_b^2\big)  \Big) &\approx
+\AS{\hat{C}_{a/i} \Big( \frac{z}{u} \Big)} &\approx
 \delta_{ai} \delta(1-z/u).
+\label{e:Wils_approx}
 \end{align}  
-As a consequence, the expression for the evolved TMD functions reduces to
+As a consequence \AS{of the scale choice $\mu_i=\mu_b$ and of Eq.~\eqref{e:Wils_approx}}, the expression for the evolved TMD functions reduces to
 \begin{align}   
 \widetilde{f}_1^a (x,  \bT^2; Q^2) &= f_1^a (x ; \mu_b^2) 
 \  e^{S (\mu_b^2, Q^2)} \  e^{g_K(\bT) \ln (Q^2 / Q_0^2)} \  \widetilde{f}_{1 {\rm NP}}^a (x, \bT^2) \ ,
@@ -547,13 +624,13 @@ S(\mu_b^2,Q^2)=-\int_{\mu_b^2}^{Q^2}{d\mu^2\over \mu^2}
 Functions $A$ and $B$ have perturbative expansions of the form
 \begin{align}
 A\left(\alpha_s(k_T)\right) &= \sum_{k=1}^{\infty}A_k
-\bigg(\frac{\alpha_S}{\pi} \bigg),
+\bigg(\frac{\alpha_S}{\pi} \bigg)^{\AS{k}},
 &
 B\left(\alpha_s(k_T)\right) &= \sum_{k=1}^{\infty}B_k
-\bigg(\frac{\alpha_S}{\pi} \bigg).
+\bigg(\frac{\alpha_S}{\pi} \bigg)^{\AS{k}}.
 \end{align} 
 To NNL accuracy, we need the following 
-terms~\cite{Davies:1984hs,Collins:1984kg}
+terms~\cite{Davies:1984hs,Collins:1984kg,Bacchetta:2015ora}
 \begin{align}
 A_1&= C_F, 
 &
@@ -564,7 +641,7 @@ C_A \bigg( \frac{67}{18} - \frac{\pi^2}{6} \bigg)
 &
 B_1&= - \frac{3}{2}C_F.
 \end{align} 
-We use the approximate analytic expression for $\alpha_S$ at NLO with the
+We use the approximate analytic expression for $\alpha_S$ at NLO with 
 $\Lambda_{\text{QCD}}=$ 340 MeV, 296 MeV, 214 MeV for three, four, five
 flavors, respectively, corresponding to a value of $\alpha_S(M_Z)=0.117$. 
 We fix the flavor thresholds at $m_c=1.5$ GeV and 
@@ -584,71 +661,7 @@ Refs.~\cite{Frixione:1998dw,Bozzi:2005wk,Echevarria:2012pw}).
 %  nonperturbative universal term $g_K$ at large $\bT$ that accounts for the
 %  radiation of soft gluons emitted by the considered parton. } 
 
-The collinear PDFs in Eqs.~\eqref{e:TMDevol1b}, \eqref{e:TMDevol2b} are computed at a
-scale $\mu_b^2$, which is also the lower limit of integration in the Sudakov
-exponent in Eq.~\eqref{e:Sudakov}. We choose it to be
-\begin{align} 
-\mu_b &= \frac{2 e^{-\gamma_E}}{\bar{\bb}_{\ast}} \  ,
-\label{e:mub}
-\end{align}  
-where $\gamma_E$ is the Euler constant and
-\begin{align} 
-\bar{\bb}_{\ast} &\equiv \bb_{\rm max} \Bigg(\frac{1-e^{- \bT^4 / \bb_{\rm max}^4} }{1-e^{- \bT^4 / \bb_{\rm min}^4}} \Bigg)^{1/4} .
-\label{e:b*}
-\end{align}  
-This variable replaces the simple dependence upon $\bT$ in the
-  convolutions of Eqs.~\eqref{e:WC1}, \eqref{e:WC2} and in the perturbative
-  Sudakov factors $S$ and $\hat{S}$; namely, in the perturbative parts of the
-  TMD definitions of Eqs.~\eqref{e:TMDevol1},~\eqref{e:TMDevol2}. In fact, at
-  large $\bT$ these parts are no longer reliable. Therefore, the
-  $\bar{\bb}_{\ast}$ is chosen to saturate on the maximum value $\bb_{\rm max}$,
-  as suggested by the CSS 
-  formalism~\cite{Collins:2011zzd,Aybat:2011zv}.\footnote{We remind that
-  different schemes are possible to deal with 
-the high-$\bT$ region like the so-called ``complex-$\bb$
-prescription''~\cite{Laenen:2000de}.}
-On the other hand, at
-small $\bT$ the TMD formalism is not reliable and should be 
-matched to the fixed-order collinear
-calculations. The way
-the matching is implemented is arbitrary.  In any case, the TMD contribution
-can be arbitrarily modified at small $\bT$. In our approach, we choose to
-saturate 
-$\bar{\bb}_{\ast}$  at
-the minimum value $\bb_{\rm min}\propto 1/Q$. With the appropriate choices, 
-for $\bT=0$ the Sudakov exponent vanishes, as it
-should~\cite{Parisi:1979se,Altarelli:1984pt}. 
-Our choice partially corresponds to modifying the resummed logarithms as in
-Ref.~\cite{Bozzi:2010xn} and to other similar modifications proposed in the
-literature~\cite{Boer:2014tka,Collins:2016hqq}. One advantage of these kind of
-prescriptions is that by integrating over the impact parameter $\bT$, the
-collinear expression for the cross section, in terms of collinear PDFs, is
-recovered, at least at leading order~\cite{Collins:2016hqq}.
 
-The values of $\bb_{\rm max}$ and
-$\bb_{\rm min}$ could
-be regarded as arbitrary scales separating perturbative from nonperturbative
-regimes. 
-We choose to fix them to the
-values 
-\begin{align}
-\bb_{\rm max} &= 2 e^{-\gamma_E}  \text{  GeV}^{-1} = 1.123 \text{  GeV}^{-1}, 
-&
-\bb_{\rm min} &= 2 e^{-\gamma_E}/Q \ .
-\label{e:bminmax}
-\end{align} 
-The motivations are the following: 
-\begin{itemize}
-\item{} with the above choices, the scale $\mu_b$ is
-  constrained between 1 GeV and $Q$, so that the collinear PDFs are never
-  computed at a scale lower than 1 GeV and the lower limit of the integrals
-  contained in the definition of the perturbative Sudakov factor can never
-  become larger than the upper limit;
-\item{} at $Q_0 = 1$ GeV, $\bb_{\rm max} = \bb_{\rm min}$ and there are no evolution effects; the TMD is
-simply given by the corresponding collinear function multiplied by a
-nonperturbative contribution depending on $k_\T$ (plus possible corrections of
-order $\alpha_S$ from the Wilson coefficients) .
-\end{itemize} 
 
 Following Refs.~\cite{Nadolsky:1999kb,Landry:2002ix,Konychev:2005iy}, for the
 nonperturbative Sudakov factor we make the traditional choice 
@@ -685,8 +698,8 @@ following ways
      {2 \pi z^2 \Big(\langle \bm{P}_{\T a\to h}^2 \rangle + \big(\lambda_F/z^2\big)   \langle \bm{P}_{\T a\to h}'^2 \rangle^2\Big)} \  .
 \label{e:D1NP}
 \end{align} 
-After performing the anti-Fourier transform, the $f_{1 \rm NP}$ and $D_{1\rm
-  NP}$ in momentum space correspond to the normalized linear combination of
+After performing the anti-Fourier transform, $f_{1 \rm NP}^a$ and $D_{1\rm
+  NP}^{a \to h}$ in momentum space correspond to the normalized linear combination of
 a Gaussian and a weighted Gaussian:
 \begin{align} 
 f_{1 {\rm NP}}^a (x, \bm{k}_{\T}^2) &= \frac{1}{\pi} \  
@@ -712,21 +725,21 @@ with angular momentum
 $L=1$~\cite{Bacchetta:2007wc,Pasquini:2008ax,Avakian:2010br,Bacchetta:2010si,Burkardt:2015qoa}.   
 
 The
-Gaussian width of the TMD distribution may depend 
+Gaussian width of the TMD \AS{distributions} may depend 
 on the parton flavor $a$~\cite{Signori:2013mda}. 
 In the present analysis, however, we assume they are
 flavor independent. The justification for this choice is that most of the data
 we are considering are not sufficiently sensitive to flavor differences.
 
-Finally, we assume the Gaussian width of the TMD depends on 
-fractional longitudinal momentum $x$ according to
+Finally, we assume \AS{that} the Gaussian width of the TMD depends on 
+fractional longitudinal momentum $x$~\cite{Signori:2013mda} according to
 \begin{align} 
 \big\langle \bm{k}_{\T}^2 \big\rangle (x) &= \big\langle \hat{\bm{k}}_{\T}^2 \big\rangle \;  
 \frac{(1-x)^{\alpha} \  x^{\sigma} }{ (1 - \hat{x})^{\alpha} \  \hat{x}^{\sigma} } \, ,
 \label{e:kT2_kin}
 \end{align}
 where $\alpha, \, \sigma,$ and $\big\langle \hat{\bm{k}}_{\T}^2 \big\rangle
-\equiv \big\langle \bm{k}_{\T}^2 \big\rangle (\hat{x})$ with $\hat{x} = 0.1$,
+\equiv \big\langle \bm{k}_{\T}^2 \big\rangle (\hat{x})$ with $\hat{x} = 0.1$
 are free parameters. Similarly, for fragmentation functions we have
 \begin{align}  
 \big\langle \bm{P}_{\T}^2 \big\rangle (z) &= \big\langle \hat{\bm{P}}_{\T}^2 \big\rangle \  
@@ -748,10 +761,10 @@ $\big\langle \hat{\bm{P}}_{\T}^{\prime 2} \big\rangle$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The main goals of our work are to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes. To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales.
-In this chapter we describe the data sets considered for each process and the reasons behind the kinematic cuts applied.
+The main goals of our work are \AS{to extract the magnitude of intrinsic transverse momenta,} to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes. To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales.
+In this chapter we describe the data sets considered for each process and \AS{\sout{the reasons behind}} the kinematic cuts applied.
 
-Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes\ experiment) and presents their kinematic ranges. 
+Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off \AS{a} proton target (\hermes\ experiment) and presents their kinematic ranges. 
 The same holds for Tab.~\ref{t:data_SIDIS_deuteron}, Tab.~\ref{t:data_DY}, Tab.~\ref{t:data_Z} for SIDIS off deuteron (\hermes\ and \compass\ experiments), Drell-Yan events at low energy and $Z$ boson production respectively. 
 For each kinematic variable in all the considered data sets, we fit the average value in each bin.
  
@@ -760,17 +773,17 @@ For each kinematic variable in all the considered data sets, we fit the average 
 \label{ss:SIDIS data}
 
 The semi-inclusive DIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
-Both \hermes\ and \compass\ data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza}, however they have never been fitted together, nevertheless considering also the contributions deriving from TMD evolution.
+Both \hermes\ and \compass\ data have been already analyzed in previous works, e.g.~\cite{Signori:2013mda,Anselmino:2013lza} \AS{ . Nonetheless,} they have never been fitted together \AS{ . \sout{, nevertheless considering also the contributions deriving from TMD evolution}}.
 
 The application of the TMD formalism to SIDIS crucially depends on the capability of identifying the current fragmentation region. This task has been recently discussed in~\cite{Boglione:2016bph}, where the authors point out a possible overlap among different  fragmentation regions when the hard scale $Q$ is sufficiently low. 
-In this paper we do not tackle this problem and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.74$\ .\footnote{The implementation of the ``collinearity'' criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the partonic properties.}
+In this paper we do not tackle this problem and we leave it to future studies. As described in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region operating a cut on $z$ only, namely $0.2 < z < 0.74$\ .\footnote{\AS{\sout{The implementation of the ``collinearity'' criterion proposed in~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2 \rangle$, features that requires independent determinations of the partonic properties.}}}
 
 %PhT <Min[0.2Q,0.7Qz]+0.5GeV
 Another requirement for the applicability of TMD factorization is the presence of two separate hard scales in the process. In SIDIS, those are the $Q^2$ and $P_{hT}^2$, which should satisfy the hierarchy $\Lambda_{\text{QCD}}^2 \ll P_{hT}^2 \ll Q^2$. 
 In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
-The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax
+The second condition is \AS{\sout{$P_{hT}^2 \ll Q^2$, together with the further constraint}  $P_{hT}^2/z^2 \ll Q^2$}. In our analysis we relax
 %~\footnote{\textcolor{red}{AS [comment to ourselves]: adding $0.5$ GeV might be a bit ``extreme'', since we could probe the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}} 
-these conditions and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points.
+these \AS{condition} and implement them as $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV. The specific values of the terms are chosen to maximize the goodness of the fit procedure and not to exclude too many data points.
 All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:data_SIDIS_deuteron}.
 
 \subsubsection{\hermes\ data}
@@ -779,25 +792,24 @@ All these choices are summarized in Tabs.~\ref{t:data_SIDIS_proton} and~\ref{t:d
 \hermes\ hadron multiplicities are measured in a fixed target experiment, colliding a $27.6$ GeV lepton beam on a hydrogen ($p$) or deuterium ($D$) gas target, for a total of 2688 points.\\
 These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
 The collinear energy fraction $z$ in Eq.~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
-The peculiarity of \hermes\ SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to determine their momenta and charges.
+The peculiarity of \hermes\ SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to \AS{determining} their momenta and charges.
 The particle identification process distinguish the final data sets in eight different channels, one for every combination of target ($p,\,D$) and detected charged hadron ($\pi^\pm, \,  K^\pm$ ).
-\hermes\ Collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
+\AS{The \hermes\ collaboration} published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where these contributions have been subtracted. \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{\compass\ data}
 \label{sss:compass}
 
-Compass collaboration extracted multiplicities of charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment. \\
-The data set are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes , for \compass\ $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
+\AS{The \compass\ }collaboration extracted multiplicities \AS{for} charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment. The data \AS{\sout{set}} are organised in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes , for \compass\ $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
 
-The multiplicities published by \compass\ are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}), in order to avoid this issue we divide the data grouped in one of the bin characterized by a value of ($x, z, Q^2$) by the data point with the lowest $P_{hT}^2$ in that group.
-We define the {\em normalized} multiplicity that result from this procedure as:
+The multiplicities published by \compass\ are affected by a normalization error (see the {\em erratum} to~\cite{Adolph:2013stb}). \AS{In} order to avoid this issue we divide the data grouped in \AS{\sout{one of the} bins} characterized by \AS{\sout{a} values} of ($x, z, Q^2$) by the \AS{\sout{data point} value} with the lowest $P_{hT}^2$ in that group.
+\AS{As a result, we} define the {\em normalized} multiplicity \AS{\sout{that result from this procedure}} as:
 \begin{equation}
 m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm \min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
 \label{e:mult_norm}
 \end{equation}
-where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. Fitting normalized multiplicities the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
+where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. Fitting normalized multiplicities, the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Low-energy Drell-Yan data}
@@ -805,41 +817,42 @@ where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. Fitting
 
 We analyze Drell-Yan events collected by fixed-target experiments at low-energy. These data set have been considered also in previous works, e.g.~\cite{DAlesio:2014mrz}. 
 We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dq^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of Cu or Pt.
-The measurements were repeated using proton incident energies of $200$, $300$ and $400$ $GeV$, producing three different data sets.
+The measurements were repeated using proton incident energies of $200$, $300$ and $400$ \AS{GeV}, producing three different data sets.
 Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4$ GeV.
-We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ $GeV$ ($\sqrt{s}=38.8$ GeV) on a copper fixed target .\\
+We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ \AS{GeV} ($\sqrt{s}=38.8$ GeV) on a copper fixed target .\\
 
-The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity ,\textcolor{red}{ whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf})}.  
-As discussed for SIDIS data, we can apply TMD factorization if $\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse momentum of the intermediate electroweak boson, reconstructed from the kinematics of the final state leptons. As done for SIDIS, we choose $q_T < 0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to maximize the goodness of the fit and to not exclude too many points.
-We consider the target nuclei as an ensemble composed by $40\%$ proton and $60\%$ nucleon, as suggested in~\cite{Ito:1980ev}, independent one from the other.
+The explored $Q$ values are higher compared to the SIDIS case, as can be seen in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity ,\textcolor{red}{ whereas E605 explores a range of values for $x_F$ (see~\eqref{e:eta_xf})} \AS{(why in red?)}.  
+As discussed for SIDIS data, we can apply TMD factorization if $\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse momentum of the intermediate electroweak boson, reconstructed from the kinematics of the final state leptons. As for SIDIS, we choose $q_T < 0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to maximize the goodness of the fit and to not exclude too many points.
+\AS{As suggested in~\cite{Ito:1980ev}, we} consider the target nuclei as an ensemble composed by $40\%$ proton and $60\%$ nucleon,  independent one from the other.
 
-As we already observed, results from E288 and E605 experiments are reported as $\frac{Ed^3\sigma}{d^3q}$; this variable is related the differential cross section $d\sigma/dq_T$ in the following way~\cite{Olive:2016xmw} :
+As we already observed, results from E288 and E605 experiments are reported as $\frac{Ed^3\sigma}{d^3q}$; this variable is related \AS{to} the differential cross section $d\sigma/dq_T$ in the following way~\cite{Olive:2016xmw} :
 
 \begin{equation}
-\frac{Ed^3\sigma}{d^3q}=\frac{d^3\sigma}{d\phi dy q_T dq_T} \Rightarrow \frac{d^2\sigma}{\pi dy d(q^2_T)}
+\frac{Ed^3\sigma}{d^3q}=\frac{d^3\sigma}{d\phi \AS{d\eta} q_T dq_T} \Rightarrow \frac{d^2\sigma}{\pi \AS{d\eta} d(q^2_T)}
 \end{equation}
-where the third term is the average over $\phi$.
+where \AS{$\phi$ is the polar angle of $q_T$ and} the third term is the average over $\phi$.
 Therefore, the invariant dimuon cross section can be obtained from Eq.~\ref{e:dsigma_gZ} performing an integration of its terms over $Q^2$ and adding a factor $1/\pi$ to the result:
 
 \begin{equation}
-\frac{Ed^3\sigma}{d^3q} = \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T dy} .
+\frac{Ed^3\sigma}{d^3q} = \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T \AS{d\eta}} .
 \end{equation}
 
-We checked that integrating in $Q^2$ only the prefactor $\sigma_q^\gamma$, defined in Eq.~\ref{e:elem_cs_sig0}, and not the entire term in Eq.~\ref{e:dsigma_gZ} (including then the convolution) introduces only a negligible error in the fit procedure, therefore we assume:  
-
+We checked \AS{numerically} that integrating in $Q^2$ only the prefactor $\sigma_q^\gamma$, defined in Eq.~\ref{e:elem_cs_sig0}, and not the entire term in Eq.~\ref{e:dsigma_gZ} (including then the convolution) introduces only a negligible error in the fit procedure. \AS{\sout{therefore we assume:} For Drell-Yan we obtain}
 \begin{equation}
 \frac{1}{\pi}  \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
-= \frac{4\alpha_{em}^2}{3 N_c s} e_q^2 \ln \left( \frac{Q_f^2}{Q_i^2} \right) .
+= \frac{4\alpha_{em}^2}{3 N_c s} e_q^2 \ln \left( \frac{Q_f^2}{Q_i^2} \right) ,
 \end{equation}
+\AS{where $Q_{i,f}$ are the lower and upper values in the experimental coverage (correct?). For $Z$ production we have a single value, $Q=M_Z$, as it is also evident from the delta distribution in Eq.~\eqref{e:elem_cs_sig0}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Z-boson production data}
 \label{ss:zboson}
 
 In order to reach higher $Q$ and $q_T$ values, we also consider $Z$ boson production in collider experiments at Tevatron. 
-We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II~\cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. CDF and D0 collaborations studied the differential cross section for $p\bar{p}\rightarrow Z/\gamma^* \rightarrow, e^+e^- + X$, that is the production of an $e^+e^-$ pairs from $p\bar{p}$ collision,  through an intermediate $Z$ vector boson. 
+We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:1999jh,Abbott:1999wk} at $\sqrt{s}=1.8\text{ TeV}$ and Run II~\cite{Aaltonen:2012fi,Abazov:2007ac} at $\sqrt{s}=1.96\text{ TeV}$. 
+CDF and D0 collaborations studied the differential cross section for $p\bar{p}\ \AS{\rightarrow Z}\ \rightarrow e^+e^- + X$, \AS{namely} the production of an $e^+e^-$ \AS{pair} from $p\bar{p}$ collision,  through an intermediate $Z$ vector boson. 
 
-The invariant mass distribution peaks at the $Z$-pole, $Q=M_Z$, while the transverse momentum of the exchanged $Z$ ranges in $0< q_T < 20 \text{ GeV}$.
+The invariant mass distribution peaks at the $Z$-pole, $Q \AS{\sim} M_Z$, while the transverse momentum of the exchanged $Z$ ranges in $0< q_T < 20 \text{ GeV}$.
 We use the same kinematic condition applied to Drell-Yan events:  $q_T < 0.2\ Q + 0.5$ GeV $ = 18.7$ GeV, since $Q$ is fixed to $M_Z$. 
 
 The observable measured in CDF and D0 is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable in all the cases considered, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abulencia:2005ix}. In this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
@@ -980,14 +993,14 @@ Normalization        &  1.114       &    0.992          &       1.049        &  
 \subsection{The replica method}
 \label{ss:replica_method}
 
-\textcolor{red}{AS: I edited a bit the text, but some overlap remains in this section with the text in~\cite{Signori:2013mda}.}
+\AS{ I edited a bit the text, but some overlap remains in this section with the text in~\cite{Signori:2013mda}.}
 
-In this section we describe the replica method and we give a definition of the $\chi^2$ function minimized by the fit procedure.
-The fit and the error analysis were carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty,Signori:2013mda,Radici:2015mwa} and taking
+\AS{Our fit is based on the replica methodology.} In this section we describe \AS{this} method and we give a definition of the $\chi^2$ function minimized by the fit procedure.
+The fit and the error analysis \AS{were/are (?)} carried out using a similar Monte Carlo approach as in Ref.~\cite{Bacchetta:2012ty,Signori:2013mda,Radici:2015mwa} and taking
 inspiration from the work of the Neural-Network PDF (NNPDF) collaboration (see, e.g.,~\cite{Forte:2002fg,Ball:2008by,Ball:2010de}). 
 The approach consists in creating $\mathcal{M}$ replicas of the data points. In each replica (denoted by the index $r$), each data point $i$ is shifted by a Gaussian noise with the same variance as the measurement. 
 Each replica, therefore, represents a possible outcome of an independent experimental measurement, which we denote by $m_{N, r}^{h}(x, z, \bm{P}_{h\Tperp}^2, Q^2)$. 
-The number of replicas is chosen so that the mean and standard deviation of the set of replicas accurately reproduces the original data points. We see that 200 replicas are sufficient for the purpose.
+The number of replicas is chosen so that the mean and standard deviation of the set of replicas accurately reproduces the original data points. \AS{\sout{We see that} In this case} 200 replicas are sufficient for the purpose.
 
 A minimization procedure is applied to each replica separately, by minimizing the following error function:~\footnote{Note that the error for each replica is taken to be equal to the error on the original data points. This is consistent with the fact that the variance of the $\mathcal{M}$ replicas should reproduce the variance of the original data points.}  
 \begin{equation}
@@ -1004,6 +1017,7 @@ Statistical and systematic experimental uncertainties $\Delta m_{N, \mbox{\tiny 
 We do not take into account the covariance among different kinematic bins. 
 
 \minuit minimizes the error function in~\eqref{e:MC_chi2} calculating its gradient with respect to the vector of parameters $\{p\}$. 
+\AS{In each replica we randomize the starting point of the minimization, to better sample the space of fit paramters.} 
 The final outcome is a set of $\mathcal{M}$ different vectors of best-fit parameters, $\{ p_{0r}\},\; r=1,\ldots \mathcal{M}$, with which we can calculate any observable, its mean, and its standard deviation. 
 The distribution of these values needs not to be necessarily Gaussian. In fact, in this case the $1 \sigma$ confidence interval is different from the 68\% interval. 
 The latter can simply be computed for each experimental point by rejecting the largest and the lowest 16\% of the $\mathcal{M}$ values.   
