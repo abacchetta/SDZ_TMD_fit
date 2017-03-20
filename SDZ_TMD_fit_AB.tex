@@ -14,11 +14,14 @@
 \usepackage{multirow}
 \usepackage{color}
 \usepackage[utf8]{inputenc}
-
+\usepackage[normalem]{ulem}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\xbj}{x_B}
 \newcommand{\zh}{z_h}
+
+%% legenda comments
+\newcommand{\AS}[1]{{\textcolor[rgb]{1,0,1}{#1}}}
 
 %% macro to draw particularly short right arrows. Choose one of the two
 \newcommand{\smarrow}{\mbox{\raisebox{-4.5pt}[0pt][0pt]{$\hspace{-1pt} 
@@ -62,7 +65,7 @@ inelastic scattering, Drell-Yan scattering, and Z-boson production.
 \affiliation{INFN Sezione di Pavia, via Bassi 6, I-27100 Pavia, Italy}
 
 \author{Cristian Pisano}
-\email{alessandro.bacchetta@unipv.it}
+\email{cristian.pisano@unipv.it}
 \affiliation{Dipartimento di Fisica, Universit\`a di Pavia, via Bassi 6,
   I-27100 Pavia} 
 \affiliation{INFN Sezione di Pavia, via Bassi 6, I-27100 Pavia, Italy}
@@ -82,8 +85,7 @@ inelastic scattering, Drell-Yan scattering, and Z-boson production.
 \begin{abstract}
 We present an extraction of unpolarized partonic transverse momentum
 distributions (TMDs) 
-from a simultaneous fit of available data measured in semi-inclusive deep
-inelastic scattering, 
+from a simultaneous fit of available data measured in semi-inclusive \AS{deep-inelastic} scattering, 
 Drell-Yan scattering, and $Z$ boson production. 
 To connect data at different scales, we use TMD evolution at next-to-leading logarithmic accuracy. The
 analysis is restricted to the low-transverse-momentum region, with no matching
@@ -106,6 +108,16 @@ This could be considered as a first attempt at a global fit of TMDs.
 \section{Introduction}
 \label{s:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\AS{General comments:}
+\begin{itemize}
+\item \AS{[physics] why do we use $P_{hT}$ instead of $P_{h\perp}$? The latter would follow the notation given in~\cite{Mulders:1995dh,Bacchetta:2006tn,Bacchetta:2004jz}. We used $P_{hT}$ in~\cite{Signori:2013mda}, though.}
+\item \AS{[style] use Ref. before citations or not? Now it's mixed.}
+\item \AS{[style] use Eq. before equation numbers or not? Now it's mixed.}
+\item \AS{[style] use ":" before introducing equations? Now it's mixed.}
+\item \AS{[style] which tense do we want to use? Now there is mixture between present and past tense.}
+\end{itemize}
+
 
 Parton distribution functions describe the internal structure of the nucleon
 in terms of its elementary constituents (quarks and gluons). They cannot be
@@ -131,15 +143,15 @@ Collinear PDFs
 describe the distribution of partons integrated over all components of
 partonic momentum except the one collinear to the parent hadron; hence,
 collinear PDFs
-are functions only of the parton longitudinal momentum fraction $x$. 
+are functions only of the parton longitudinal momentum fraction $x$ \AS{(and the renormalization scale $\mu$)}. 
 TMD PDFs (or TMDs for short) 
-include also the dependence on transverse momentum components $k_{\T}^2$. 
+include also the dependence on \AS{the modulus squared of the} transverse momentum \AS{\sout{components}} $k_{\T}^2$. 
 They can be interpreted as three-dimensional generalizations of collinear PDFs.
 Similar arguments apply to collinear FFs and TMD FFs~\cite{Angeles-Martinez:2015sea}.
 
 There are several differences between collinear and TMD distributions. From
 the formal point of view, factorization theorems for the two types of
-functions are qualitatively different, implying also different universality
+functions are \AS{\sout{qualitatively}} different, implying also different universality
 properties and evolution equations~\cite{Rogers:2015sqa}. From the
 experimental point 
 of view, observables related to TMDs require the measurement of some transverse
@@ -151,7 +163,7 @@ the only scale of the process, and access is limited to collinear PDFs
 and FFs. In semi-inclusive DIS (SIDIS) also the transverse momentum of the
 outgoing  
 hadron ($P_{hT}$) can be measured~\cite{Mulders:1995dh,Bacchetta:2006tn}. 
-If $P_{hT}^2\ll Q^2$, TMD
+If \AS{$P_{hT}^2/z^2 \ll Q^2$} \AS{(tell what $z$ is or use $P_{hT}$ only?)}, TMD
 factorization can be applied and the process is sensitive to
 TMDs~\cite{Collins:2011zzd}. 
 
@@ -171,9 +183,9 @@ Anselmino:2013vqa,Kang:2015msa%Collins
 }.  In
 this work, we focus on the simplest ones, i.e., the unpolarized TMD
 PDF $f_1^q(x,k_{\T}^2)$ and the unpolarized TMD
-FF $D_1^{q \to h}(z,P_{hT}^2)$, where $z$ is
-  the fractional energy carried by the detected hadron $h$. Despite their
-  simplicity, the phenomenology of these unpolarized TMDs present several
+FF $D_1^{q \to h}(z,\AS{P_{\perp}^2})$, where $z$ is
+  the fractional energy carried by the detected hadron $h$ \AS{(shall we say also what the transverse momenta are?)}. Despite their
+  simplicity, the phenomenology of these unpolarized TMDs \AS{presents} several
   challenges~\cite{Signori:2016lvd}: the choice of a functional form 
   for the nonperturbative components of TMDs, 
   the inclusion of a possible dependence on partonic
@@ -182,8 +194,8 @@ FF $D_1^{q \to h}(z,P_{hT}^2)$, where $z$ is
   fixed-order calculations in collinear
   factorization~\cite{Collins:2016hqq}. 
 
-We take into consideration three kinds of processes: semi-inclusive DIS, and
-Drell--Yan processes (DY) with the production of virtual photons and $Z$
+We take into consideration three kinds of processes: \AS{\sout{semi-inclusive DIS}} \AS{SIDIS}, 
+Drell--Yan processes (DY) \AS{\sout{with}} \AS{and} the production of \AS{\sout{virtual photons and}} $Z$
 bosons. To date, they represent 
 all possible processes
   where experimental information is available for unpolarized TMD
@@ -195,7 +207,7 @@ FFs~\cite{Bacchetta:2015ora}. This work can therefore be considered as the
 first attempt at a global fit of TMDs.  
 
 The paper is organized as follows. In Sec.~\ref{s:theory}, the general
-formalism for TMDs in SIDIS and DY processes is briefly outlined, including a
+formalism for TMDs in SIDIS, \AS{DY processes and $Z$ production} is briefly outlined, including a
 description of the assumptions and approximations in the phenomenological
 implementation of TMD evolution equations. In Sec.~\ref{s:data_analysis}, the criteria
 for selecting the data analyzed in the fit are summarized and commented. In
@@ -364,7 +376,7 @@ where we introduced the Fourier transforms of the TMD PDF and FF according to
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Drell--Yan processes}
+\subsection{\AS{Drell--Yan and $Z$ production}}
 \label{ss:DY_formalism}
 
 In a Drell--Yan process, two hadrons $A$ and $B$ with momenta $P_A$ and $P_B$
@@ -1192,7 +1204,7 @@ Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim} and th
 
 
 
-\subsubsection*{Drell-Yan processes}
+\subsubsection*{\AS{Drell--Yan and $Z$ production}}
 \label{sss:DYZ_agreement}
 
 %%% CHI2 VALUES %%%
@@ -1723,7 +1735,6 @@ Building on this, we can proceed to deepen our understanding of hadron structure
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgments}
-%Discussions with  are gratefully acknowledged. 
 Discussions with Giuseppe Bozzi are gratefully acknowledged.
 This work is supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 647981, 3DSPIN). 
 AS acknowledges support from U.S. Department of Energy contract DE-AC05-06OR23177, under which Jefferson Science Associates, LLC, manages and operates Jefferson Lab. 
