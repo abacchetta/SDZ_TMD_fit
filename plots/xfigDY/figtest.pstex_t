@@ -1,0 +1,29 @@
+\begin{picture}(0,0)%
+\includegraphics{figtest.pstex}%
+\end{picture}%
+\setlength{\unitlength}{3947sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(12613,5712)(2432,-5161)
+\put(7426,-3886){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$k_{\perp A}$}%
+}}}}
+\put(11551,-961){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$q_T$}%
+}}}}
+\put(8476,-1786){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$k_{\perp B}$}%
+}}}}
+\put(7351,-2461){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$k_B$}%
+}}}}
+\put(9976,-3736){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$k_A$}%
+}}}}
+\put(4201,-1261){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$P_B$}%
+}}}}
+\put(9376,-736){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$q$}%
+}}}}
+\put(13426,-5011){\makebox(0,0)[lb]{\smash{{\SetFigFont{25}{30.0}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$P_A$}%
+}}}}
+\end{picture}%
