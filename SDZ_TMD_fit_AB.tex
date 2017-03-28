@@ -216,7 +216,7 @@ discussed. In Sec.~\ref{s:conclusions}, we summarize the results and present an 
 \label{s:theory}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{red}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in Ref.~\cite{Signori:2013mda}.}
+%\textcolor{red}{AS: Shall we add pictures for the kinematics of SIDIS and DY data ? E.g. see Fig. 1 in Ref.~\cite{Signori:2013mda}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Semi-inclusive DIS}
@@ -298,24 +298,21 @@ representation of the involved transverse momenta):
 \nonumber\\&
 \nonumber + Y_{UU,T}\big(Q^2, \bm{P}_{h\Tperp}^2\big) + \mathcal{O}\big(M^2/Q^2\big) \, .
 \end{align} 
-Here, $\mathcal{H}_{UU,T}$ is the hard scattering part; $f_1^a(x,\bm{k}_{\T}^2;
-\mu^2)$ is the TMD distribution of unpolarized partons with flavor $a$ in an unpolarized
+Here, $\mathcal{H}_{UU,T}$ is the hard scattering part; $f_1^a(x,\bm{k}_{\T}^2;Q^2)$ is the TMD distribution of unpolarized partons with flavor $a$ in an unpolarized
 proton, carrying longitudinal momentum fraction $x$ and transverse momentum
-$\bm{k}_\T$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;
-\mu^2)$ is the TMD fragmentation function describing the fragmentation of an unpolarized parton with flavor $a$ into
+$\bm{k}_\T$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;Q^2)$ is the TMD fragmentation function describing the fragmentation of an unpolarized parton with flavor $a$ into
 an unpolarized hadron $h$ carrying longitudinal momentum fraction $z$ and
 transverse momentum 
 $\bm{P}_\T$. 
-\AS{insert sentence on scale choices} Both distributions are evaluated at the factorization 
-scale $\mu^2$, which in the following we
-choose to be equal to $Q^2$. 
+TMDs generally depend on two energy scales~\cite{Collins:2011zzd}: the first enters via the renormalization group evolution, whereas the second is associated to the rapidity renormalization and enters via a process-independent soft factor. 
+In this work we choose them to be equal and set to $Q^2$. 
 The term $Y_{UU,T}$ is introduced to ensure a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
 
 %%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=10cm]{plots/trans_momenta_SIDIS}
+\includegraphics[width=0.6\textwidth]{plots/trans_momenta_SIDIS}
 \caption{Diagram describing the relevant momenta involved in a semi-inclusive DIS event (see also Ref.~\cite{Matevosyan:2011vj}): a
   virtual photon (defining the reference axis) strikes a parton inside a
   proton. The parton has a transverse momentum $\bm{k}_\perp$ (not measured). The
@@ -387,7 +384,7 @@ where we introduced the Fourier transforms of the TMD PDF and FF according to
 %\\ &= 
 \int_0^{\infty} d |\bm{k}_\T| 
                 |\bm{k}_\T|J_0\big(\bT |\bm{k}_\T|\big) 
-       f_1^a\big(x, \bm{k}_\T^2;\mu^2\big),
+       f_1^a\big(x, \bm{k}_\T^2;Q^2\big),
 \\
 \tilde{D}_1^{a\smarrow h}\big(z, \bT^2; Q^2 \big) &=
 % \frac{1}{2\pi} \int_0^{\infty} \frac{d^2 \bm{P}_\T}{z^2} e^{i (\bm{P}_\T \cdot \bm{b}_T)/z}
@@ -395,7 +392,7 @@ where we introduced the Fourier transforms of the TMD PDF and FF according to
 %\\ &=
 \int_0^{\infty} \frac{d |\bm{P}_{\T}|}{z^2} |\bm{P}_{\T}| 
                                              J_0\big(\bT |\bm{P}_{\T}|/z\big)
-       D_1^{a\smarrow h}\big(z, \bm{P}_{\T}^2; \mu^2 \big).
+       D_1^{a\smarrow h}\big(z, \bm{P}_{\T}^2; Q^2 \big).
 \end{align}  
 
 
@@ -490,7 +487,7 @@ representation of the involved transverse momenta)
 %%%%%%%%%%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=10cm]{plots/trans_momenta_DY}
+\includegraphics[width=0.6\textwidth]{plots/trans_momenta_DY}
 \caption{Diagram describing the relevant momenta involved in a Drell-Yan
   event: two partons from two hadrons collide. They have transverse momenta
   $\bm{k}_{\T A}$ and  $\bm{k}_{\T B}$ (not measured). They produce a virtual
@@ -531,11 +528,10 @@ the right-hand side of Eq.~\eqref{e:DYkT} as
 \subsection{TMDs and their evolution}
 \label{ss:TMDevo}
 
-\AS{TMDs generally depend on two energy scales, $\mu$ and $\zeta$~\cite{Collins:2011zzd}. 
-The first enters via the renormalization group evolution, whereas the second is associated to the rapidity renormalization and enters via a process-independent soft factor. 
-Evolution equations quantitatively describe the connection between different values for the two energy scales. 
-In the following we will set their initial values to $\mu_i^2=\zeta_i=\mu_b^2$ and their final values as $\mu_f^2=\zeta_f=Q^2$, so that only $Q^2$ and $\mu_b^2$ need to be specified in a TMD distribution.}
-
+%TMDs generally depend on two energy scales, $\mu$ and $\zeta$~\cite{Collins:2011zzd}. 
+%The first enters via the renormalization group evolution, whereas the second is associated to the rapidity renormalization and enters via a process-independent soft factor. 
+Evolution equations quantitatively describe the connection between different values for the energy scales. 
+In the following we will set their initial values to $\mu_b^2$ and their final values as $Q^2$, so that only $Q^2$ and $\mu_b^2$ need to be specified in a TMD distribution.
 Following the formalism of Refs.~\cite{Collins:2011zzd,Aybat:2011zv}, the
 unpolarized TMD distribution and fragmentation functions in configuration
 space for a parton flavor $a$ at a certain scale $Q^2$ can be written as 
@@ -554,7 +550,7 @@ space for a parton flavor $a$ at a certain scale $Q^2$ can be written as
 \label{e:TMDevol2}
 \end{align}
 
-The collinear distributions in Eqs.~\eqref{e:TMDevol1b}, \eqref{e:TMDevol2b} 
+The collinear distributions \AS{\sout{in Eqs.~\eqref{e:TMDevol1b}, \eqref{e:TMDevol2b}}}
 and the perturbative Sudakov form factor $S$ 
 involve the 
 scale $\mu_b^2$. 
@@ -565,11 +561,11 @@ We choose it to be
 \end{align}  
 where $\gamma_E$ is the Euler constant and
 \begin{align} 
-\bar{\bb}_{\ast} &\equiv \bar{\bb}_{\ast}(b_T;\bb_{\rm min},\bb_{\rm max}) = \bb_{\rm max} \Bigg(\frac{1-e^{- \bT^4 / \bb_{\rm max}^4} }{1-e^{- \bT^4 / \bb_{\rm min}^4}} \Bigg)^{1/4} .
+\bar{\bb}_{\ast} &\equiv \bar{\bb}_{\ast}(\bT;\bb_{\rm min},\bb_{\rm max}) = \bb_{\rm max} \Bigg(\frac{1-e^{- \bT^4 / \bb_{\rm max}^4} }{1-e^{- \bT^4 / \bb_{\rm min}^4}} \Bigg)^{1/4} .
 \label{e:b*}
 \end{align}  
 This variable replaces the simple dependence upon $\bT$ in the
-  convolutions of Eqs.~\eqref{e:WC1}, \eqref{e:WC2} and in the perturbative
+  convolutions of Eqs.~\eqref{e:TMDevol1}, \eqref{e:TMDevol2} (see also Eqs.~\eqref{e:WC1}, \eqref{e:WC2} later) and in the perturbative
   Sudakov factor $S$; namely, in the perturbative parts of the
   TMD definitions of Eqs.~\eqref{e:TMDevol1},~\eqref{e:TMDevol2}. In fact, at
   large $\bT$ these parts are no longer reliable. Therefore, the
@@ -625,9 +621,9 @@ nonperturbative contribution depending on $k_\T$ (plus possible corrections of
 order $\alpha_S$ from the Wilson coefficients) .
 \end{itemize} 
 
-The Collins-Soper kernel $K$ is a power series in $\alpha_s$ with coefficients
+The Collins-Soper kernel $K$ is a power series in $\alpha_S$ with coefficients
 involving $\ln \mu/\mu_b$. 
-At NLL accuracy, $K(\bar{b}_{\ast},\mu=\mu_b) =
+At NLL accuracy, $K(\bar{\bb}_{\ast},\mu_b) =
 0$. 
 Similarly, the $C$ and $\hat{C}$ are perturbatively calculable Wilson
 coefficients for 
@@ -642,11 +638,10 @@ convoluted with the corresponding collinear functions according to
 \bigl( \hat{C}_{a/i} \otimes D_1^{i\to h} \bigr) (z, \bar{\bb}_\ast, \mu_b^2) &= \int_z^1 \frac{du}{u}\  \hat{C}_{a/i} \left( \frac{z}{u}, \bar{\bb}_\ast, \alpha_S\big(\mu_b^2\big) \right) \  D_1^{i\to h} (u; \mu_b^2) \  . 
 \label{e:WC2}
 \end{align}
-\AS{The $b_T$ dependence in $C$ and $\hat{C}$ enters only at higher orders in $\alpha_S$ via logarithms of the type $\ln \mu/\mu_b$. 
-As we already saw for $K$, also for the Wilson coefficients $C,\hat{C}$ the choice $\mu_i=\mu_b$ improves the convergence of the perturbative calculation minimizing the logarithms involved.} 
+%\AS{The $b_T$ dependence in $C$ and $\hat{C}$ enters only at higher orders in $\alpha_S$ via logarithms of the type $\ln \mu/\mu_b$. As we already saw for $K$, also for the Wilson coefficients $C,\hat{C}$ the choice $\mu_i=\mu_b$ improves the convergence of the perturbative calculation minimizing the logarithms involved.} 
 
 In the present analysis, we consider only the leading-order term
-in the $\alpha_S$ expansion, i.e., 
+in the $\alpha_S$ expansion for $C$, $\hat{C}$ , i.e., 
 \begin{align} 
 C_{a/i} \Big( \frac{x}{u}, \bar{\bb}_\ast, \alpha_S\big(\mu_b^2\big)  \Big) 
 &\approx
@@ -671,16 +666,16 @@ The Sudakov exponent $S$
 can be written as
 \begin{equation} 
 S(\mu_b^2,Q^2)=-\int_{\mu_b^2}^{Q^2}{d\mu^2\over \mu^2}
-\bigg[A\Big(\alpha_s(\mu^2)\Big)\ln\bigg({Q^2\over \mu^2}\bigg) 
-+ B\Big(\alpha_s(\mu^2)\Big) \bigg] \;.
+\bigg[A\Big(\alpha_S(\mu^2)\Big)\ln\bigg({Q^2\over \mu^2}\bigg) 
++ B\Big(\alpha_S(\mu^2)\Big) \bigg] \ ,
 \label{e:Sudakov} 
 \end{equation} 
-Functions $A$ and $B$ have perturbative expansions of the form
+where the functions $A$ and $B$ have a perturbative expansions of the form
 \begin{align}
-A\left(\alpha_s(\mu^2)\right) &= \sum_{k=1}^{\infty}A_k
+A\left(\alpha_S(\mu^2)\right) &= \sum_{k=1}^{\infty}A_k
 \bigg(\frac{\alpha_S}{\pi} \bigg)^k,
 &
-B\left(\alpha_s(\mu^2)\right) &= \sum_{k=1}^{\infty}B_k
+B\left(\alpha_S(\mu^2)\right) &= \sum_{k=1}^{\infty}B_k
 \bigg(\frac{\alpha_S}{\pi} \bigg)^k.
 \end{align} 
 To NNL accuracy, we need the following 
@@ -727,7 +722,7 @@ theoretical studies aimed at calculating this term using nonperturbative
 methods~\cite{Scimemi:2016ffw}.  
 All these
 choices should be tested in future studies. In Ref.~\cite{D'Alesio:2014vja}, a
-good agreement with data was achieved even without this term: we think this is
+good agreement with data was achieved even without this term: \AS{\sout{we think} (anche gli autori della ref. stessa lo dicono)} this is
 not possible when including data at low $Q^2$.
 
 In this analysis, for the collinear PDFs $f_1^a$ we adopt the GJR08FFnloE
@@ -788,7 +783,7 @@ In the present analysis, however, we assume they are
 flavor independent. The justification for this choice is that most of the data
 we are considering are not sufficiently sensitive to flavor differences.
 
-Finally, we assume the Gaussian width of the TMD depends on 
+Finally, we assume that the Gaussian width of the TMD depends on 
 fractional longitudinal momentum $x$ according to
 \begin{align} 
  g_1 (x) &= N_1 \;  
@@ -893,7 +888,7 @@ colliding a $27.6$ GeV lepton beam on a hydrogen ($p$) or deuterium ($D$) gas
 target, for a total of 2688 points.
 These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
 The collinear energy fraction $z$ in Eq.~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
-The peculiarity of \hermes\ SIDIS experiment lies in the ability of his detector to distinguish between pions and kaons in the final state, in addition to determining their momenta and charges.
+The peculiarity of \hermes\ SIDIS experiment lies in the ability of its detector to distinguish between pions and kaons in the final state, in addition to determining their momenta and charges.
 The particle identification process distinguish the final data sets in eight
 different channels, one for every combination of target ($p,\,D$) and detected
 charged hadron ($\pi^\pm, \,  K^\pm$ ). The
@@ -1150,7 +1145,7 @@ E_r^2(\{p\})=\sum_{i}
 \end{equation}
 The sum runs over the $i$ experimental points, including all species of targets $N$ and final-state hadrons $h$. 
 In each $z$ bin for each replica the values of the collinear fragmentation functions $D_1^{a \smarrow h}$ are independently modified with a Gaussian noise with standard deviation equal to the theoretical error $\Delta D_1^{a\smarrow h}$. 
-In this work we rely on different parametrizations for $D_1^{a \smarrow h}$: for pions we use the DSEHS analysis~\cite{deFlorian:2014xna} at NLO in $\alpha_s$; for kaons we use the DSS parametrization~\cite{deFlorian:2007aj} at LO in $\alpha_s$. 
+In this work we rely on different parametrizations for $D_1^{a \smarrow h}$: for pions we use the DSEHS analysis~\cite{deFlorian:2014xna} at NLO in $\alpha_S$; for kaons we use the DSS parametrization~\cite{deFlorian:2007aj} at LO in $\alpha_S$. 
 The uncertainties $\Delta D_1^{a\smarrow h}$ are estimated from the plots in Ref.~\cite{Epele:2012vg}; they represents the only source of uncertainty in $\Delta m_{N,  {\rm theo}}^{h}$. 
 Statistical and systematic experimental uncertainties $\Delta m_{N, \mbox{\tiny stat}}^{h}$ and $\Delta m_{N, \mbox{\tiny sys}}^{h}$ are taken from the experimental collaborations. 
 We do not take into account the covariance among different kinematic bins. 
@@ -1212,7 +1207,7 @@ the subject~\cite{Ladinsky:1993zn,Landry:1999an,Landry:2002ix}). They did not co
 points. Contrary to our approach, Konychev and Nadolsky studied the quality of the fit as a
 function of $\bb_{\text{max}}$. They found that the best value for
 $\bb_{\text{max}}$ is $1.5$ GeV$^{-1}$. We choose $\bb_{\text{max}}\approx 1.123$ GeV$^{-1}$, instead (see Sec.~\ref{ss:TMDevo}). Comparisons of best-fit values in the nonperturbative Sudakov form factors are delicate, since the functional form is different from ours.
-In 2014 D'Alesio, Echevarria, Melis, Scimemi performed a fit~\cite{DAlesio:2014mrz} of Drell-Yan data and $Z$-boson production data at Tevatron, focusing in particular on the role of the nonperturbative contribution to the kernel of TMD evolution. This is the fit with the highest accuracy in transverse momentum resummation performed up to date (NNLL in the Sudakov exponent and ${\cal O}(\alpha_s)$ in the Wilson coefficients). 
+In 2014 D'Alesio, Echevarria, Melis, Scimemi performed a fit~\cite{DAlesio:2014mrz} of Drell-Yan data and $Z$-boson production data at Tevatron, focusing in particular on the role of the nonperturbative contribution to the kernel of TMD evolution. This is the fit with the highest accuracy in transverse momentum resummation performed up to date (NNLL in the Sudakov exponent and ${\cal O}(\alpha_S)$ in the Wilson coefficients). 
 In the same year Echevarria, Idilbi, Kang and Vitev~\cite{Echevarria:2014xaa} attempted a global fit of data for the Sivers asymmetry (thus including both SIDIS and Drell-Yan events), extracting also the nonperturbative part of the unpolarized TMDs. They anyway considered only one bin in $x, Q^2$ both for \hermes\ and \compass\ and the agreement between data and theory is questionable. 
 Another attempt was performed by Sun, Isaacson, Yuan and Yuan~\cite{Su:2014wpa} without providing a precise fit of the nonperturbative contributions.
 
@@ -1532,7 +1527,7 @@ not from the shape in $q_T$ (see Sec.~\ref{ss:replica105}).
 \label{ss:bestfit_TMDs}
 
 %% separation in bT space
-The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $b_T$ where transverse momentum resummation is computed perturbatively. $\bb_{\rm max}$ allows to avoid the Landau pole and $\bb_{\rm min}$ allows to recover correctly the high transverse momentum limit of the cross section (see also Sec.~\ref{ss:TMDevo}).
+The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $\bT$ where transverse momentum resummation is computed perturbatively. $\bb_{\rm max}$ allows to avoid the Landau pole and $\bb_{\rm min}$ allows to recover correctly the high transverse momentum limit of the cross section (see also Sec.~\ref{ss:TMDevo}).
 The $g_2$ parameter enters the nonperturbative Sudakov exponent and
 quantifies the amount of transverse momentum 
 due to soft gluon radiation that is not included in the
@@ -1548,8 +1543,7 @@ average with $68\%$ C.L. uncertainty computed over the set of 200 replicas. A
 larger value ($g_2 = 0.184 \pm 0.018$) was found in Ref.~\cite{Konychev:2005iy},
 where however no SIDIS data was taken into consideration.
 We stress here that a prescription involving both $\bb_{\text{min}}$ and
-$\bb_{\text{max}}$ is equivalent to requesting $\mu_{\bar{\bb^*}}^2 < Q^2 \equiv
-\mu^2$ for all $\bb_T$ values in Eq.~\eqref{e:Sudakov}. This requirement turns out
+$\bb_{\text{max}}$ is equivalent to requesting $\mu_b^2 < Q^2$ for all $\bb_T$ values in Eq.~\eqref{e:Sudakov}. This requirement turns out
 to be useful in order to fit SIDIS data with TMD evolution.
 
 To make it possible to analyze the results related to a single replica,
@@ -1569,7 +1563,7 @@ Keeping in mind that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big
 \hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big
 \rangle (z=0.5)$, we note that 
 delicate, since here we rely on a modified Gaussian ansatz,
-see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}.
+see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}. \AS{Do we agree on the fact that $\langle P_\perp^{2 \prime} \rangle$ does not make sense here? We should remove it.}
 
 Fig.~\ref{f:kT2_vs_PT2} is useful to compare different extractions of
 partonic transverse momenta. The horizontal axis shows 
@@ -1715,7 +1709,7 @@ Replica 105   &
 \caption{Kinematic dependence of $\big \langle \bm{k}_{\T}^2 \big \rangle (x)$
   (a) and of $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$ (b). The bands
   are the $68\%$ C.L. envelope of the full sets of best-fit
-  curves. 
+  curves.  \AS{We should put the figures without comparisons to other cases.}
 % Comparisons with other extractions are displayed. Color coding is
 %  the same as in Fig.~\ref{f:kT2_vs_PT2}.  In (b) the grey-dashed curve refers
 %  to the parametrization used in GMCtrans~\cite{gmctrans} and the black-dashed
