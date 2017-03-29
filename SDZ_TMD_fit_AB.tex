@@ -48,8 +48,8 @@
 
 \title{
 Extraction of partonic transverse momentum distributions 
-from semi-inclusive deep
-inelastic scattering, Drell-Yan scattering, and Z-boson production
+from semi-inclusive 
+deep-inelastic scattering, Drell-Yan scattering, and Z-boson production
 }
 
 \author{Alessandro Bacchetta}
@@ -114,7 +114,7 @@ This could be considered as a first attempt at a global fit of TMDs.
 Parton distribution functions describe the internal structure of the nucleon
 in terms of its elementary constituents (quarks and gluons). They cannot be
 easily computed from first principles, because they require the ability to
-carry out Quantum Chromodynamics (QCD) calculations in a nonperturbative
+carry out Quantum Chromodynamics (QCD) calculations in its nonperturbative
 regime. Many experimental observables in hard scattering experiments
 involving hadrons are related to parton distribution functions (PDFs) and
 fragmentation functions (FFs), in a way that is specified by factorization
@@ -124,7 +124,7 @@ These theorems also elucidate the universality properties of PDFs and FFs
 and their evolution equations (i.e., how they get modified by the change in
 the hard scale of the process). 
 Availability of measurements of different processes in different
-experiments makes it possible to test the reliability of factorization
+experiments makes it possible to test factorization
 theorems and extract PDFs and FFs through so-called global fits. 
 On the other side, the knowledge of PDFs and FFs allows us
 to make predictions for other hard hadronic processes. 
@@ -152,8 +152,8 @@ momentum component much smaller than the hard scale of the
 process~\cite{Bacchetta:2016ccz,Radici:2016hbh}.  For
 instance, Deep-Inelastic Scattering (DIS) is characterized by a hard scale represented by the
 4-momentum squared of the virtual photon ($-Q^2$). In inclusive DIS this is
-the only scale of the process, and access is limited to collinear PDFs
-and FFs. In semi-inclusive DIS (SIDIS) also the transverse momentum of the
+the only scale of the process, and only collinear PDFs
+and FFs can be accessed. In semi-inclusive DIS (SIDIS) also the transverse momentum of the
 outgoing  
 hadron ($P_{hT}$) can be measured~\cite{Mulders:1995dh,Bacchetta:2006tn}. 
 If $P_{hT}^2\ll Q^2$, TMD
@@ -270,7 +270,8 @@ where
 \varepsilon &= \frac{1-y -\frac{1}{4} \gamma^2 y^2}{1-y+\frac{1}{2} y^2 +\frac{1}{4} \gamma^2 y^2} \ .
 \end{align}  
 In the numerator of Eq.~\eqref{e:mFF} the structure function $F_{XY,Z}$ corresponds to a lepton with polarization $X$ scattering on a target with polarization $Y$ by exchanging a virtual photon in a polarization state $Z$. 
-In the denominator only the photon polarization is explicited ($T$, $L$).
+In the denominator, only the photon polarization is explicitly written ($T$,
+$L$), as usually done in the literature.
 
 The semi-inclusive cross section can be expressed in a factorized form in
 terms of TMDs only in the kinematic limits $M^2 \ll Q^2$ and 
@@ -299,13 +300,22 @@ representation of the involved transverse momenta):
 \nonumber\\&
 \nonumber + Y_{UU,T}\big(Q^2, \bm{P}_{h\Tperp}^2\big) + \mathcal{O}\big(M^2/Q^2\big) \, .
 \end{align} 
-Here, $\mathcal{H}_{UU,T}$ is the hard scattering part; $f_1^a(x,\bm{k}_{\T}^2;Q^2)$ is the TMD distribution of unpolarized partons with flavor $a$ in an unpolarized
+Here, $\mathcal{H}_{UU,T}$ is the hard scattering part; $f_1^a(x,\bm{k}_{\T}^2;Q^2)$ is the TMD PDF of unpolarized partons with flavor $a$ in an unpolarized
 proton, carrying longitudinal momentum fraction $x$ and transverse momentum
-$\bm{k}_\T$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;Q^2)$ is the TMD fragmentation function describing the fragmentation of an unpolarized parton with flavor $a$ into
+$\bm{k}_\T$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;Q^2)$ is the TMD FF describing the fragmentation of an unpolarized parton with flavor $a$ into
 an unpolarized hadron $h$ carrying longitudinal momentum fraction $z$ and
 transverse momentum 
 $\bm{P}_\T$ (see Fig.~\ref{f:trans_momenta_SIDIS}).  
-TMDs generally depend on two energy scales~\cite{Collins:2011zzd}: the first enters via the renormalization group evolution, whereas the second is associated to the rapidity renormalization and enters via a process-independent soft factor. 
+TMDs generally depend on two energy scales~\cite{Collins:2011zzd}: the first
+enters via the renormalization group evolution, whereas the second is
+associated to the rapidity renormalization and enters via a
+process-independent soft factor \AS{AB: still some doubts about this sentence:
+  1. is it customary to talk about rapidity renormalization? 2. If we talk
+  about rapidity renormalization, then should we specify what kind of
+  renormalization is the first one? 3. We mention the soft factor, but we
+  don't have a soft factor anywhere in the formulas. Should we at least say
+  that it is reabsorbed into the definition of the TMDs? Or should we be more
+  generic and talk about soft gluons instead of a soft factor, or say nothing at all?}.  
 In this work we choose them to be equal and set to $Q^2$. 
 The term $Y_{UU,T}$ is introduced to ensure a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
@@ -506,10 +516,10 @@ the couplings, i.e.,
 &
 {\cal H}_{UU, Z}^{1 a}(Q^2) &\approx \frac{V_a^2+A_a^2}{N_c} \ ,
 \end{align}  
-where\footnote{We remind the reader that the value of weak isospin $I_3$ is equal to $+1$ for $u$, $c$, $t$ and
-  $-1$ for $d$, $s$, $b$.}
+where\footnote{We remind the reader that the value of weak isospin $I_3$ is equal to $+1/2$ for $u$, $c$, $t$ and
+  $-1/2$ for $d$, $s$, $b$.}
 \begin{align}
-V_a & = I_{3a} - 2 e_{a} \sin \theta_W \  ,
+V_a & = I_{3a} - 2 e_{a} \sin^2 \theta_W \  ,
 &
 A_a & = I_{3a} \  .
 \end{align} 
@@ -551,11 +561,7 @@ space for a parton with flavor $a$ at a certain scale $Q^2$ can be written as
 \label{e:TMDevol2}
 \end{align}
 
-The collinear distributions \AS{\sout{in Eqs.~\eqref{e:TMDevol1b}, \eqref{e:TMDevol2b}}}
-and the perturbative Sudakov form factor $S$ 
-involve the 
-scale $\mu_b^2$. 
-We choose it to be
+We choose the scale $\mu_b$ it to be
 \begin{align} 
 \mu_b &= \frac{2 e^{-\gamma_E}}{\bar{\bb}_{\ast}} \  ,
 \label{e:mub}
@@ -565,9 +571,8 @@ where $\gamma_E$ is the Euler constant and
 \bar{\bb}_{\ast} &\equiv \bar{\bb}_{\ast}(\bT;\bb_{\rm min},\bb_{\rm max}) = \bb_{\rm max} \Bigg(\frac{1-e^{- \bT^4 / \bb_{\rm max}^4} }{1-e^{- \bT^4 / \bb_{\rm min}^4}} \Bigg)^{1/4} .
 \label{e:b*}
 \end{align}  
-This variable replaces the simple dependence upon $\bT$ in the
-  convolutions of Eqs.~\eqref{e:TMDevol1}, \eqref{e:TMDevol2} (see also Eqs.~\eqref{e:WC1}, \eqref{e:WC2} later) and in the perturbative
-  Sudakov factor $S$; namely, in the perturbative parts of the
+This variable replaces the simple dependence upon $\bT$ 
+in the perturbative parts of the
   TMD definitions of Eqs.~\eqref{e:TMDevol1},~\eqref{e:TMDevol2}. In fact, at
   large $\bT$ these parts are no longer reliable. Therefore, the
   $\bar{\bb}_{\ast}$ is chosen to saturate on the maximum value $\bb_{\rm max}$,
@@ -577,7 +582,7 @@ On the other hand, at
 small $\bT$ the TMD formalism is not valid and should be 
 matched to the fixed-order collinear
 calculations. The way
-the matching is implemented is \AS{not unique}.  In any case, the TMD contribution
+the matching is implemented is not unique.  In any case, the TMD contribution
 can be arbitrarily modified at small $\bT$. In our approach, we choose to
 saturate 
 $\bar{\bb}_{\ast}$  at
@@ -619,12 +624,13 @@ The motivations are the following:
 \item{} at $Q=Q_0 = 1$ GeV, $\bb_{\rm max} = \bb_{\rm min}$ and there are no evolution effects; the TMD is
 simply given by the corresponding collinear function multiplied by a
 nonperturbative contribution depending on $k_\T$ (plus possible corrections of
-order $\alpha_S$ from the Wilson coefficients) .
+order $\alpha_S$ from the Wilson coefficients).
 \end{itemize} 
 
 The Collins-Soper kernel $K$ is a power series in $\alpha_S$ with coefficients
-involving $\ln \mu/\mu_b$. 
-At NLL accuracy, $K(\bar{\bb}_{\ast},\mu_b) =
+involving $\ln \mu/\mu_b$ \AS{We did not define $\mu$ anywhere anymore. Should
+we remove the sentence?}. 
+At NLL accuracy, for our choice of scales $K(\bar{\bb}_{\ast},\mu_b) =
 0$. 
 Similarly, the $C$ and $\hat{C}$ are perturbatively calculable Wilson
 coefficients for 
@@ -642,7 +648,7 @@ convoluted with the corresponding collinear functions according to
 %\AS{The $b_T$ dependence in $C$ and $\hat{C}$ enters only at higher orders in $\alpha_S$ via logarithms of the type $\ln \mu/\mu_b$. As we already saw for $K$, also for the Wilson coefficients $C,\hat{C}$ the choice $\mu_i=\mu_b$ improves the convergence of the perturbative calculation minimizing the logarithms involved.} 
 
 In the present analysis, we consider only the leading-order term
-in the $\alpha_S$ expansion for $C$, $\hat{C}$ , i.e., 
+in the $\alpha_S$ expansion for $C$ and $\hat{C}$ , i.e., 
 \begin{align} 
 C_{a/i} \Big( \frac{x}{u}, \bar{\bb}_\ast, \alpha_S\big(\mu_b^2\big)  \Big) 
 &\approx
@@ -723,7 +729,7 @@ theoretical studies aimed at calculating this term using nonperturbative
 methods~\cite{Scimemi:2016ffw}.  
 All these
 choices should be tested in future studies. In Ref.~\cite{D'Alesio:2014vja}, a
-good agreement with data was achieved even without this term: \AS{\sout{we think} (anche gli autori della ref. stessa lo dicono)} this is
+good agreement with data was achieved even without this term, but this is
 not possible when including data at low $Q^2$.
 
 In this analysis, for the collinear PDFs $f_1^a$ we adopt the GJR08FFnloE
@@ -752,8 +758,7 @@ following ways
 \label{e:D1NP}
 \end{align} 
 After performing the anti-Fourier transform, the $f_{1 \rm NP}$ and $D_{1\rm
-  NP}$ in momentum space correspond to the normalized linear combination of
-a Gaussian and a weighted Gaussian:
+  NP}$ in momentum space correspond to 
 \begin{align} 
 f_{1 {\rm NP}}^a (x, \bm{k}_{\T}^2) &= \frac{1}{\pi} \  
                         \frac{\big( 1 +\lambda \bm{k}_{\T}^2\big)}
@@ -768,23 +773,28 @@ D_{1 {\rm NP}}^{a\to h} (z, \bm{P}_{\T}^2) &=  \frac{1}{\pi} \
            e^{- \frac{\bm{P}_{\T}^2}{g_{4 a \to h}}} \bigg) \  .
 \label{e:D1NPk}
 \end{align} 
-In the TMD PDF case, the Gaussian and the
-weighted Gaussian have the same width, while in the fragmentation function, we
-considered the possibility that the two Gaussian widths are different. 
-The choice of this particular functional form is motivated by model
-calculations: the weighted Gaussian could arise from 
+The TMD PDF at the starting scale is therefore a normalized sum of a Gaussian
+with variance $g_1$ and the same Gaussian weighted by a factor $\lambda
+\bm{k}_{\T}^2$. The TMD FF at the starting scale is a normalized sum of a Gaussian
+with variance $g_3$ and a second Gaussian with variance $g_4$ weighted by a factor $\lambda_F
+\bm{P}_{\T}^2/z^2$. 
+The choice of this particular functional forms is motivated by model
+calculations: the weighted Gaussian in the TMD PDF could arise from 
 the presence of components of the quark wave function 
 with angular momentum
-$L=1$~\cite{Bacchetta:2007wc,Pasquini:2008ax,Avakian:2010br,Bacchetta:2010si,Burkardt:2015qoa}.   
+$L=1$~\cite{Bacchetta:2007wc,Pasquini:2008ax,Avakian:2010br,Bacchetta:2010si,Burkardt:2015qoa}. Similar
+features occurr in models of fragmentation functions~\cite{Bacchetta:2002tk,Bacchetta:2007wc,Matevosyan:2011vj}.
 
 The
 Gaussian width of the TMD distributions may depend 
-on the parton flavor $a$~\cite{Signori:2013mda}. 
+on the parton flavor $a$~\cite{Signori:2013mda,Matevosyan:2011vj,Schweitzer:2012hh}. 
 In the present analysis, however, we assume they are
 flavor independent. The justification for this choice is that most of the data
-we are considering are not sufficiently sensitive to flavor differences.
+we are considering are not sufficiently sensitive to flavor differences,
+leading to unclear results. We
+will devote attention to this issue in further studies.
 
-Finally, we assume that the Gaussian width of the TMD depends on 
+Finally, we assume that the Gaussian width of the TMD depends on the 
 fractional longitudinal momentum $x$ according to
 \begin{align} 
  g_1 (x) &= N_1 \;  
@@ -825,8 +835,10 @@ Eq.~\eqref{e:f1NPk} and \eqref{e:D1NPk} can be computed analytically:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The main goals of our work are to extract the magnitude of intrinsic transverse momenta, to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy and to test their universality among different processes.
-To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$ boson production from different experimental collaborations at different energy scales.
+The main goals of our work are to extract information about intrinsic transverse momenta, to study the evolution of TMD parton distributions and fragmentation functions over a large enough range of energy, and to test their universality among different processes.
+To achieve this we included measurements taken from SIDIS, Drell-Yan and $Z$
+boson production from different experimental collaborations at different
+energy scales. 
 In this chapter we describe the data sets considered for each process and the applied kinematic cuts.
 
 Tab.~\ref{t:data_SIDIS_proton} refers to the data sets for SIDIS off proton target (\hermes\ experiment) and presents their kinematic ranges. 
@@ -839,11 +851,11 @@ average values of the kinematic variables in each bin.
 \subsection{Semi-inclusive DIS data}
 \label{ss:SIDIS data}
 
-The semi-inclusive DIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
+The SIDIS data are taken from \hermes~\cite{Airapetian:2012ki} and \compass~\cite{Adolph:2013stb} experiments. 
 Both \hermes\ and \compass\ data have been already analyzed in previous works,
 e.g., Refs.~\cite{Signori:2013mda,Anselmino:2013lza}, 
 however they have never been
-fitted together, considering also the contributions deriving from TMD
+fitted together, including also the contributions deriving from TMD
 evolution. 
 
 The application of the TMD formalism to SIDIS depends on the capability of
@@ -874,7 +886,9 @@ $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV.
 With this choice, $P_{hT}^2$ is always smaller than $Q^2/3$, but in a few 
 bins (at low $Q^2$ and $z$) $P_{hT}^2/z^2$ may become larger
 than $Q^2$. The applicability of TMD factorization in this case could be
-questioned. However, as we will explain further in Sec.~\ref{ss:replica105},
+questioned. 
+\AS{AB: the next sentence perhaps needs still to be phrased better. Suggestions?}
+However, as we will explain further in Sec.~\ref{ss:replica105},
 we can obtain a fit that can describe a wide region of $P_{hT}$ and can also
 perform very well in a restricted region,  where TMD factorization
 certainly holds.
@@ -890,8 +904,8 @@ target, for a total of 2688 points.
 These are grouped in bins of $(x,z,Q^2,P_{hT})$ with the average values of $(x,Q^2)$ ranging from about $(0.04, 1.25\text{ GeV}^2)$ to $(0.4, 9.2\text{ GeV}^2)$. 
 The collinear energy fraction $z$ in Eq.~\eqref{e:xyz} ranges in $0.1\leq z\leq 0.9$. The transverse momentum of the detected hadron satisfies $0.1 \text{ GeV} \leq \vert P_{hT} \vert \leq 1.3 \text{ GeV}$.
 The peculiarity of \hermes\ SIDIS experiment lies in the ability of its detector to distinguish between pions and kaons in the final state, in addition to determining their momenta and charges.
-The particle identification process distinguish the final data sets in eight
-different channels, one for every combination of target ($p,\,D$) and detected
+We consider eight different 
+combinations of target ($p,\,D$) and detected
 charged hadron ($\pi^\pm, \,  K^\pm$ ). The
 \hermes\ collaboration published two distinct sets, characterized by the inclusion or subtraction of the vector meson contribution. In our work we considered only the data set where this contribution has been subtracted. 
 
@@ -900,8 +914,12 @@ charged hadron ($\pi^\pm, \,  K^\pm$ ). The
 \subsubsection{\compass\ data}
 \label{sss:compass}
 
-The \compass\ collaboration extracted multiplicities for charge-separated but unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$) target~\cite{Adolph:2013stb}.  The number of data is an order of magnitude higher compared to the \hermes\ experiment.
-The data are organized in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$, they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to $(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. Similarly to \hermes , we have $P_{h\Tperp}^2 \lesssim 1$ GeV$^2$. 
+The \compass\ collaboration extracted multiplicities for charge-separated but
+unidentified hadrons produced in SIDIS off a deuteron ($^6\text{LiD}$)
+target~\cite{Adolph:2013stb}.  The number of data points is an order of magnitude higher compared to the \hermes\ experiment.
+The data are organized in multidimensional bins of $(x,z,Q^2,P_{h\Tperp})$,
+they cover a range in $(x,Q^2)$ from about $(0.005, 1.11\text{ GeV}^2)$ to
+$(0.09, 7.57\text{ GeV}^2)$ and the interval $0.2 \leq z \leq 0.8$. 
 The multiplicities published by \compass\ are affected by normalization
 errors (see the {\em erratum} to Ref.~\cite{Adolph:2013stb}). In order to
 avoid this issue, we divide the data in each bin in ($x, z, Q^2$) by the data
@@ -911,7 +929,9 @@ As a result, we define the {\em normalized} multiplicity as
 m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2) = \frac{m_N^h(x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm \min}[\bm{P}_{h\Tperp}^2], Q^2)} \ ,
 \label{e:mult_norm}
 \end{equation}
-where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. When fitting normalized multiplicities, the first data point of each bin is considered as a fixed parameter and excluded from the degrees of freedom of the system.
+where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. When
+fitting normalized multiplicities, the first data point of each bin is
+considered as a fixed constraint and excluded from the degrees of freedom.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Low-energy Drell-Yan data}
@@ -920,30 +940,27 @@ where the multiplicity $m_N^h$ is defined in Eq.~\eqref{e:multiplicity}. When fi
 We analyze Drell-Yan events collected by fixed-target experiments at
 low-energy. These data sets have been considered also in previous works, e.g.,
 in Ref.~\cite{Landry:1999an,Landry:2002ix,Konychev:2005iy,DAlesio:2014mrz}. 
-We used data sets from the E288 experiment~\cite{Ito:1980ev}, that measured the invariant dimuon cross section $E d^3\sigma / dq^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of Cu or Pt.
-The measurements were repeated using proton incident energies of $200$, $300$ and $400$ GeV, producing three different data sets.
+We used data sets from the E288 experiment~\cite{Ito:1980ev}, which measured the invariant dimuon cross section $E d^3\sigma / dq^3$ for the production of $\mu^+ \mu^-$ pairs from the collision of a proton beam with a fixed target, either composed of Cu or Pt.
+The measurements were performed using proton incident energies of $200$, $300$ and $400$ GeV, producing three different data sets.
 Their respective center of mass energies are $\sqrt{s}=19.4,23.8,27.4$ GeV.
 We also included the set of measurements $E d^3\sigma / dq^3$ from E605~\cite{Moreno:1990sf}, extracted from the collision of a proton beam with an energy of $800$ GeV ($\sqrt{s}=38.8$ GeV) on a copper fixed target .
 
 The explored $Q$ values are higher compared to the SIDIS case, as can be seen
-in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity
-,
+in Tab.~\ref{t:data_DY}. E288 provides data at fixed rapidity,
 whereas E605 provides data at fixed $x_F=0.1$.  
 We can apply TMD factorization if
-$\Lambda_{\text{QCD}}^2 \ll q_T^2 \ll Q^2$, where $q_T$ is the transverse
+$q_T^2 \ll Q^2$, where $q_T$ is the transverse
 momentum of the intermediate electroweak boson, reconstructed from the
 kinematics of the final state leptons. We choose $q_T <
-0.2\ Q + 0.5$ GeV. Again, the values of the coefficients are chosen to
-maximize the goodness of the fit and to not exclude too many points. 
+0.2\ Q + 0.5$ GeV. 
 As suggested in Ref.~\cite{Ito:1980ev}, we consider the target nuclei as an
-ensemble composed by $40\%$ of protons and $60\%$ of neutrons, 
-independent one from the other.
+incoherent ensemble composed $40\%$ by protons and $60\%$ by neutrons.
 
 As we already observed, results from E288 and E605 experiments are reported as
 $\frac{Ed^3\sigma}{d^3q}$; this variable is related to the differential cross
 section of Eq.~\eqref{e:dsigma_gZ} in the following way:
 \begin{equation}
-\frac{Ed^3\sigma}{d^3q}=\frac{d^3\sigma}{d\phi d\eta q_T dq_T} \Rightarrow \frac{d^2\sigma}{\pi d\eta d(q^2_T)}
+\frac{Ed^3\sigma}{d^3q}=\frac{d^3\sigma}{d\phi d\eta q_T dq_T} \Rightarrow \frac{d^2\sigma}{\pi d\eta d(q^2_T)},
 \end{equation}
 where $\phi$ is the polar angle of $q_T$ and 
 the third term is the average over $\phi$.
@@ -955,25 +972,18 @@ Therefore, the invariant dimuon cross section can be obtained from Eq.~\eqref{e:
 Numerically we checked that integrating in $Q^2$ only the prefactor
 $\sigma_q^\gamma$ (see Eq.~\eqref{e:elem_cs_sig0}) introduces only
 a negligible error in the theoretical estimates. We also assume that
-$\alpha_{\rm em}$ does not change within the experimental bin. For Drell-Yan we
-thus obtain
+$\alpha_{\rm em}$ does not change within the experimental bin. Therefore, for Drell-Yan we
+obtain
 \begin{equation}
 \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T d\eta}
 \approx 
 %\frac{1}{\pi}  \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
 %= 
-\frac{4\alpha_{\rm em}^2}{3 N_c s} e_q^2 \ln \left( \frac{Q_f^2}{Q_i^2} \right)
+\frac{4\alpha_{\rm em}^2}{3 s} \ln \left( \frac{Q_f^2}{Q_i^2} \right)
 F_{UU}^1. 
 \end{equation}
 where $Q_{i,f}$ are the lower and upper values in the experimental bin. 
-As evident from Eq.~\eqref{e:elem_cs_sig0},  
-for $Z$ production the integration over $Q^2$ with the delta function yields
-\begin{equation}
-\frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T d\eta}
-\approx 
-\frac{\pi^2 \alpha_{\rm em}}{s \sin^2{\theta_W} \cos^2{\theta_W}}
-B_R(Z\rightarrow \ell^+\ell^-) F_{UU}^1
-\end{equation} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Z-boson production data}
@@ -985,9 +995,29 @@ We analyze data from CDF and D0, collected during Tevatron Run I~\cite{Affolder:
 The invariant mass distribution peaks at the $Z$-pole, $Q \approx M_Z$, while the transverse momentum of the exchanged $Z$ ranges in $0< q_T < 20 \text{ GeV}$.
 We use the same kinematic cut applied to Drell-Yan events:  $q_T < 0.2\ Q + 0.5$ GeV $ = 18.7$ GeV, since $Q$ is fixed to $M_Z$. 
 
-The observable measured in CDF and D0 is $d\sigma /dq_T$,  apart from the case of D0 Run II, for which the published data refer to $1/\sigma \times d\sigma/dq_T$. In order to work with the same observable, we multiply the D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8 \pm 16 \text{ pb}$~\cite{Abulencia:2005ix}. In this case, we add in quadrature the uncertainties of the total cross section and of the published data. 
+The observable measured in CDF and D0 is 
+\begin{equation} 
+\frac{d\sigma}{d q_T} = \int d Q^2 d \eta 2 q_T
+\frac{d\sigma}{dQ^2dq^2_T d\eta}
+\approx 
+\frac{\pi^2 \alpha_{\rm em}}{s \sin^2{\theta_W} \cos^2{\theta_W}}
+B_R(Z\rightarrow \ell^+\ell^-) 2 q_T \int d \eta F_{UU}^1,
+\end{equation}  
+apart from the case
+of D0 Run II, for which the published data refer to $1/\sigma \times
+d\sigma/dq_T$. In order to work with the same observable, we multiply the
+D0-Run II data by the total cross section of the process $\sigma_{exp} = 255.8
+\pm 16 \text{ pb}$~\cite{Abulencia:2005ix}. In this case, we add in quadrature
+the uncertainties of the total cross section and of the published data. 
 
-We normalize our functional form with factors listed in Tab.~\ref{t:data_Z}. These are the same normalization factors used in Ref.~\cite{DAlesio:2014mrz} to fit $Z$ boson production and differ from the experimental ones. 
+We normalize our functional form with the factors listed in
+Tab.~\ref{t:data_Z}. These are the same normalization factors used in
+Ref.~\cite{DAlesio:2014mrz}, computed by comparing the experimental total
+cross section with the theoretical results based on the code of 
+Ref.~\cite{Catani:2009sm}. These factors are not precisely consistent with our
+formulas. In fact, as we will discuss in Sec.~\ref{ss:replica105} a 5\%
+increase in these factors would improve the agreement with data, without
+affecting the TMD parameters. 
 
 %\textcolor{red}{Cuts and reasons}\\
 
@@ -1000,27 +1030,27 @@ We normalize our functional form with factors listed in Tab.~\ref{t:data_Z}. The
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
  \hline
-  & HERMES & HERMES & HERMES & HERMES \\
+  & \hermes & \hermes & \hermes & \hermes \\
  ~          &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$               \\
  \hline
  Reference & \multicolumn{4}{c|}{\cite{Airapetian:2012ki}}        \\
 \hline
 \multirow{3}{*}{Cuts}             & \multicolumn{4}{c|}{$Q^2 > 1.4 \text{ GeV}^2$}     \\
-             & \multicolumn{4}{c|}{$0.2 <z <0.74$}     \\
+             & \multicolumn{4}{c|}{$0.20 <z <0.74$}     \\
              & \multicolumn{4}{c|}{$P_{h \Tperp}< {\rm Min}[0.2\ Q, 0.7 \ Q z ] +0.5$ GeV}     \\
 \hline
  Points         &  190 & 190 & 189 & 187       \\
  \hline
 Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}               \\
  \hline
-$x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }                \\
+$x$ range       & \multicolumn{4}{c|}{$0.04 < x < 0.4$ }                \\
 \hline
 %Notes         &\multicolumn{4}{c|}{ }   \\ 
 %\hline 
 %$\chi^2 /$points &4.24 & 3.49 & 0.63 & 1.00                \\
 %\hline
 \end{tabular}
-\caption{SIDIS proton-target data (Hermes experiment).}
+\caption{SIDIS proton-target data (\hermes experiment).}
 \label{t:data_SIDIS_proton}
 \end{center}
 \end{table}
@@ -1029,20 +1059,20 @@ $x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }                \\
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|}
  \hline
-  & HERMES & HERMES & HERMES & HERMES & COMPASS & COMPASS\\
+  & \hermes & \hermes & \hermes & \hermes & \compass & \compass\\
  ~          &  $D \to \pi^+$    &   $D \to \pi^-$    &  $D \to K^+$    &   $D \to K^-$      &  $D \to h^+$    &   $D \to h^-$            \\
  \hline
  Reference & \multicolumn{4}{c|}{\cite{Airapetian:2012ki}}        &\multicolumn{2}{c|}{\cite{Adolph:2013stb}} \\
 \hline
 \multirow{3}{*}{Cuts}             & \multicolumn{6}{c|}{$Q^2 > 1.4 \text{ GeV}^2$}     \\
-             & \multicolumn{6}{c|}{$0.2 <z <0.7$}     \\
+             & \multicolumn{6}{c|}{$0.20 <z <0.74$}     \\
              & \multicolumn{6}{c|}{$P_{h \Tperp}< {\rm Min}[0.2\ Q, 0.7 \ Q z ] +0.5$ GeV}     \\
 \hline
  Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
  \hline
 Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}      & \multicolumn{2}{c|}{$10 \text{ GeV}^2 $}             \\
  \hline
-$x$ range       & \multicolumn{4}{c|}{$0.06 < x < 0.4$ }    &  \multicolumn{2}{c|}{$0.006 < x < 0.12$ }             \\
+$x$ range       & \multicolumn{4}{c|}{$0.04 < x < 0.4$ }    &  \multicolumn{2}{c|}{$0.005 < x < 0.12$ }             \\
 \hline
 Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2)$, Eq.~\eqref{e:mult_norm}}  \\
 %Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle \frac{m_N^h
@@ -1051,7 +1081,7 @@ Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\disp
 %$\chi^2 /$points &3.06 & 2.53 & 1.04 & 3.18    &  1.48        &    0.96             \\
 %\hline
 \end{tabular}
-\caption{SIDIS deuteron-target data (Hermes and Compass experiments).}
+\caption{SIDIS deuteron-target data (\hermes\ and \compass\ experiments).}
 \label{t:data_SIDIS_deuteron}
 \end{center}
 \end{table}
@@ -1075,9 +1105,9 @@ Cuts             & \multicolumn{4}{c|}{$q_T < 0.2\ Q +0.5$ GeV}
  \hline
  $\sqrt{s}$               &    19.4 GeV   &   23.8 GeV        &      27.4 GeV    &  38.8 GeV           \\
 \hline
-$Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV   &  7-9, 10.5-18 GeV   \\
+$Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV   &  7-9, 10.5-11.5 GeV   \\
  \hline
- Kin. var.           & $\eta$=0.4         &  $\eta$=0.21          &   $\eta$=0.03         &    $x_F=0.1$         \\
+ Kin. var.           & $\eta$=0.40         &  $\eta$=0.21          &   $\eta$=0.03         &    $x_F=0.1$         \\
 \hline
 %$ \chi^2  /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
 %\hline
@@ -1151,7 +1181,8 @@ The uncertainties $\Delta D_1^{a\smarrow h}$ are estimated from the plots in Ref
 Statistical and systematic experimental uncertainties $\Delta m_{N, \mbox{\tiny stat}}^{h}$ and $\Delta m_{N, \mbox{\tiny sys}}^{h}$ are taken from the experimental collaborations. 
 We do not take into account the covariance among different kinematic bins. 
 
-\minuit\ minimizes the error function in Eq.~\eqref{e:MC_chi2} calculating its gradient with respect to the vector of parameters $\{p\}$. 
+We minimize the error function in
+Eq.~\eqref{e:MC_chi2} with \minuit~\cite{James:1975dr}. 
 In each replica we randomize the starting point of the minimization, to better
 sample the space of fit parameters.
  The final outcome is a set of $\mathcal{M}$ different vectors of best-fit parameters, $\{ p_{0r}\},\; r=1,\ldots \mathcal{M}$, with which we can calculate any observable, its mean, and its standard deviation. 
@@ -1191,30 +1222,51 @@ $\chi^2$/d.o.f. should be peaked around one.
 Our work aims at simultaneously fitting for the first time data sets related to different experiments. 
 In the past, only fits related either to SIDIS or hadronic collisions have
 been presented. Here we mention a selection of recent existing analyses. 
-Among the fits of SIDIS data only, we refer to Refs.~\cite{Signori:2013mda}
-and
-\cite{Anselmino:2013lza}. In the first one, the authors fitted \hermes\ multiplicities only (1538 points in total) without taking into account QCD evolution (not DGLAP, nor TMD). In that work, a flavor decomposition in transverse momentum of the unpolarized TMDs and an analysis of the kinematic dependence of the intrinsic average square transverse momenta were presented. 
+
+In Ref.~\cite{Signori:2013mda}, the authors fitted \hermes\ multiplicities
+only (taking into account a total of 1538 points) 
+without taking into account QCD evolution. 
+In that work, a flavor decomposition in transverse momentum of the unpolarized
+TMDs and an analysis of the kinematic dependence of the intrinsic average
+square transverse momenta were presented.  
 In Ref.~\cite{Anselmino:2013lza} the authors fitted \hermes\ and \compass\
-multiplicities separately (576 and 6284 points respectively), introducing an
-ad-hoc normalization for \compass\ data and using DGLAP evolution. A fit of
-SIDIS data including TMD evolution was performed on measurement by the H1
+multiplicities separately (576 and 6284 points respectively), without TMD
+evolution and introducing an
+ad-hoc normalization for \compass\ data. A fit of
+SIDIS data including TMD evolution was performed on measurements by the H1
 collaboration of the so-called transverse energy flow~\cite{Nadolsky:1999kb,Aid:1995we}. 
  
-Looking at data from hadronic collisions, in 2007 Konychev and
+Looking at data from hadronic collisions, Konychev and
 Nadolsky~\cite{Konychev:2005iy} fitted data of low-energy Drell-Yan events and
 $Z$-boson production at Tevatron, taking into account TMD evolution at NLL
 accuracy (this is the most recent of a series of important papers on
-the subject~\cite{Ladinsky:1993zn,Landry:1999an,Landry:2002ix}). They did not consider SIDIS events and fitted in total 98
+the subject~\cite{Ladinsky:1993zn,Landry:1999an,Landry:2002ix}). They fitted in total 98
 points. Contrary to our approach, Konychev and Nadolsky studied the quality of the fit as a
 function of $\bb_{\text{max}}$. They found that the best value for
-$\bb_{\text{max}}$ is $1.5$ GeV$^{-1}$. We choose $\bb_{\text{max}}\approx 1.123$ GeV$^{-1}$, instead (see Sec.~\ref{ss:TMDevo}). Comparisons of best-fit values in the nonperturbative Sudakov form factors are delicate, since the functional form is different from ours.
-In 2014 D'Alesio, Echevarria, Melis, Scimemi performed a fit~\cite{DAlesio:2014mrz} of Drell-Yan data and $Z$-boson production data at Tevatron, focusing in particular on the role of the nonperturbative contribution to the kernel of TMD evolution. This is the fit with the highest accuracy in transverse momentum resummation performed up to date (NNLL in the Sudakov exponent and ${\cal O}(\alpha_S)$ in the Wilson coefficients). 
-In the same year Echevarria, Idilbi, Kang and Vitev~\cite{Echevarria:2014xaa} attempted a global fit of data for the Sivers asymmetry (thus including both SIDIS and Drell-Yan events), extracting also the nonperturbative part of the unpolarized TMDs. They anyway considered only one bin in $x, Q^2$ both for \hermes\ and \compass\ and the agreement between data and theory is questionable. 
-Another attempt was performed by Sun, Isaacson, Yuan and Yuan~\cite{Su:2014wpa} without providing a precise fit of the nonperturbative contributions.
+$\bb_{\text{max}}$ is $1.5$ GeV$^{-1}$ (to be compared to our choice
+$\bb_{\text{max}}\approx 1.123$ GeV$^{-1}$, see
+Sec.~\ref{ss:TMDevo}). 
+ Comparisons of best-fit values in the nonperturbative Sudakov form factors
+ are delicate, since the functional form is different from ours. 
+In 2014 D'Alesio, Echevarria, Melis, Scimemi performed a
+fit~\cite{DAlesio:2014mrz} of Drell-Yan data and $Z$-boson production data at
+Tevatron, focusing in particular on the role of the nonperturbative
+contribution to the kernel of TMD evolution. This is the fit with the highest
+accuracy in TMD evolution performed up to date (NNLL in the Sudakov exponent and ${\cal O}(\alpha_S)$ in the Wilson coefficients). 
+In the same year Echevarria, Idilbi, Kang and Vitev~\cite{Echevarria:2014xaa}
+presented a parametrization of the unpolarized TMD that described
+qualitatively well some bins of \hermes\ and \compass\ data, together with
+Drell-Yan and Z-production data.
+A similar result was presented by Sun, Isaacson, Yuan and
+Yuan~\cite{Su:2014wpa}. 
 
 
-In the following, we detail the results of a fit to the data sets described in Sec.~\ref{s:data_analysis} with a flavor-independent configuration for the transverse momentum dependence of unpolarized TMDs.
-In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. The number of degrees of freedom (d.o.f.) is given by the number of data points analyzed reduced by the number of free parameters in the error function. 
+In the following, we detail the results of a fit to the data sets described in
+Sec.~\ref{s:data_analysis} with a flavor-independent configuration for the
+transverse momentum dependence of unpolarized TMDs. 
+In Tab.~\ref{t:fl_ind_chi2} we present the total $\chi^2$. The number of
+degrees of freedom (d.o.f.) is given by the number of data points analyzed
+reduced by the number of free parameters in the error function.  
 The overall quality of the fit is good, with a global $\chi^2$/d.o.f. $= 1.55 \pm 0.05$. Uncertainties are computed as the $68\%$ confidence level (C.L.) from the replica methodology. 
 %%%%%%%%%%%%%%%% Tab. chi2 total  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
@@ -1236,7 +1288,7 @@ Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 %Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
 %                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
 % \\ 
-%      &    &    &  & HERMES    & HERMES   & COMPASS & COMPASS & DY \& Z & DY \& Z  \\
+%      &    &    &  & \hermes    & \hermes   & \compass & \compass & DY \& Z & DY \& Z  \\
 %\hline
 %8156 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ & 1737&  &6126 & & 293 &    \\
 %\hline
@@ -1290,7 +1342,7 @@ uncertainties for the kaon FFs.
 \begin{tabular}{|c|c|c|c|c|}
  \hline
 \hline
-  & HERMES & HERMES & HERMES & HERMES \\   
+  & \hermes & \hermes & \hermes & \hermes \\   
  &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$
  \\
  \hline
@@ -1327,7 +1379,7 @@ most of the discrepancy between theory and data due to normalization.
 \begin{tabular}{|c|c|c|c|c|c|c|}
  \hline
 \hline
-  & HERMES & HERMES & HERMES & HERMES & COMPASS & COMPASS\\
+  & \hermes & \hermes & \hermes & \hermes & \compass & \compass\\
  ~          &  $D \to \pi^+$    &   $D \to \pi^-$    &  $D \to K^+$    &   $D \to K^-$      &  $D \to h^+$    &   $D \to h^-$            \\
 \hline
  Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
@@ -1351,7 +1403,9 @@ Different $\langle x \rangle$, $\langle z \rangle$ and $\langle Q^2 \rangle$
 bins are displayed as a function 
 of the transverse momentum of the detected hadron $P_{hT}$.
 The grey bands are an envelope of the $200$ replica of best-fit curves. For every point in $P_{hT}$ we apply a $68\%$ C.L. selection criterion. 
-Points marked with different symbols and colors correspond to different $\langle z \rangle$ values. There is a strong correlation between $\langle x \rangle$ and $\langle Q^2 \rangle$ that does not allow to explore the $x$ and $Q^2$ dependence of the TMDs separately. 
+Points marked with different symbols and colors correspond to different
+$\langle z \rangle$ values. There is a strong correlation between $\langle x
+\rangle$ and $\langle Q^2 \rangle$ that does not allow us to explore the $x$ and $Q^2$ dependence of the TMDs separately. 
 Studying the contributions to the $\chi^2$/points as a function of the kinematics,  
 we notice that the $\chi^2(Q^2)$ 
 tends to improve as we move to higher $Q^2$ values, where the kinematic approximations of factorization are more reliable. 
@@ -1391,7 +1445,7 @@ the data apply.
 \begin{center}
 \includegraphics[width=0.90\textwidth]{plots/Hermes_Pions_SCIplot_flINDEP.pdf}
 \end{center}
-\caption{Hermes multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron  $P_{hT}$. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{\hermes\ multiplicities for production of pions off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron  $P_{hT}$. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:H_pions}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1399,7 +1453,7 @@ the data apply.
 \begin{center}
 \includegraphics[width=0.90\textwidth]{plots/Hermes_Kaons_SCIplot_flINDEP.pdf}
 \end{center}
-\caption{Hermes multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron $P_{hT}$. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{\hermes\ multiplicities for production of kaons off a proton and a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron $P_{hT}$. For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:H_kaons}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1407,7 +1461,7 @@ the data apply.
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piminus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of negative hadrons ($\pi^-$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{\compass\ multiplicities for production of negative hadrons ($\pi^-$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron  $P_{hT}$. Multiplicities are normalized to the first bin in $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pim}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1415,7 +1469,7 @@ the data apply.
 \begin{center}
 \includegraphics[width=\textwidth]{plots/COMPASS_SCIplot_flINDEP_Piplus.pdf}
 \end{center}
-\caption{Compass multiplicities for production of positive hadrons ($\pi^+$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron $P_{hT}$. Multiplicities are normalized to the first bin in  $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
+\caption{\compass\ multiplicities for production of positive hadrons ($\pi^+$) off a deuteron for different $\langle x \rangle$, $\langle z \rangle$, and $\langle Q^2 \rangle$ bins as a function of the transverse momentum of the detected hadron $P_{hT}$. Multiplicities are normalized to the first bin in  $P_{hT}$ for each $\langle z \rangle$ value (see~\eqref{e:mult_norm}). For clarity, each $\langle z \rangle$  bin has been shifted by an offset indicated in the legend.} 
 \label{f:C_pip}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1528,32 +1582,31 @@ not from the shape in $q_T$ (see Sec.~\ref{ss:replica105}).
 \label{ss:bestfit_TMDs}
 
 %% separation in bT space
-The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $\bT$ where transverse momentum resummation is computed perturbatively. $\bb_{\rm max}$ allows to avoid the Landau pole and $\bb_{\rm min}$ allows to recover correctly the high transverse momentum limit of the cross section (see also Sec.~\ref{ss:TMDevo}).
+The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $\bT$
+where transverse momentum resummation is computed perturbatively. 
 The $g_2$ parameter enters the nonperturbative Sudakov exponent and
 quantifies the amount of transverse momentum 
 due to soft gluon radiation that is not included in the
 perturbative part of the Sudakov form factor.
-As already detailed in Sec.~\ref{ss:TMDevo}, in this work we fix the value for
+As already explained in Sec.~\ref{ss:TMDevo}, in this work we fix the value for
 $\bb_{\rm min}$ and $\bb_{\rm max}$ in such a way that at $Q=1$ GeV the
-unpolarized TMDs coincide with their nonperturbative input. $g_2$, instead, is
+unpolarized TMDs coincide with their nonperturbative input. We leave $g_2$ as 
 a fit parameter. 
 
 Tab.~\ref{t:fl_ind_parcommon} summarizes the chosen values of $\bb_{\rm min}$,
 $\bb_{\rm max}$ and the best-fit value for $g_2$. The latter is given as an
-average with $68\%$ C.L. uncertainty computed over the set of 200 replicas. A
-larger value ($g_2 = 0.184 \pm 0.018$) was found in Ref.~\cite{Konychev:2005iy},
-where however no SIDIS data was taken into consideration.
-We stress here that a prescription involving both $\bb_{\text{min}}$ and
-$\bb_{\text{max}}$ is equivalent to requesting $\mu_b^2 < Q^2$ for all $\bb_T$ values in Eq.~\eqref{e:Sudakov}. This requirement turns out
-to be useful in order to fit SIDIS data with TMD evolution.
-
-We also quote the results obtained from
+average with $68\%$ C.L. uncertainty computed over the set of 200 replicas. We also quote the results obtained from
 replica 105, since its parameters are very close to the
 mean values of all replicas. 
+We obtain a value $g_2=0.13 \pm 0.01$, smaller than the value ($g_2 = 0.184 \pm 0.018$) obtained in Ref.~\cite{Konychev:2005iy},
+where however no SIDIS data was taken into consideration, and smaller than the
+value ($g_2=0.16$) chosen in Ref.~\cite{Echevarria:2014xaa}. We stress however
+that our prescriptions involving both $\bb_{\text{min}}$ and
+$\bb_{\text{max}}$ are different from previous work.
 
 %% best fit values and transverse momenta
 Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values of parameters in the
-nonperturbative part of the TMDs at $Q=1$ GeV (see Eq.~\eqref{e:f1NP}
+nonperturbative part of the TMDs at $Q=1$ GeV (see Eqs.~\eqref{e:f1NP}
 and~\eqref{e:D1NP}); as for $g_2$, we give the average value over the full set
 of replicas and the standard deviation based on a $68\%$ C.L. (see
 Sec.~\ref{ss:replica_method}), and we also quote the value of replica 105.
@@ -1716,7 +1769,7 @@ Replica 105   &
 %=======================================================
 % some possible titles for this section :
 %\subsection{Modifications to the default choices}
-\subsection{Fit quality: normalization and kinematic effects}
+\subsection{Stability of our results}
 %\subsection{Kinematic cuts and fit quality}
 \label{ss:replica105}
 
@@ -1752,7 +1805,7 @@ not improve significantly and parameters do not change much.
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
  \hline
 \hline
-%  & HERMES & HERMES & HERMES & HERMES  & HERMES & HERMES & HERMES & HERMES \\
+%  & \hermes & \hermes & \hermes & \hermes  & \hermes & \hermes & \hermes & \hermes \\
  ~     &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$       &  $D \to \pi^+$    &   $D \to \pi^-$    &  $D \to K^+$    &   $D \to K^-$                \\
 \hline
  Original   &  5.18 &  2.67 & 0.75  & 0.78      &  3.63 &  2.31 & 1.12  & 2.27    \\
@@ -1829,7 +1882,7 @@ the number of bins drops to only 477, with  a
 %Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
 %                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
 % \\ 
-%      &    &    &  & HERMES    & HERMES   & COMPASS & COMPASS & DY \& Z & DY \& Z  \\
+%      &    &    &  & \hermes    & \hermes   & \compass & \compass & DY \& Z & DY \& Z  \\
 %\hline
 %8156 & 18  & $10456 \pm  $ & $1.28 \pm  $ & 1737&  &6126 & & 293 &    \\
 %\hline
