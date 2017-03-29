@@ -18,7 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% legenda comments
-\newcommand{\AS}[1]{{\textcolor[rgb]{1,0,1}{#1}}}
+%\newcommand{\AS}[1]{{\textcolor[rgb]{1,0,1}{#1}}}
 
 \newcommand{\xbj}{x_B}
 \newcommand{\zh}{z_h}
@@ -26,8 +26,6 @@
 %% macro to draw particularly short right arrows. Choose one of the two
 \newcommand{\smarrow}{\mbox{\raisebox{-4.5pt}[0pt][0pt]{$\hspace{-1pt} 
 		\vec{\phantom{v}}$}}}
-%\newcommand{\smarrow}{\mbox{\raisebox{0.5pt}{\tiny $\hspace{-1.5pt} \rightarrow 
-%\hspace{-8.25pt}{\color{white} \rule[1pt]{1.5pt}{0.5pt}} \hspace{4pt} $}} }
 
 %% names of experiments + MINUIT
 \newcommand{\hermes}{\textsc{Hermes}}
@@ -77,10 +75,6 @@ deep-inelastic scattering, Drell-Yan scattering, and Z-boson production
 \author{Andrea Signori}
 \email{asignori@jlab.org}
 \affiliation{Theory Center, Thomas Jefferson National Accelerator Facility, 12000 Jefferson Avenue, Newport News, VA 23606, USA}
-%\affiliation{Department of Physics and Astronomy, VU University Amsterdam, De
-% Boelelaan 1081, NL-1081 HV Amsterdam, the Netherlands}
-%\affiliation{Nikhef, Science Park 105, NL-1098 XG Amsterdam, the
-% Netherlands}
 
 
 \begin{abstract}
@@ -160,9 +154,6 @@ If $P_{hT}^2\ll Q^2$, TMD
 factorization can be applied and the process is sensitive to
 TMDs~\cite{Collins:2011zzd}. 
 
-%If $P_{h\perp}^2\sim Q^2$ or if the measurement is integrated over $P_{h\perp}$,
-%collinear factorization applies and the process is sensitive to collinear
-%PDFs. 
 
 If polarization is taken into account, several TMDs can be
 introduced~\cite{Mulders:1995dh,Boer:1997nt,%quark twist 2, spin 1/2
@@ -305,17 +296,9 @@ $\bm{k}_\T$.  The $D_1^{a\smarrow h}(z, \bm{P}_{\T}^2;Q^2)$ is the TMD FF descri
 an unpolarized hadron $h$ carrying longitudinal momentum fraction $z$ and
 transverse momentum 
 $\bm{P}_\T$ (see Fig.~\ref{f:trans_momenta_SIDIS}).  
-TMDs generally depend on two energy scales~\cite{Collins:2011zzd}: the first
-enters via the renormalization group evolution, whereas the second is
-associated to the rapidity renormalization and enters via a
-process-independent soft factor \AS{AB: still some doubts about this sentence:
-  1. is it customary to talk about rapidity renormalization? 2. If we talk
-  about rapidity renormalization, then should we specify what kind of
-  renormalization is the first one? 3. We mention the soft factor, but we
-  don't have a soft factor anywhere in the formulas. Should we at least say
-  that it is reabsorbed into the definition of the TMDs? Or should we be more
-  generic and talk about soft gluons instead of a soft factor, or say nothing at all?}.  
-In this work we choose them to be equal and set to $Q^2$. 
+TMDs generally depend on two energy scales~\cite{Collins:2011zzd}, which enter
+via the renormalization of ultraviolet and rapidity divergencies. 
+In this work we choose them to be equal and set them to $Q^2$. 
 The term $Y_{UU,T}$ is introduced to ensure a matching
 to the perturbative fixed-order calculations at higher transverse momenta. 
 
@@ -349,8 +332,7 @@ discussed in Refs.~\cite{Boglione:2016bph,Moffat:2017sha}.
  
 Eq.~\eqref{e:SIDISkT} can be expanded in powers
 of $\alpha_S$. In the present analysis, we 
-will consider only the leading order terms in $\alpha_S$ \AS{at small transverse momentum}, i.e., stop at
-order $\alpha_S^0$. In this case 
+will consider only the terms at order $\alpha_S^0$. In this case 
 $\mathcal{H}^a_{UU,T} (Q^2) \approx e_a^2$
 and $Y_{UU,T}\approx 0$. 
 However, perturbative corrections include large logarithms $L \equiv
@@ -359,11 +341,8 @@ In the present analysis, we will take into account all
 leading and Next-to-Leading Logarithms (NLL).\footnote{We
   remark that formulas at NNLL are available in the
   literature~\cite{Echevarria:2016scs}.}  
-%powers of the form $\alpha_S^n L^{2n-1}$ (Leading Logarithms -- LL) 
-%and 
-%$\alpha_S^n L^{2n-2} $ (Next-to-Leading Logarithms -- NLL)
 
-In these approximations (LO in $\alpha_S$ and NLL), only the first term in
+In these approximations ($\alpha_S^0$ and NLL), only the first term in
 Eq.~\eqref{e:SIDISkT} is relevant (often in the
 literature this has been called $W$ term). We expect this term to provide a
 good description of the
@@ -621,9 +600,6 @@ nonperturbative contribution depending on $k_\T$ (plus possible corrections of
 order $\alpha_S$ from the Wilson coefficients).
 \end{itemize} 
 
-The Collins-Soper kernel $K$ is a power series in $\alpha_S$ with coefficients
-involving $\ln \mu/\mu_b$ \AS{AB: We did not define $\mu$ anywhere anymore. Should
-we remove the sentence?}. 
 At NLL accuracy, for our choice of scales $K(\bar{\bb}_{\ast},\mu_b) =
 0$. 
 Similarly, the $C$ and $\hat{C}$ are perturbatively calculable Wilson
@@ -697,18 +673,6 @@ $m_b= 4.7$ GeV. The integration of the Sudakov exponent in
 Eq.~\eqref{e:Sudakov} can
 be done analytically (for the complete expressions see, e.g.,
 Refs.~\cite{Frixione:1998dw,Bozzi:2005wk,Echevarria:2012pw}).  
-
-
-%\textcolor{red}{The convolutions are only valid for small $\bT \ll
-%  1/\Lambda_{\rm QCD}$. At larger $\bT$, the TMDs need to match the
-%  nonperturbative expressions $\widetilde{f}_{1 \rm NP}^a$ and
-%  $\widetilde{D}_{1 {\rm NP}}^{a\to h}$, respectively, that must be
-%  constrained by fitting experimental data. The evolution of TMDs from the
-%  initial scale $Q_0$ to $\mu$ is carried out through perturbatively
-%  calculable Sudakov factors $S$ and $\hat{S}$, respectively, and through a
-%  nonperturbative universal term $g_K$ at large $\bT$ that accounts for the
-%  radiation of soft gluons emitted by the considered parton. } 
-
 
 Following Refs.~\cite{Nadolsky:1999kb,Landry:2002ix,Konychev:2005iy}, for the
 nonperturbative Sudakov factor we make the traditional choice 
@@ -803,12 +767,6 @@ g_{3,4} (z) &= N_{3,4} \
 where $\beta, \, \gamma, \, \delta, $ and $N_{3,4} \equiv g_{3,4} (\hat{z})$ with
 $\hat{z} = 0.5$ 
 are free parameters. 
-%The same functional form
-%applies also to the width of the weighted Gaussian. For simplicity, we
-%considered parameters $\beta$, $\delta$, and $\gamma$ to be the same for both
-%Gaussians, and keep a distinction only between parameters 
-%$N_3$ and
-%$N'_3$.
 
 The average transverse momentum squared for the distributions in
 Eq.~\eqref{e:f1NPk} and \eqref{e:D1NPk} can be computed analytically:
@@ -859,27 +817,19 @@ In this paper we do not tackle this problem and we leave it to future
 studies. As described in Tabs.~\ref{t:data_SIDIS_proton}
 and~\ref{t:data_SIDIS_deuteron}, we identify the current fragmentation region
 operating a cut on $z$ only, namely $0.2 < z < 0.74$.
-%\footnote{The
-%  implementation of the ``collinearity'' criterion proposed
-%  in Ref.~\cite{Boglione:2016bph} crucially depends on the value of $\langle k_T^2
-%  \rangle$, requiring independent determinations of the partonic
-%  properties.} 
 
-%PhT <Min[0.2Q,0.7Qz]+0.5GeV
+
+
 Another requirement for the applicability of TMD factorization is the presence
 of two separate scales in the process. In SIDIS, those are the $Q^2$ and
 $P_{hT}^2$, which should satisfy the condition $P_{hT}^2 \ll Q^2$, or more
 precisely  $P_{hT}^2/z^2 \ll Q^2$. 
-%In order to satisfy $\Lambda_{\text{QCD}}^2 \ll Q^2$, we request $Q^2 > 1.4$ GeV$^2$. 
-%The second condition is $P_{hT}^2 \ll Q^2$, together with the further constraint  $P_{hT}^2/z^2 \ll Q^2$. In our analysis we relax
-%~\footnote{\textcolor{red}{AS [comment to ourselves]: adding $0.5$ GeV might be a bit ``extreme'', since we could probe the $P_{hT} > Q$ region where a matching to fixed-order calculations should be taken into account.}} 
 We implement this condition by imposing 
 $P_{hT} < \min[0.2\ Q, 0.7\ Qz] + 0.5$ GeV.
 With this choice, $P_{hT}^2$ is always smaller than $Q^2/3$, but in a few 
 bins (at low $Q^2$ and $z$) $P_{hT}^2/z^2$ may become larger
 than $Q^2$. The applicability of TMD factorization in this case could be
 questioned. 
-\AS{AB: the next sentence perhaps needs still to be phrased better. Suggestions?}
 However, as we will explain further in Sec.~\ref{ss:replica105},
 we can obtain a fit that can describe a wide region of $P_{hT}$ and can also
 perform very well in a restricted region,  where TMD factorization
@@ -969,8 +919,6 @@ obtain
 \begin{equation}
 \frac{1}{\pi} \int dQ^2 \frac{d\sigma}{dQ^2dq^2_T d\eta}
 \approx 
-%\frac{1}{\pi}  \int dQ^2 \frac{4\pi \alpha^2_{em}}{3N_cQ^2 s} e_q^2 
-%= 
 \frac{4\alpha_{\rm em}^2}{3 s} \ln \left( \frac{Q_f^2}{Q_i^2} \right)
 F_{UU}^1. 
 \end{equation}
@@ -1011,7 +959,6 @@ formulas. In fact, as we will discuss in Sec.~\ref{ss:replica105} a 5\%
 increase in these factors would improve the agreement with data, without
 affecting the TMD parameters. 
 
-%\textcolor{red}{Cuts and reasons}\\
 
 
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
@@ -1037,10 +984,6 @@ Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}               \\
  \hline
 $x$ range       & \multicolumn{4}{c|}{$0.04 < x < 0.4$ }                \\
 \hline
-%Notes         &\multicolumn{4}{c|}{ }   \\ 
-%\hline 
-%$\chi^2 /$points &4.24 & 3.49 & 0.63 & 1.00                \\
-%\hline
 \end{tabular}
 \caption{SIDIS proton-target data (\hermes experiment).}
 \label{t:data_SIDIS_proton}
@@ -1067,11 +1010,7 @@ Max. $Q^2$      &  \multicolumn{4}{c|}{$9.2 \text{ GeV}^2 $}      & \multicolumn
 $x$ range       & \multicolumn{4}{c|}{$0.04 < x < 0.4$ }    &  \multicolumn{2}{c|}{$0.005 < x < 0.12$ }             \\
 \hline
 Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle m_{\text{norm}}(x,z,\bm{P}_{h\Tperp}^2, Q^2)$, Eq.~\eqref{e:mult_norm}}  \\
-%Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\displaystyle \frac{m_N^h
-%    (x,z,\bm{P}_{h\Tperp}^2, Q^2)}{m_N^h (x,z,{\rm Min}[\bm{P}_{h\Tperp}^2], Q^2)}$}             \\
 \hline 
-%$\chi^2 /$points &3.06 & 2.53 & 1.04 & 3.18    &  1.48        &    0.96             \\
-%\hline
 \end{tabular}
 \caption{SIDIS deuteron-target data (\hermes\ and \compass\ experiments).}
 \label{t:data_SIDIS_deuteron}
@@ -1080,8 +1019,6 @@ Notes         &\multicolumn{4}{c|}{ }   & \multicolumn{2}{c|}{Observable: $\disp
 %%%%%%%%%%%%%% Tab. Drell-Yan data low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
-%\newcommand{\m}{\hphantom{$-$}}
-%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
 \renewcommand{\arraystretch}{1.2} % enlarge line spacing
 \begin{tabular}{|c|c|c|c|c|}
@@ -1101,8 +1038,6 @@ $Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV  
  \hline
  Kin. var.           & $\eta$=0.40         &  $\eta$=0.21          &   $\eta$=0.03         &    $x_F=0.1$         \\
 \hline
-%$ \chi^2  /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
-%\hline
 \end{tabular}
 \caption{Low energy Drell-Yan data collected by the E288 and E605 experiments at Tevatron, with different center-of-mass energies.}
 \label{t:data_DY}
@@ -1111,9 +1046,6 @@ $Q$ range                 &  4-9 GeV      &  4-9 GeV         &  5-9, 11-14 GeV  
 %%%%%%%%%%%%%% Tab. Z data Tevatron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
-%\vskip 18pt
-%\newcommand{\m}{\hphantom{$-$}}
-%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
 \renewcommand{\arraystretch}{1.2} % enlarge line spacing
 \begin{tabular}{|c|c|c|c|c|}
@@ -1130,8 +1062,6 @@ Cuts             & \multicolumn{4}{c|}{$q_T< 0.2\ Q +0.5 \text{ GeV}=18.7$ GeV} 
  \hline
 Normalization        &  1.114       &    0.992          &       1.049        &       1.048    \\
 \hline
-%$\chi^2 /$points      &  0.52        &    0.98           &       0.68         &   0.68     \\
-%\hline
 \end{tabular}
 \caption{$Z$ boson production data collected by the CDF and D0 experiments at Tevatron, with different center-of-mass energies.}
 \label{t:data_Z}
@@ -1188,22 +1118,7 @@ Eq.~\eqref{e:MC_chi2} but with the replacement $m_{N, r}^{h} \to m_{N}^{h}$,
 i.e.,  with respect to the original data set. If the model is able to give a
 good description of the data, the distribution of the $\mathcal{M}$ values of
 $\chi^2$/d.o.f. should be peaked around one.  
-%In practice, the rigidity of our functional form leads to higher $\chi^2$ values. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{s:results}
@@ -1267,25 +1182,12 @@ The overall quality of the fit is good, with a global $\chi^2$/d.o.f. $= 1.55 \p
   \begin{tabular}{|c|c|c|c|}
 \hline
 \hline
-%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%  \hline
-%  \hline
 Points& Parameters & $\chi^2$& $\chi^2/$d.o.f. \\
 \hline
 8059 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ \\
 \hline
 \hline
 \end{tabular}
-%  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-%Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
-%                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
-% \\ 
-%      &    &    &  & \hermes    & \hermes   & \compass & \compass & DY \& Z & DY \& Z  \\
-%\hline
-%8156 & 11  & $12629 \pm 363$ & $1.55 \pm 0.05$ & 1737&  &6126 & & 293 &    \\
-%\hline
-%\hline
-%\end{tabular}
 \caption{Total number of points analyzed, number of free parameters and $\chi^2$ values.}
 \label{t:fl_ind_chi2}
 \end{table}
@@ -1305,7 +1207,6 @@ respectively.
 \subsubsection*{Semi-inclusive DIS}
 \label{sss:SIDIS_agreement}
 
-%%% CHI2 VALUES %%%
 
 For SIDIS at \hermes\ off a proton, 
 most of the contribution to the $\chi^2$ comes from events with a $\pi^+$ in the final state. 
@@ -1340,7 +1241,6 @@ uncertainties for the kaon FFs.
  \hline
  Points         &  190 & 190 & 189 & 187       \\
  \hline
-%$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
 $\chi^2 /$points & $4 .83\pm 0.42$ & $2 .47\pm 0.28$ & $0 .91\pm 0.14$ & $0 .82\pm 0.17$   \\            
 \hline
 \hline
@@ -1376,7 +1276,6 @@ most of the discrepancy between theory and data due to normalization.
 \hline
  Points         &  190 & 190 & 189 & 189   & 3125 & 3127   \\
  \hline
-%$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
 $\chi^2 /$points & $3.46\pm 0.32$ & $2.00\pm 0.17$ & $1.31\pm 0.26$ & $2.54\pm 0.57$  & $1.11\pm 0.03$ & $1.61\pm 0.04$ \\            
  \hline
  \hline
@@ -1402,17 +1301,11 @@ Studying the contributions to the $\chi^2$/points as a function of the kinematic
 we notice that the $\chi^2(Q^2)$ 
 tends to improve as we move to higher $Q^2$ values, where the kinematic approximations of factorization are more reliable. 
 Moreover, usually the $\chi^2(z)$ increases at lower $z$ values.
-%, which also resembles the kinematic condition $P_{hT}/z \lesssim Q$ for TMD factorization.
-%Concerning the transverse momentum dependence we observe that .
 
 Fig.~\ref{f:H_kaons} has same contents and notation as in Fig.~\ref{f:H_pions}
 but for kaons in the final state. In this case, the trend of the agreement as
 a function of $Q^2$ is not as clear as for the case of pions: good agreement
 is found also at low $Q^2$.
-%Here we notice that the agreement at low $z$ tends to be better than in the previous case of pion production. 
-%\AS{Looking at replica 105, for kaons at \hermes\ the trend of the agreement as a function of $Q^2$ behavior is not as clear as for the case of pions. 
-%In general, we observe a better agreement at lower-$z$ rather than at higher-$z$ (in particular for $\{ P K^-,\ D K^+,\ D K^- \}$). }
-% no specific trend in PhT
 
 In Fig.~\ref{f:C_pim} we present \compass\ normalized multiplicities (see
 Eq.~\eqref{e:mult_norm}) for production of $\pi^-$ off a deuteron for
@@ -1427,7 +1320,6 @@ high $z$.
 For fixed $\langle Q^2 \rangle$ and high $\langle z \rangle$, a good agreement
 is recovered moving to higher $\langle x \rangle$ bins (see, e.g., the
   third line from the top in Fig.~\ref{f:C_pim}).
-%do not mention PhT behavior
 
 Fig.~\ref{f:C_pip} has same content and notation as in Fig.~\ref{f:C_pim}, but
 for $h^+ \equiv \pi^+$. The same comments on the agreement between theory and
@@ -1473,7 +1365,6 @@ the data apply.
 \subsubsection*{Drell--Yan and $Z$ production}
 \label{sss:DYZ_agreement}
 
-%%% CHI2 VALUES %%%
 
 The low energy Drell-Yan data collected by the E288 and E605 experiments at Fermilab have large error bands (see Fig.~\ref{f:DY_panel}). This is why the $\chi^2$ values in Tab.~\ref{t:fl_ind_chi2_DY} are rather low compared to the other data sets. 
 
@@ -1481,8 +1372,6 @@ The agreement is also good for $Z$ boson production, see Tab.~\ref{t:fl_ind_chi2
 %%%%%%%%%%%%%% Tab. chi2 Drell-Yan low Q %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
-%\newcommand{\m}{\hphantom{$-$}}
-%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
 \renewcommand{\arraystretch}{1.2} % enlarge line spacing
 \begin{tabular}{|c|c|c|c|c|}
@@ -1503,9 +1392,6 @@ $ \chi^2  /$points      &  $0.99\pm 0.09$        &    $0.84\pm 0.10$           &
 %%%%%%%%%%%%%% Tab. chi2 Z Tevatron %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
 \begin{center}
-%\vskip 18pt
-%\newcommand{\m}{\hphantom{$-$}}
-%\newcommand{\cc}[1]{\multicolumn{1}{c}{#1}}
 \renewcommand{\tabcolsep}{0.4pc} % enlarge column spacing
 \renewcommand{\arraystretch}{1.2} % enlarge line spacing
 \begin{tabular}{|c|c|c|c|c|}
@@ -1526,7 +1412,6 @@ $\chi^2 /$points     &  $1.36\pm 0.00$        &    $1.11\pm 0.02$           &   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%% FIGURES %%%
 
 Fig.~\ref{f:DY_panel} displays the cross section for DY events differential with respect to the transverse momentum $q_T$ of the virtual photon, its invariant mass $Q^2$ and rapidity $y$.  
 As for the case of SIDIS, the grey bands are the $68\%$ C.L. envelope of the
@@ -1573,7 +1458,6 @@ not from the shape in $q_T$ (see Sec.~\ref{ss:replica105}).
 \subsection{Transverse momentum dependence at 1 GeV}
 \label{ss:bestfit_TMDs}
 
-%% separation in bT space
 The variables $\bb_{\rm min}$ and $\bb_{\rm max}$ delimit the range in $\bT$
 where transverse momentum resummation is computed perturbatively. 
 The $g_2$ parameter enters the nonperturbative Sudakov exponent and
@@ -1596,19 +1480,11 @@ value ($g_2=0.16$) chosen in Ref.~\cite{Echevarria:2014xaa}. We stress however
 that our prescriptions involving both $\bb_{\text{min}}$ and
 $\bb_{\text{max}}$ are different from previous work.
 
-%% best fit values and transverse momenta
 Tab.~\ref{t:fl_ind_par_TMD} collects the best-fit values of parameters in the
 nonperturbative part of the TMDs at $Q=1$ GeV (see Eqs.~\eqref{e:f1NP}
 and~\eqref{e:D1NP}); as for $g_2$, we give the average value over the full set
 of replicas and the standard deviation based on a $68\%$ C.L. (see
 Sec.~\ref{ss:replica_method}), and we also quote the value of replica 105.
-
-%Keeping in mind that $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle = \big
-%\langle \bm{k}_{\T}^2 \big \rangle (x=0.1)$ and  $\big \langle
-%\hat{\bm{P}}_{\perp}^2 \big \rangle = \big \langle \bm{P}_{\perp}^2 \big
-%\rangle (z=0.5)$, we note that 
-%delicate, since here we rely on a modified Gaussian ansatz,
-%see~\eqref{e:f1NPk} and~\eqref{e:D1NPk}. \AS{Do we agree on the fact that $\langle P_\perp^{2 \prime} \rangle$ does not make sense here? We should remove it.}
 
 In Fig.~\ref{f:kT2_vs_PT2} we compare different extractions of
 partonic transverse momenta. The horizontal axis shows 
@@ -1647,9 +1523,6 @@ The bands are computed as the $68\%$ C.L.  envelope of the full sets of curves f
   \begin{tabular}{|c|c|c|c|}
 \hline
 \hline
-%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%  \hline
-%  \hline
 &$\bb_{\rm max}$ [GeV$^{-1}$] & $\bb_{\rm min}$ [GeV$^{-1}$] &  $g_2$ {[GeV$^2$]} 
  \\ 
 & (fixed)     & (fixed)   &                            \\
@@ -1670,9 +1543,6 @@ Replica 105 &  $2 e^{-\gamma_E}$& $2 e^{-\gamma_E}/Q$  & $0.128$  \\
   \begin{tabular}{|c||c|c|c|c|c|c|}
 \hline
 \hline
-%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%  \hline
-%  \hline
 TMD PDFs&  $g_1$ 
 & $\alpha$ & $\sigma$ & & $\lambda$ &  
  \\ 
@@ -1719,21 +1589,7 @@ Replica 105   &
  (5) results from Ref.~\cite{Anselmino:2013lza} for \hermes\ data at high $z$, (6) results from Ref.~\cite{Anselmino:2013lza} for normalized \compass\ data, (7) results from Ref.~\cite{Anselmino:2013lza} for normalized \compass\ data at high $z$, (8) results from Ref.~\cite{Echevarria:2014xaa}.} 
 \label{f:kT2_vs_PT2}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[h!]
-%\centering
-%\begin{tabular}{ccc}
-%\includegraphics[width=0.40\textwidth]{plots/kT2av_curves_at1GeV_flINDEP.pdf}
-%&\hspace{0.001cm}
-%&
-%\includegraphics[width=0.40\textwidth]{plots/PT2av_curves_at1GeV_flINDEP.pdf}
-%\\
-%(a) && (b)
-%\end{tabular}
-%\caption{write the caption here (a) and another here (b).}
-%\label{f:avmomenta_all_rep}
-%\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{figure}[h!]
 \centering
 \begin{tabular}{ccc}
@@ -1748,21 +1604,14 @@ Replica 105   &
   (a) and of $\big \langle \bm{P}_{\perp}^2 \big \rangle (z)$ (b). The bands
   are the $68\%$ C.L. envelope of the full sets of best-fit
   curves.  
-% Comparisons with other extractions are displayed. Color coding is
-%  the same as in Fig.~\ref{f:kT2_vs_PT2}.  In (b) the grey-dashed curve refers
-%  to the parametrization used in GMCtrans~\cite{gmctrans} and the black-dashed
-%  curve refers to~\cite{Boglione:1999pz}.
 }
 \label{f:avmomenta_68CL}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%=======================================================
-% some possible titles for this section :
-%\subsection{Modifications to the default choices}
+
 \subsection{Stability of our results}
-%\subsection{Kinematic cuts and fit quality}
 \label{ss:replica105}
 
 
@@ -1797,12 +1646,10 @@ not improve significantly and parameters do not change much.
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
  \hline
 \hline
-%  & \hermes & \hermes & \hermes & \hermes  & \hermes & \hermes & \hermes & \hermes \\
  ~     &  $p \to \pi^+$    &   $p \to \pi^-$    &  $p \to K^+$    &   $p \to K^-$       &  $D \to \pi^+$    &   $D \to \pi^-$    &  $D \to K^+$    &   $D \to K^-$                \\
 \hline
  Original   &  5.18 &  2.67 & 0.75  & 0.78      &  3.63 &  2.31 & 1.12  & 2.27    \\
  \hline
-%$\chi^2$ &4.24 & 3.49 & 0.63 & 1.00                \\
 Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\            
  \hline
  \hline
@@ -1855,113 +1702,7 @@ the number of bins drops to only 477, with  a
  region, where TMD factorization is expected to be under control.
 
 
-%%========================================================
-%\subsection{Comments on flavor-dependent fits}
-%\label{ss:comment_fldep}
-%
-%\textcolor{red}{AS: do we want to comment on the difficulties encountered while fitting with a flavor-dependent scheme for the transverse momentum dependence? In my opinion we should do it, but I also think that we should aim at conveying a positive message. For example, we could talk about some of the tests that we have performed excluding \compass\ data.}
-%
 
-%\begin{table}[h]
-%\small
-%  \centering
-%  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-%\hline
-%\hline
-%%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%%  \hline
-%%  \hline
-%Points& Parameters & $\chi^2$& $\chi^2/$d.o.f.& 
-%                  Points &$\chi^2$& Points &$\chi^2$& Points &$\chi^2$ 
-% \\ 
-%      &    &    &  & \hermes    & \hermes   & \compass & \compass & DY \& Z & DY \& Z  \\
-%\hline
-%8156 & 18  & $10456 \pm  $ & $1.28 \pm  $ & 1737&  &6126 & & 293 &    \\
-%\hline
-%\hline
-%\end{tabular}
-%\caption{Number of points and $\chi^2$ values 
-%for the flavor-dependent fit}
-%\label{t:chi2_flav}
-%\end{table}
-%
-%\begin{table}
-%\small
-%  \centering
-%  \begin{tabular}{|c|c|c|}
-%\hline
-%\hline
-%%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%%  \hline
-%%  \hline
-%$\bb_{\rm max}$ & $\bb_{\rm min}$ &  $g_2$ 
-% \\ 
-% (fixed)     & (fixed)   & {[GeV$^2$]}                           \\
-%\hline
-%$2 e^{-\gamma_E}/$GeV& $2 e^{-\gamma_E}/Q$  & $0.13 \pm 0.01$  \\
-%\hline
-%\hline
-%\end{tabular}
-%\caption{Values of parameters common to TMD PDFs and FFs 
-%for the flavor-dependent fit}
-%\label{t:parcommon_flav}
-%\end{table}
-%
-%
-%
-%\begin{table}
-%\small
-%  \centering
-%  \begin{tabular}{|c||c|c|c|c|c|c|}
-%\hline
-%\hline
-%%  \multicolumn{4}{|c|}{Parameters for TMD PDFs} \\
-%%  \hline
-%%  \hline
-%TMD PDFs&  $\big \langle \hat{\bm{k}}_{\T}^2 \big \rangle$ 
-%& $\alpha$ & $\sigma$ & & $\lambda$ &  
-% \\ 
-%        & {[GeV$^2$]}                               &
-%      (random) &      &  & & \\
-%\hline
-%up valence 
-%& $0.15 \pm  $ & $0.00 \pm   $ & $-0.93 \pm  $  &  & $50.0 \pm  $ &
-%\\
-%\hline
-%down valence 
-%& $0.31 \pm  $ & '' & ''  &  & '' &    \\
-%\hline
-%sea 
-%& $0.17 \pm  $ & $4.56 \pm   $ & $0.27 \pm  $  &  & $0.147 \pm  $ &    \\
-%\hline
-%\hline
-%TMD FFs&  $\big \langle \hat{\bm{P}}_{\perp}^2 \big \rangle$ &
-%$\beta$ & $\delta$ & $\gamma$ & $\lambda_F$ & $\big \langle
-%\hat{\bm{P}}_{\perp}^{\prime 2} \big \rangle$
-% \\ 
-%        & {[GeV$^2$]} &            &         & & &{[GeV$^2$]}    \\
-%\hline
-%$u \to \pi^+$   &  $0.22 \pm $ & $2.6 \pm  $ & $2.8 \pm $ 
-%      & $0.062 \pm $ & $5.9 \pm $ & $0.139 \pm $  \\
-%\hline
-%$d \to \pi^+$  &  $0.24 \pm $ & '' & '' & '' & '' & ''  \\
-%\hline
-%$\bar{s} \to K^+$ &  $0.24 \pm$ (random) & '' & '' & '' & '' & ''   \\
-%\hline
-%$u \to K^+$   &  $0.22 \pm $ & '' & '' & '' & '' & ''  \\
-%\hline
-%\hline
-%\end{tabular}
-%\caption{68\% confidence intervals of 
-%best-fit parameters for TMD PDFs for the flavor-dependent fit}
-%\label{t:fd_PDFs_par_flav}
-%\end{table}
-
-
-
-
-
-%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{s:conclusions}
@@ -1976,7 +1717,7 @@ boson production at small transverse momentum collected by different experiments
 This constitutes the first attempt towards a global fit of 
 $f_1^a(x,k_\perp^2)$ and $D_1^{a \to h}(z,P_\perp^2)$ in the context of TMD
 factorization and with the implementation of 
-TMD evolution at NLL accuracy. % and at LO in $\alpha_S$.
+TMD evolution at NLL accuracy. 
   
 We extracted unpolarized TMDs using 8059 data points with 11 free parameters
 using a replica methodology. We selected data with 
@@ -1991,17 +1732,12 @@ The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$ and can be improved up to 1.02
 restricting the kinematic cuts, without changing the parameters (see Sec.~\ref{ss:replica105}). 
 Most of the discrepancies between experimental data and theory comes from the
 normalization and not from the transverse momentum shape. 
-%This might
-%indicate the both perturbative corrections and higher-twist corrections could
-%play a relevant role at low energies. 
 
 Our fit is performed assuming that the intrinsic transverse momentum
 dependence of TMD PDFs and FFs 
 can be parametrized by a normalized linear combination of a Gaussian and a
 weigthed Gaussian. We considered that the widths of the Gaussians depend on the longitudinal
 momenta. We neglected a possible flavor dependence. 
-%For $f_1$ we assume that the two Gaussian
-%distributions have the same variance, for $D_1$ we relax this condition.  
 For the nonperturbative component of TMD evolution, we adopted the choice most
 often used in the literature (see Sec.~\ref{ss:TMDevo}). 
 
@@ -2061,25 +1797,16 @@ powerful tools to look for footprints of new physics.
 
 
 
-
-
-%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgments}
-%Discussions with  are gratefully acknowledged. 
 Discussions with Giuseppe Bozzi are gratefully acknowledged.
 This work is supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 647981, 3DSPIN). 
 AS acknowledges support from U.S. Department of Energy contract DE-AC05-06OR23177, under which Jefferson Science Associates, LLC, manages and operates Jefferson Lab. 
 The work of AS has been funded partly also by the program of the Stichting voor Fundamenteel Onderzoek der Materie (FOM), which is financially supported by the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO).
 \end{acknowledgments}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\bibliographystyle{myrevtex}
-%\bibliographystyle{h-physrev}
 \bibliographystyle{apsrevM}
-%\bibliographystyle{JHEP}
 \bibliography{mybiblio}
-%\bibliography{biblio_sidis}
-%\bibliography{bibroad}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

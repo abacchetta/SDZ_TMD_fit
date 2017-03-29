@@ -76,7 +76,6 @@
      "t:replica105-hermes"
      "s:conclusions")
     (TeX-add-symbols
-     '("AS" 1)
      "xbj"
      "zh"
      "smarrow"
