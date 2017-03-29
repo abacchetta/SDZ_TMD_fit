@@ -628,7 +628,7 @@ order $\alpha_S$ from the Wilson coefficients).
 \end{itemize} 
 
 The Collins-Soper kernel $K$ is a power series in $\alpha_S$ with coefficients
-involving $\ln \mu/\mu_b$ \AS{We did not define $\mu$ anywhere anymore. Should
+involving $\ln \mu/\mu_b$ \AS{AB: We did not define $\mu$ anywhere anymore. Should
 we remove the sentence?}. 
 At NLL accuracy, for our choice of scales $K(\bar{\bb}_{\ast},\mu_b) =
 0$. 
@@ -1776,19 +1776,19 @@ Replica 105   &
 
 In this subsection we discuss the effect of modifying some of the choices we
 made in our default fit. Instead of repeating the fitting procedure with
-different choices, we limited ourselves to checking how the $\chi^2$ of a single
+different choices, we limit ourselves to checking how the $\chi^2$ of a single
 replica is affected by the modifications. 
 
-As starting point we chose replica
+As starting point we choose replica
 105, which, as discussed above, is one of the most representative among the
 whole replica set. 
-The global $\chi^2/$d.o.f.\ of replica 105 is 1.51. We kept all parameters
+The global $\chi^2/$d.o.f.\ of replica 105 is 1.51. We keep all parameters
 fixed, without performing any new minimization, 
-and we computed the $\chi^2/$d.o.f.\ after the modifications described in the
+and we compute the $\chi^2/$d.o.f.\ after the modifications described in the
 following.
 
-First of all, we analyzed \hermes\ data with the same strategy as \compass,
-i.e., we normalized \hermes\ data to the value of the first bin
+First of all, we analyze \hermes\ data with the same strategy as \compass,
+i.e., we normalize \hermes\ data to the value of the first bin
 in $P_{hT}$. In this case, the global
 $\chi^2/$d.o.f.\ reduces sharply to 1.27. The partial $\chi^2$ for the
 different SIDIS processes measured 
@@ -1821,7 +1821,7 @@ Normalized  &  1.94 &  1.13 &  0.57 & 0.29 & 1.59  & 0.80 & 0.47 & 0.97  \\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We also considered the effect of changing the normalization of the $Z$-boson
+We consider the effect of changing the normalization of the $Z$-boson
 data: if we increase the normalization factors quoted
 in the last row of Tab.~\ref{t:data_Z} by 5\%, the $\chi^2$ quoted in the last
 row of Tab.~\ref{t:fl_ind_chi2_Z}
@@ -1831,7 +1831,7 @@ also already visible by eye in Fig.~\ref{f:Z_qT}: the theoretical curves are
 systematically below the experimental data points, but the shape is reproduced
 very well.
 
-We considered the sensitivity of our results to the %set of
+We consider the sensitivity of our results to the %set of
  parameterizations adopted for the collinear quark PDFs. 
 The $\chi^2/ \text{d.o.f.}$ varies from its original value
 1.51, obtained with the NLO GJR 2008 parametrization~\cite{Gluck:2007ck}, to
@@ -1839,11 +1839,11 @@ The $\chi^2/ \text{d.o.f.}$ varies from its original value
 CJ12~\cite{Owens:2012bv}. In both cases, the agreement with \hermes\
 and $Z$ boson data is not affected significanlty,
  the agreement with \compass\ data becomes slightly worse, 
-and the agreement with DY data is clearly worse. 
+and the agreement with DY data becomes clearly worse. 
 
 An extremely important point is the choice of kinematic cuts. Our default
 choices are listed in Tabs.~\ref{t:data_SIDIS_proton}--\ref{t:data_Z}. We
-considered also more stringent kinematic cuts on SIDIS data: 
+consider also more stringent kinematic cuts on SIDIS data: 
 $Q^2 > 1.5$ GeV$^2$ and 
 $0.25 < z < 0.6$ instead of $Q^2 > 1.4$ GeV$^2$ and $0.2 < z <
 0.7$, leaving the other ones unchanged. The number of bins with these cuts 
@@ -1995,7 +1995,8 @@ on the basis of phenomenological considerations
 we included regions where TMD
 factorization could be questioned, but we checked that our results describe 
 very well the regions where TMD factorization is supposed to hold. 
-The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$ and can be improved up to 1.02 working on the kinematic cuts (see Sec.~\ref{ss:replica105}). 
+The average $\chi^2$/d.o.f. is $1.55 \pm 0.05$ and can be improved up to 1.02
+restricting the kinematic cuts, without changing the parameters (see Sec.~\ref{ss:replica105}). 
 Most of the discrepancies between experimental data and theory comes from the
 normalization and not from the transverse momentum shape. 
 %This might
@@ -2005,7 +2006,8 @@ normalization and not from the transverse momentum shape.
 Our fit is performed assuming that the intrinsic transverse momentum
 dependence of TMD PDFs and FFs 
 can be parametrized by a normalized linear combination of a Gaussian and a
-weigthed Gaussian. 
+weigthed Gaussian. We considered that the widths of the Gaussians depend on the longitudinal
+momenta. We neglected a possible flavor dependence. 
 %For $f_1$ we assume that the two Gaussian
 %distributions have the same variance, for $D_1$ we relax this condition.  
 For the nonperturbative component of TMD evolution, we adopted the choice most
@@ -2018,13 +2020,15 @@ present and future experiments.
 In future studies, different
 functional forms for all the nonperturbative ingredients should be explored, 
 adding also a possible
-flavor dependence in the large-$\bT$ models for the TMDs, which we presently neglected.
+flavor dependence 
+including also a possible
+flavor dependence of the intrinsic transverse momenta.
 A more
 precise analysis from the perturbative point of view is also needed, which
 should in principle make it possible to relax the tension in the normalization and to describe data at higher transverse
 momenta. Moreover, the description at low transverse momentum  
 should be properly matched to 
-the collinear fixed-order calculations. 
+the collinear fixed-order calculations at high transverse momentum. 
 
 Together with an improved theoretical framework, in order to better understand
 the formalism more experimental data is needed. It would be particularly
@@ -2056,7 +2060,7 @@ the LHC~\cite{Boer:2012bt,Dunnen:2014eta,Signori:2016jwo,Lansberg:2017tlc}.
 Testing the formalism of TMD factorization and understanding the structure of unpolarized TMDs is only the first crucial step in the exploration of the 3D proton structure in momentum space and this work opens the way to global determinations of TMDs. 
 Building on this, we can proceed to deepen our understanding of hadron
 structure via polarized structure function and asymmetries (see, e.g.,
-Refs~\cite{Aschenauer:2015ndk,Boglione:2015zyc,Kikola:2017hnp}) and, at the
+Refs.~\cite{Aschenauer:2015ndk,Boglione:2015zyc} and references therein) and, at the
 same time, to test the impact of hadron structure in precision measurements at
 high-energies, such as at the LHC. A detailed mapping of hadron structure is
 essential to interpret data from hadronic collisions, which are among the most
